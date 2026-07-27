@@ -1,0 +1,162 @@
+import excavationImg from "@/assets/service-excavation.jpg";
+import { SERVICE_IMAGES } from "./assets";
+import {
+  COMMON_TRUST_BAR,
+  PLACEHOLDER_TESTIMONIAL_DEFAULT,
+  SECONDARY_CALLOUT_DEFAULT,
+} from "./defaults";
+import type { PillarService } from "./types";
+
+export const siteDevelopment: PillarService = {
+  slug: "site-development",
+  eyebrow: "Commercial Site Development",
+  title: "Commercial Site Development Contractor in Southern California",
+  shortName: "Site Development",
+  intro:
+    "Full-scope commercial site development — grading, utilities, paving, concrete, and erosion control — for warehouse, retail, industrial, and municipal projects across the Inland Empire, Orange County, and Los Angeles County.",
+  cardDesc: "Turnkey sitework and site development for commercial and industrial projects.",
+  heroImage: excavationImg,
+  metaTitle: "Commercial Site Development Contractor Southern California | Mendozer x Earthworks",
+  metaDesc:
+    "Licensed commercial site development contractor in Southern California. Turnkey sitework including grading, underground utilities, paving, concrete flatwork, and SWPPP compliance for warehouse, retail, industrial, and developer-led projects.",
+  hasDetailPage: true,
+  definition:
+    "Commercial site development is the integrated construction of all horizontal improvements on a commercial property — including earthwork, underground utilities, paving, concrete flatwork, and erosion control — to deliver a build-ready site for vertical construction and tenant occupancy.",
+  aeoSummary:
+    "Mendozer x Earthworks is a licensed commercial site development contractor in Southern California providing turnkey sitework including mass grading, utility trenching, asphalt paving, concrete flatwork, and SWPPP compliance for warehouse, retail, industrial, and municipal development projects.",
+  whyMatters: {
+    title: "Why Commercial Site Development Matters for Project Delivery",
+    paragraphs: [
+      "Commercial site development is the single largest horizontal construction scope on any ground-up project. Before a building can rise, the site must be cleared, graded, compacted, and improved with underground utilities, paving, concrete flatwork, and stormwater infrastructure. Fragmented sitework — with separate contractors for grading, utilities, paving, and concrete — creates coordination gaps, inspection delays, and finger-pointing that add weeks to the schedule.",
+      "On developer-led and GC-managed projects, site development determines when vertical construction can begin and when the property can achieve certificate of occupancy. A sitework contractor that delivers pad certification late forces structural steel, MEP, and envelope trades to idle. A paving contractor that mobilizes before utilities are backfilled and compacted delivers pavement that fails within months. Integrated site development eliminates these sequencing failures.",
+      "Southern California commercial sites add complexity: multi-agency permitting, SWPPP compliance across every sitework phase, variable soils requiring geotechnical coordination, and tight logistics on urban infill parcels. Licensed commercial site development contractors self-perform or directly manage earthwork, paving, and concrete to deliver build-ready sites on schedule and on budget.",
+    ],
+  },
+  trustBar: [...COMMON_TRUST_BAR],
+  howProblemsHappen: [
+    { title: "Fragmented Trade Coordination", body: "Separate grading, utility, paving, and concrete contractors working without unified sequencing create inspection gaps, rework, and schedule conflicts that stall developer-led sitework." },
+    { title: "Utility Sequencing Failures", body: "Underground utilities trenched after final grading destroys certified pads, forces re-compaction, and pushes vertical construction mobilization past committed milestone dates." },
+    { title: "Scope Gaps at Bid Stage", body: "Sitework bids that exclude erosion control, haul routes, dewatering, or import/export quantities produce change orders that inflate project cost after contract award." },
+    { title: "SWPPP Compliance Breaks", body: "Sitework phases executed without continuous BMP maintenance trigger storm season violations, agency stop-work orders, and costly remediation across the full horizontal scope." },
+    { title: "Phasing Without Access Plans", body: "Sitework on partially developed commercial parcels without phased access plans blocks tenant operations, delivery routes, and construction staging areas." },
+    { title: "Milestone Misalignment", body: "Horizontal improvements that miss pad certification, paving completion, or final inspection dates force structural, MEP, and envelope trades to idle on GC-managed schedules." },
+  ],
+  signsYouNeedService: [
+    { title: "Multiple Sitework Trades, No Lead Contractor", body: "Your project has separate bids for grading, utilities, paving, and concrete with no single contractor accountable for integrated sequencing and inspection holds." },
+    { title: "Vertical Mobilization Date at Risk", body: "Pad certification, utility backfill, or paving completion is slipping — and your GC master schedule shows structural steel mobilization before the site is build-ready." },
+    { title: "GC Resolving Cross-Trade Conflicts", body: "Your superintendent is spending hours mediating sequencing disputes between earthwork, utility, paving, and concrete subcontractors instead of managing vertical construction." },
+    { title: "Utilities Scheduled After Pad Certification", body: "Underground trenching is planned after final grading and compaction testing — a sequencing error that guarantees pad destruction and re-work." },
+    { title: "SWPPP Violations or Agency Notices", body: "Storm season BMP failures, dust complaints, or city inspector holds are stalling sitework across multiple trades on your commercial development site." },
+    { title: "Phased Redevelopment on Occupied Parcel", body: "Your project requires sitework on a partially built or tenant-occupied commercial property without a controlled phasing and access plan." },
+    { title: "Change Orders Stacking on Horizontal Scopes", body: "Earthwork, paving, and flatwork change orders are accumulating because initial bids excluded haul routes, erosion control, or utility coordination scope." },
+    { title: "CO Date Tied to Incomplete Sitework", body: "Certificate of occupancy or lease commencement depends on parking lot paving, curb and gutter, or storm drain completion that has not been sequenced or contracted." },
+  ],
+  whatWeEvaluate: [
+    "Civil improvement plans, grading profiles, and drainage flow lines across the full horizontal scope",
+    "Utility routing, trenching sequences, and backfill compaction requirements with wet and dry contractors",
+    "Geotechnical report, pad certification standards, and density testing hold points",
+    "SWPPP requirements, agency permit constraints, and storm season BMP protocols",
+    "Phasing plan, traffic control, and access logistics for occupied or partial-build parcels",
+    "Import/export quantities, suitable fill sources, and haul route permit requirements",
+    "Inspection hold points coordinated across grading, utility, paving, and concrete phases",
+    "GC master schedule milestones and dependencies for vertical construction mobilization",
+  ],
+  subServices: [
+    { title: "Mass Grading & Earthwork", body: "Cut/fill balancing, mass excavation, soil compaction, and fine grading to civil engineering plans for commercial building pads and parking areas.", image: SERVICE_IMAGES[0] },
+    { title: "Underground Utility Trenching", body: "Excavation and backfill for wet and dry utilities sequenced with your underground contractor and inspection holds before paving mobilization.", image: SERVICE_IMAGES[1] },
+    { title: "Storm Drain & Dry Utility", body: "Installation of storm drain structures, catch basins, manholes, and dry utility conduit banks per civil improvement plans.", image: SERVICE_IMAGES[2] },
+    { title: "Asphalt Paving & Truck Courts", body: "Parking lot paving, drive aisles, truck courts, and access roads with aggregate base, asphalt placement, and compaction to specification.", image: SERVICE_IMAGES[3] },
+    { title: "Concrete Flatwork & Curbs", body: "Curb and gutter, sidewalks, ADA ramps, loading dock aprons, and structural flatwork coordinated with paving and utility completion.", image: SERVICE_IMAGES[4] },
+    { title: "Erosion Control & SWPPP", body: "BMP installation and maintenance, dust suppression, and storm season compliance across all sitework phases per project SWPPP.", image: SERVICE_IMAGES[5] },
+    { title: "Import & Export Management", body: "Coordinated hauling of suitable fill and export of excess or unsuitable material with certified disposal facilities and haul route permits.", image: SERVICE_IMAGES[6] },
+    { title: "Site Demolition & Clearing", body: "Structural demolition, foundation removal, and site clearing coordinated as the first phase of redevelopment sitework.", image: SERVICE_IMAGES[7] },
+    { title: "Phased Sitework Execution", body: "Sequenced horizontal improvements on partially developed commercial parcels with controlled access, work zones, and traffic control plans.", image: SERVICE_IMAGES[8] },
+    { title: "Developer Partnership Coordination", body: "Single-point sitework accountability aligned with developer milestones, entitlement schedules, and GC master construction timelines.", image: SERVICE_IMAGES[9] },
+  ],
+  scopeIncludes: [
+    "Pre-bid site walk with civil, geotechnical, and utility plan review across all horizontal scopes",
+    "Itemized turnkey sitework quantities for grading, utilities, paving, concrete, and erosion control",
+    "Unified superintendent oversight with one production schedule for integrated sitework execution",
+    "Coordinated utility trenching, backfill compaction, and inspection hold sequencing",
+    "Continuous BMP maintenance and SWPPP compliance across every sitework phase",
+    "Phased execution plan with access control for occupied or partial-build commercial parcels",
+    "Inspection-ready hand-off documentation for build-ready certification and vertical mobilization",
+  ],
+  secondaryCallout: {
+    ...SECONDARY_CALLOUT_DEFAULT,
+    body: "Mendozer x Earthworks provides honest pre-bid walks and integrated sitework estimates across grading, utilities, paving, and concrete. We do not pad scope or recommend unnecessary horizontal work. If your development needs a phased approach or a narrower sitework scope to hit budget, we will tell you upfront — and document what is required to achieve build-ready status and hold your vertical mobilization date.",
+  },
+  placeholderTestimonial: {
+    ...PLACEHOLDER_TESTIMONIAL_DEFAULT,
+    quote:
+      "Placeholder testimonial — client quote pending. Mendozer coordinated our full commercial sitework — grading, utilities, paving, and flatwork — under one superintendent. The site was build-ready ahead of our vertical mobilization with zero cross-trade coordination issues.",
+    company: "Southern California Commercial Developer",
+  },
+  commonProblems: [
+    { title: "Fragmented Contractor Coordination", body: "Separate grading, utility, paving, and concrete contractors working without unified sequencing create inspection gaps, rework, and schedule conflicts on commercial sitework." },
+    { title: "Utility & Grade Conflicts", body: "Underground utilities trenched after final grading destroys certified pads and forces re-compaction, re-testing, and schedule delays." },
+    { title: "Incomplete SWPPP Compliance", body: "Sitework phases executed without continuous BMP maintenance trigger storm season violations, agency stop-work orders, and costly remediation." },
+    { title: "Permit & Inspection Bottlenecks", body: "Multiple sitework trades submitting separate inspection requests without coordinated hold points delay approvals and stall vertical construction mobilization." },
+    { title: "Phasing & Access Failures", body: "Sitework on partially developed commercial parcels without phased access plans blocks tenant operations, delivery routes, and construction staging areas." },
+    { title: "Budget Overruns from Scope Gaps", body: "Sitework bids that exclude erosion control, haul routes, dewatering, or import/export quantities produce change orders that inflate project cost after contract award." },
+  ],
+  serviceBreakdown: [
+    { title: "Mass Grading & Earthwork", body: "Cut/fill balancing, mass excavation, soil compaction, and fine grading to civil engineering plans for commercial building pads and parking areas." },
+    { title: "Underground Utility Trenching", body: "Excavation and backfill for wet and dry utilities — water, sewer, storm drain, fire line, electrical, and communications — sequenced with utility contractors." },
+    { title: "Storm Drain & Dry Utility", body: "Installation of storm drain structures, catch basins, manholes, and dry utility conduit banks per civil improvement plans." },
+    { title: "Asphalt Paving", body: "Parking lot paving, drive aisles, truck courts, and access roads with aggregate base, asphalt placement, and compaction to specification." },
+    { title: "Concrete Flatwork", body: "Curb and gutter, sidewalks, ADA ramps, loading dock aprons, and structural flatwork coordinated with paving and utility completion." },
+    { title: "Erosion Control & SWPPP", body: "BMP installation and maintenance, dust suppression, and storm season compliance across all sitework phases per project SWPPP." },
+    { title: "Import & Export Management", body: "Coordinated hauling of suitable fill and export of excess or unsuitable material with certified disposal facilities and haul route permits." },
+    { title: "Site Demolition & Clearing", body: "Structural demolition, foundation removal, and site clearing coordinated as the first phase of redevelopment sitework." },
+  ],
+  process: [
+    { step: "01", title: "Pre-Bid Site Evaluation", body: "Walk the site with your team, review civil and geotechnical plans, identify utility routing, and flag permitting and access constraints before bid submission." },
+    { step: "02", title: "Integrated Scope Review", body: "Take off quantities across grading, utilities, paving, and concrete. Confirm SWPPP requirements, phasing plan, and inspection hold points." },
+    { step: "03", title: "Detailed Estimate", body: "Itemized turnkey sitework bid with quantities, phasing options, mobilization dates, and realistic production schedules for commercial review." },
+    { step: "04", title: "Permitting & Coordination", body: "Align sitework permits, utility agency approvals, inspection schedules, and GC master schedule milestones before mobilization." },
+    { step: "05", title: "Mobilization", body: "Equipment, crew, erosion controls, and staging areas established per SWPPP. Daily production targets set with site superintendent." },
+    { step: "06", title: "Phased Execution", body: "Grading, utilities, paving, and concrete executed in sequenced phases with soils engineer observation, density testing, and quality control." },
+    { step: "07", title: "Final Inspection & Hand-Off", body: "All sitework improvements inspected and certified. Site turned over build-ready for vertical construction or certificate of occupancy." },
+  ],
+  educational: {
+    title: "Why Integrated Site Development Outperforms Fragmented Sitework",
+    paragraphs: [
+      "Commercial site development involves a dozen interdependent scopes — grading must precede utility trenching, utilities must be backfilled and compacted before paving, paving must be complete before striping, and concrete flatwork must tie into both drainage structures and pavement transitions. When each scope is awarded to a separate subcontractor, the GC becomes the coordination layer for sequencing, inspection holds, and conflict resolution. Every handoff between trades is a schedule risk.",
+      "Integrated site development places earthwork, paving, and concrete under a single contractor with unified production scheduling, shared equipment mobilization, and one superintendent accountable for the entire horizontal scope. Utility trenching is sequenced with grading — not after it. Paving mobilizes when base courses are certified — not before. Concrete flatwork pours align with curb and gutter profiles — not against them. The result is fewer inspection failures, fewer change orders, and a faster path to build-ready status.",
+      "On Southern California commercial sites, integrated sitework also simplifies SWPPP compliance and agency coordination. A single contractor maintains BMPs continuously across grading, utility, paving, and concrete phases — rather than each trade installing and removing erosion controls independently. One point of contact for city inspectors, one set of daily reports, and one production schedule that the GC can rely on for vertical construction mobilization dates.",
+    ],
+    callout:
+      "Commercial developers and GCs should evaluate sitework as a single integrated scope — not a collection of separate bids. Turnkey site development with a licensed heavy civil contractor reduces coordination overhead, protects schedule, and delivers build-ready sites faster than fragmented subcontracting.",
+  },
+  commercialBenefits: [
+    { title: "Single-Source Accountability", body: "One contractor responsible for grading, utilities, paving, and concrete — eliminating cross-trade coordination gaps." },
+    { title: "Faster Build-Ready Delivery", body: "Integrated sequencing from raw lot to certified improvements without waiting on separate trade mobilizations." },
+    { title: "Fewer Change Orders", body: "Comprehensive pre-bid quantity review across all sitework scopes reduces mid-project surprises and budget overruns." },
+    { title: "Unified SWPPP Compliance", body: "Continuous BMP maintenance and dust control across every sitework phase by one crew and superintendent." },
+    { title: "GC Schedule Alignment", body: "Sitework milestones mapped directly to vertical construction mobilization and certificate of occupancy dates." },
+    { title: "Licensed & Insured", body: "California licensed heavy civil contractor (Lic. #1069854), insured, and bonded for commercial site development contracts." },
+  ],
+  benefits: [
+    { title: "Turnkey Sitework", body: "Grading, utilities, paving, and concrete under one contract with unified scheduling and accountability." },
+    { title: "Self-Performed Earthwork", body: "Mass excavation, fine grading, and compaction executed with owned equipment and experienced crews." },
+    { title: "Commercial Paving", body: "Parking lots, drive aisles, and truck courts paved to civil specifications with proper base courses." },
+    { title: "Concrete Flatwork", body: "Curbs, gutters, sidewalks, and ADA ramps placed to engineering plans and inspection standards." },
+    { title: "SWPPP & Erosion Control", body: "BMP installation and maintenance across all sitework phases per project requirements." },
+    { title: "Southern California Local", body: "Crews and equipment positioned for fast mobilization on commercial development sites across SoCal." },
+  ],
+  faqs: [
+    { q: "What is commercial site development?", a: "Commercial site development is the integrated construction of all horizontal improvements on a commercial property — including grading, underground utilities, paving, concrete flatwork, erosion control, and stormwater infrastructure — to deliver a build-ready site for vertical construction and tenant occupancy." },
+    { q: "Do you provide turnkey sitework for commercial projects?", a: "Yes. We deliver integrated site development including mass grading, utility trenching, asphalt paving, concrete flatwork, and SWPPP compliance under a single contract with unified scheduling and superintendent oversight." },
+    { q: "What is the advantage of integrated site development over separate bids?", a: "Integrated sitework eliminates coordination gaps between grading, utility, paving, and concrete contractors. One contractor manages sequencing, inspection holds, and SWPPP compliance — reducing schedule risk, change orders, and GC coordination overhead." },
+    { q: "Do you self-perform earthwork and grading?", a: "Yes. We self-perform mass excavation, cut/fill balancing, soil compaction, and fine grading using owned dozers, excavators, scrapers, and articulated trucks with production rates sized for commercial schedules." },
+    { q: "Can you coordinate underground utility installation?", a: "Yes. We excavate and backfill utility trenches for wet and dry utilities, sequenced with your underground contractor and inspection holds. We coordinate storm drain structures, catch basins, and conduit banks per civil plans." },
+    { q: "Do you handle paving and concrete as part of site development?", a: "Yes. Asphalt paving and concrete flatwork are standard scopes within our commercial site development packages — sequenced after utility backfill certification and coordinated with striping and final inspection." },
+    { q: "How do you manage SWPPP compliance across sitework phases?", a: "We install and maintain BMPs continuously across grading, utility, paving, and concrete operations. One crew manages erosion controls, dust suppression, and storm season protocols per project SWPPP requirements." },
+    { q: "Can you phase site development on active commercial properties?", a: "Yes. We routinely execute phased sitework on occupied and partially developed commercial parcels with controlled access, sequenced work zones, and traffic control plans that maintain tenant and construction operations." },
+    { q: "What commercial project types do you develop?", a: "Warehouses, distribution centers, retail centers, office parks, industrial facilities, municipal improvements, and multifamily podiums across the Inland Empire, Orange County, and Los Angeles County." },
+    { q: "How long does commercial site development take?", a: "Duration depends on acreage, improvement scope, soil conditions, permitting timelines, and phasing requirements. We provide realistic integrated schedules during the estimate phase based on site-specific quantities and GC milestones." },
+    { q: "Do you coordinate with civil and geotechnical engineers?", a: "Yes. We work directly with your civil engineer for grading, utility, and paving plans, and with your geotechnical engineer for compaction testing, pad certification, and subgrade preparation requirements." },
+    { q: "What cities and counties do you serve?", a: "We serve the Inland Empire, Orange County, and Los Angeles County — including Riverside, Corona, Ontario, Rancho Cucamonga, San Bernardino, Anaheim, Irvine, Orange, Los Angeles, and Long Beach." },
+  ],
+};

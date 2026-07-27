@@ -1,0 +1,32 @@
+import type { PlaceholderCaseStudy } from "@/data/service-city-content/types";
+
+export function PlaceholderCaseStudyCard({ study }: { study: PlaceholderCaseStudy }) {
+  return (
+    <article className="rounded-xl border border-border bg-card overflow-hidden hover:border-gold/60 transition">
+      <div className="aspect-[16/10] overflow-hidden relative">
+        <img src={study.image} alt={study.title} className="h-full w-full object-cover" loading="lazy" />
+        <span className="absolute top-3 left-3 text-[10px] uppercase tracking-wider bg-charcoal/90 border border-gold/40 text-gold px-2 py-0.5 rounded">
+          Placeholder — case study coming soon
+        </span>
+      </div>
+      <div className="p-6">
+        <p className="text-xs uppercase tracking-wider text-gold">{study.location}</p>
+        <h3 className="mt-2 font-display text-lg tracking-wide">{study.title}</h3>
+        <dl className="mt-4 space-y-3 text-sm">
+          <div>
+            <dt className="font-semibold text-foreground/90">Scope</dt>
+            <dd className="mt-1 text-muted-foreground leading-relaxed">{study.scope}</dd>
+          </div>
+          <div>
+            <dt className="font-semibold text-foreground/90">Challenge</dt>
+            <dd className="mt-1 text-muted-foreground leading-relaxed">{study.challenge}</dd>
+          </div>
+          <div>
+            <dt className="font-semibold text-foreground/90">Result</dt>
+            <dd className="mt-1 text-muted-foreground leading-relaxed">{study.result}</dd>
+          </div>
+        </dl>
+      </div>
+    </article>
+  );
+}
