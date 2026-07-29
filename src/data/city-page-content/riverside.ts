@@ -1,7 +1,7 @@
 import g1 from "@/assets/gallery-1.jpg";
 import pavingImg from "@/assets/service-paving.jpg";
 import excavationImg from "@/assets/service-excavation.jpg";
-import concreteImg from "@/assets/service-concrete.jpg";
+import pourCure from "@/assets/pour-phase-cure.jpg";
 import { getCityLandmarkAsset } from "@/assets/cities";
 import type { CityPageContent } from "./types";
 
@@ -162,7 +162,7 @@ export const cityPageRiverside: CityPageContent = {
       { src: excavationImg, caption: "Placeholder — mass grading on Riverside warehouse commercial sitework" },
       { src: g1, caption: "Placeholder — pad certification and compaction testing, Riverside distribution parcel" },
       { src: pavingImg, caption: "Placeholder — commercial paving phase on Riverside logistics redevelopment" },
-      { src: concreteImg, caption: "Placeholder — curb and flatwork completing Riverside horizontal scope" },
+      { src: pourCure, caption: "Placeholder — curb and flatwork completing Riverside horizontal scope" },
     ],
     video: {
       poster: excavationImg,

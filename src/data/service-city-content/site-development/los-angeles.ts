@@ -1,7 +1,7 @@
 import g1 from "@/assets/gallery-1.jpg";
 import g2 from "@/assets/gallery-2.jpg";
 import excavationImg from "@/assets/service-excavation.jpg";
-import concreteImg from "@/assets/service-concrete.jpg";
+import pourCure from "@/assets/pour-phase-cure.jpg";
 import { getCityLandmarkAsset } from "@/assets/cities";
 import type { ServiceCityPageContent } from "../types";
 
@@ -162,7 +162,7 @@ export const siteDevelopmentLosAngeles: ServiceCityPageContent = {
       { src: excavationImg, caption: "Placeholder — urban grading on Los Angeles industrial sitework package" },
       { src: g1, caption: "Placeholder — utility trenching on LA utility-dense commercial parcel" },
       { src: g2, caption: "Placeholder — phased sitework with community impact controls on LA urban corridor" },
-      { src: concreteImg, caption: "Placeholder — curb and gutter flatwork completing Los Angeles horizontal scope" },
+      { src: pourCure, caption: "Placeholder — curb and gutter flatwork completing Los Angeles horizontal scope" },
     ],
     video: {
       poster: g1,

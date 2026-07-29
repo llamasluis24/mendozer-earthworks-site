@@ -1,7 +1,7 @@
 import g3 from "@/assets/gallery-3.jpg";
 import pavingImg from "@/assets/service-paving.jpg";
 import excavationImg from "@/assets/service-excavation.jpg";
-import concreteImg from "@/assets/service-concrete.jpg";
+import pourCure from "@/assets/pour-phase-cure.jpg";
 import { getCityLandmarkAsset } from "@/assets/cities";
 import type { CityPageContent } from "./types";
 
@@ -162,7 +162,7 @@ export const cityPageTemecula: CityPageContent = {
       { src: excavationImg, caption: "Placeholder — hillside grading on Temecula master-planned commercial sitework" },
       { src: g3, caption: "Placeholder — pad certification and compaction testing, Temecula commercial parcel" },
       { src: pavingImg, caption: "Placeholder — commercial asphalt paving phase on Temecula retail development" },
-      { src: concreteImg, caption: "Placeholder — curb and flatwork completing Temecula horizontal scope" },
+      { src: pourCure, caption: "Placeholder — curb and flatwork completing Temecula horizontal scope" },
     ],
     video: {
       poster: excavationImg,

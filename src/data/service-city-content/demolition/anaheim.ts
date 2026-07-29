@@ -3,7 +3,7 @@ import g3 from "@/assets/gallery-3.jpg";
 import g4 from "@/assets/gallery-4.jpg";
 import aboutImg from "@/assets/about-daytime.jpg";
 import pavingImg from "@/assets/service-paving.jpg";
-import concreteImg from "@/assets/service-concrete.jpg";
+import demolitionImg from "@/assets/service-demolition.jpg";
 import { getCityLandmarkAsset } from "@/assets/cities";
 import type { ServiceCityPageContent } from "../types";
 
@@ -143,7 +143,7 @@ export const demolitionAnaheim: ServiceCityPageContent = {
       scope: "Selective interior and structural demolition on a commercial building being repositioned for hospitality use near an active entertainment corridor.",
       challenge: "OC agency dust enforcement and strict noise ordinance windows limited production hours, requiring sequenced after-hours work and water suppression throughout the operation.",
       result: "Selective demo completed within noise-compliant windows with zero BMP violations. Foundation conflicts identified and removed before civil mobilization. Placeholder — case study details coming soon.",
-      image: concreteImg,
+      image: demolitionImg,
       isPlaceholder: true,
     },
   ],
@@ -159,7 +159,7 @@ export const demolitionAnaheim: ServiceCityPageContent = {
     photos: [
       { src: pavingImg, caption: "Placeholder — phased retail demolition along Anaheim commercial corridor" },
       { src: g1, caption: "Placeholder — screened debris containment near active hospitality tenants" },
-      { src: concreteImg, caption: "Placeholder — after-hours structural takedown, Orange County" },
+      { src: demolitionImg, caption: "Placeholder — after-hours structural takedown, Orange County" },
       { src: aboutImg, caption: "Placeholder — ADA corridor protection during Anaheim phased demo" },
     ],
     video: {

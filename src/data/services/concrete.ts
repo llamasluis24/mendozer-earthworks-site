@@ -1,5 +1,5 @@
 import concreteImg from "@/assets/service-concrete.jpg";
-import { SERVICE_IMAGES } from "./assets";
+import { CONCRETE_IMAGES } from "./assets";
 import {
   COMMON_TRUST_BAR,
   PLACEHOLDER_TESTIMONIAL_DEFAULT,
@@ -62,18 +62,18 @@ export const concrete: PillarService = {
     "Coordination with paving, striping, and landscaping scopes for site completion sequencing",
   ],
   subServices: [
-    { title: "Commercial Flatwork", body: "Site concrete placement and finishing for commercial developments — aprons, walkways, equipment pads, and horizontal improvements that complete a commercial parcel.", image: SERVICE_IMAGES[0] },
-    { title: "Commercial Sidewalks", body: "Pedestrian walkways and circulation paths with proper slope-to-drain, control jointing, and broom or exposed finishes per civil plans.", image: SERVICE_IMAGES[1] },
-    { title: "Curbs & Gutters", body: "Formed and extruded curb and gutter installation tied to civil drainage profiles, flow lines, and storm drain structure tie-ins.", image: SERVICE_IMAGES[2] },
-    { title: "Driveways", body: "Concrete driveways and approach slabs for commercial properties — built to handle daily vehicle traffic with proper subgrade prep and joint layout.", image: SERVICE_IMAGES[3] },
-    { title: "Patios", body: "Commercial patio flatwork for outdoor dining, tenant amenity areas, and plaza spaces with specified finishes and drainage slopes.", image: SERVICE_IMAGES[4] },
-    { title: "California Rooms", body: "Outdoor living and covered patio concrete for commercial tenant spaces and mixed-use developments. Placeholder — project examples coming soon.", image: SERVICE_IMAGES[5] },
-    { title: "Stoops", body: "Entry stoops and landing flatwork at building entrances — formed, poured, and finished to match architectural and accessibility requirements.", image: SERVICE_IMAGES[6] },
-    { title: "Steps", body: "Concrete steps and stair flatwork for site access, building entries, and grade transitions with proper riser/tread dimensions and drainage.", image: SERVICE_IMAGES[7] },
-    { title: "ADA Concrete Improvements", body: "Compliant curb ramps, detectable warning surfaces, accessible routes, and landing transitions per ADA and California Building Code requirements. Placeholder — certification details coming soon.", image: SERVICE_IMAGES[8] },
-    { title: "Loading & Utility Flatwork", body: "Dumpster pads, utility access slabs, and equipment pads — site concrete built for commercial use and maintenance access.", image: SERVICE_IMAGES[9] },
-    { title: "Decorative Site Flatwork", body: "Exposed aggregate, colored concrete, and architectural finishes for commercial entry plazas and public-facing site improvements. Placeholder — finish portfolio coming soon.", image: SERVICE_IMAGES[0] },
-    { title: "Flatwork Repair & Replacement", body: "Removal and replacement of failed sidewalk, curb, gutter, and driveway sections on commercial properties during renovation or redevelopment.", image: SERVICE_IMAGES[1] },
+    { title: "Commercial Flatwork", body: "Site concrete placement and finishing for commercial developments — aprons, walkways, equipment pads, and horizontal improvements that complete a commercial parcel.", image: CONCRETE_IMAGES[0] },
+    { title: "Commercial Sidewalks", body: "Pedestrian walkways and circulation paths with proper slope-to-drain, control jointing, and broom or exposed finishes per civil plans.", image: CONCRETE_IMAGES[1] },
+    { title: "Curbs & Gutters", body: "Formed and extruded curb and gutter installation tied to civil drainage profiles, flow lines, and storm drain structure tie-ins.", image: CONCRETE_IMAGES[2] },
+    { title: "Driveways", body: "Concrete driveways and approach slabs for commercial properties — built to handle daily vehicle traffic with proper subgrade prep and joint layout.", image: CONCRETE_IMAGES[3] },
+    { title: "Patios", body: "Commercial patio flatwork for outdoor dining, tenant amenity areas, and plaza spaces with specified finishes and drainage slopes.", image: CONCRETE_IMAGES[4] },
+    { title: "California Rooms", body: "Outdoor living and covered patio concrete for commercial tenant spaces and mixed-use developments. Placeholder — project examples coming soon.", image: CONCRETE_IMAGES[5] },
+    { title: "Stoops", body: "Entry stoops and landing flatwork at building entrances — formed, poured, and finished to match architectural and accessibility requirements.", image: CONCRETE_IMAGES[6] },
+    { title: "Steps", body: "Concrete steps and stair flatwork for site access, building entries, and grade transitions with proper riser/tread dimensions and drainage.", image: CONCRETE_IMAGES[7] },
+    { title: "ADA Concrete Improvements", body: "Compliant curb ramps, detectable warning surfaces, accessible routes, and landing transitions per ADA and California Building Code requirements. Placeholder — certification details coming soon.", image: CONCRETE_IMAGES[8] },
+    { title: "Loading & Utility Flatwork", body: "Dumpster pads, utility access slabs, and equipment pads — site concrete built for commercial use and maintenance access.", image: CONCRETE_IMAGES[9] },
+    { title: "Decorative Site Flatwork", body: "Exposed aggregate, colored concrete, and architectural finishes for commercial entry plazas and public-facing site improvements. Placeholder — finish portfolio coming soon.", image: CONCRETE_IMAGES[0] },
+    { title: "Flatwork Repair & Replacement", body: "Removal and replacement of failed sidewalk, curb, gutter, and driveway sections on commercial properties during renovation or redevelopment.", image: CONCRETE_IMAGES[1] },
   ],
   scopeIncludes: [
     "Pre-bid and pre-pour plan review with your civil engineer and GC superintendent",

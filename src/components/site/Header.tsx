@@ -1,9 +1,8 @@
 import { Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
-import { Menu, X, Phone } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import logo from "@/assets/logo.png";
 import { MAIN_NAV } from "@/data/navigation";
-import { COMPANY } from "@/data/company";
 
 function NavLink({
   item,
@@ -93,12 +92,12 @@ export function Header() {
         </nav>
 
         <div className="flex items-center gap-3">
-          <a
-            href={COMPANY.phoneHref}
-            className="hidden md:inline-flex items-center gap-2 rounded-md bg-gold px-4 py-2.5 text-sm font-semibold uppercase tracking-wider text-primary-foreground hover:bg-gold-bright transition shadow-lg shadow-gold/20"
+          <Link
+            to="/contact"
+            className="hidden md:inline-flex items-center rounded-md bg-gold px-4 py-2.5 text-sm font-semibold uppercase tracking-wider text-primary-foreground hover:bg-gold-bright transition shadow-lg shadow-gold/20"
           >
-            <Phone className="h-4 w-4" /> {COMPANY.phone}
-          </a>
+            Request Estimate
+          </Link>
           <button
             onClick={() => setOpen((o) => !o)}
             className="lg:hidden p-2 text-foreground"
@@ -121,12 +120,13 @@ export function Header() {
                 className="py-2.5 text-sm uppercase tracking-wider text-foreground/85 hover:text-gold border-b border-border/40"
               />
             ))}
-            <a
-              href={COMPANY.phoneHref}
-              className="mt-3 inline-flex items-center justify-center gap-2 rounded-md bg-gold px-4 py-3 text-sm font-semibold uppercase tracking-wider text-primary-foreground"
+            <Link
+              to="/contact"
+              onClick={() => setOpen(false)}
+              className="mt-3 inline-flex items-center justify-center rounded-md bg-gold px-4 py-3 text-sm font-semibold uppercase tracking-wider text-primary-foreground"
             >
-              <Phone className="h-4 w-4" /> Call {COMPANY.phone}
-            </a>
+              Request Estimate
+            </Link>
           </div>
         </div>
       )}

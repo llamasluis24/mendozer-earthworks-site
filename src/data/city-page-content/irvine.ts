@@ -1,7 +1,7 @@
 import g3 from "@/assets/gallery-3.jpg";
 import aboutImg from "@/assets/about-daytime.jpg";
 import excavationImg from "@/assets/service-excavation.jpg";
-import concreteImg from "@/assets/service-concrete.jpg";
+import pourCure from "@/assets/pour-phase-cure.jpg";
 import { getCityLandmarkAsset } from "@/assets/cities";
 import type { CityPageContent } from "./types";
 
@@ -145,7 +145,7 @@ export const cityPageIrvine: CityPageContent = {
       scope: "Commercial pad grading, utility backfill compaction, and fine grade verification on an Irvine tech park development with documented compaction testing and city engineering inspection hold points.",
       challenge: "Tight grading tolerances, geotechnical observation on every structural lift, and utility trench backfill sequencing had to align with a fast-track GC master schedule on a visible Irvine campus project.",
       result: "Pad certified inspection-ready with GPS fine grade verification and documented compaction records. Placeholder — case study details coming soon.",
-      image: concreteImg,
+      image: pourCure,
       isPlaceholder: true,
     },
   ],
@@ -162,7 +162,7 @@ export const cityPageIrvine: CityPageContent = {
       { src: excavationImg, caption: "Placeholder — GPS fine grading on Irvine office campus commercial sitework" },
       { src: aboutImg, caption: "Placeholder — superintendent-led commercial earthwork on Irvine tech park development" },
       { src: g3, caption: "Placeholder — compaction testing and pad certification on Irvine commercial parcel" },
-      { src: concreteImg, caption: "Placeholder — landscape-adjacent flatwork completing Irvine horizontal scope" },
+      { src: pourCure, caption: "Placeholder — landscape-adjacent flatwork completing Irvine horizontal scope" },
     ],
     video: {
       poster: aboutImg,

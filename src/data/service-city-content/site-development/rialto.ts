@@ -1,7 +1,7 @@
 import g1 from "@/assets/gallery-1.jpg";
 import pavingImg from "@/assets/service-paving.jpg";
 import excavationImg from "@/assets/service-excavation.jpg";
-import concreteImg from "@/assets/service-concrete.jpg";
+import pourCure from "@/assets/pour-phase-cure.jpg";
 import { getCityLandmarkAsset } from "@/assets/cities";
 import type { ServiceCityPageContent } from "../types";
 
@@ -162,7 +162,7 @@ export const siteDevelopmentRialto: ServiceCityPageContent = {
       { src: excavationImg, caption: "Placeholder — mass grading on Rialto BNSF logistics sitework package" },
       { src: g1, caption: "Placeholder — pad certification and compaction testing, Rialto industrial parcel" },
       { src: pavingImg, caption: "Placeholder — integrated paving phase on Rialto turnkey sitework project" },
-      { src: concreteImg, caption: "Placeholder — curb and gutter flatwork completing Rialto horizontal scope" },
+      { src: pourCure, caption: "Placeholder — curb and gutter flatwork completing Rialto horizontal scope" },
     ],
     video: {
       poster: excavationImg,

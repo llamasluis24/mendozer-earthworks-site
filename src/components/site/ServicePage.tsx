@@ -1,7 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { ArrowRight, Phone } from "lucide-react";
 import { CTASection } from "./CTA";
-import { ContactForm } from "./ContactForm";
 import { Breadcrumbs } from "./Breadcrumbs";
 import { EducationalCallout } from "./EducationalCallout";
 import { ServiceAreasSection } from "./ServiceAreasSection";
@@ -14,8 +13,6 @@ import { SubServiceCards } from "./SubServiceCards";
 import { BenefitGrid } from "./BenefitGrid";
 import { TestimonialPlaceholder } from "./TestimonialPlaceholder";
 import { ServiceBottomCTA } from "./ServiceBottomCTA";
-import { NearbyCityPills } from "./NearbyCityPills";
-import { CITIES } from "@/data/cities";
 import { COMPANY } from "@/data/company";
 import type { PillarService } from "@/data/services/types";
 
@@ -162,27 +159,12 @@ export function ServicePage(p: PillarService) {
 
       {/* FAQ */}
       <section className="py-20 lg:py-28">
-        <div className="container-x grid lg:grid-cols-[1.2fr_1fr] gap-12">
+        <div className="container-x">
           <FAQAccordion faqs={p.faqs} title={`${p.shortName} FAQs for Commercial Projects`} />
-          <div className="lg:sticky lg:top-28 lg:self-start">
-            <h3 className="heading-lg mb-4">Request a Commercial Estimate</h3>
-            <p className="text-sm text-muted-foreground mb-6">Share your project scope, civil plans, and timeline. We respond within one business day.</p>
-            <ContactForm compact />
-          </div>
         </div>
       </section>
 
       <ServiceAreasSection serviceSlug={p.slug} />
-
-      <section className="py-12 border-t border-border">
-        <div className="container-x">
-          <NearbyCityPills
-            citySlugs={CITIES.map((c) => c.slug)}
-            serviceSlug={p.slug}
-            title="Commercial Service Areas"
-          />
-        </div>
-      </section>
 
       <ServiceBottomCTA
         title={`Ready for Commercial ${p.shortName}?`}

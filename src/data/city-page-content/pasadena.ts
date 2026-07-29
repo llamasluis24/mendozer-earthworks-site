@@ -1,4 +1,4 @@
-import concreteImg from "@/assets/service-concrete.jpg";
+import pourCure from "@/assets/pour-phase-cure.jpg";
 import pavingImg from "@/assets/service-paving.jpg";
 import excavationImg from "@/assets/service-excavation.jpg";
 import g4 from "@/assets/gallery-4.jpg";
@@ -162,7 +162,7 @@ export const cityPagePasadena: CityPageContent = {
       { src: excavationImg, caption: "Placeholder — urban foothill grading on Pasadena commercial sitework" },
       { src: g4, caption: "Placeholder — confined staging and compaction testing, Pasadena TI project" },
       { src: pavingImg, caption: "Placeholder — phased asphalt paving on Pasadena commercial improvement" },
-      { src: concreteImg, caption: "Placeholder — curb and flatwork completing Pasadena horizontal scope" },
+      { src: pourCure, caption: "Placeholder — curb and flatwork completing Pasadena horizontal scope" },
     ],
     video: {
       poster: excavationImg,

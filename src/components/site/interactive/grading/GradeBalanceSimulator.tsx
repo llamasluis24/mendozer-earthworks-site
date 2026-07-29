@@ -229,10 +229,45 @@ function GradingTerrain({ balance }: { balance: number }) {
           </g>
         ))}
 
-      <rect x="118" y="14" width="164" height="20" rx="10" fill="rgba(20,14,6,0.75)" stroke="#d4a843" strokeWidth="0.8" />
-      <text x="200" y="27" textAnchor="middle" fill="#d4a843" fontSize="7.5" fontWeight="bold" letterSpacing="0.8">
-        {isExport ? "EXPORTING — HAULING DIRT OFF-SITE" : isImport ? "IMPORTING — BUILDING UP PAD" : "BALANCED — AT DESIGN ELEVATION"}
-      </text>
+      {(() => {
+        const badge = isExport
+          ? { lines: ["EXPORTING", "HAUL OFF-SITE"] as const, width: 118, height: 28 }
+          : isImport
+            ? { lines: ["IMPORTING", "BUILD PAD"] as const, width: 118, height: 28 }
+            : { lines: ["BALANCED", "AT DESIGN ELEVATION"] as const, width: 132, height: 28 };
+        const badgeX = 200 - badge.width / 2;
+
+        return (
+          <>
+            <rect
+              x={badgeX}
+              y={10}
+              width={badge.width}
+              height={badge.height}
+              rx={badge.height / 2}
+              fill="rgba(20,14,6,0.75)"
+              stroke="#d4a843"
+              strokeWidth="0.8"
+            />
+            <text
+              x="200"
+              y={22}
+              textAnchor="middle"
+              fill="#d4a843"
+              fontSize="7"
+              fontWeight="bold"
+              letterSpacing="0.5"
+            >
+              <tspan x="200" dy="0">
+                {badge.lines[0]}
+              </tspan>
+              <tspan x="200" dy="9">
+                {badge.lines[1]}
+              </tspan>
+            </text>
+          </>
+        );
+      })()}
     </svg>
   );
 }

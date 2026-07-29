@@ -3,7 +3,7 @@ import g3 from "@/assets/gallery-3.jpg";
 import g4 from "@/assets/gallery-4.jpg";
 import aboutImg from "@/assets/about-daytime.jpg";
 import pavingImg from "@/assets/service-paving.jpg";
-import concreteImg from "@/assets/service-concrete.jpg";
+import pavingSurface from "@/assets/paving-layer-surface.jpg";
 import { getCityLandmarkAsset } from "@/assets/cities";
 import type { ServiceCityPageContent } from "../types";
 
@@ -147,7 +147,7 @@ export const pavingAnaheim: ServiceCityPageContent = {
       scope: "Full-depth pavement reconstruction with curb ramp replacement, accessible route regrading, and detectable warning surface coordination on an Anaheim hospitality commercial property prior to certificate of occupancy.",
       challenge: "Orange County inspection standards required precise slope tolerances at curb ramps and fire lanes while guest drop-off and valet circulation remained partially operational through sequenced paving zones.",
       result: "ADA path-of-travel passed inspection with positive drainage verified and striping coordinated for CO milestone. Placeholder — case study details coming soon.",
-      image: concreteImg,
+      image: pavingSurface,
       isPlaceholder: true,
     },
   ],

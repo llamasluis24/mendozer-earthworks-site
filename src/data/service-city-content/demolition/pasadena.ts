@@ -1,7 +1,6 @@
 import g1 from "@/assets/gallery-1.jpg";
 import g3 from "@/assets/gallery-3.jpg";
 import excavationImg from "@/assets/service-excavation.jpg";
-import concreteImg from "@/assets/service-concrete.jpg";
 import demolitionImg from "@/assets/service-demolition.jpg";
 import { getCityLandmarkAsset } from "@/assets/cities";
 import type { ServiceCityPageContent } from "../types";
@@ -159,7 +158,7 @@ export const demolitionPasadena: ServiceCityPageContent = {
       { src: demolitionImg, caption: "Placeholder — structural demolition on Pasadena Colorado Blvd parcel" },
       { src: g1, caption: "Placeholder — foundation and slab removal, Los Angeles County urban site" },
       { src: excavationImg, caption: "Placeholder — tight staging debris export, Pasadena foothills corridor" },
-      { src: concreteImg, caption: "Placeholder — phased demo near occupied Pasadena commercial tenants" },
+      { src: demolitionImg, caption: "Placeholder — phased demo near occupied Pasadena commercial tenants" },
     ],
     video: {
       poster: g1,

@@ -1,7 +1,7 @@
 import g1 from "@/assets/gallery-1.jpg";
 import pavingImg from "@/assets/service-paving.jpg";
 import excavationImg from "@/assets/service-excavation.jpg";
-import concreteImg from "@/assets/service-concrete.jpg";
+import pourCure from "@/assets/pour-phase-cure.jpg";
 import { getCityLandmarkAsset } from "@/assets/cities";
 import type { CityPageContent } from "./types";
 
@@ -162,7 +162,7 @@ export const cityPageRialto: CityPageContent = {
       { src: excavationImg, caption: "Placeholder — large-lot grading on Rialto industrial commercial sitework" },
       { src: g1, caption: "Placeholder — pad certification and compaction testing, Rialto warehouse parcel" },
       { src: pavingImg, caption: "Placeholder — heavy-duty truck court paving on Rialto logistics development" },
-      { src: concreteImg, caption: "Placeholder — curb and flatwork completing Rialto horizontal scope" },
+      { src: pourCure, caption: "Placeholder — curb and flatwork completing Rialto horizontal scope" },
     ],
     video: {
       poster: excavationImg,

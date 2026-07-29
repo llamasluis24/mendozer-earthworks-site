@@ -1,7 +1,7 @@
 import pavingImg from "@/assets/service-paving.jpg";
 import type { PillarService } from "./types";
 import { COMMON_TRUST_BAR, SECONDARY_CALLOUT_DEFAULT, PLACEHOLDER_TESTIMONIAL_DEFAULT } from "./defaults";
-import { SERVICE_IMAGES } from "./assets";
+import { PAVING_IMAGES } from "./assets";
 
 export const paving: PillarService = {
   slug: "paving",
@@ -58,18 +58,18 @@ export const paving: PillarService = {
     "Striping layout, fire lane markings, stall counts, and pavement marking coordination",
   ],
   subServices: [
-    { title: "New Asphalt Installation", body: "Full-depth asphalt pavement construction from subgrade preparation through surface course — built to civil engineering specifications for new commercial developments.", image: SERVICE_IMAGES[0] },
-    { title: "Asphalt Overlays", body: "Mill-and-overlay and resurfacing of existing commercial parking lots to restore ride quality, correct drainage, and extend pavement service life without full reconstruction.", image: SERVICE_IMAGES[1] },
-    { title: "Parking Lots", body: "New and rehabilitated commercial parking lots with proper base courses, drainage grading, and pavement sections sized for expected traffic loading.", image: SERVICE_IMAGES[2] },
-    { title: "Drive Aisles", body: "Asphalt paving for on-site drive aisles and circulation routes — engineered for commercial vehicle turning movements and daily delivery traffic.", image: SERVICE_IMAGES[3] },
-    { title: "Access Roads", body: "On-site and off-site access road paving tied to civil plan profiles, drainage structures, and agency improvement requirements.", image: SERVICE_IMAGES[4] },
-    { title: "Industrial Yards", body: "Heavy-duty pavement sections in truck courts, loading areas, and industrial yards designed for commercial vehicle loads and high-frequency traffic.", image: SERVICE_IMAGES[5] },
-    { title: "Patch Repairs", body: "Full-depth patching and localized repair of failed pavement sections on commercial and industrial properties — addressing rutting, cracking, and settlement before they spread.", image: SERVICE_IMAGES[6] },
-    { title: "Asphalt Resurfacing", body: "Surface rehabilitation of aging commercial pavement to restore ride quality, seal surface cracks, and extend service life on budget-conscious renovation scopes.", image: SERVICE_IMAGES[7] },
-    { title: "Striping Coordination", body: "Paving completion sequenced with striping contractors for stall layout, fire lanes, directional arrows, and pavement markings per project plans.", image: SERVICE_IMAGES[8] },
-    { title: "ADA Compliance Coordination", body: "Paving graded and sequenced around ADA-compliant curb ramps, accessible routes, and detectable warning surfaces. Placeholder — additional compliance documentation coming soon.", image: SERVICE_IMAGES[9] },
-    { title: "Drainage Considerations", body: "Pavement graded to civil plan cross-slopes and flow lines with positive drainage to storm drain inlets, catch basins, and approved drainage infrastructure.", image: SERVICE_IMAGES[0] },
-    { title: "Aggregate Base Installation", body: "Placement and compaction of crushed aggregate base course to geotechnical specifications before asphalt paving mobilization begins.", image: SERVICE_IMAGES[1] },
+    { title: "New Asphalt Installation", body: "Full-depth asphalt pavement construction from subgrade preparation through surface course — built to civil engineering specifications for new commercial developments.", image: PAVING_IMAGES[0] },
+    { title: "Asphalt Overlays", body: "Mill-and-overlay and resurfacing of existing commercial parking lots to restore ride quality, correct drainage, and extend pavement service life without full reconstruction.", image: PAVING_IMAGES[1] },
+    { title: "Parking Lots", body: "New and rehabilitated commercial parking lots with proper base courses, drainage grading, and pavement sections sized for expected traffic loading.", image: PAVING_IMAGES[2] },
+    { title: "Drive Aisles", body: "Asphalt paving for on-site drive aisles and circulation routes — engineered for commercial vehicle turning movements and daily delivery traffic.", image: PAVING_IMAGES[3] },
+    { title: "Access Roads", body: "On-site and off-site access road paving tied to civil plan profiles, drainage structures, and agency improvement requirements.", image: PAVING_IMAGES[4] },
+    { title: "Industrial Yards", body: "Heavy-duty pavement sections in truck courts, loading areas, and industrial yards designed for commercial vehicle loads and high-frequency traffic.", image: PAVING_IMAGES[5] },
+    { title: "Patch Repairs", body: "Full-depth patching and localized repair of failed pavement sections on commercial and industrial properties — addressing rutting, cracking, and settlement before they spread.", image: PAVING_IMAGES[6] },
+    { title: "Asphalt Resurfacing", body: "Surface rehabilitation of aging commercial pavement to restore ride quality, seal surface cracks, and extend service life on budget-conscious renovation scopes.", image: PAVING_IMAGES[7] },
+    { title: "Striping Coordination", body: "Paving completion sequenced with striping contractors for stall layout, fire lanes, directional arrows, and pavement markings per project plans.", image: PAVING_IMAGES[8] },
+    { title: "ADA Compliance Coordination", body: "Paving graded and sequenced around ADA-compliant curb ramps, accessible routes, and detectable warning surfaces. Placeholder — additional compliance documentation coming soon.", image: PAVING_IMAGES[9] },
+    { title: "Drainage Considerations", body: "Pavement graded to civil plan cross-slopes and flow lines with positive drainage to storm drain inlets, catch basins, and approved drainage infrastructure.", image: PAVING_IMAGES[0] },
+    { title: "Aggregate Base Installation", body: "Placement and compaction of crushed aggregate base course to geotechnical specifications before asphalt paving mobilization begins.", image: PAVING_IMAGES[1] },
   ],
   scopeIncludes: [
     "Subgrade proof-rolling and aggregate base placement to geotechnical specifications",

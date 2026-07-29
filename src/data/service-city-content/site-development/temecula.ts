@@ -1,7 +1,7 @@
 import g3 from "@/assets/gallery-3.jpg";
 import pavingImg from "@/assets/service-paving.jpg";
 import excavationImg from "@/assets/service-excavation.jpg";
-import concreteImg from "@/assets/service-concrete.jpg";
+import pourCure from "@/assets/pour-phase-cure.jpg";
 import { getCityLandmarkAsset } from "@/assets/cities";
 import type { ServiceCityPageContent } from "../types";
 
@@ -162,7 +162,7 @@ export const siteDevelopmentTemecula: ServiceCityPageContent = {
       { src: excavationImg, caption: "Placeholder — hillside mass grading on Temecula master-planned sitework package" },
       { src: g3, caption: "Placeholder — pad certification and compaction testing, Temecula Valley retail parcel" },
       { src: pavingImg, caption: "Placeholder — integrated paving phase on Temecula turnkey sitework project" },
-      { src: concreteImg, caption: "Placeholder — curb and gutter flatwork completing Temecula horizontal scope" },
+      { src: pourCure, caption: "Placeholder — curb and gutter flatwork completing Temecula horizontal scope" },
     ],
     video: {
       poster: excavationImg,

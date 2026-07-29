@@ -114,7 +114,13 @@ function LotCutaway({ active }: { active: number }) {
               {layer.title}
             </text>
             {isOn && (
-              <text x="28" y={y + h / 2 + 20} fill="#c9b896" fontSize="9">
+              <text
+                x="332"
+                y={y + h / 2 + 5}
+                textAnchor="end"
+                fill="#e8e0d0"
+                fontSize="9"
+              >
                 {layer.thickness}
               </text>
             )}

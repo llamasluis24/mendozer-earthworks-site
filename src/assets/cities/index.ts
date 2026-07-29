@@ -7,7 +7,6 @@ import heroImg from "@/assets/hero-bulldozer.jpg";
 import excavationImg from "@/assets/service-excavation.jpg";
 import demolitionImg from "@/assets/service-demolition.jpg";
 import pavingImg from "@/assets/service-paving.jpg";
-import concreteImg from "@/assets/service-concrete.jpg";
 
 export interface CityLandmarkAsset {
   image: string;
@@ -63,7 +62,7 @@ export const CITY_LANDMARK_ASSETS: Record<string, CityLandmarkAsset> = {
     alt: "Placeholder — Downtown Los Angeles skyline and industrial corridor",
   },
   pasadena: {
-    image: concreteImg,
+    image: aboutImg,
     landmark: "Old Pasadena / Colorado Boulevard corridor",
     alt: "Placeholder — Old Pasadena and Colorado Boulevard commercial corridor",
   },

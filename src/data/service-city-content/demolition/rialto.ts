@@ -1,7 +1,6 @@
 import g1 from "@/assets/gallery-1.jpg";
 import g3 from "@/assets/gallery-3.jpg";
 import heroImg from "@/assets/hero-bulldozer.jpg";
-import concreteImg from "@/assets/service-concrete.jpg";
 import demolitionImg from "@/assets/service-demolition.jpg";
 import { getCityLandmarkAsset } from "@/assets/cities";
 import type { ServiceCityPageContent } from "../types";
@@ -159,7 +158,7 @@ export const demolitionRialto: ServiceCityPageContent = {
       { src: demolitionImg, caption: "Placeholder — structural demolition on Rialto BNSF corridor parcel" },
       { src: g1, caption: "Placeholder — foundation and slab removal, San Bernardino County industrial site" },
       { src: heroImg, caption: "Placeholder — debris segregation and export staging, Rialto large-lot pad" },
-      { src: concreteImg, caption: "Placeholder — phased demo near active Rialto logistics operations" },
+      { src: demolitionImg, caption: "Placeholder — phased demo near active Rialto logistics operations" },
     ],
     video: {
       poster: heroImg,

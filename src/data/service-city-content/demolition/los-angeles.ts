@@ -2,7 +2,6 @@ import g2 from "@/assets/gallery-2.jpg";
 import g4 from "@/assets/gallery-4.jpg";
 import heroImg from "@/assets/hero-bulldozer.jpg";
 import demolitionImg from "@/assets/service-demolition.jpg";
-import concreteImg from "@/assets/service-concrete.jpg";
 import { getCityLandmarkAsset } from "@/assets/cities";
 import type { ServiceCityPageContent } from "../types";
 
@@ -162,7 +161,7 @@ export const demolitionLosAngeles: ServiceCityPageContent = {
     photos: [
       { src: heroImg, caption: "Placeholder — urban industrial yard demolition, Los Angeles commercial corridor" },
       { src: demolitionImg, caption: "Placeholder — structural takedown on LA logistics redevelopment parcel" },
-      { src: concreteImg, caption: "Placeholder — foundation and slab removal, dense LA utility zone" },
+      { src: demolitionImg, caption: "Placeholder — foundation and slab removal, dense LA utility zone" },
       { src: g2, caption: "Placeholder — phased demo with urban haul route staging" },
       { src: g4, caption: "Placeholder — debris export sequencing near active LA tenant operations" },
     ],

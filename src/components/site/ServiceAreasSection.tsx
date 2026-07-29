@@ -1,4 +1,5 @@
 import { Link } from "@tanstack/react-router";
+import { MapPin } from "lucide-react";
 import { CITIES } from "@/data/cities";
 import { cityUrl } from "@/data/cities";
 import { serviceCityUrl } from "@/data/services";
@@ -30,9 +31,10 @@ export function ServiceAreasSection({ serviceSlug }: { serviceSlug?: string }) {
                 <li key={c.slug}>
                   <Link
                     to={serviceSlug ? serviceCityUrl(serviceSlug, c.slug) : cityUrl(c.slug)}
-                    className="text-sm text-foreground/85 hover:text-gold transition"
+                    className="inline-flex items-center gap-1.5 text-sm text-foreground/85 hover:text-gold transition"
                   >
-                    {c.name}, CA →
+                    <MapPin className="h-3.5 w-3.5 shrink-0 text-gold" />
+                    {c.name}, CA
                   </Link>
                 </li>
               ))}

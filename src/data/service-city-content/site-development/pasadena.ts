@@ -1,7 +1,7 @@
 import g3 from "@/assets/gallery-3.jpg";
 import pavingImg from "@/assets/service-paving.jpg";
 import excavationImg from "@/assets/service-excavation.jpg";
-import concreteImg from "@/assets/service-concrete.jpg";
+import pourCure from "@/assets/pour-phase-cure.jpg";
 import { getCityLandmarkAsset } from "@/assets/cities";
 import type { ServiceCityPageContent } from "../types";
 
@@ -162,7 +162,7 @@ export const siteDevelopmentPasadena: ServiceCityPageContent = {
       { src: excavationImg, caption: "Placeholder — mass grading on Pasadena Colorado Blvd sitework package" },
       { src: g3, caption: "Placeholder — pad certification and compaction testing, Pasadena urban foothills parcel" },
       { src: pavingImg, caption: "Placeholder — integrated paving phase on Pasadena turnkey sitework project" },
-      { src: concreteImg, caption: "Placeholder — curb and gutter flatwork completing Pasadena horizontal scope" },
+      { src: pourCure, caption: "Placeholder — curb and gutter flatwork completing Pasadena horizontal scope" },
     ],
     video: {
       poster: excavationImg,

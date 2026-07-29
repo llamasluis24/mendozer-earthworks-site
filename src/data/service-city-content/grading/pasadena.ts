@@ -1,8 +1,8 @@
 import g1 from "@/assets/gallery-1.jpg";
+import g2 from "@/assets/gallery-2.jpg";
 import g4 from "@/assets/gallery-4.jpg";
 import heroImg from "@/assets/hero-bulldozer.jpg";
 import excavationImg from "@/assets/service-excavation.jpg";
-import concreteImg from "@/assets/service-concrete.jpg";
 import { getCityLandmarkAsset } from "@/assets/cities";
 import type { ServiceCityPageContent } from "../types";
 
@@ -146,7 +146,7 @@ export const gradingPasadena: ServiceCityPageContent = {
       scope: "Fine grading, phased cut/fill, and fine grading on a mixed-use commercial repositioning parcel with tight staging, alley access coordination, and City of Pasadena grading clearance.",
       challenge: "Tight urban staging and daily export through constrained haul routes required sequenced work zones while Los Angeles County SWPPP enforcement maintained BMP compliance throughout active earthwork.",
       result: "Pad turned over inspection-ready with positive drainage verified and multi-agency grading clearance completed before foundation layout. Placeholder — case study details coming soon.",
-      image: concreteImg,
+      image: g2,
       isPlaceholder: true,
     },
   ],

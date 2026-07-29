@@ -3,7 +3,7 @@ import g3 from "@/assets/gallery-3.jpg";
 import aboutImg from "@/assets/about-daytime.jpg";
 import heroImg from "@/assets/hero-bulldozer.jpg";
 import pavingImg from "@/assets/service-paving.jpg";
-import concreteImg from "@/assets/service-concrete.jpg";
+import pavingSurface from "@/assets/paving-layer-surface.jpg";
 import { getCityLandmarkAsset } from "@/assets/cities";
 import type { ServiceCityPageContent } from "../types";
 
@@ -147,7 +147,7 @@ export const pavingPasadena: ServiceCityPageContent = {
       scope: "Full-depth parking lot reconstruction, aggregate base replacement, and asphalt placement on a mixed-use commercial repositioning project with ADA ramp and fire lane sections.",
       challenge: "Tight urban staging and phased traffic control required sequenced work zones while Los Angeles County SWPPP enforcement maintained BMP compliance throughout active asphalt prep on a constrained foothill parcel.",
       result: "Asphalt turned over inspection-ready with documented compaction results, striping completed, and City of Pasadena pavement acceptance before tenant improvement start. Placeholder — case study details coming soon.",
-      image: concreteImg,
+      image: pavingSurface,
       isPlaceholder: true,
     },
   ],

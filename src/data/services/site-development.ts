@@ -1,5 +1,5 @@
 import excavationImg from "@/assets/service-excavation.jpg";
-import { SERVICE_IMAGES } from "./assets";
+import { SITE_DEVELOPMENT_IMAGES } from "./assets";
 import {
   COMMON_TRUST_BAR,
   PLACEHOLDER_TESTIMONIAL_DEFAULT,
@@ -62,16 +62,16 @@ export const siteDevelopment: PillarService = {
     "GC master schedule milestones and dependencies for vertical construction mobilization",
   ],
   subServices: [
-    { title: "Mass Grading & Earthwork", body: "Cut/fill balancing, mass excavation, soil compaction, and fine grading to civil engineering plans for commercial building pads and parking areas.", image: SERVICE_IMAGES[0] },
-    { title: "Underground Utility Trenching", body: "Excavation and backfill for wet and dry utilities sequenced with your underground contractor and inspection holds before paving mobilization.", image: SERVICE_IMAGES[1] },
-    { title: "Storm Drain & Dry Utility", body: "Installation of storm drain structures, catch basins, manholes, and dry utility conduit banks per civil improvement plans.", image: SERVICE_IMAGES[2] },
-    { title: "Asphalt Paving & Truck Courts", body: "Parking lot paving, drive aisles, truck courts, and access roads with aggregate base, asphalt placement, and compaction to specification.", image: SERVICE_IMAGES[3] },
-    { title: "Concrete Flatwork & Curbs", body: "Curb and gutter, sidewalks, ADA ramps, loading dock aprons, and structural flatwork coordinated with paving and utility completion.", image: SERVICE_IMAGES[4] },
-    { title: "Erosion Control & SWPPP", body: "BMP installation and maintenance, dust suppression, and storm season compliance across all sitework phases per project SWPPP.", image: SERVICE_IMAGES[5] },
-    { title: "Import & Export Management", body: "Coordinated hauling of suitable fill and export of excess or unsuitable material with certified disposal facilities and haul route permits.", image: SERVICE_IMAGES[6] },
-    { title: "Site Demolition & Clearing", body: "Structural demolition, foundation removal, and site clearing coordinated as the first phase of redevelopment sitework.", image: SERVICE_IMAGES[7] },
-    { title: "Phased Sitework Execution", body: "Sequenced horizontal improvements on partially developed commercial parcels with controlled access, work zones, and traffic control plans.", image: SERVICE_IMAGES[8] },
-    { title: "Developer Partnership Coordination", body: "Single-point sitework accountability aligned with developer milestones, entitlement schedules, and GC master construction timelines.", image: SERVICE_IMAGES[9] },
+    { title: "Mass Grading & Earthwork", body: "Cut/fill balancing, mass excavation, soil compaction, and fine grading to civil engineering plans for commercial building pads and parking areas.", image: SITE_DEVELOPMENT_IMAGES[0] },
+    { title: "Underground Utility Trenching", body: "Excavation and backfill for wet and dry utilities sequenced with your underground contractor and inspection holds before paving mobilization.", image: SITE_DEVELOPMENT_IMAGES[1] },
+    { title: "Storm Drain & Dry Utility", body: "Installation of storm drain structures, catch basins, manholes, and dry utility conduit banks per civil improvement plans.", image: SITE_DEVELOPMENT_IMAGES[2] },
+    { title: "Asphalt Paving & Truck Courts", body: "Parking lot paving, drive aisles, truck courts, and access roads with aggregate base, asphalt placement, and compaction to specification.", image: SITE_DEVELOPMENT_IMAGES[3] },
+    { title: "Concrete Flatwork & Curbs", body: "Curb and gutter, sidewalks, ADA ramps, loading dock aprons, and structural flatwork coordinated with paving and utility completion.", image: SITE_DEVELOPMENT_IMAGES[4] },
+    { title: "Erosion Control & SWPPP", body: "BMP installation and maintenance, dust suppression, and storm season compliance across all sitework phases per project SWPPP.", image: SITE_DEVELOPMENT_IMAGES[5] },
+    { title: "Import & Export Management", body: "Coordinated hauling of suitable fill and export of excess or unsuitable material with certified disposal facilities and haul route permits.", image: SITE_DEVELOPMENT_IMAGES[6] },
+    { title: "Site Demolition & Clearing", body: "Structural demolition, foundation removal, and site clearing coordinated as the first phase of redevelopment sitework.", image: SITE_DEVELOPMENT_IMAGES[7] },
+    { title: "Phased Sitework Execution", body: "Sequenced horizontal improvements on partially developed commercial parcels with controlled access, work zones, and traffic control plans.", image: SITE_DEVELOPMENT_IMAGES[8] },
+    { title: "Developer Partnership Coordination", body: "Single-point sitework accountability aligned with developer milestones, entitlement schedules, and GC master construction timelines.", image: SITE_DEVELOPMENT_IMAGES[9] },
   ],
   scopeIncludes: [
     "Pre-bid site walk with civil, geotechnical, and utility plan review across all horizontal scopes",

@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Phone, Mail, MapPin, Clock } from "lucide-react";
 import { COMPANY } from "@/data/company";
 import { ContactForm } from "@/components/site/ContactForm";
-import heroImg from "@/assets/service-concrete.jpg";
+import heroImg from "@/assets/hero-bulldozer.jpg";
 
 export const Route = createFileRoute("/contact")({
   head: () => ({
@@ -24,7 +24,7 @@ function Contact() {
     <>
       <section className="relative pt-32 pb-16 lg:pt-44 lg:pb-20 overflow-hidden">
         <div className="absolute inset-0">
-          <img src={heroImg} alt="Concrete pour at commercial site" className="h-full w-full object-cover" />
+          <img src={heroImg} alt="Commercial earthwork site with heavy equipment" className="h-full w-full object-cover" />
           <div className="absolute inset-0 bg-gradient-to-r from-charcoal via-charcoal/85 to-charcoal/40" />
         </div>
         <div className="container-x relative">

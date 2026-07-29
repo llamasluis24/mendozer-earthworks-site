@@ -1,7 +1,7 @@
 import heroImg from "@/assets/hero-bulldozer.jpg";
 import pavingImg from "@/assets/service-paving.jpg";
 import excavationImg from "@/assets/service-excavation.jpg";
-import concreteImg from "@/assets/service-concrete.jpg";
+import pourCure from "@/assets/pour-phase-cure.jpg";
 import { getCityLandmarkAsset } from "@/assets/cities";
 import type { CityPageContent } from "./types";
 
@@ -162,7 +162,7 @@ export const cityPageSantaAna: CityPageContent = {
       { src: excavationImg, caption: "Placeholder — urban infill grading on Santa Ana commercial sitework" },
       { src: heroImg, caption: "Placeholder — confined-parcel staging and compaction testing, Santa Ana TI project" },
       { src: pavingImg, caption: "Placeholder — phased asphalt paving on Santa Ana retail improvement" },
-      { src: concreteImg, caption: "Placeholder — ADA flatwork completing Santa Ana horizontal scope" },
+      { src: pourCure, caption: "Placeholder — ADA flatwork completing Santa Ana horizontal scope" },
     ],
     video: {
       poster: excavationImg,

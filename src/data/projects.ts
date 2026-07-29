@@ -1,6 +1,6 @@
 import excavationImg from "@/assets/service-excavation.jpg";
 import pavingImg from "@/assets/service-paving.jpg";
-import concreteImg from "@/assets/service-concrete.jpg";
+import pourCure from "@/assets/pour-phase-cure.jpg";
 import g2 from "@/assets/gallery-2.jpg";
 import g3 from "@/assets/gallery-3.jpg";
 
@@ -44,7 +44,7 @@ export const PROJECTS: Project[] = [
     results:
       "Site turned over build-ready with documented compaction results, completed flatwork, and paved areas inspection-ready ahead of franchise opening. Placeholder — final client metrics pending.",
     image: pavingImg,
-    gallery: [pavingImg, concreteImg, g2],
+    gallery: [pavingImg, pourCure, g2],
     relatedServices: ["grading", "excavation", "concrete", "paving"],
   },
   {
@@ -67,7 +67,7 @@ export const PROJECTS: Project[] = [
     results:
       "Pad certified and site turned over inspection-ready for subsequent utility and civil contractor mobilization. Placeholder — final client metrics pending.",
     image: excavationImg,
-    gallery: [excavationImg, g3, concreteImg],
+    gallery: [excavationImg, g3, pourCure],
     relatedServices: ["grading", "excavation", "concrete"],
   },
   {

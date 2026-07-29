@@ -1,7 +1,7 @@
 import g1 from "@/assets/gallery-1.jpg";
 import g2 from "@/assets/gallery-2.jpg";
 import excavationImg from "@/assets/service-excavation.jpg";
-import concreteImg from "@/assets/service-concrete.jpg";
+import pourCure from "@/assets/pour-phase-cure.jpg";
 import { getCityLandmarkAsset } from "@/assets/cities";
 import type { CityPageContent } from "./types";
 
@@ -162,7 +162,7 @@ export const cityPageLosAngeles: CityPageContent = {
       { src: excavationImg, caption: "Placeholder — urban mass grading on Los Angeles industrial commercial sitework" },
       { src: g1, caption: "Placeholder — pad preparation and compaction testing on LA County commercial parcel" },
       { src: g2, caption: "Placeholder — utility trenching coordination on Los Angeles redevelopment site" },
-      { src: concreteImg, caption: "Placeholder — municipal concrete improvements completing Los Angeles horizontal scope" },
+      { src: pourCure, caption: "Placeholder — municipal concrete improvements completing Los Angeles horizontal scope" },
     ],
     video: {
       poster: g1,

@@ -1,7 +1,7 @@
 import g3 from "@/assets/gallery-3.jpg";
 import aboutImg from "@/assets/about-daytime.jpg";
 import excavationImg from "@/assets/service-excavation.jpg";
-import concreteImg from "@/assets/service-concrete.jpg";
+import pourCure from "@/assets/pour-phase-cure.jpg";
 import { getCityLandmarkAsset } from "@/assets/cities";
 import type { ServiceCityPageContent } from "../types";
 
@@ -162,7 +162,7 @@ export const siteDevelopmentIrvine: ServiceCityPageContent = {
       { src: excavationImg, caption: "Placeholder — campus grading on Irvine office park sitework package" },
       { src: aboutImg, caption: "Placeholder — utility-dense trenching on Irvine tech campus development" },
       { src: g3, caption: "Placeholder — storm drain integration on Irvine commercial sitework" },
-      { src: concreteImg, caption: "Placeholder — landscape-adjacent flatwork meeting Irvine master-plan standards" },
+      { src: pourCure, caption: "Placeholder — landscape-adjacent flatwork meeting Irvine master-plan standards" },
     ],
     video: {
       poster: aboutImg,

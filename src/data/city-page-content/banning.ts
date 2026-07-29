@@ -1,7 +1,7 @@
 import g2 from "@/assets/gallery-2.jpg";
 import pavingImg from "@/assets/service-paving.jpg";
 import excavationImg from "@/assets/service-excavation.jpg";
-import concreteImg from "@/assets/service-concrete.jpg";
+import pourCure from "@/assets/pour-phase-cure.jpg";
 import { getCityLandmarkAsset } from "@/assets/cities";
 import type { CityPageContent } from "./types";
 
@@ -153,7 +153,7 @@ export const cityPageBanning: CityPageContent = {
       { src: excavationImg, caption: "Placeholder — mass grading on Banning I-10 corridor commercial sitework" },
       { src: g2, caption: "Placeholder — pad certification and compaction testing, Banning desert-edge parcel" },
       { src: pavingImg, caption: "Placeholder — commercial asphalt paving phase on Banning retail development" },
-      { src: concreteImg, caption: "Placeholder — curb and flatwork completing Banning horizontal scope" },
+      { src: pourCure, caption: "Placeholder — curb and flatwork completing Banning horizontal scope" },
     ],
     video: {
       poster: excavationImg,

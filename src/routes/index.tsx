@@ -290,9 +290,16 @@ function Reviews() {
         <p className="eyebrow text-center">What Our Clients Say</p>
         <h2 className="mt-3 heading-lg text-center max-w-3xl mx-auto">Trusted by Commercial Builders Across SoCal</h2>
         <div className="mt-12 max-w-3xl mx-auto relative">
-          <Quote className="absolute -top-4 -left-2 h-16 w-16 text-gold/15" />
-          <div key={idx} className="fade-up rounded-2xl border border-border bg-card p-8 lg:p-12 text-center">
-            <p className="text-lg lg:text-xl leading-relaxed text-foreground/90">"{r.body}"</p>
+          <div key={idx} className="fade-up relative rounded-2xl border border-border bg-card p-8 lg:p-12 text-center">
+            <Quote
+              className="pointer-events-none absolute -top-5 left-6 h-14 w-14 text-gold/55 z-10"
+              aria-hidden
+            />
+            <Quote
+              className="pointer-events-none absolute -bottom-5 right-6 h-14 w-14 rotate-180 text-gold/55 z-10"
+              aria-hidden
+            />
+            <p className="relative z-0 text-lg lg:text-xl leading-relaxed text-foreground/90">"{r.body}"</p>
             <div className="mt-6 flex flex-col items-center gap-1">
               <div className="font-display text-base tracking-wider text-gold">{r.name}</div>
               <div className="text-xs uppercase tracking-wider text-muted-foreground">{r.company}</div>

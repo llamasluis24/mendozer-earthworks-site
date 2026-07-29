@@ -1,7 +1,7 @@
 import g2 from "@/assets/gallery-2.jpg";
 import type { PillarService } from "./types";
 import { COMMON_TRUST_BAR } from "./defaults";
-import { SERVICE_IMAGES } from "./assets";
+import { GRADING_IMAGES } from "./assets";
 
 export const grading: PillarService = {
   slug: "grading",
@@ -58,21 +58,21 @@ export const grading: PillarService = {
     "GC master schedule milestones, phasing constraints, and inspection windows",
   ],
   subServices: [
-    { title: "Rough Grading", body: "Large-area rough grading establishes site balance, pad layout, and drainage patterns before compaction and finish grading begin. On commercial parcels, rough grade sets the foundation for every downstream trade.", image: SERVICE_IMAGES[0] },
-    { title: "Finish Grading", body: "GPS and laser-guided finish grading brings building pads, parking areas, and access roads to final civil plan tolerances — the elevations inspectors, surveyors, and structural teams rely on.", image: SERVICE_IMAGES[1] },
-    { title: "Mass Excavation", body: "High-volume earthmoving to establish pad elevations, balance cuts and fills, and prepare large commercial parcels for structural fill placement and compaction.", image: SERVICE_IMAGES[2] },
-    { title: "Cut & Fill Operations", body: "On-site cut and fill executed to civil quantities — minimizing import and export while meeting engineered pad elevations and drainage requirements.", image: SERVICE_IMAGES[3] },
-    { title: "Engineered Pad Preparation", body: "Subgrade preparation coordinated with your geotechnical engineer — including lift placement, moisture conditioning, and compaction to structural specifications before foundations begin.", image: SERVICE_IMAGES[4] },
-    { title: "Pad Certification Support", body: "Proof-rolling, compaction testing coordination, and pad turnover documentation prepared for geotechnical sign-off and city inspector review. Placeholder — project certification examples coming soon.", image: SERVICE_IMAGES[5] },
-    { title: "Over-Excavation", body: "Removal of unsuitable, expansive, or contaminated soils to geotechnical depths — required when existing site soils cannot support commercial building loads without remediation.", image: SERVICE_IMAGES[6] },
-    { title: "Recompaction / Soil Stabilization", body: "Approved structural fill placed in controlled lifts, moisture-conditioned, and compacted to specified density after over-excavation or unsuitable soil removal.", image: SERVICE_IMAGES[7] },
-    { title: "Building Pad Preparation", body: "Complete pad workflow from rough grade through compaction and fine grade — delivering a certified subgrade ready for foundation layout and vertical construction.", image: SERVICE_IMAGES[8] },
-    { title: "Site Balancing", body: "Cut/fill balance planning and execution to keep material on-site where possible, reducing haul costs and truck traffic on commercial developments.", image: SERVICE_IMAGES[9] },
-    { title: "Import & Export of Soil", body: "Coordinated import of approved structural fill and export of excess or unsuitable material with certified disposal facilities and permitted haul routes.", image: SERVICE_IMAGES[0] },
-    { title: "Utility Trenching Coordination", body: "Grading and trench backfill sequenced with wet and dry utility contractors — maintaining compaction requirements at utility crossings and structure tie-ins.", image: SERVICE_IMAGES[1] },
-    { title: "Soil Compaction", body: "Controlled lifts, moisture conditioning, and density testing to meet structural and paving specifications. Proper compaction directly affects long-term building and pavement performance.", image: SERVICE_IMAGES[2] },
-    { title: "Erosion Control", body: "SWPPP BMP installation, track-out control, and slope stabilization maintained throughout active grading operations per agency requirements.", image: SERVICE_IMAGES[3] },
-    { title: "GPS / Laser Guided Grading", body: "Machine-controlled finish grading for tight elevation tolerances on commercial building pads and pavement subgrades. Placeholder — equipment and project photos coming soon.", image: SERVICE_IMAGES[4] },
+    { title: "Rough Grading", body: "Large-area rough grading establishes site balance, pad layout, and drainage patterns before compaction and finish grading begin. On commercial parcels, rough grade sets the foundation for every downstream trade.", image: GRADING_IMAGES[0] },
+    { title: "Finish Grading", body: "GPS and laser-guided finish grading brings building pads, parking areas, and access roads to final civil plan tolerances — the elevations inspectors, surveyors, and structural teams rely on.", image: GRADING_IMAGES[1] },
+    { title: "Mass Excavation", body: "High-volume earthmoving to establish pad elevations, balance cuts and fills, and prepare large commercial parcels for structural fill placement and compaction.", image: GRADING_IMAGES[2] },
+    { title: "Cut & Fill Operations", body: "On-site cut and fill executed to civil quantities — minimizing import and export while meeting engineered pad elevations and drainage requirements.", image: GRADING_IMAGES[3] },
+    { title: "Engineered Pad Preparation", body: "Subgrade preparation coordinated with your geotechnical engineer — including lift placement, moisture conditioning, and compaction to structural specifications before foundations begin.", image: GRADING_IMAGES[4] },
+    { title: "Pad Certification Support", body: "Proof-rolling, compaction testing coordination, and pad turnover documentation prepared for geotechnical sign-off and city inspector review. Placeholder — project certification examples coming soon.", image: GRADING_IMAGES[5] },
+    { title: "Over-Excavation", body: "Removal of unsuitable, expansive, or contaminated soils to geotechnical depths — required when existing site soils cannot support commercial building loads without remediation.", image: GRADING_IMAGES[6] },
+    { title: "Recompaction / Soil Stabilization", body: "Approved structural fill placed in controlled lifts, moisture-conditioned, and compacted to specified density after over-excavation or unsuitable soil removal.", image: GRADING_IMAGES[7] },
+    { title: "Building Pad Preparation", body: "Complete pad workflow from rough grade through compaction and fine grade — delivering a certified subgrade ready for foundation layout and vertical construction.", image: GRADING_IMAGES[8] },
+    { title: "Site Balancing", body: "Cut/fill balance planning and execution to keep material on-site where possible, reducing haul costs and truck traffic on commercial developments.", image: GRADING_IMAGES[9] },
+    { title: "Import & Export of Soil", body: "Coordinated import of approved structural fill and export of excess or unsuitable material with certified disposal facilities and permitted haul routes.", image: GRADING_IMAGES[10] },
+    { title: "Utility Trenching Coordination", body: "Grading and trench backfill sequenced with wet and dry utility contractors — maintaining compaction requirements at utility crossings and structure tie-ins.", image: GRADING_IMAGES[11] },
+    { title: "Soil Compaction", body: "Controlled lifts, moisture conditioning, and density testing to meet structural and paving specifications. Proper compaction directly affects long-term building and pavement performance.", image: GRADING_IMAGES[12] },
+    { title: "Erosion Control", body: "SWPPP BMP installation, track-out control, and slope stabilization maintained throughout active grading operations per agency requirements.", image: GRADING_IMAGES[13] },
+    { title: "GPS / Laser Guided Grading", body: "Machine-controlled finish grading for tight elevation tolerances on commercial building pads and pavement subgrades. Placeholder — equipment and project photos coming soon.", image: GRADING_IMAGES[14] },
   ],
   scopeIncludes: [
     "Pre-bid site walk with civil and geotechnical plan review",

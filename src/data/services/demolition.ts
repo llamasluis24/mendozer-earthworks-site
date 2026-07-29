@@ -1,5 +1,5 @@
 import demolitionImg from "@/assets/service-demolition.jpg";
-import { SERVICE_IMAGES } from "./assets";
+import { DEMOLITION_IMAGES } from "./assets";
 import {
   COMMON_TRUST_BAR,
   PLACEHOLDER_TESTIMONIAL_DEFAULT,
@@ -62,18 +62,18 @@ export const demolition: PillarService = {
     "Recycling diversion requirements, disposal facility routing, and dust suppression plans",
   ],
   subServices: [
-    { title: "Structural Demolition", body: "Complete takedown of warehouses, retail centers, industrial facilities, and office structures using high-reach excavators and controlled demolition methods on commercial redevelopment sites.", image: SERVICE_IMAGES[0] },
-    { title: "Interior Demolition", body: "Targeted removal of partitions, ceilings, MEP systems, and finishes for tenant improvement and adaptive reuse without compromising structural elements required for the new occupancy.", image: SERVICE_IMAGES[1] },
-    { title: "Selective Demolition", body: "Precision removal of specific building sections, additions, or improvements while preserving portions of the structure or site that remain in service.", image: SERVICE_IMAGES[2] },
-    { title: "Site Clearing", body: "Demolition of asphalt paving, curbs, sidewalks, retaining walls, and landscape improvements to deliver a cleared redevelopment parcel ready for earthwork.", image: SERVICE_IMAGES[3] },
-    { title: "Concrete Removal", body: "Breaking, removal, and export of concrete flatwork, walls, and structural elements — including foundations, slabs, and below-grade improvements.", image: SERVICE_IMAGES[4] },
-    { title: "Asphalt Removal", body: "Milling and removal of existing asphalt pavement, drive aisles, and parking areas to prepare subgrade for new paving or earthwork operations.", image: SERVICE_IMAGES[5] },
-    { title: "Slab Removal", body: "Breaking and export of existing slabs-on-grade, loading dock aprons, and concrete paving to deliver bare subgrade for new civil and structural plans.", image: SERVICE_IMAGES[6] },
-    { title: "Debris Hauling", body: "Daily hauling of demolition debris to certified recycling and disposal facilities with load tracking and compliance documentation for project records.", image: SERVICE_IMAGES[7] },
-    { title: "Redevelopment Preparation", body: "Complete demolition and clearing scope — structure, slabs, paving, and improvements removed — delivering a bare pad ready for grading, utilities, and new construction.", image: SERVICE_IMAGES[8] },
-    { title: "Phased Demolition on Active Sites", body: "Staged takedown on partially occupied commercial properties with controlled access zones, dust suppression, and sequenced work areas.", image: SERVICE_IMAGES[9] },
-    { title: "Underground Improvement Removal", body: "Removal of abandoned wet and dry utilities, vaults, and underground structures coordinated with environmental and utility contractors.", image: SERVICE_IMAGES[0] },
-    { title: "Hazmat Abatement Coordination", body: "Demolition sequenced around licensed asbestos, lead, and hazardous material abatement with proper containment access and clearance documentation.", image: SERVICE_IMAGES[1] },
+    { title: "Structural Demolition", body: "Complete takedown of warehouses, retail centers, industrial facilities, and office structures using high-reach excavators and controlled demolition methods on commercial redevelopment sites.", image: DEMOLITION_IMAGES[0] },
+    { title: "Interior Demolition", body: "Targeted removal of partitions, ceilings, MEP systems, and finishes for tenant improvement and adaptive reuse without compromising structural elements required for the new occupancy.", image: DEMOLITION_IMAGES[1] },
+    { title: "Selective Demolition", body: "Precision removal of specific building sections, additions, or improvements while preserving portions of the structure or site that remain in service.", image: DEMOLITION_IMAGES[2] },
+    { title: "Site Clearing", body: "Demolition of asphalt paving, curbs, sidewalks, retaining walls, and landscape improvements to deliver a cleared redevelopment parcel ready for earthwork.", image: DEMOLITION_IMAGES[3] },
+    { title: "Concrete Removal", body: "Breaking, removal, and export of concrete flatwork, walls, and structural elements — including foundations, slabs, and below-grade improvements.", image: DEMOLITION_IMAGES[4] },
+    { title: "Asphalt Removal", body: "Milling and removal of existing asphalt pavement, drive aisles, and parking areas to prepare subgrade for new paving or earthwork operations.", image: DEMOLITION_IMAGES[5] },
+    { title: "Slab Removal", body: "Breaking and export of existing slabs-on-grade, loading dock aprons, and concrete paving to deliver bare subgrade for new civil and structural plans.", image: DEMOLITION_IMAGES[6] },
+    { title: "Debris Hauling", body: "Daily hauling of demolition debris to certified recycling and disposal facilities with load tracking and compliance documentation for project records.", image: DEMOLITION_IMAGES[7] },
+    { title: "Redevelopment Preparation", body: "Complete demolition and clearing scope — structure, slabs, paving, and improvements removed — delivering a bare pad ready for grading, utilities, and new construction.", image: DEMOLITION_IMAGES[8] },
+    { title: "Phased Demolition on Active Sites", body: "Staged takedown on partially occupied commercial properties with controlled access zones, dust suppression, and sequenced work areas.", image: DEMOLITION_IMAGES[9] },
+    { title: "Underground Improvement Removal", body: "Removal of abandoned wet and dry utilities, vaults, and underground structures coordinated with environmental and utility contractors.", image: DEMOLITION_IMAGES[0] },
+    { title: "Hazmat Abatement Coordination", body: "Demolition sequenced around licensed asbestos, lead, and hazardous material abatement with proper containment access and clearance documentation.", image: DEMOLITION_IMAGES[1] },
   ],
   scopeIncludes: [
     "Pre-bid site walk with structure assessment, hazmat flag review, and utility disconnect status",
