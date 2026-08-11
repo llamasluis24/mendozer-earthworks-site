@@ -23,7 +23,7 @@ export function BrandWordmark({
           MENDOZER
         </div>
         <div
-          className="font-display text-lg font-bold text-gold-bright tracking-[0.35em] leading-none py-0.5"
+          className="font-display text-lg font-bold text-gold-bright tracking-[0.35em] leading-none py-0.5 [text-shadow:0_0_10px_var(--gold-bright),0_0_22px_rgba(212,168,67,0.55),0_0_36px_rgba(212,168,67,0.25)]"
           aria-label="X for Excavation"
         >
           X
