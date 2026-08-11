@@ -85,6 +85,13 @@
 @layer utilities {
   .container-x { @apply mx-auto w-full max-w-7xl px-6 lg:px-10; }
   .text-gold { color: var(--gold); }
+  .brand-x-glow {
+    color: var(--gold-bright);
+    text-shadow:
+      0 0 10px var(--gold-bright),
+      0 0 22px rgb(212 168 67 / 0.55),
+      0 0 36px rgb(212 168 67 / 0.25);
+  }
   .bg-gold { background-color: var(--gold); }
   .border-gold { border-color: var(--gold); }
   .bg-charcoal { background-color: var(--charcoal); }

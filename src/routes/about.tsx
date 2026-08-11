@@ -65,7 +65,10 @@ function About() {
         <div className="container-x relative">
           <p className="eyebrow">About Us</p>
           <h1 className="mt-4 heading-xl max-w-4xl">
-            Built on Excavation. <span className="text-gold">The X Is Who We Are.</span>
+            Built on Excavation.{" "}
+            <span className="text-gold">
+              The <span className="brand-x-glow">X</span> Is Who We Are.
+            </span>
           </h1>
           <p className="mt-6 max-w-2xl text-lg text-foreground/85 leading-relaxed">
             Mendozer X Earthworks Inc. is a Southern California commercial earthwork contractor founded by Miguel Mendoza — a licensed heavy civil operator who grew up around equipment and built this company through discipline, referrals, and repeat work.
@@ -98,7 +101,8 @@ function About() {
                 Miguel brings approximately fifteen years of industry experience, but the foundation goes back further. His father has been a heavy equipment operator since the 1990s. Miguel grew up around dozers, excavators, and grading crews. That upbringing shaped how he reads a site, talks to operators, and understands what excavation and earthwork actually require in the field — before a quantity hits a spreadsheet.
               </p>
               <p>
-                The <strong className="text-foreground">X</strong> in Mendozer X stands for <strong className="text-foreground">Excavation</strong>. It is not decorative. It reflects what the company was built on and what we self-perform every day: commercial excavation, grading, and the horizontal sitework that gets a pad ready for vertical construction.
+                The <strong className="brand-x-glow">X</strong> in Mendozer X stands for{" "}
+                <strong className="text-foreground">Excavation</strong>. It is not decorative. It reflects what the company was built on and what we self-perform every day: commercial excavation, grading, and the horizontal sitework that gets a pad ready for vertical construction.
               </p>
             </div>
             <div className="mt-8 grid grid-cols-3 gap-4">
