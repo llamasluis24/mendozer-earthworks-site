@@ -25,16 +25,17 @@ const SOIL_PRESETS = [
 const ACRES = 2.5;
 const CY_PER_FT = ACRES * 1613;
 const TRUCK_CY = 10;
+const TRUCK_LABEL = "Super 10";
 
 const EDUCATION = [
   {
     id: "expansion",
     title: "Soil Expansion",
     icon: ArrowUpFromLine,
-    body: "Clay and wet soils expand when excavated. Material that measures 1,000 bank cubic yards (BCY) in the ground can swell to 1,250–1,350 loose cubic yards (LCY) in the truck depending on moisture and soil type. That difference drives export quantity, haul costs, and disposal fees.",
+    body: "Clay and wet soils expand when excavated. Material that measures 1,000 bank cubic yards (BCY) in the ground can swell to 1,250–1,350 loose cubic yards (LCY) in the truck depending on moisture and soil type. That difference drives export quantity, haul costs, and disposal fees. Soil type matters — expansive clays and wet silts swell more than granular material.",
     points: [
       "Wet clays and silts swell the most — often 25–35% above bank volume",
-      "Expansion increases loose haul quantities and truck load counts",
+      "Expansion increases loose haul quantities and Super 10 load counts",
       "Underestimating swell is one of the most common earthwork change-order triggers",
     ],
   },
@@ -64,11 +65,11 @@ const EDUCATION = [
     id: "volumes",
     title: "BCY · LCY · CCY",
     icon: Layers,
-    body: "Earthwork quantities are measured in three conditions. Bank Cubic Yards (BCY) is material in its natural state in the ground. Loose Cubic Yards (LCY) is excavated material in a truck or stockpile — larger due to swell. Compacted Cubic Yards (CCY) is engineered fill after compaction — smaller than loose due to shrink.",
+    body: "Earthwork quantities are measured in three conditions. Bank Cubic Yards (BCY) is material in its natural state in the ground. Loose Cubic Yards (LCY) is excavated material in a truck or stockpile — larger due to swell. Compacted Cubic Yards (CCY) is engineered fill after compaction — smaller than loose due to shrink. Field volumes start with length × width × depth (cut) or fill height, divided by 27 to convert cubic feet to cubic yards.",
     points: [
-      "BCY → cut quantities in place on the grading plan",
-      "LCY → export hauling and import delivery quantities",
-      "CCY → structural fill placed and compacted on the pad",
+      "CY = (Length × Width × Depth or Fill Height) ÷ 27",
+      "1,000 CY export ≈ 100 Super 10 loads at 10 CY per load",
+      "BCY → bank in place · LCY → haul · CCY → compacted fill on pad",
     ],
   },
   {
@@ -625,6 +626,10 @@ export function GradeBalanceSimulator() {
         <p className="text-center text-xs text-muted-foreground uppercase tracking-wider">
           Conceptual planning tool — adjust cut/fill, expansion, and shrink to see how earthwork quantities change
         </p>
+        <p className="text-center text-sm text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+          Cubic yards = (Length × Width × Depth or Fill Height) ÷ 27 · {TRUCK_LABEL} trucks haul {TRUCK_CY} CY per load
+          (example: 1,000 CY ≈ 100 {TRUCK_LABEL} loads). Adjust soil type below — expansive dirt changes export and import math.
+        </p>
 
         <div className="flex items-center justify-center gap-3 max-w-lg mx-auto">
           <button type="button" onClick={() => nudge(-1)} disabled={balance <= -8} className="flex flex-col items-center gap-1.5 rounded-xl border-2 border-orange-500/50 bg-orange-500/10 px-5 py-4 hover:bg-orange-500/20 transition disabled:opacity-30 min-w-[120px]">
@@ -654,6 +659,9 @@ export function GradeBalanceSimulator() {
         <div className="grid lg:grid-cols-2 gap-6 max-w-5xl mx-auto">
           <div className="rounded-xl border border-border bg-card/50 p-5 space-y-5">
             <h4 className="font-display text-sm tracking-wide text-gold uppercase">Soil Factors</h4>
+            <p className="text-xs text-muted-foreground leading-relaxed">
+              Soil type changes expansion and shrink. Clay and wet soils are more expansive; sandy and granular imports shrink more under compaction — use the presets or sliders to match geotech assumptions.
+            </p>
             <div>
               <div className="flex justify-between text-xs text-muted-foreground mb-1">
                 <span>Expansion (swell on export)</span>
@@ -691,7 +699,7 @@ export function GradeBalanceSimulator() {
                     <dd className="font-display text-lg text-foreground mt-0.5">{stats.lcyExport.toLocaleString()}</dd>
                   </div>
                   <div className="rounded-lg border border-border px-3 py-2 col-span-2">
-                    <dt className="text-[10px] uppercase tracking-wider text-muted-foreground flex items-center gap-1"><Truck className="h-3 w-3" /> Export truck loads (~{TRUCK_CY} LCY each)</dt>
+                    <dt className="text-[10px] uppercase tracking-wider text-muted-foreground flex items-center gap-1"><Truck className="h-3 w-3" /> Export {TRUCK_LABEL} loads ({TRUCK_CY} LCY each)</dt>
                     <dd className="font-display text-lg text-orange-300 mt-0.5">{stats.exportLoads.toLocaleString()} loads</dd>
                     <p className="text-[11px] text-muted-foreground mt-1">Without expansion factor: ~{stats.naiveLoads} loads — underestimates haul by {stats.exportLoads - stats.naiveLoads} loads at {expansionPct}% swell</p>
                   </div>
@@ -707,7 +715,7 @@ export function GradeBalanceSimulator() {
                     <dd className="font-display text-lg text-foreground mt-0.5">{stats.lcyImport.toLocaleString()}</dd>
                   </div>
                   <div className="rounded-lg border border-border px-3 py-2 col-span-2">
-                    <dt className="text-[10px] uppercase tracking-wider text-muted-foreground flex items-center gap-1"><Truck className="h-3 w-3" /> Import truck loads</dt>
+                    <dt className="text-[10px] uppercase tracking-wider text-muted-foreground flex items-center gap-1"><Truck className="h-3 w-3" /> Import {TRUCK_LABEL} loads ({TRUCK_CY} LCY each)</dt>
                     <dd className="font-display text-lg text-sky-300 mt-0.5">{stats.importLoads.toLocaleString()} loads</dd>
                   </div>
                 </>

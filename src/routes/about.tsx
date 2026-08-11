@@ -79,7 +79,10 @@ function About() {
             <img src={teamImg} alt="Commercial excavation and grading in progress" className="h-full w-full object-cover" loading="lazy" />
           </div>
           <div>
-            <p className="eyebrow">Our Story</p>
+            <p className="text-sm font-display tracking-wide text-gold border-l-2 border-gold pl-4 max-w-lg">
+              {COMPANY.tagline}
+            </p>
+            <p className="eyebrow mt-8">Our Story</p>
             <h2 className="mt-3 heading-lg">From COVID Downtime to a Full-Time Commercial Contractor</h2>
             <div className="mt-6 space-y-5 text-muted-foreground text-lg leading-relaxed">
               <p>

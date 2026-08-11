@@ -11,6 +11,7 @@ export const COMPANY = {
   serviceAreas: ["Inland Empire", "Orange County", "Los Angeles County", "Southern California"],
   description:
     "Mendozer X Earthworks Inc. is a licensed commercial earthwork contractor serving the Inland Empire, Orange County, and Los Angeles County. The X stands for Excavation — grading, excavation, concrete flatwork, and asphalt for developers, general contractors, and construction professionals.",
+  tagline: "The goal is to get things right the first time.",
   founder: "Miguel Mendoza",
   licensingSchool: "Blue Collar Licensing",
   licensingInstructor: "Luis Gonzalez",

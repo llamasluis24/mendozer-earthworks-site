@@ -1,7 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
-import logo from "@/assets/logo.png";
+import { BrandWordmark } from "./BrandWordmark";
 import { MAIN_NAV } from "@/data/navigation";
 
 function NavLink({
@@ -65,18 +65,11 @@ export function Header() {
       }`}
     >
       <div className="container-x flex items-center justify-between py-3">
-        <Link to="/" className="flex items-center gap-3 group">
-          <img
-            src={logo}
-            alt="Mendozer X Earthworks Inc. logo"
-            width={56}
-            height={56}
-            className="h-14 w-14 object-contain drop-shadow-md group-hover:scale-[1.02] transition"
+        <Link to="/" className="group hover:opacity-95 transition">
+          <BrandWordmark
+            iconClassName="h-14 w-14 group-hover:scale-[1.02] transition-transform"
+            textClassName="hidden sm:flex"
           />
-          <div className="hidden sm:block leading-tight">
-            <div className="font-display text-sm tracking-[0.18em] text-gold">MENDOZER <span className="text-gold-bright">X</span></div>
-            <div className="font-display text-xs tracking-[0.18em] text-foreground/80">EARTHWORKS INC.</div>
-          </div>
         </Link>
 
         <nav className="hidden lg:flex items-center gap-7" aria-label="Main navigation">

@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { Phone, Mail, MapPin } from "lucide-react";
-import logo from "@/assets/logo.png";
+import { BrandWordmark } from "./BrandWordmark";
 import { FOOTER_SERVICES } from "@/data/navigation";
 import { CITIES } from "@/data/cities";
 import { COMPANY } from "@/data/company";
@@ -11,13 +11,7 @@ export function Footer() {
       <div className="h-1 diagonal-stripes opacity-80" />
       <div className="container-x py-16 grid gap-12 lg:grid-cols-4">
         <div>
-          <div className="flex items-center gap-3">
-            <img src={logo} alt="Mendozer X Earthworks Inc." width={64} height={64} className="h-16 w-16 object-contain" loading="lazy" />
-            <div>
-              <div className="font-display text-sm tracking-[0.18em] text-gold">MENDOZER <span className="text-gold-bright">X</span></div>
-              <div className="font-display text-xs tracking-[0.18em] text-foreground/80">EARTHWORKS INC.</div>
-            </div>
-          </div>
+          <BrandWordmark iconClassName="h-16 w-16" />
           <p className="mt-5 text-sm text-muted-foreground leading-relaxed">
             {COMPANY.description}
           </p>
