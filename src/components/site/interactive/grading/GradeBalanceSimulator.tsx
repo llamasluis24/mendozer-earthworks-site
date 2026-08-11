@@ -104,10 +104,17 @@ const GROUND_Y = 148;
 const PAD_L = 118;
 const PAD_R = 282;
 const SLOPE_OUT = 28;
-/** Fixed strip at bottom of graphic — keeps callouts clear of equipment */
+/** Bottom strip for import / hint callouts */
 const CALLOUT_Y = 168;
+/** Sky-area callout for export overlays — above the excavation pit */
+const EXPORT_CALLOUT_Y = 48;
+const EXPORT_TRUCK_Y = 36;
 const CALLOUT_W = 216;
 const CALLOUT_X = 200 - CALLOUT_W / 2;
+
+function exportCalloutY(padY: number) {
+  return Math.min(EXPORT_CALLOUT_Y, Math.max(42, padY - 56));
+}
 
 function CalloutBox({
   x,
@@ -231,16 +238,17 @@ function GraphicOverlay({
   const cx = 200;
 
   if (eduId === "expansion" && isExport && stats.mag > 0) {
+    const calloutY = exportCalloutY(padY);
     return (
       <g>
-        <path d={`M${PAD_L + 24} ${padY + 6} L${PAD_L + 24} ${padY - 14}`} stroke="#f97316" strokeWidth="1.2" markerEnd="url(#arrowUp)" />
-        <path d={`M${PAD_R - 24} ${padY + 6} L${PAD_R - 24} ${padY - 14}`} stroke="#f97316" strokeWidth="1.2" markerEnd="url(#arrowUp)" />
-        <CalloutBox x={CALLOUT_X} y={CALLOUT_Y} width={CALLOUT_W} height={40} stroke="#f97316">
-          <CalloutTitle x={cx} y={CALLOUT_Y + 13} fill="#fdba74">SWELL ON EXCAVATION</CalloutTitle>
-          <CalloutLine x={cx} y={CALLOUT_Y + 26} fill="#fff" size={7}>
+        <path d={`M${PAD_L + 24} ${padY + 6} L${PAD_L + 24} ${calloutY + 40}`} stroke="#f97316" strokeWidth="1.2" markerEnd="url(#arrowUp)" />
+        <path d={`M${PAD_R - 24} ${padY + 6} L${PAD_R - 24} ${calloutY + 40}`} stroke="#f97316" strokeWidth="1.2" markerEnd="url(#arrowUp)" />
+        <CalloutBox x={CALLOUT_X} y={calloutY} width={CALLOUT_W} height={40} stroke="#f97316">
+          <CalloutTitle x={cx} y={calloutY + 13} fill="#fdba74">SWELL ON EXCAVATION</CalloutTitle>
+          <CalloutLine x={cx} y={calloutY + 26} fill="#fff" size={7}>
             {stats.bcy.toLocaleString()} BCY → {stats.lcyExport.toLocaleString()} LCY
           </CalloutLine>
-          <CalloutLine x={cx} y={CALLOUT_Y + 36} fill="#fdba74" size={6}>
+          <CalloutLine x={cx} y={calloutY + 36} fill="#fdba74" size={6}>
             +{expansionPct}% expansion increases haul quantities
           </CalloutLine>
         </CalloutBox>
@@ -300,13 +308,14 @@ function GraphicOverlay({
   }
 
   if (eduId === "changeorders" && isExport && stats.mag > 0 && stats.exportLoads > stats.naiveLoads) {
+    const calloutY = exportCalloutY(padY);
     return (
-      <CalloutBox x={CALLOUT_X} y={CALLOUT_Y} width={CALLOUT_W} height={44} stroke="#ef4444" fill="rgba(120,40,20,0.92)">
-        <CalloutTitle x={cx} y={CALLOUT_Y + 13} fill="#fca5a5">CHANGE ORDER RISK</CalloutTitle>
-        <CalloutLine x={cx} y={CALLOUT_Y + 26} fill="#fff" size={6.5}>
+      <CalloutBox x={CALLOUT_X} y={calloutY} width={CALLOUT_W} height={44} stroke="#ef4444" fill="rgba(120,40,20,0.92)">
+        <CalloutTitle x={cx} y={calloutY + 13} fill="#fca5a5">CHANGE ORDER RISK</CalloutTitle>
+        <CalloutLine x={cx} y={calloutY + 26} fill="#fff" size={6.5}>
           Naive: {stats.naiveLoads} loads · Actual: {stats.exportLoads} loads
         </CalloutLine>
-        <CalloutLine x={cx} y={CALLOUT_Y + 37} fill="#fecaca" size={6}>
+        <CalloutLine x={cx} y={calloutY + 37} fill="#fecaca" size={6}>
           +{stats.exportLoads - stats.naiveLoads} extra hauls without swell factor
         </CalloutLine>
       </CalloutBox>
@@ -490,11 +499,6 @@ function GradingTerrain({
         )}
       </g>
 
-      {isExport &&
-        Array.from({ length: truckCount }).map((_, i) => (
-          <HaulTruck key={`out-${i}`} x={8 + i * 30} y={84} direction="out" />
-        ))}
-
       {isImport &&
         Array.from({ length: truckCount }).map((_, i) => (
           <HaulTruck key={`in-${i}`} x={340 - i * 30} y={84} direction="in" />
@@ -509,6 +513,11 @@ function GradingTerrain({
         isExport={isExport}
         isImport={isImport}
       />
+
+      {isExport &&
+        Array.from({ length: truckCount }).map((_, i) => (
+          <HaulTruck key={`out-${i}`} x={8 + i * 30} y={EXPORT_TRUCK_Y} direction="out" />
+        ))}
 
       {/* Pad label on top layer so equipment never covers it */}
       <g className="transition-all duration-500 ease-out">

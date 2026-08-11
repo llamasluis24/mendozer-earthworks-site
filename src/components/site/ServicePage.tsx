@@ -13,6 +13,7 @@ import { SubServiceCards } from "./SubServiceCards";
 import { BenefitGrid } from "./BenefitGrid";
 import { TestimonialPlaceholder } from "./TestimonialPlaceholder";
 import { ServiceBottomCTA } from "./ServiceBottomCTA";
+import { CommercialWorkflowSection } from "./CommercialWorkflowSection";
 import { COMPANY } from "@/data/company";
 import type { PillarService } from "@/data/services/types";
 
@@ -108,22 +109,11 @@ export function ServicePage(p: PillarService) {
         items={p.scopeIncludes}
       />
 
-      {/* Process */}
-      <section className="py-20 lg:py-28 bg-secondary/40 border-y border-border">
-        <div className="container-x">
-          <p className="eyebrow">Our Process</p>
-          <h2 className="mt-3 heading-lg max-w-3xl">A Predictable Commercial Workflow From Bid to Completion</h2>
-          <div className="mt-12 grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
-            {p.process.map((s) => (
-              <div key={s.step} className="rounded-xl bg-card border border-border p-6">
-                <div className="font-display text-4xl text-gold/80 leading-none">{s.step}</div>
-                <h3 className="mt-3 font-display text-base tracking-wide">{s.title}</h3>
-                <p className="mt-2 text-sm text-muted-foreground leading-relaxed">{s.body}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <CommercialWorkflowSection
+        eyebrow="Our Process"
+        title="A Predictable Commercial Workflow From Bid to Completion"
+        subtitle="Every commercial scope follows the same preconstruction, field execution, and closeout sequence — sequenced with your GC schedule and inspection milestones."
+      />
 
       {/* Educational Deep Dive */}
       <section className="py-20 lg:py-28">

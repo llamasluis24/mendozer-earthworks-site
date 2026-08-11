@@ -1,4 +1,25 @@
 /** Approved commercial sitework workflow — homepage & reference */
+export const COMMERCIAL_WORKFLOW_PHASES = [
+  {
+    id: "preconstruction",
+    label: "Preconstruction",
+    description: "Site walks, plan review, specifications, estimating, and schedule alignment before mobilization.",
+    stepIndices: [0, 1, 2, 3, 4],
+  },
+  {
+    id: "field-execution",
+    label: "Field Execution",
+    description: "Mobilization through horizontal improvements — excavation, grading, utilities, base, and paving.",
+    stepIndices: [5, 6, 7, 8, 9, 10],
+  },
+  {
+    id: "closeout",
+    label: "Closeout",
+    description: "Final inspection, documentation, and build-ready turnover to your project team.",
+    stepIndices: [11, 12],
+  },
+] as const;
+
 export const COMMERCIAL_WORKFLOW = [
   {
     step: "01",
