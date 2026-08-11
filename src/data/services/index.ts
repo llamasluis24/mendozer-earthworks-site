@@ -49,18 +49,18 @@ export function serviceCityUrl(serviceSlug: string, citySlug: string) {
 
 export function getServiceCityMeta(service: PillarService, cityName: string) {
   return {
-    title: `Commercial ${service.shortName} in ${cityName}, CA | Mendozer x Earthworks`,
+    title: `Commercial ${service.shortName} in ${cityName}, CA | Mendozer X Earthworks Inc.`,
     description: `Licensed commercial ${service.shortName.toLowerCase()} contractor serving ${cityName}, CA. ${service.aeoSummary.split(".")[0]}.`,
     h1: `Commercial ${service.shortName} in ${cityName}, CA`,
-    intro: `Mendozer x Earthworks provides licensed commercial ${service.shortName.toLowerCase()} for developers, general contractors, and property owners in this market. ${service.definition}`,
+    intro: `Mendozer X Earthworks Inc. provides licensed commercial ${service.shortName.toLowerCase()} for developers, general contractors, and property owners in this market. ${service.definition}`,
   };
 }
 
 export function getCityPageMeta(cityName: string, county: string) {
   return {
-    title: `Commercial Earthwork Contractor in ${cityName}, CA | Mendozer x Earthworks`,
-    description: `Mendozer x Earthworks provides commercial grading, excavation, concrete, and asphalt in ${cityName}, CA and ${county}.`,
+    title: `Commercial Earthwork Contractor in ${cityName}, CA | Mendozer X Earthworks Inc.`,
+    description: `Mendozer X Earthworks Inc. provides commercial grading, excavation, concrete, and asphalt in ${cityName}, CA and ${county}.`,
     h1: `Commercial Earthwork Contractor in ${cityName}, CA`,
-    intro: `Mendozer x Earthworks Inc. is a licensed commercial earthwork contractor serving ${county}. We partner with developers, general contractors, municipalities, and property owners on grading, excavation, concrete, and asphalt.`,
+    intro: `Mendozer X Earthworks Inc. is a licensed commercial earthwork contractor serving ${county}. We partner with developers, general contractors, municipalities, and property owners on grading, excavation, concrete, and asphalt.`,
   };
 }

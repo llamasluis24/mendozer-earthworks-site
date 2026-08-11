@@ -14,12 +14,78 @@ export const pavingAnaheim: ServiceCityPageContent = {
     "Commercial asphalt paving in Anaheim, CA. After-hours paving near active retail and hospitality, Orange County inspection standards, dust and traffic control, and ADA path-of-travel reconstruction on commercial corridor projects.",
 
   siteVisitItems: [
-    "Walk Anaheim commercial parking areas adjacent to active retail, restaurant, and hospitality operations and document phased paving boundaries that preserve tenant access and customer circulation",
-    "Review civil paving plans, ADA path-of-travel requirements, curb ramp tie-ins, and detectable warning surface coordination for Orange County-compliant commercial reconstruction",
-    "Confirm after-hours paving windows, noise ordinance limits, and dust suppression methods with City of Anaheim building division on high-visibility corridor redevelopment sites",
-    "Assess existing pavement distress, drainage ponding near accessible routes, and fire lane slope compliance before mill-and-overlay or full-depth reconstruction is scoped",
-    "Map traffic control phasing, haul routes, and screened containment for paving production that maintains ADA corridors and fire lane access through sequenced Anaheim commercial lot closures",
-    "Deliver itemized paving bid with after-hours allowances, OC inspection coordination, dust control methods, and phased production rates tied to Anaheim retail and hospitality corridor schedules",
+    {
+      title: "Pre-Bid Site Walk",
+      lead:
+        "Walk Anaheim commercial parking areas adjacent to active retail, restaurant, and hospitality operations and document phased paving boundaries that preserve tenant access and customer circulation.",
+      checkpoints: [
+        "Walk Anaheim commercial parking areas adjacent to active retail.",
+        "Cross-check observations against civil plans, geotechnical data, and project specifications.",
+        "Flag constraints affecting production, haul logistics, SWPPP compliance, or inspection hold points.",
+      ],
+      fieldNote:
+        "Early plan and document review keeps bid assumptions aligned with engineer-approved civil quantities before contract award.",
+    },
+    {
+      title: "Plan & Document Review",
+      lead:
+        "Review civil paving plans, ADA path-of-travel requirements, curb ramp tie-ins, and detectable warning surface coordination for Orange County-compliant commercial reconstruction.",
+      checkpoints: [
+        "Review civil paving plans.",
+        "ADA path-of-travel requirements.",
+        "Curb ramp tie-ins.",
+      ],
+      fieldNote:
+        "Early plan and document review keeps bid assumptions aligned with engineer-approved civil quantities before contract award.",
+    },
+    {
+      title: "Specification Verification",
+      lead:
+        "Confirm after-hours paving windows, noise ordinance limits, and dust suppression methods with City of Anaheim building division on high-visibility corridor redevelopment sites.",
+      checkpoints: [
+        "Confirm after-hours paving windows.",
+        "Noise ordinance limits.",
+        "Dust suppression methods with City of Anaheim building division on high-visibility corridor redevelopment sites.",
+      ],
+      fieldNote:
+        "Verified specifications before mobilization protect compaction acceptance, drainage performance, and agency sign-off.",
+    },
+    {
+      title: "Field Conditions Assessment",
+      lead:
+        "Assess existing pavement distress, drainage ponding near accessible routes, and fire lane slope compliance before mill-and-overlay or full-depth reconstruction is scoped.",
+      checkpoints: [
+        "Assess existing pavement distress.",
+        "Drainage ponding near accessible routes.",
+        "Fire lane slope compliance before mill-and-overlay or full-depth reconstruction is scoped.",
+      ],
+      fieldNote:
+        "Field assessment during the pre-bid walk surfaces constraints that affect production, haul logistics, and inspection sequencing.",
+    },
+    {
+      title: "Inspection & Schedule Mapping",
+      lead:
+        "Map traffic control phasing, haul routes, and screened containment for paving production that maintains ADA corridors and fire lane access through sequenced Anaheim commercial lot closures.",
+      checkpoints: [
+        "Map traffic control phasing.",
+        "Haul routes.",
+        "Screened containment for paving production that maintains ADA corridors and fire lane access through sequenced Anaheim commercial lot closures.",
+      ],
+      fieldNote:
+        "Mapped inspection windows and hold points keep sitework sequenced with your GC master schedule and vertical mobilization.",
+    },
+    {
+      title: "Itemized Bid Delivery",
+      lead:
+        "Deliver itemized paving bid with after-hours allowances, OC inspection coordination, dust control methods, and phased production rates tied to Anaheim retail and hospitality corridor schedules.",
+      checkpoints: [
+        "Deliver itemized paving bid with after-hours allowances.",
+        "OC inspection coordination.",
+        "Dust control methods.",
+      ],
+      fieldNote:
+        "Itemized assumptions documented in the bid package protect schedule, budget, and both parties at award.",
+    },
   ],
 
   evaluationSteps: [
@@ -91,7 +157,7 @@ export const pavingAnaheim: ServiceCityPageContent = {
   faqs: [
     {
       q: "Do you provide commercial asphalt paving in Anaheim, CA?",
-      a: "Yes. Mendozer x Earthworks (Lic. #1069854) self-performs commercial asphalt paving, mill-and-overlay, parking lot reconstruction, and ADA path-of-travel improvements on retail, hospitality, and industrial commercial properties in Anaheim and Orange County.",
+      a: "Yes. Mendozer X Earthworks Inc. (Lic. #1069854) self-performs commercial asphalt paving, mill-and-overlay, parking lot reconstruction, and ADA path-of-travel improvements on retail, hospitality, and industrial commercial properties in Anaheim and Orange County.",
     },
     {
       q: "Can you pave after hours near active Anaheim retail and hospitality tenants?",

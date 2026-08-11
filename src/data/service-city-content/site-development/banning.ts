@@ -12,12 +12,78 @@ export const siteDevelopmentBanning: ServiceCityPageContent = {
     "Commercial site development in Banning, CA. I-10 corridor turnkey sitework, desert-edge pad certification, Riverside County multi-phase inspection, and SWPPP-compliant horizontal improvements for Pass area logistics and retail.",
 
   siteVisitItems: [
-    "Review civil improvement plans, grading profiles, and full horizontal scope across Banning I-10 corridor warehouse and retail redevelopment parcels",
-    "Assess geotechnical requirements, desert-edge sandy soil conditions, and pad certification standards before mass grading mobilizes on Riverside County Pass area sites",
-    "Confirm underground utility routing, trenching sequences, and backfill compaction requirements coordinated with wet and dry utility contractors on Banning corridor parcels",
-    "Evaluate SWPPP BMP requirements, Pass area wind erosion controls, and storm season compliance across all Banning sitework phases",
-    "Map phased sitework sequencing, import/export quantities, and Riverside County multi-agency inspection hold points before vertical mobilization on Banning logistics pads",
-    "Deliver itemized turnkey sitework bid with grading, utility, paving, concrete, and SWPPP scope assumptions within one business day",
+    {
+      title: "Plan & Document Review",
+      lead:
+        "Review civil improvement plans, grading profiles, and full horizontal scope across Banning I-10 corridor warehouse and retail redevelopment parcels.",
+      checkpoints: [
+        "Review civil improvement plans.",
+        "Grading profiles.",
+        "Full horizontal scope across Banning I-10 corridor warehouse and retail redevelopment parcels.",
+      ],
+      fieldNote:
+        "Early plan and document review keeps bid assumptions aligned with engineer-approved civil quantities before contract award.",
+    },
+    {
+      title: "Field Conditions Assessment",
+      lead:
+        "Assess geotechnical requirements, desert-edge sandy soil conditions, and pad certification standards before mass grading mobilizes on Riverside County Pass area sites.",
+      checkpoints: [
+        "Assess geotechnical requirements.",
+        "Desert-edge sandy soil conditions.",
+        "Pad certification standards before mass grading mobilizes on Riverside County Pass area sites.",
+      ],
+      fieldNote:
+        "Field assessment during the pre-bid walk surfaces constraints that affect production, haul logistics, and inspection sequencing.",
+    },
+    {
+      title: "Specification Verification",
+      lead:
+        "Confirm underground utility routing, trenching sequences, and backfill compaction requirements coordinated with wet and dry utility contractors on Banning corridor parcels.",
+      checkpoints: [
+        "Confirm underground utility routing.",
+        "Trenching sequences.",
+        "Backfill compaction requirements coordinated with wet and dry utility contractors on Banning corridor parcels.",
+      ],
+      fieldNote:
+        "Verified specifications before mobilization protect compaction acceptance, drainage performance, and agency sign-off.",
+    },
+    {
+      title: "Technical Evaluation",
+      lead:
+        "Evaluate SWPPP BMP requirements, Pass area wind erosion controls, and storm season compliance across all Banning sitework phases.",
+      checkpoints: [
+        "Evaluate SWPPP BMP requirements.",
+        "Pass area wind erosion controls.",
+        "Storm season compliance across all Banning sitework phases.",
+      ],
+      fieldNote:
+        "Technical evaluation upfront reduces rework during production and prevents mid-project quantity disputes.",
+    },
+    {
+      title: "Inspection & Schedule Mapping",
+      lead:
+        "Map phased sitework sequencing, import/export quantities, and Riverside County multi-agency inspection hold points before vertical mobilization on Banning logistics pads.",
+      checkpoints: [
+        "Map phased sitework sequencing.",
+        "Import/export quantities.",
+        "Riverside County multi-agency inspection hold points before vertical mobilization on Banning logistics pads.",
+      ],
+      fieldNote:
+        "Mapped inspection windows and hold points keep sitework sequenced with your GC master schedule and vertical mobilization.",
+    },
+    {
+      title: "Itemized Bid Delivery",
+      lead:
+        "Deliver itemized turnkey sitework bid with grading, utility, paving, concrete, and SWPPP scope assumptions within one business day.",
+      checkpoints: [
+        "Deliver itemized turnkey sitework bid with grading.",
+        "Cross-check observations against civil plans, geotechnical data, and project specifications.",
+        "Confirm bid assumptions, quantities, and schedule milestones align with preconstruction requirements.",
+      ],
+      fieldNote:
+        "Itemized assumptions documented in the bid package protect schedule, budget, and both parties at award.",
+    },
   ],
 
   evaluationSteps: [
@@ -89,7 +155,7 @@ export const siteDevelopmentBanning: ServiceCityPageContent = {
   faqs: [
     {
       q: "Do you provide commercial site development in Banning, CA?",
-      a: "Yes. Mendozer x Earthworks (Lic. #1069854) delivers turnkey commercial sitework including mass grading, utility trenching, storm drain, asphalt paving, concrete flatwork, and SWPPP compliance on warehouse, logistics, and retail projects throughout Banning and Riverside County.",
+      a: "Yes. Mendozer X Earthworks Inc. (Lic. #1069854) delivers turnkey commercial sitework including mass grading, utility trenching, storm drain, asphalt paving, concrete flatwork, and SWPPP compliance on warehouse, logistics, and retail projects throughout Banning and Riverside County.",
     },
     {
       q: "What does turnkey sitework include on Banning I-10 corridor projects?",

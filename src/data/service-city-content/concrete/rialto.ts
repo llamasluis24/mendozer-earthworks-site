@@ -13,12 +13,78 @@ export const concreteRialto: ServiceCityPageContent = {
     "Commercial concrete contractor in Rialto, CA. BNSF-adjacent logistics slab pours, large-lot pad footings, and San Bernardino County pre-pour inspection coordination for industrial redevelopment.",
 
   siteVisitItems: [
-    "Review structural and civil concrete plans, slab-on-grade specifications, and footing details on Rialto BNSF logistics corridor and large-lot industrial redevelopment parcels",
-    "Assess large-lot subgrade compaction certification, proof-roll results, and vapor barrier requirements before formwork mobilizes on San Bernardino County industrial pads",
-    "Confirm rebar placement, embed schedules, and dowel layouts against structural engineering drawings on Rialto distribution and warehouse floor pours",
-    "Evaluate mix design, slump targets, and 28-day PSI strength specifications for heavy floor loading on Rialto logistics slabs sized for racking and forklift traffic",
-    "Map pre-pour inspection hold points, curing compound protocols, and pour scheduling with San Bernardino County building officials on Rialto industrial sites",
-    "Deliver itemized commercial concrete bid with pour quantities, formwork assumptions, and inspection sequencing within one business day",
+    {
+      title: "Plan & Document Review",
+      lead:
+        "Review structural and civil concrete plans, slab-on-grade specifications, and footing details on Rialto BNSF logistics corridor and large-lot industrial redevelopment parcels.",
+      checkpoints: [
+        "Review structural and civil concrete plans.",
+        "Slab-on-grade specifications.",
+        "Footing details on Rialto BNSF logistics corridor and large-lot industrial redevelopment parcels.",
+      ],
+      fieldNote:
+        "Early plan and document review keeps bid assumptions aligned with engineer-approved civil quantities before contract award.",
+    },
+    {
+      title: "Field Conditions Assessment",
+      lead:
+        "Assess large-lot subgrade compaction certification, proof-roll results, and vapor barrier requirements before formwork mobilizes on San Bernardino County industrial pads.",
+      checkpoints: [
+        "Assess large-lot subgrade compaction certification.",
+        "Proof-roll results.",
+        "Vapor barrier requirements before formwork mobilizes on San Bernardino County industrial pads.",
+      ],
+      fieldNote:
+        "Field assessment during the pre-bid walk surfaces constraints that affect production, haul logistics, and inspection sequencing.",
+    },
+    {
+      title: "Specification Verification",
+      lead:
+        "Confirm rebar placement, embed schedules, and dowel layouts against structural engineering drawings on Rialto distribution and warehouse floor pours.",
+      checkpoints: [
+        "Confirm rebar placement.",
+        "Embed schedules.",
+        "Dowel layouts against structural engineering drawings on Rialto distribution and warehouse floor pours.",
+      ],
+      fieldNote:
+        "Verified specifications before mobilization protect compaction acceptance, drainage performance, and agency sign-off.",
+    },
+    {
+      title: "Technical Evaluation",
+      lead:
+        "Evaluate mix design, slump targets, and 28-day PSI strength specifications for heavy floor loading on Rialto logistics slabs sized for racking and forklift traffic.",
+      checkpoints: [
+        "Evaluate mix design.",
+        "Slump targets.",
+        "28-day PSI strength specifications for heavy floor loading on Rialto logistics slabs sized for racking and forklift traffic.",
+      ],
+      fieldNote:
+        "Technical evaluation upfront reduces rework during production and prevents mid-project quantity disputes.",
+    },
+    {
+      title: "Inspection & Schedule Mapping",
+      lead:
+        "Map pre-pour inspection hold points, curing compound protocols, and pour scheduling with San Bernardino County building officials on Rialto industrial sites.",
+      checkpoints: [
+        "Map pre-pour inspection hold points.",
+        "Curing compound protocols.",
+        "Pour scheduling with San Bernardino County building officials on Rialto industrial sites.",
+      ],
+      fieldNote:
+        "Mapped inspection windows and hold points keep sitework sequenced with your GC master schedule and vertical mobilization.",
+    },
+    {
+      title: "Itemized Bid Delivery",
+      lead:
+        "Deliver itemized commercial concrete bid with pour quantities, formwork assumptions, and inspection sequencing within one business day.",
+      checkpoints: [
+        "Deliver itemized commercial concrete bid with pour quantities.",
+        "Formwork assumptions.",
+        "Inspection sequencing within one business day.",
+      ],
+      fieldNote:
+        "Itemized assumptions documented in the bid package protect schedule, budget, and both parties at award.",
+    },
   ],
 
   evaluationSteps: [
@@ -90,7 +156,7 @@ export const concreteRialto: ServiceCityPageContent = {
   faqs: [
     {
       q: "Do you provide commercial concrete in Rialto, CA?",
-      a: "Yes. Mendozer x Earthworks (Lic. #1069854) self-performs commercial concrete including structural footings, slabs-on-grade, curb and gutter, sidewalks, and loading aprons on warehouse, logistics, and industrial projects throughout Rialto and San Bernardino County.",
+      a: "Yes. Mendozer X Earthworks Inc. (Lic. #1069854) self-performs commercial concrete including structural footings, slabs-on-grade, curb and gutter, sidewalks, and loading aprons on warehouse, logistics, and industrial projects throughout Rialto and San Bernardino County.",
     },
     {
       q: "Can you pour warehouse slabs-on-grade near the Rialto BNSF corridor?",

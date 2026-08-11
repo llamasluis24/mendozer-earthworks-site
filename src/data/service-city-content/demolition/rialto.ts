@@ -12,12 +12,78 @@ export const demolitionRialto: ServiceCityPageContent = {
     "Licensed commercial demolition in Rialto, CA. BNSF-adjacent structural takedown, large-lot foundation removal, and San Bernardino County hazmat-coordinated site clearing for industrial logistics redevelopment.",
 
   siteVisitItems: [
-    "Walk existing warehouse or industrial structures and document load-bearing systems, slab thickness, and foundation depth for Rialto BNSF logistics corridor redevelopment parcels",
-    "Review Phase I/II environmental reports and asbestos survey status before structural demolition is scoped on San Bernardino County industrial sites",
-    "Verify gas, electric, water, sewer, and fire line disconnect documentation with your utility coordinator on active Rialto large-lot job sites",
-    "Assess haul routes, debris staging, and export logistics for Rialto BNSF corridor commercial sites with SWPPP and dust control requirements",
-    "Identify adjacent occupied logistics operations requiring phased demolition access and dust suppression near Rialto industrial corridors",
-    "Deliver itemized demolition estimate with permit assumptions, abatement allowances, and debris export quantities within one business day",
+    {
+      title: "Pre-Bid Site Walk",
+      lead:
+        "Walk existing warehouse or industrial structures and document load-bearing systems, slab thickness, and foundation depth for Rialto BNSF logistics corridor redevelopment parcels.",
+      checkpoints: [
+        "Walk existing warehouse or industrial structures and document load-bearing systems.",
+        "Slab thickness.",
+        "Foundation depth for Rialto BNSF logistics corridor redevelopment parcels.",
+      ],
+      fieldNote:
+        "Early plan and document review keeps bid assumptions aligned with engineer-approved civil quantities before contract award.",
+    },
+    {
+      title: "Plan & Document Review",
+      lead:
+        "Review Phase I/II environmental reports and asbestos survey status before structural demolition is scoped on San Bernardino County industrial sites.",
+      checkpoints: [
+        "Review Phase I/II environmental reports and asbestos survey status before structural demolition is scoped on San Bernardino County industrial sites.",
+        "Cross-check observations against civil plans, geotechnical data, and project specifications.",
+        "Flag constraints affecting production, haul logistics, SWPPP compliance, or inspection hold points.",
+      ],
+      fieldNote:
+        "Early plan and document review keeps bid assumptions aligned with engineer-approved civil quantities before contract award.",
+    },
+    {
+      title: "Field Verification",
+      lead:
+        "Verify gas, electric, water, sewer, and fire line disconnect documentation with your utility coordinator on active Rialto large-lot job sites.",
+      checkpoints: [
+        "Verify gas.",
+        "Cross-check observations against civil plans, geotechnical data, and project specifications.",
+        "Flag constraints affecting production, haul logistics, SWPPP compliance, or inspection hold points.",
+      ],
+      fieldNote:
+        "Pre-mobilization verification prevents stop-work orders and rework that stall downstream trades.",
+    },
+    {
+      title: "Field Conditions Assessment",
+      lead:
+        "Assess haul routes, debris staging, and export logistics for Rialto BNSF corridor commercial sites with SWPPP and dust control requirements.",
+      checkpoints: [
+        "Assess haul routes.",
+        "Debris staging.",
+        "Export logistics for Rialto BNSF corridor commercial sites with SWPPP and dust control requirements.",
+      ],
+      fieldNote:
+        "Field assessment during the pre-bid walk surfaces constraints that affect production, haul logistics, and inspection sequencing.",
+    },
+    {
+      title: "Identify Adjacent Occupied Logistics Operations Requ",
+      lead:
+        "Identify adjacent occupied logistics operations requiring phased demolition access and dust suppression near Rialto industrial corridors.",
+      checkpoints: [
+        "Identify adjacent occupied logistics operations requiring phased demolition access and dust suppression near Rialto industrial corridors.",
+        "Cross-check observations against civil plans, geotechnical data, and project specifications.",
+        "Flag constraints affecting production, haul logistics, SWPPP compliance, or inspection hold points.",
+      ],
+      fieldNote:
+        "Early plan and document review keeps bid assumptions aligned with engineer-approved civil quantities before contract award.",
+    },
+    {
+      title: "Itemized Bid Delivery",
+      lead:
+        "Deliver itemized demolition estimate with permit assumptions, abatement allowances, and debris export quantities within one business day.",
+      checkpoints: [
+        "Deliver itemized demolition estimate with permit assumptions.",
+        "Abatement allowances.",
+        "Debris export quantities within one business day.",
+      ],
+      fieldNote:
+        "Itemized assumptions documented in the bid package protect schedule, budget, and both parties at award.",
+    },
   ],
 
   evaluationSteps: [
@@ -89,7 +155,7 @@ export const demolitionRialto: ServiceCityPageContent = {
   faqs: [
     {
       q: "Do you handle commercial demolition in Rialto, CA?",
-      a: "Yes. Mendozer x Earthworks (Lic. #1069854) is a licensed commercial demolition contractor serving developers, GCs, and property owners in Rialto and San Bernardino County. We self-perform structural takedown, foundation removal, and site clearing on warehouse, logistics, and industrial redevelopment projects along the BNSF corridor.",
+      a: "Yes. Mendozer X Earthworks Inc. (Lic. #1069854) is a licensed commercial demolition contractor serving developers, GCs, and property owners in Rialto and San Bernardino County. We self-perform structural takedown, foundation removal, and site clearing on warehouse, logistics, and industrial redevelopment projects along the BNSF corridor.",
     },
     {
       q: "What demolition projects do you take on in Rialto?",

@@ -12,12 +12,78 @@ export const siteDevelopmentLosAngeles: ServiceCityPageContent = {
     "Commercial site development in Los Angeles, CA. Urban sitework logistics, multi-agency permitting, utility-dense parcels, and community impact controls on horizontal improvements.",
 
   siteVisitItems: [
-    "Review civil improvement plans and full horizontal scope on Los Angeles urban commercial and industrial redevelopment parcels",
-    "Assess urban staging constraints, haul route restrictions, multi-agency permit requirements, and community impact protocols",
-    "Confirm utility-dense site conditions, underground MEP routing, and trenching sequences affecting grading and paving on LA commercial sites",
-    "Evaluate integrated grading, utility trenching, storm drain, paving, and flatwork as unified horizontal improvements on urban LA projects",
-    "Map LA city and county multi-agency inspection hold points, SWPPP requirements, and vertical mobilization milestone dependencies",
-    "Deliver itemized turnkey sitework bid with urban logistics allowances, utility coordination, and multi-agency inspection sequencing within one business day",
+    {
+      title: "Plan & Document Review",
+      lead:
+        "Review civil improvement plans and full horizontal scope on Los Angeles urban commercial and industrial redevelopment parcels.",
+      checkpoints: [
+        "Review civil improvement plans and full horizontal scope on Los Angeles urban commercial and industrial redevelopment parcels.",
+        "Cross-check observations against civil plans, geotechnical data, and project specifications.",
+        "Flag constraints affecting production, haul logistics, SWPPP compliance, or inspection hold points.",
+      ],
+      fieldNote:
+        "Early plan and document review keeps bid assumptions aligned with engineer-approved civil quantities before contract award.",
+    },
+    {
+      title: "Field Conditions Assessment",
+      lead:
+        "Assess urban staging constraints, haul route restrictions, multi-agency permit requirements, and community impact protocols.",
+      checkpoints: [
+        "Assess urban staging constraints.",
+        "Haul route restrictions.",
+        "Multi-agency permit requirements.",
+      ],
+      fieldNote:
+        "Field assessment during the pre-bid walk surfaces constraints that affect production, haul logistics, and inspection sequencing.",
+    },
+    {
+      title: "Specification Verification",
+      lead:
+        "Confirm utility-dense site conditions, underground MEP routing, and trenching sequences affecting grading and paving on LA commercial sites.",
+      checkpoints: [
+        "Confirm utility-dense site conditions.",
+        "Underground MEP routing.",
+        "Trenching sequences affecting grading and paving on LA commercial sites.",
+      ],
+      fieldNote:
+        "Verified specifications before mobilization protect compaction acceptance, drainage performance, and agency sign-off.",
+    },
+    {
+      title: "Technical Evaluation",
+      lead:
+        "Evaluate integrated grading, utility trenching, storm drain, paving, and flatwork as unified horizontal improvements on urban LA projects.",
+      checkpoints: [
+        "Evaluate integrated grading.",
+        "Utility trenching.",
+        "Storm drain.",
+      ],
+      fieldNote:
+        "Technical evaluation upfront reduces rework during production and prevents mid-project quantity disputes.",
+    },
+    {
+      title: "Inspection & Schedule Mapping",
+      lead:
+        "Map LA city and county multi-agency inspection hold points, SWPPP requirements, and vertical mobilization milestone dependencies.",
+      checkpoints: [
+        "Map LA city and county multi-agency inspection hold points.",
+        "SWPPP requirements.",
+        "Vertical mobilization milestone dependencies.",
+      ],
+      fieldNote:
+        "Mapped inspection windows and hold points keep sitework sequenced with your GC master schedule and vertical mobilization.",
+    },
+    {
+      title: "Itemized Bid Delivery",
+      lead:
+        "Deliver itemized turnkey sitework bid with urban logistics allowances, utility coordination, and multi-agency inspection sequencing within one business day.",
+      checkpoints: [
+        "Deliver itemized turnkey sitework bid with urban logistics allowances.",
+        "Utility coordination.",
+        "Multi-agency inspection sequencing within one business day.",
+      ],
+      fieldNote:
+        "Itemized assumptions documented in the bid package protect schedule, budget, and both parties at award.",
+    },
   ],
 
   evaluationSteps: [
@@ -89,7 +155,7 @@ export const siteDevelopmentLosAngeles: ServiceCityPageContent = {
   faqs: [
     {
       q: "Do you provide commercial site development in Los Angeles, CA?",
-      a: "Yes. Mendozer x Earthworks (Lic. #1069854) delivers turnkey commercial sitework including grading, utility trenching, storm drain, paving, concrete flatwork, and SWPPP compliance on urban commercial and industrial projects throughout Los Angeles and LA County.",
+      a: "Yes. Mendozer X Earthworks Inc. (Lic. #1069854) delivers turnkey commercial sitework including grading, utility trenching, storm drain, paving, concrete flatwork, and SWPPP compliance on urban commercial and industrial projects throughout Los Angeles and LA County.",
     },
     {
       q: "How do you manage urban sitework logistics in Los Angeles?",

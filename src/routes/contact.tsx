@@ -7,9 +7,9 @@ import heroImg from "@/assets/hero-bulldozer.jpg";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact Mendozer x Earthworks Inc. | Request a Commercial Estimate" },
-      { name: "description", content: "Contact Mendozer x Earthworks Inc. for commercial grading, excavation, concrete, and asphalt in Southern California. Call (951) 427-4904 or request an estimate." },
-      { property: "og:title", content: "Contact Mendozer x Earthworks Inc." },
+      { title: "Contact Mendozer X Earthworks Inc. | Request a Commercial Estimate" },
+      { name: "description", content: "Contact Mendozer X Earthworks Inc. for commercial grading, excavation, concrete, and asphalt in Southern California. Call (951) 427-4904 or request an estimate." },
+      { property: "og:title", content: "Contact Mendozer X Earthworks Inc." },
       { property: "og:description", content: "Request a commercial earthwork estimate. Serving Inland Empire, Orange County, and LA County." },
       { property: "og:image", content: heroImg },
       { property: "og:url", content: "/contact" },

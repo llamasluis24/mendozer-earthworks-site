@@ -13,12 +13,78 @@ export const demolitionSanBernardino: ServiceCityPageContent = {
     "Commercial demolition contractor in San Bernardino, CA. Legacy industrial takedown, environmental review coordination, and large-lot debris export for former industrial zone redevelopment across the Inland Empire.",
 
   siteVisitItems: [
-    "Inventory legacy industrial structures, abandoned manufacturing buildings, and undocumented subsurface improvements on San Bernardino redevelopment parcels",
-    "Review Phase I/II environmental reports, asbestos survey status, and underground storage tank records before structural demolition is scoped",
-    "Confirm demolition permit pathway with City of San Bernardino building division and San Bernardino County environmental health triggers",
-    "Plan large-lot debris staging, export volumes, and articulated haul routes for expansive former industrial zone parcels with limited on-site stockpile capacity",
-    "Map utility disconnect and cap documentation for gas, electric, water, sewer, and fire lines on dormant San Bernardino commercial properties",
-    "Deliver itemized demolition bid with environmental review allowances, recycling diversion targets, and production rates tied to redevelopment pad delivery milestones",
+    {
+      title: "Inventory Legacy Industrial Structures",
+      lead:
+        "Inventory legacy industrial structures, abandoned manufacturing buildings, and undocumented subsurface improvements on San Bernardino redevelopment parcels.",
+      checkpoints: [
+        "Inventory legacy industrial structures.",
+        "Abandoned manufacturing buildings.",
+        "Undocumented subsurface improvements on San Bernardino redevelopment parcels.",
+      ],
+      fieldNote:
+        "Early plan and document review keeps bid assumptions aligned with engineer-approved civil quantities before contract award.",
+    },
+    {
+      title: "Plan & Document Review",
+      lead:
+        "Review Phase I/II environmental reports, asbestos survey status, and underground storage tank records before structural demolition is scoped.",
+      checkpoints: [
+        "Review Phase I/II environmental reports.",
+        "Asbestos survey status.",
+        "Underground storage tank records before structural demolition is scoped.",
+      ],
+      fieldNote:
+        "Early plan and document review keeps bid assumptions aligned with engineer-approved civil quantities before contract award.",
+    },
+    {
+      title: "Specification Verification",
+      lead:
+        "Confirm demolition permit pathway with City of San Bernardino building division and San Bernardino County environmental health triggers.",
+      checkpoints: [
+        "Confirm demolition permit pathway with City of San Bernardino building division and San Bernardino County environmental health triggers.",
+        "Cross-check observations against civil plans, geotechnical data, and project specifications.",
+        "Flag constraints affecting production, haul logistics, SWPPP compliance, or inspection hold points.",
+      ],
+      fieldNote:
+        "Verified specifications before mobilization protect compaction acceptance, drainage performance, and agency sign-off.",
+    },
+    {
+      title: "Plan Large-lot Debris Staging",
+      lead:
+        "Plan large-lot debris staging, export volumes, and articulated haul routes for expansive former industrial zone parcels with limited on-site stockpile capacity.",
+      checkpoints: [
+        "Plan large-lot debris staging.",
+        "Export volumes.",
+        "Articulated haul routes for expansive former industrial zone parcels with limited on-site stockpile capacity.",
+      ],
+      fieldNote:
+        "Early plan and document review keeps bid assumptions aligned with engineer-approved civil quantities before contract award.",
+    },
+    {
+      title: "Inspection & Schedule Mapping",
+      lead:
+        "Map utility disconnect and cap documentation for gas, electric, water, sewer, and fire lines on dormant San Bernardino commercial properties.",
+      checkpoints: [
+        "Map utility disconnect and cap documentation for gas.",
+        "Cross-check observations against civil plans, geotechnical data, and project specifications.",
+        "Flag constraints affecting production, haul logistics, SWPPP compliance, or inspection hold points.",
+      ],
+      fieldNote:
+        "Mapped inspection windows and hold points keep sitework sequenced with your GC master schedule and vertical mobilization.",
+    },
+    {
+      title: "Itemized Bid Delivery",
+      lead:
+        "Deliver itemized demolition bid with environmental review allowances, recycling diversion targets, and production rates tied to redevelopment pad delivery milestones.",
+      checkpoints: [
+        "Deliver itemized demolition bid with environmental review allowances.",
+        "Recycling diversion targets.",
+        "Production rates tied to redevelopment pad delivery milestones.",
+      ],
+      fieldNote:
+        "Itemized assumptions documented in the bid package protect schedule, budget, and both parties at award.",
+    },
   ],
 
   evaluationSteps: [
@@ -90,7 +156,7 @@ export const demolitionSanBernardino: ServiceCityPageContent = {
   faqs: [
     {
       q: "Do you provide commercial demolition in San Bernardino, CA?",
-      a: "Yes. Mendozer x Earthworks provides licensed commercial demolition for developers, GCs, and industrial property owners in San Bernardino and the Inland Empire. We self-perform structural takedown, foundation removal, and site clearing on former industrial zone redevelopment parcels.",
+      a: "Yes. Mendozer X Earthworks Inc. provides licensed commercial demolition for developers, GCs, and industrial property owners in San Bernardino and the Inland Empire. We self-perform structural takedown, foundation removal, and site clearing on former industrial zone redevelopment parcels.",
     },
     {
       q: "What types of demolition do you handle in San Bernardino?",

@@ -9,7 +9,7 @@ import heroImg from "@/assets/gallery-2.jpg";
 export const Route = createFileRoute("/projects")({
   head: () =>
     buildPageMeta({
-      title: "Commercial Earthwork Case Studies | Mendozer x Earthworks",
+      title: "Commercial Earthwork Case Studies | Mendozer X Earthworks Inc.",
       description:
         "Commercial earthwork case studies across Southern California. Grading, excavation, concrete, and asphalt projects for developers and GCs.",
       path: "/projects",

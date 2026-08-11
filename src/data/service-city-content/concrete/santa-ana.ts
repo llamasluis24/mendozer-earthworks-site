@@ -13,12 +13,78 @@ export const concreteSantaAna: ServiceCityPageContent = {
     "Commercial concrete contractor in Santa Ana, CA. Urban OC infill slab pours, county seat permit coordination, and dense staging flatwork for commercial redevelopment near civic center agencies.",
 
   siteVisitItems: [
-    "Review structural and civil concrete plans, slab-on-grade specifications, and footing details on Santa Ana urban infill commercial and mixed-use redevelopment parcels",
-    "Assess tight-lot subgrade compaction certification, proof-roll results, and vapor barrier requirements before formwork mobilizes on densely staged Santa Ana commercial pads",
-    "Confirm rebar placement, embed schedules, and dowel layouts against structural engineering drawings on Santa Ana infill floor pours with limited crane and pump access",
-    "Evaluate mix design, slump targets, and 28-day PSI strength specifications for commercial floor loading on Santa Ana urban slabs with tenant-specific finish requirements",
-    "Map pre-pour inspection hold points, curing compound protocols, and pump truck staging with City of Santa Ana and Orange County building officials on infill sites",
-    "Deliver itemized commercial concrete bid with pour quantities, formwork assumptions, and inspection sequencing within one business day",
+    {
+      title: "Plan & Document Review",
+      lead:
+        "Review structural and civil concrete plans, slab-on-grade specifications, and footing details on Santa Ana urban infill commercial and mixed-use redevelopment parcels.",
+      checkpoints: [
+        "Review structural and civil concrete plans.",
+        "Slab-on-grade specifications.",
+        "Footing details on Santa Ana urban infill commercial and mixed-use redevelopment parcels.",
+      ],
+      fieldNote:
+        "Early plan and document review keeps bid assumptions aligned with engineer-approved civil quantities before contract award.",
+    },
+    {
+      title: "Field Conditions Assessment",
+      lead:
+        "Assess tight-lot subgrade compaction certification, proof-roll results, and vapor barrier requirements before formwork mobilizes on densely staged Santa Ana commercial pads.",
+      checkpoints: [
+        "Assess tight-lot subgrade compaction certification.",
+        "Proof-roll results.",
+        "Vapor barrier requirements before formwork mobilizes on densely staged Santa Ana commercial pads.",
+      ],
+      fieldNote:
+        "Field assessment during the pre-bid walk surfaces constraints that affect production, haul logistics, and inspection sequencing.",
+    },
+    {
+      title: "Specification Verification",
+      lead:
+        "Confirm rebar placement, embed schedules, and dowel layouts against structural engineering drawings on Santa Ana infill floor pours with limited crane and pump access.",
+      checkpoints: [
+        "Confirm rebar placement.",
+        "Embed schedules.",
+        "Dowel layouts against structural engineering drawings on Santa Ana infill floor pours with limited crane and pump access.",
+      ],
+      fieldNote:
+        "Verified specifications before mobilization protect compaction acceptance, drainage performance, and agency sign-off.",
+    },
+    {
+      title: "Technical Evaluation",
+      lead:
+        "Evaluate mix design, slump targets, and 28-day PSI strength specifications for commercial floor loading on Santa Ana urban slabs with tenant-specific finish requirements.",
+      checkpoints: [
+        "Evaluate mix design.",
+        "Slump targets.",
+        "28-day PSI strength specifications for commercial floor loading on Santa Ana urban slabs with tenant-specific finish requirements.",
+      ],
+      fieldNote:
+        "Technical evaluation upfront reduces rework during production and prevents mid-project quantity disputes.",
+    },
+    {
+      title: "Inspection & Schedule Mapping",
+      lead:
+        "Map pre-pour inspection hold points, curing compound protocols, and pump truck staging with City of Santa Ana and Orange County building officials on infill sites.",
+      checkpoints: [
+        "Map pre-pour inspection hold points.",
+        "Curing compound protocols.",
+        "Pump truck staging with City of Santa Ana and Orange County building officials on infill sites.",
+      ],
+      fieldNote:
+        "Mapped inspection windows and hold points keep sitework sequenced with your GC master schedule and vertical mobilization.",
+    },
+    {
+      title: "Itemized Bid Delivery",
+      lead:
+        "Deliver itemized commercial concrete bid with pour quantities, formwork assumptions, and inspection sequencing within one business day.",
+      checkpoints: [
+        "Deliver itemized commercial concrete bid with pour quantities.",
+        "Formwork assumptions.",
+        "Inspection sequencing within one business day.",
+      ],
+      fieldNote:
+        "Itemized assumptions documented in the bid package protect schedule, budget, and both parties at award.",
+    },
   ],
 
   evaluationSteps: [
@@ -90,7 +156,7 @@ export const concreteSantaAna: ServiceCityPageContent = {
   faqs: [
     {
       q: "Do you provide commercial concrete in Santa Ana, CA?",
-      a: "Yes. Mendozer x Earthworks (Lic. #1069854) self-performs commercial concrete including structural footings, slabs-on-grade, curb and gutter, sidewalks, and loading aprons on urban infill, mixed-use, and commercial projects throughout Santa Ana and Orange County.",
+      a: "Yes. Mendozer X Earthworks Inc. (Lic. #1069854) self-performs commercial concrete including structural footings, slabs-on-grade, curb and gutter, sidewalks, and loading aprons on urban infill, mixed-use, and commercial projects throughout Santa Ana and Orange County.",
     },
     {
       q: "Can you pour slabs-on-grade on Santa Ana urban infill sites?",

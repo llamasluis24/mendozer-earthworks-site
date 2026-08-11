@@ -12,12 +12,78 @@ export const siteDevelopmentRialto: ServiceCityPageContent = {
     "Commercial site development in Rialto, CA. BNSF-adjacent logistics sitework, large-lot industrial packages, San Bernardino County multi-phase inspection, and SWPPP-compliant horizontal improvements for Inland Empire distribution.",
 
   siteVisitItems: [
-    "Review civil improvement plans, grading profiles, and full horizontal scope across Rialto BNSF logistics corridor and large-lot industrial redevelopment parcels",
-    "Assess geotechnical requirements, large-lot pad certification standards, and former industrial subgrade conditions before mass grading mobilizes on San Bernardino County sites",
-    "Confirm underground utility routing, trenching sequences, and backfill compaction requirements coordinated with wet and dry utility contractors on Rialto distribution pads",
-    "Evaluate SWPPP BMP requirements, storm season compliance, and erosion control scope across all Rialto sitework phases on multi-acre logistics parcels",
-    "Map phased sitework sequencing, import/export quantities, and San Bernardino County multi-agency inspection hold points before vertical mobilization",
-    "Deliver itemized turnkey sitework bid with grading, utility, paving, concrete, and SWPPP scope assumptions within one business day",
+    {
+      title: "Plan & Document Review",
+      lead:
+        "Review civil improvement plans, grading profiles, and full horizontal scope across Rialto BNSF logistics corridor and large-lot industrial redevelopment parcels.",
+      checkpoints: [
+        "Review civil improvement plans.",
+        "Grading profiles.",
+        "Full horizontal scope across Rialto BNSF logistics corridor and large-lot industrial redevelopment parcels.",
+      ],
+      fieldNote:
+        "Early plan and document review keeps bid assumptions aligned with engineer-approved civil quantities before contract award.",
+    },
+    {
+      title: "Field Conditions Assessment",
+      lead:
+        "Assess geotechnical requirements, large-lot pad certification standards, and former industrial subgrade conditions before mass grading mobilizes on San Bernardino County sites.",
+      checkpoints: [
+        "Assess geotechnical requirements.",
+        "Large-lot pad certification standards.",
+        "Former industrial subgrade conditions before mass grading mobilizes on San Bernardino County sites.",
+      ],
+      fieldNote:
+        "Field assessment during the pre-bid walk surfaces constraints that affect production, haul logistics, and inspection sequencing.",
+    },
+    {
+      title: "Specification Verification",
+      lead:
+        "Confirm underground utility routing, trenching sequences, and backfill compaction requirements coordinated with wet and dry utility contractors on Rialto distribution pads.",
+      checkpoints: [
+        "Confirm underground utility routing.",
+        "Trenching sequences.",
+        "Backfill compaction requirements coordinated with wet and dry utility contractors on Rialto distribution pads.",
+      ],
+      fieldNote:
+        "Verified specifications before mobilization protect compaction acceptance, drainage performance, and agency sign-off.",
+    },
+    {
+      title: "Technical Evaluation",
+      lead:
+        "Evaluate SWPPP BMP requirements, storm season compliance, and erosion control scope across all Rialto sitework phases on multi-acre logistics parcels.",
+      checkpoints: [
+        "Evaluate SWPPP BMP requirements.",
+        "Storm season compliance.",
+        "Erosion control scope across all Rialto sitework phases on multi-acre logistics parcels.",
+      ],
+      fieldNote:
+        "Technical evaluation upfront reduces rework during production and prevents mid-project quantity disputes.",
+    },
+    {
+      title: "Inspection & Schedule Mapping",
+      lead:
+        "Map phased sitework sequencing, import/export quantities, and San Bernardino County multi-agency inspection hold points before vertical mobilization.",
+      checkpoints: [
+        "Map phased sitework sequencing.",
+        "Import/export quantities.",
+        "San Bernardino County multi-agency inspection hold points before vertical mobilization.",
+      ],
+      fieldNote:
+        "Mapped inspection windows and hold points keep sitework sequenced with your GC master schedule and vertical mobilization.",
+    },
+    {
+      title: "Itemized Bid Delivery",
+      lead:
+        "Deliver itemized turnkey sitework bid with grading, utility, paving, concrete, and SWPPP scope assumptions within one business day.",
+      checkpoints: [
+        "Deliver itemized turnkey sitework bid with grading.",
+        "Cross-check observations against civil plans, geotechnical data, and project specifications.",
+        "Confirm bid assumptions, quantities, and schedule milestones align with preconstruction requirements.",
+      ],
+      fieldNote:
+        "Itemized assumptions documented in the bid package protect schedule, budget, and both parties at award.",
+    },
   ],
 
   evaluationSteps: [
@@ -89,7 +155,7 @@ export const siteDevelopmentRialto: ServiceCityPageContent = {
   faqs: [
     {
       q: "Do you provide commercial site development in Rialto, CA?",
-      a: "Yes. Mendozer x Earthworks (Lic. #1069854) delivers turnkey commercial sitework including mass grading, utility trenching, storm drain, asphalt paving, concrete flatwork, and SWPPP compliance on warehouse, logistics, and industrial projects throughout Rialto and San Bernardino County.",
+      a: "Yes. Mendozer X Earthworks Inc. (Lic. #1069854) delivers turnkey commercial sitework including mass grading, utility trenching, storm drain, asphalt paving, concrete flatwork, and SWPPP compliance on warehouse, logistics, and industrial projects throughout Rialto and San Bernardino County.",
     },
     {
       q: "What does turnkey sitework include on Rialto BNSF logistics projects?",

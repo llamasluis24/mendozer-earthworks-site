@@ -13,12 +13,78 @@ export const pavingRiverside: ServiceCityPageContent = {
     "Commercial asphalt paving in Riverside, CA. Warehouse and distribution parking lots, SWPPP-compliant paving prep, Riverside County inspection coordination, and heavy logistics traffic pavement sections.",
 
   siteVisitItems: [
-    "Review civil paving plans, pavement section details, and truck court specifications on Riverside warehouse and distribution logistics redevelopment parcels",
-    "Assess existing pavement condition, base course integrity, and full-depth reconstruction scope on multi-acre Riverside distribution center parking and drive aisles",
-    "Confirm SWPPP BMP status, inlet protection, and stormwater compliance requirements before aggregate base and asphalt prep mobilizes on Riverside County commercial sites",
-    "Map truck court turning radii, fire lane routes, and phased traffic control for articulated logistics traffic on active Riverside industrial corridors",
-    "Evaluate aggregate base compaction, proof-roll results, and geotechnical recommendations before heavy-load asphalt sections are priced for Riverside warehouse pads",
-    "Deliver itemized commercial paving bid with tonnage assumptions, SWPPP prep scope, and Riverside County inspection sequencing within one business day",
+    {
+      title: "Plan & Document Review",
+      lead:
+        "Review civil paving plans, pavement section details, and truck court specifications on Riverside warehouse and distribution logistics redevelopment parcels.",
+      checkpoints: [
+        "Review civil paving plans.",
+        "Pavement section details.",
+        "Truck court specifications on Riverside warehouse and distribution logistics redevelopment parcels.",
+      ],
+      fieldNote:
+        "Early plan and document review keeps bid assumptions aligned with engineer-approved civil quantities before contract award.",
+    },
+    {
+      title: "Field Conditions Assessment",
+      lead:
+        "Assess existing pavement condition, base course integrity, and full-depth reconstruction scope on multi-acre Riverside distribution center parking and drive aisles.",
+      checkpoints: [
+        "Assess existing pavement condition.",
+        "Base course integrity.",
+        "Full-depth reconstruction scope on multi-acre Riverside distribution center parking and drive aisles.",
+      ],
+      fieldNote:
+        "Field assessment during the pre-bid walk surfaces constraints that affect production, haul logistics, and inspection sequencing.",
+    },
+    {
+      title: "Specification Verification",
+      lead:
+        "Confirm SWPPP BMP status, inlet protection, and stormwater compliance requirements before aggregate base and asphalt prep mobilizes on Riverside County commercial sites.",
+      checkpoints: [
+        "Confirm SWPPP BMP status.",
+        "Inlet protection.",
+        "Stormwater compliance requirements before aggregate base and asphalt prep mobilizes on Riverside County commercial sites.",
+      ],
+      fieldNote:
+        "Verified specifications before mobilization protect compaction acceptance, drainage performance, and agency sign-off.",
+    },
+    {
+      title: "Inspection & Schedule Mapping",
+      lead:
+        "Map truck court turning radii, fire lane routes, and phased traffic control for articulated logistics traffic on active Riverside industrial corridors.",
+      checkpoints: [
+        "Map truck court turning radii.",
+        "Fire lane routes.",
+        "Phased traffic control for articulated logistics traffic on active Riverside industrial corridors.",
+      ],
+      fieldNote:
+        "Mapped inspection windows and hold points keep sitework sequenced with your GC master schedule and vertical mobilization.",
+    },
+    {
+      title: "Technical Evaluation",
+      lead:
+        "Evaluate aggregate base compaction, proof-roll results, and geotechnical recommendations before heavy-load asphalt sections are priced for Riverside warehouse pads.",
+      checkpoints: [
+        "Evaluate aggregate base compaction.",
+        "Proof-roll results.",
+        "Geotechnical recommendations before heavy-load asphalt sections are priced for Riverside warehouse pads.",
+      ],
+      fieldNote:
+        "Technical evaluation upfront reduces rework during production and prevents mid-project quantity disputes.",
+    },
+    {
+      title: "Itemized Bid Delivery",
+      lead:
+        "Deliver itemized commercial paving bid with tonnage assumptions, SWPPP prep scope, and Riverside County inspection sequencing within one business day.",
+      checkpoints: [
+        "Deliver itemized commercial paving bid with tonnage assumptions.",
+        "SWPPP prep scope.",
+        "Riverside County inspection sequencing within one business day.",
+      ],
+      fieldNote:
+        "Itemized assumptions documented in the bid package protect schedule, budget, and both parties at award.",
+    },
   ],
 
   evaluationSteps: [
@@ -90,7 +156,7 @@ export const pavingRiverside: ServiceCityPageContent = {
   faqs: [
     {
       q: "Do you provide commercial asphalt paving in Riverside, CA?",
-      a: "Yes. Mendozer x Earthworks (Lic. #1069854) self-performs commercial asphalt paving, aggregate base installation, truck court heavy-duty sections, and parking lot reconstruction on warehouse, logistics, and industrial projects in Riverside and Riverside County.",
+      a: "Yes. Mendozer X Earthworks Inc. (Lic. #1069854) self-performs commercial asphalt paving, aggregate base installation, truck court heavy-duty sections, and parking lot reconstruction on warehouse, logistics, and industrial projects in Riverside and Riverside County.",
     },
     {
       q: "Can you pave warehouse and distribution parking lots in Riverside?",

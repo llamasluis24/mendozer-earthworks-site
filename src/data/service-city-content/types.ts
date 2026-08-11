@@ -28,9 +28,16 @@ export interface TabbedInsights {
   localPermits: string[];
 }
 
+export interface SiteWalkStep {
+  title: string;
+  lead: string;
+  checkpoints: string[];
+  fieldNote?: string;
+}
+
 export interface ServiceCityPageContent {
   metaDescription: string;
-  siteVisitItems: string[];
+  siteVisitItems: SiteWalkStep[];
   evaluationSteps: ServiceProcess[];
   localBenefits: ServiceBenefit[];
   serviceIssues: ServiceBenefit[];

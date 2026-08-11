@@ -7,7 +7,7 @@ import heroImg from "@/assets/gallery-1.jpg";
 export const Route = createFileRoute("/service-areas/")({
   head: () =>
     buildPageMeta({
-      title: "Commercial Earthwork Service Areas | Mendozer x Earthworks",
+      title: "Commercial Earthwork Service Areas | Mendozer X Earthworks Inc.",
       description:
         "Commercial earthwork services across Southern California. Serving the Inland Empire, Orange County, and Los Angeles County.",
       path: "/service-areas",

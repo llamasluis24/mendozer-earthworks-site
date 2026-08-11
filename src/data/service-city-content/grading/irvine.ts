@@ -13,12 +13,78 @@ export const gradingIrvine: ServiceCityPageContent = {
     "Commercial grading in Irvine, CA. GPS fine grading, utility-dense campus pad prep, and City of Irvine engineering-tolerance compaction for master-planned office and tech campus redevelopments.",
 
   siteVisitItems: [
-    "Review civil grading plans, finished floor elevations, and geotechnical recommendations against Irvine master-plan finish standards on commercial redevelopment parcels",
-    "Map underground utilities, fiber corridors, and shared campus infrastructure before mass excavation boundaries are set on utility-dense Irvine commercial sites",
-    "Confirm grading permit pathway with City of Irvine engineering review, plan check hold points, and inspection sequencing for commercial pad certification",
-    "Assess haul routes, cut/fill balance, and export staging against Irvine design standards and campus access controls on active office and R&D properties",
-    "Evaluate SWPPP requirements, BMP placement, and dust controls required near occupied office tenants during phased Irvine grading operations",
-    "Deliver itemized earthwork bid with GPS fine grading tolerances and compaction assumptions tied to foundation mobilization milestones on Irvine schedules",
+    {
+      title: "Plan & Document Review",
+      lead:
+        "Review civil grading plans, finished floor elevations, and geotechnical recommendations against Irvine master-plan finish standards on commercial redevelopment parcels.",
+      checkpoints: [
+        "Review civil grading plans.",
+        "Finished floor elevations.",
+        "Geotechnical recommendations against Irvine master-plan finish standards on commercial redevelopment parcels.",
+      ],
+      fieldNote:
+        "Early plan and document review keeps bid assumptions aligned with engineer-approved civil quantities before contract award.",
+    },
+    {
+      title: "Inspection & Schedule Mapping",
+      lead:
+        "Map underground utilities, fiber corridors, and shared campus infrastructure before mass excavation boundaries are set on utility-dense Irvine commercial sites.",
+      checkpoints: [
+        "Map underground utilities.",
+        "Fiber corridors.",
+        "Shared campus infrastructure before mass excavation boundaries are set on utility-dense Irvine commercial sites.",
+      ],
+      fieldNote:
+        "Mapped inspection windows and hold points keep sitework sequenced with your GC master schedule and vertical mobilization.",
+    },
+    {
+      title: "Specification Verification",
+      lead:
+        "Confirm grading permit pathway with City of Irvine engineering review, plan check hold points, and inspection sequencing for commercial pad certification.",
+      checkpoints: [
+        "Confirm grading permit pathway with City of Irvine engineering review.",
+        "Plan check hold points.",
+        "Inspection sequencing for commercial pad certification.",
+      ],
+      fieldNote:
+        "Verified specifications before mobilization protect compaction acceptance, drainage performance, and agency sign-off.",
+    },
+    {
+      title: "Field Conditions Assessment",
+      lead:
+        "Assess haul routes, cut/fill balance, and export staging against Irvine design standards and campus access controls on active office and R&D properties.",
+      checkpoints: [
+        "Assess haul routes.",
+        "Cut/fill balance.",
+        "Export staging against Irvine design standards and campus access controls on active office and R&D properties.",
+      ],
+      fieldNote:
+        "Field assessment during the pre-bid walk surfaces constraints that affect production, haul logistics, and inspection sequencing.",
+    },
+    {
+      title: "Technical Evaluation",
+      lead:
+        "Evaluate SWPPP requirements, BMP placement, and dust controls required near occupied office tenants during phased Irvine grading operations.",
+      checkpoints: [
+        "Evaluate SWPPP requirements.",
+        "BMP placement.",
+        "Dust controls required near occupied office tenants during phased Irvine grading operations.",
+      ],
+      fieldNote:
+        "Technical evaluation upfront reduces rework during production and prevents mid-project quantity disputes.",
+    },
+    {
+      title: "Itemized Bid Delivery",
+      lead:
+        "Deliver itemized earthwork bid with GPS fine grading tolerances and compaction assumptions tied to foundation mobilization milestones on Irvine schedules.",
+      checkpoints: [
+        "Deliver itemized earthwork bid with GPS fine grading tolerances and compaction assumptions tied to foundation mobilization milestones on Irvine schedules.",
+        "Cross-check observations against civil plans, geotechnical data, and project specifications.",
+        "Confirm bid assumptions, quantities, and schedule milestones align with preconstruction requirements.",
+      ],
+      fieldNote:
+        "Itemized assumptions documented in the bid package protect schedule, budget, and both parties at award.",
+    },
   ],
 
   evaluationSteps: [
@@ -90,7 +156,7 @@ export const gradingIrvine: ServiceCityPageContent = {
   faqs: [
     {
       q: "Do you provide commercial grading in Irvine, CA?",
-      a: "Yes. Mendozer x Earthworks (Lic. #1069854) self-performs mass excavation, fine grading, soil compaction, and pad certification for developers and GCs on Irvine master-planned office, R&D, and tech campus commercial redevelopments.",
+      a: "Yes. Mendozer X Earthworks Inc. (Lic. #1069854) self-performs mass excavation, fine grading, soil compaction, and pad certification for developers and GCs on Irvine master-planned office, R&D, and tech campus commercial redevelopments.",
     },
     {
       q: "How do City of Irvine grading tolerances affect commercial pad prep?",

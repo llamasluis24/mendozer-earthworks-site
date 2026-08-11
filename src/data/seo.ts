@@ -83,7 +83,7 @@ export function buildServiceSchema({
       url,
       provider: {
         "@type": "GeneralContractor",
-        name: "Mendozer x Earthworks Inc.",
+        name: "Mendozer X Earthworks Inc.",
         telephone: "+1-951-427-4904",
       },
       areaServed: areaServed.map((a) => ({ "@type": "Place", name: a })),

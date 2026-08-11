@@ -13,12 +13,78 @@ export const gradingTemecula: ServiceCityPageContent = {
     "Commercial grading in Temecula, CA. Wine country retail pad prep, hillside cut/fill, master-planned commercial earthwork, and Riverside County grading coordination for Temecula Valley projects.",
 
   siteVisitItems: [
-    "Review civil grading plans and hillside cut/fill profiles on Temecula master-planned commercial parcels where slope stability and retaining wall tie-ins affect earthwork sequencing",
-    "Assess wine country retail pad elevations, parking structure tie-ins, and finished floor relationships against geotechnical recommendations on Temecula Valley commercial redevelopments",
-    "Confirm Riverside County grading permit requirements, hillside grading thresholds, and geotechnical observation hold points before mass excavation mobilizes on sloped Temecula sites",
-    "Map haul roads, export routes, and equipment staging across master-planned Temecula commercial districts where phased pad turnover supports multi-tenant retail delivery schedules",
-    "Evaluate SWPPP BMP placement, sediment control, and storm drain inlet protection on hillside Temecula grading sites subject to seasonal runoff from surrounding wine country terrain",
-    "Deliver itemized grading bid with hillside cut/fill assumptions, retaining wall coordination scope, and Riverside County inspection sequencing within one business day",
+    {
+      title: "Plan & Document Review",
+      lead:
+        "Review civil grading plans and hillside cut/fill profiles on Temecula master-planned commercial parcels where slope stability and retaining wall tie-ins affect earthwork sequencing.",
+      checkpoints: [
+        "Review civil grading plans and hillside cut/fill profiles on Temecula master-planned commercial parcels where slope stability and retaining wall tie-ins affect earthwork sequencing.",
+        "Cross-check observations against civil plans, geotechnical data, and project specifications.",
+        "Flag constraints affecting production, haul logistics, SWPPP compliance, or inspection hold points.",
+      ],
+      fieldNote:
+        "Early plan and document review keeps bid assumptions aligned with engineer-approved civil quantities before contract award.",
+    },
+    {
+      title: "Field Conditions Assessment",
+      lead:
+        "Assess wine country retail pad elevations, parking structure tie-ins, and finished floor relationships against geotechnical recommendations on Temecula Valley commercial redevelopments.",
+      checkpoints: [
+        "Assess wine country retail pad elevations.",
+        "Parking structure tie-ins.",
+        "Finished floor relationships against geotechnical recommendations on Temecula Valley commercial redevelopments.",
+      ],
+      fieldNote:
+        "Field assessment during the pre-bid walk surfaces constraints that affect production, haul logistics, and inspection sequencing.",
+    },
+    {
+      title: "Specification Verification",
+      lead:
+        "Confirm Riverside County grading permit requirements, hillside grading thresholds, and geotechnical observation hold points before mass excavation mobilizes on sloped Temecula sites.",
+      checkpoints: [
+        "Confirm Riverside County grading permit requirements.",
+        "Hillside grading thresholds.",
+        "Geotechnical observation hold points before mass excavation mobilizes on sloped Temecula sites.",
+      ],
+      fieldNote:
+        "Verified specifications before mobilization protect compaction acceptance, drainage performance, and agency sign-off.",
+    },
+    {
+      title: "Inspection & Schedule Mapping",
+      lead:
+        "Map haul roads, export routes, and equipment staging across master-planned Temecula commercial districts where phased pad turnover supports multi-tenant retail delivery schedules.",
+      checkpoints: [
+        "Map haul roads.",
+        "Export routes.",
+        "Equipment staging across master-planned Temecula commercial districts where phased pad turnover supports multi-tenant retail delivery schedules.",
+      ],
+      fieldNote:
+        "Mapped inspection windows and hold points keep sitework sequenced with your GC master schedule and vertical mobilization.",
+    },
+    {
+      title: "Technical Evaluation",
+      lead:
+        "Evaluate SWPPP BMP placement, sediment control, and storm drain inlet protection on hillside Temecula grading sites subject to seasonal runoff from surrounding wine country terrain.",
+      checkpoints: [
+        "Evaluate SWPPP BMP placement.",
+        "Sediment control.",
+        "Storm drain inlet protection on hillside Temecula grading sites subject to seasonal runoff from surrounding wine country terrain.",
+      ],
+      fieldNote:
+        "Technical evaluation upfront reduces rework during production and prevents mid-project quantity disputes.",
+    },
+    {
+      title: "Itemized Bid Delivery",
+      lead:
+        "Deliver itemized grading bid with hillside cut/fill assumptions, retaining wall coordination scope, and Riverside County inspection sequencing within one business day.",
+      checkpoints: [
+        "Deliver itemized grading bid with hillside cut/fill assumptions.",
+        "Retaining wall coordination scope.",
+        "Riverside County inspection sequencing within one business day.",
+      ],
+      fieldNote:
+        "Itemized assumptions documented in the bid package protect schedule, budget, and both parties at award.",
+    },
   ],
 
   evaluationSteps: [
@@ -90,7 +156,7 @@ export const gradingTemecula: ServiceCityPageContent = {
   faqs: [
     {
       q: "Do you perform commercial grading in Temecula, CA?",
-      a: "Yes. Mendozer x Earthworks (Lic. #1069854) self-performs mass excavation, hillside cut/fill, compaction, GPS fine grading, and engineered pad prep on wine country retail, hospitality, and master-planned commercial projects throughout Temecula and Riverside County.",
+      a: "Yes. Mendozer X Earthworks Inc. (Lic. #1069854) self-performs mass excavation, hillside cut/fill, compaction, GPS fine grading, and engineered pad prep on wine country retail, hospitality, and master-planned commercial projects throughout Temecula and Riverside County.",
     },
     {
       q: "Can you grade hillside commercial pads in Temecula?",

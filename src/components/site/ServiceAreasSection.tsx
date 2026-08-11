@@ -11,7 +11,7 @@ export function ServiceAreasSection({ serviceSlug }: { serviceSlug?: string }) {
         <p className="eyebrow">Service Areas</p>
         <h2 className="mt-3 heading-lg max-w-3xl">Commercial Projects Across Southern California</h2>
         <p className="mt-4 max-w-3xl text-muted-foreground leading-relaxed">
-          Mendozer x Earthworks mobilizes across the Inland Empire, Orange County, and Los Angeles County for commercial excavation, grading, demolition, paving, concrete, and site development.
+          Mendozer X Earthworks Inc. mobilizes across the Inland Empire, Orange County, and Los Angeles County for commercial excavation, grading, demolition, paving, concrete, and site development.
         </p>
         <div className="mt-10 grid lg:grid-cols-[1.2fr_1fr] gap-8 items-start">
           <div className="rounded-xl overflow-hidden border border-border aspect-[16/10] lg:aspect-auto lg:min-h-[320px]">

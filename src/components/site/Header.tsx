@@ -68,13 +68,13 @@ export function Header() {
         <Link to="/" className="flex items-center gap-3 group">
           <img
             src={logo}
-            alt="Mendozer x Earthworks Inc. logo"
+            alt="Mendozer X Earthworks Inc. logo"
             width={56}
             height={56}
             className="h-14 w-14 object-contain drop-shadow-md group-hover:scale-[1.02] transition"
           />
           <div className="hidden sm:block leading-tight">
-            <div className="font-display text-sm tracking-[0.18em] text-gold">MENDOZER</div>
+            <div className="font-display text-sm tracking-[0.18em] text-gold">MENDOZER <span className="text-gold-bright">X</span></div>
             <div className="font-display text-xs tracking-[0.18em] text-foreground/80">EARTHWORKS INC.</div>
           </div>
         </Link>

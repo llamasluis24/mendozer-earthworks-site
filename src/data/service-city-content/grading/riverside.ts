@@ -12,12 +12,78 @@ export const gradingRiverside: ServiceCityPageContent = {
     "Commercial grading in Riverside, CA. Alluvial cut/fill, SWPPP rain-season BMPs, warehouse pad prep, and Riverside County inspection coordination.",
 
   siteVisitItems: [
-    "Review civil grading plans, cut/fill quantities, and finished floor elevations against geotechnical recommendations on Riverside warehouse and logistics pads",
-    "Assess alluvial soil conditions, groundwater indicators, and unsuitable material zones from geotech reports and test pits on Riverside County commercial parcels",
-    "Confirm SWPPP requirements, BMP placement, and rain-season grading protocols before mass excavation mobilizes on Riverside redevelopment sites",
-    "Map haul roads, export routes, and articulated truck staging for Riverside logistics parcels where on-site balance cannot absorb full cut volumes",
-    "Identify Fine grading scope, easements, and sequencing with wet and dry underground contractors on active Riverside commercial job sites",
-    "Deliver itemized grading bid with compaction assumptions, GPS fine grading scope, and Riverside County inspection hold points within one business day",
+    {
+      title: "Plan & Document Review",
+      lead:
+        "Review civil grading plans, cut/fill quantities, and finished floor elevations against geotechnical recommendations on Riverside warehouse and logistics pads.",
+      checkpoints: [
+        "Review civil grading plans.",
+        "Cut/fill quantities.",
+        "Finished floor elevations against geotechnical recommendations on Riverside warehouse and logistics pads.",
+      ],
+      fieldNote:
+        "Early plan and document review keeps bid assumptions aligned with engineer-approved civil quantities before contract award.",
+    },
+    {
+      title: "Field Conditions Assessment",
+      lead:
+        "Assess alluvial soil conditions, groundwater indicators, and unsuitable material zones from geotech reports and test pits on Riverside County commercial parcels.",
+      checkpoints: [
+        "Assess alluvial soil conditions.",
+        "Groundwater indicators.",
+        "Unsuitable material zones from geotech reports and test pits on Riverside County commercial parcels.",
+      ],
+      fieldNote:
+        "Field assessment during the pre-bid walk surfaces constraints that affect production, haul logistics, and inspection sequencing.",
+    },
+    {
+      title: "Specification Verification",
+      lead:
+        "Confirm SWPPP requirements, BMP placement, and rain-season grading protocols before mass excavation mobilizes on Riverside redevelopment sites.",
+      checkpoints: [
+        "Confirm SWPPP requirements.",
+        "BMP placement.",
+        "Rain-season grading protocols before mass excavation mobilizes on Riverside redevelopment sites.",
+      ],
+      fieldNote:
+        "Verified specifications before mobilization protect compaction acceptance, drainage performance, and agency sign-off.",
+    },
+    {
+      title: "Inspection & Schedule Mapping",
+      lead:
+        "Map haul roads, export routes, and articulated truck staging for Riverside logistics parcels where on-site balance cannot absorb full cut volumes.",
+      checkpoints: [
+        "Map haul roads.",
+        "Export routes.",
+        "Articulated truck staging for Riverside logistics parcels where on-site balance cannot absorb full cut volumes.",
+      ],
+      fieldNote:
+        "Mapped inspection windows and hold points keep sitework sequenced with your GC master schedule and vertical mobilization.",
+    },
+    {
+      title: "Identify Fine Grading Scope",
+      lead:
+        "Identify Fine grading scope, easements, and sequencing with wet and dry underground contractors on active Riverside commercial job sites.",
+      checkpoints: [
+        "Identify Fine grading scope.",
+        "Cross-check observations against civil plans, geotechnical data, and project specifications.",
+        "Flag constraints affecting production, haul logistics, SWPPP compliance, or inspection hold points.",
+      ],
+      fieldNote:
+        "Early plan and document review keeps bid assumptions aligned with engineer-approved civil quantities before contract award.",
+    },
+    {
+      title: "Itemized Bid Delivery",
+      lead:
+        "Deliver itemized grading bid with compaction assumptions, GPS fine grading scope, and Riverside County inspection hold points within one business day.",
+      checkpoints: [
+        "Deliver itemized grading bid with compaction assumptions.",
+        "GPS fine grading scope.",
+        "Riverside County inspection hold points within one business day.",
+      ],
+      fieldNote:
+        "Itemized assumptions documented in the bid package protect schedule, budget, and both parties at award.",
+    },
   ],
 
   evaluationSteps: [
@@ -89,7 +155,7 @@ export const gradingRiverside: ServiceCityPageContent = {
   faqs: [
     {
       q: "Do you perform commercial grading in Riverside, CA?",
-      a: "Yes. Mendozer x Earthworks (Lic. #1069854) self-performs mass excavation, cut/fill balancing, compaction, GPS fine grading, and engineered pad prep on warehouse, logistics, and industrial commercial projects in Riverside and Riverside County.",
+      a: "Yes. Mendozer X Earthworks Inc. (Lic. #1069854) self-performs mass excavation, cut/fill balancing, compaction, GPS fine grading, and engineered pad prep on warehouse, logistics, and industrial commercial projects in Riverside and Riverside County.",
     },
     {
       q: "How do alluvial soils affect excavation on Riverside warehouse pads?",

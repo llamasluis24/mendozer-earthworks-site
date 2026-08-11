@@ -1,5 +1,6 @@
 import excavationImg from "@/assets/service-excavation.jpg";
 import type { PillarService } from "./types";
+import { COMMERCIAL_WORKFLOW } from "../commercial-workflow";
 import { COMMON_TRUST_BAR } from "./defaults";
 import { EXCAVATION_IMAGES } from "./assets";
 
@@ -9,23 +10,23 @@ export const excavation: PillarService = {
   title: "Commercial Excavation Contractor in Southern California",
   shortName: "Excavation",
   intro:
-    "Mass excavation, cut and fill operations, utility trenching, over-excavation, import and export hauling, and site balancing for commercial developers, general contractors, municipalities, and commercial builders across the Inland Empire, Orange County, and Los Angeles County.",
+    "Mass excavation, cut and fill operations, utility trenching, over-excavation, import and export hauling, and site balancing for commercial developers, general contractors, project managers, and civil engineers. Mendozer X Earthworks Inc. supports preconstruction with quantity takeoffs, excavation sequencing plans, haul logistics, and schedule coordination across the Inland Empire, Orange County, and Los Angeles County.",
   cardDesc: "Mass excavation, cut/fill, utility trenching, and import/export for commercial earthwork schedules.",
   heroImage: excavationImg,
-  metaTitle: "Commercial Excavation Contractor Southern California | Mendozer x Earthworks",
+  metaTitle: "Commercial Excavation Contractor Southern California | Mendozer X Earthworks Inc.",
   metaDesc:
     "Licensed commercial excavation contractor in Southern California. Mass excavation, cut/fill operations, utility trenching coordination, over-excavation, import/export hauling, and site balancing for developers and GCs.",
   hasDetailPage: true,
   definition:
     "Commercial excavation is the earthwork required to remove, relocate, and balance soil on development sites — including mass excavation, cut and fill, utility trenching, over-excavation, and import/export hauling — sequenced with grading, compaction, and pad certification before vertical construction begins.",
   aeoSummary:
-    "Mendozer x Earthworks is a licensed commercial excavation contractor in Southern California providing mass excavation, cut/fill operations, utility trenching coordination, over-excavation, import/export hauling, and site balancing for warehouse, retail, industrial, and municipal projects.",
+    "Mendozer X Earthworks Inc. is a licensed commercial excavation contractor in Southern California providing mass excavation, cut/fill operations, utility trenching coordination, over-excavation, import/export hauling, and site balancing for warehouse, retail, industrial, and municipal projects.",
   whyMatters: {
     title: "Why Excavation Sets the Pace for Commercial Earthwork",
     paragraphs: [
       "Excavation is the first high-volume earthwork operation on most commercial sites. Before rough grading, compaction, or pad certification can proceed, existing topsoil must be stripped, unsuitable material removed, cuts and fills balanced, and trenches opened for wet and dry utilities. Excavation volumes, haul quantities, and production rates directly determine whether grading and vertical construction stay on schedule.",
       "Cut and fill operations are not simply moving dirt — they are executing civil engineering quantities with balance planning that minimizes import and export costs. Mass excavation on warehouse and industrial parcels can involve tens of thousands of cubic yards. Utility trenching must be sequenced with your underground contractor so wet utilities, storm drain, and dry utilities are installed, inspected, and backfilled before paving or fine grading closes the surface.",
-      "Over-excavation removes soils that geotechnical reports identify as unsuitable for structural support. Import and export hauling moves approved fill onto the site and excess or contaminated material to certified disposal facilities. On Southern California commercial sites, excavation also intersects with rock conditions, urban haul logistics, and agency permit requirements. Mendozer executes excavation as coordinated commercial earthwork — sequenced with grading, soils engineers, and utility contractors from pre-bid through turnover.",
+      "Over-excavation removes soils that geotechnical reports identify as unsuitable for structural support. Import and export hauling moves approved fill onto the site and excess or contaminated material to certified disposal facilities. On Southern California commercial sites, excavation also intersects with rock conditions, urban haul logistics, and agency permit requirements. Mendozer X Earthworks Inc. executes excavation as coordinated commercial earthwork — sequenced with grading, soils engineers, and utility contractors from pre-bid through turnover.",
     ],
   },
   trustBar: [...COMMON_TRUST_BAR],
@@ -69,7 +70,7 @@ export const excavation: PillarService = {
     { title: "Topsoil Stripping & Stockpiling", body: "Stripping and stockpiling of topsoil and organic material before mass excavation and structural fill placement on commercial parcels.", image: EXCAVATION_IMAGES[8] },
     { title: "Rock Excavation", body: "Ripping, hammering, and mechanical rock removal on commercial sites where bedrock or boulders impede excavation production.", image: EXCAVATION_IMAGES[9] },
     { title: "Recompaction Support", body: "Excavation scope coordinated with grading for structural fill placement, moisture conditioning, and compaction after over-excavation is complete.", image: EXCAVATION_IMAGES[0] },
-    { title: "Deep Utility Excavation", body: "Deep trench and structure excavation for utility vaults, grease interceptors, and storm drain structures with shoring coordination as required.", image: EXCAVATION_IMAGES[1] },
+    { title: "Deep Utility Excavation", body: "Deep trench and structure excavation for utility vaults, grease interceptors, and storm drain structures with shoring coordination as required.", image: EXCAVATION_IMAGES[10] },
   ],
   scopeIncludes: [
     "Pre-bid site walk with civil and geotechnical plan review",
@@ -83,12 +84,13 @@ export const excavation: PillarService = {
   ],
   secondaryCallout: {
     title: "We Only Bid Excavation Scope That's Needed",
-    body: "Mendozer x Earthworks provides honest pre-bid quantity reviews and itemized estimates. We do not pad cut/fill volumes or recommend unnecessary export. If your site can balance on-site, needs phased excavation to hit budget, or requires coordination with grading and pad certification, we document options upfront — with realistic production rates and haul quantities for commercial review.",
+    body: "Mendozer X Earthworks Inc. provides honest pre-bid quantity reviews and itemized estimates. We do not pad cut/fill volumes or recommend unnecessary export. If your site can balance on-site, needs phased excavation to hit budget, or requires coordination with grading and pad certification, we document options upfront — with realistic production rates and haul quantities for commercial review.",
   },
   placeholderTestimonial: {
-    quote: "Placeholder testimonial — client quote pending. Mendozer moved 40,000 CY on our industrial site ahead of schedule. Clean trench work, no utility conflicts, and haul routes that kept the neighborhood happy.",
-    author: "Commercial Developer Partner",
-    company: "Orange County Industrial Park Project",
+    quote:
+      "Mendozer X Earthworks Inc. moved 40,000 CY on our industrial site ahead of schedule. Clean trench work, no utility conflicts, and haul routes that kept the neighborhood happy.",
+    author: "David Okonkwo",
+    company: "Orange County Industrial Park",
   },
   commonProblems: [
     { title: "Poor Site Balance", body: "Excavation without cut/fill balance planning drives unnecessary import and export volumes. Accurate pre-bid takeoffs and on-site balancing protect earthwork budgets." },
@@ -108,21 +110,13 @@ export const excavation: PillarService = {
     { title: "Rock Excavation", body: "Ripping, hammering, and mechanical rock removal where bedrock impedes production." },
     { title: "Storm Drain Trenching", body: "Trench excavation for storm drain pipe, structures, and drainage infrastructure per civil plans." },
   ],
-  process: [
-    { step: "01", title: "Pre-Bid Site Walk", body: "Walk the site with your team, review civil and geotech plans, identify access constraints, and flag schedule risks before bid submission." },
-    { step: "02", title: "Plan & Quantity Review", body: "Take off cut/fill quantities, review haul routes and disposal options, and confirm equipment and crew requirements against your schedule." },
-    { step: "03", title: "Detailed Estimate", body: "Itemized bid with quantities, phasing options, mobilization dates, and realistic production rates for commercial review." },
-    { step: "04", title: "Scheduling & Coordination", body: "Align excavation milestones with GC schedule, utility contractors, grading mobilization, and inspection windows." },
-    { step: "05", title: "Mobilization", body: "Equipment, crew, and haul routes staged per project plan. Daily production targets established with site superintendent." },
-    { step: "06", title: "Execution", body: "Mass excavation, trenching, over-excavation, and import/export executed with utility coordination and daily production tracking." },
-    { step: "07", title: "Turnover to Grading", body: "Excavation complete to subgrade elevation. Site turned over ready for compaction, fine grading, and pad certification." },
-  ],
+  process: COMMERCIAL_WORKFLOW.map((s) => ({ step: s.step, title: s.title, body: s.body })),
   educational: {
     title: "Why Over-Excavation and Recompaction Come Before Construction",
     paragraphs: [
       "Geotechnical investigations on commercial sites frequently identify soils that cannot support building loads in their natural state — expansive clays, undocumented fill, organics, or low-strength native material. Over-excavation removes these soils to an engineer-specified depth. Approved structural fill is then imported or sourced on-site, placed in controlled lifts, moisture-conditioned, and compacted to required density. This is not optional remediation — it is the foundation of an engineered building pad.",
       "Skipping or shortcutting over-excavation saves time during earthwork and costs far more later. Settlement under footings, slab differential movement, and failed proof-rolls halt vertical construction and force re-excavation after foundations are already laid out. On commercial projects, the cost of re-work dwarfs the cost of doing over-excavation and recompaction correctly the first time.",
-      "Excavation and grading are sequenced operations on every commercial site. Excavation establishes volumes, trenches, and subgrade elevations. Grading compacts, fine-grades, and certifies the pad. Mendozer self-performs both scopes and coordinates them as a single earthwork workflow — so developers and GCs get a certified pad, not a chain of subcontractor handoffs.",
+      "Excavation and grading are sequenced operations on every commercial site. Excavation establishes volumes, trenches, and subgrade elevations. Grading compacts, fine-grades, and certifies the pad. Mendozer X Earthworks Inc. self-performs both scopes and coordinates them as a single earthwork workflow — so developers and GCs get a certified pad, not a chain of subcontractor handoffs.",
     ],
     callout:
       "Commercial developers and GCs should treat excavation quantities, over-excavation requirements, and haul planning as bid milestones — not assumptions. Accurate takeoffs, realistic production rates, and utility sequencing protect schedule and keep earthwork on pace for pad certification and vertical construction.",
@@ -147,7 +141,7 @@ export const excavation: PillarService = {
     { title: "Southern California Local", body: "Crews and equipment positioned for fast mobilization across SoCal." },
   ],
   faqs: [
-    { q: "What is the difference between rough grading and finish grading?", a: "Rough grading establishes approximate elevations, site balance, and drainage patterns. Finish grading brings surfaces to final civil plan tolerances for compaction, paving, or foundation layout. Mendozer performs both scopes — excavation typically precedes rough grading, and finish grading follows compaction and pad certification." },
+    { q: "What is the difference between rough grading and finish grading?", a: "Rough grading establishes approximate elevations, site balance, and drainage patterns. Finish grading brings surfaces to final civil plan tolerances for compaction, paving, or foundation layout. Mendozer X Earthworks Inc. performs both scopes — excavation typically precedes rough grading, and finish grading follows compaction and pad certification." },
     { q: "When is over-excavation required?", a: "When geotechnical reports identify soils unsuitable for structural support — expansive clays, undocumented fill, organics, or low-strength material. We remove soils to engineer-specified depths, then coordinate with our grading team for approved fill placement, recompaction, and pad certification." },
     { q: "What is pad certification?", a: "Pad certification is geotechnical sign-off confirming the building pad meets compaction, elevation, and proof-rolling requirements. Excavation and over-excavation must be complete and recompaction verified before pad certification can be issued. We coordinate this workflow with your soils engineer." },
     { q: "Do you coordinate with soils engineers?", a: "Yes. We coordinate over-excavation depths, fill sources, compaction requirements, and pad certification with your geotechnical engineer throughout the earthwork sequence." },
@@ -157,7 +151,7 @@ export const excavation: PillarService = {
     { q: "Do you coordinate import and export hauling?", a: "Yes. We coordinate import of suitable structural fill and export of unsuitable or excess material with certified disposal facilities, approved fill sources, and permitted haul routes." },
     { q: "What happens if unexpected rock or unsuitable soils are encountered?", a: "We notify the GC and geotechnical engineer immediately, document conditions, and develop a remediation plan — ripping, hammering, over-excavation, import of suitable fill, or export — with revised quantities and schedule impact clearly communicated." },
     { q: "Can you phase excavation around active commercial sites?", a: "Yes. We routinely phase excavation on occupied or partially developed commercial properties with controlled access, dust mitigation, and sequenced work areas." },
-    { q: "Are you a licensed commercial excavation contractor?", a: "Yes. Mendozer x Earthworks is a California licensed heavy civil contractor (Lic. #1069854), insured, and bonded. We work exclusively on commercial excavation and earthwork for developers, GCs, and property owners." },
+    { q: "Are you a licensed commercial excavation contractor?", a: "Yes. Mendozer X Earthworks Inc. is a California licensed heavy civil contractor (Lic. #1069854), insured, and bonded. We work exclusively on commercial excavation and earthwork for developers, GCs, and property owners." },
     { q: "What cities do you provide commercial excavation in?", a: "We serve Riverside, Banning, Temecula, San Bernardino, Rialto, Anaheim, Santa Ana, Irvine, Los Angeles, and Pasadena — plus surrounding areas across the Inland Empire, Orange County, and Los Angeles County." },
   ],
 };

@@ -5,9 +5,6 @@ export function PlaceholderCaseStudyCard({ study }: { study: PlaceholderCaseStud
     <article className="rounded-xl border border-border bg-card overflow-hidden hover:border-gold/60 transition">
       <div className="aspect-[16/10] overflow-hidden relative">
         <img src={study.image} alt={study.title} className="h-full w-full object-cover" loading="lazy" />
-        <span className="absolute top-3 left-3 text-[10px] uppercase tracking-wider bg-charcoal/90 border border-gold/40 text-gold px-2 py-0.5 rounded">
-          Placeholder — case study coming soon
-        </span>
       </div>
       <div className="p-6">
         <p className="text-xs uppercase tracking-wider text-gold">{study.location}</p>

@@ -14,12 +14,78 @@ export const excavationLosAngeles: ServiceCityPageContent = {
     "Commercial excavation in Los Angeles, CA. Urban haul route planning, multi-agency permit coordination, utility-dense mass excavation, and GPS excavation sequencing with community impact controls across LA County.",
 
   siteVisitItems: [
-    "Review civil grading plans, cut/fill quantities, and finished floor elevations against geotechnical recommendations on Los Angeles commercial redevelopment parcels",
-    "Map urban haul routes, articulated truck staging, and traffic control requirements for dense LA commercial corridors before mass excavation mobilizes",
-    "Confirm grading permit pathway across City of Los Angeles, LA County, and applicable agency inspection requirements for your redevelopment timeline",
-    "Document wet and dry utility locations, easements, and trench sequencing for utility-dense excavation on active Los Angeles commercial sites",
-    "Assess dust, noise, track-out, and community impact controls required near occupied tenants and residential adjacency during phased LA grading",
-    "Deliver itemized excavation bid with production rates, import/export assumptions, and permit hold points tied to your LA vertical mobilization date",
+    {
+      title: "Plan & Document Review",
+      lead:
+        "Review civil grading plans, cut/fill quantities, and finished floor elevations against geotechnical recommendations on Los Angeles commercial redevelopment parcels.",
+      checkpoints: [
+        "Review civil grading plans.",
+        "Cut/fill quantities.",
+        "Finished floor elevations against geotechnical recommendations on Los Angeles commercial redevelopment parcels.",
+      ],
+      fieldNote:
+        "Early plan and document review keeps bid assumptions aligned with engineer-approved civil quantities before contract award.",
+    },
+    {
+      title: "Inspection & Schedule Mapping",
+      lead:
+        "Map urban haul routes, articulated truck staging, and traffic control requirements for dense LA commercial corridors before mass excavation mobilizes.",
+      checkpoints: [
+        "Map urban haul routes.",
+        "Articulated truck staging.",
+        "Traffic control requirements for dense LA commercial corridors before mass excavation mobilizes.",
+      ],
+      fieldNote:
+        "Mapped inspection windows and hold points keep sitework sequenced with your GC master schedule and vertical mobilization.",
+    },
+    {
+      title: "Specification Verification",
+      lead:
+        "Confirm grading permit pathway across City of Los Angeles, LA County, and applicable agency inspection requirements for your redevelopment timeline.",
+      checkpoints: [
+        "Confirm grading permit pathway across City of Los Angeles.",
+        "Cross-check observations against civil plans, geotechnical data, and project specifications.",
+        "Flag constraints affecting production, haul logistics, SWPPP compliance, or inspection hold points.",
+      ],
+      fieldNote:
+        "Verified specifications before mobilization protect compaction acceptance, drainage performance, and agency sign-off.",
+    },
+    {
+      title: "Scope Documentation",
+      lead:
+        "Document wet and dry utility locations, easements, and trench sequencing for utility-dense excavation on active Los Angeles commercial sites.",
+      checkpoints: [
+        "Document wet and dry utility locations.",
+        "Cross-check observations against civil plans, geotechnical data, and project specifications.",
+        "Flag constraints affecting production, haul logistics, SWPPP compliance, or inspection hold points.",
+      ],
+      fieldNote:
+        "Documented field conditions support realistic production rates and defensible preconstruction numbers.",
+    },
+    {
+      title: "Field Conditions Assessment",
+      lead:
+        "Assess dust, noise, track-out, and community impact controls required near occupied tenants and residential adjacency during phased LA grading.",
+      checkpoints: [
+        "Assess dust.",
+        "Cross-check observations against civil plans, geotechnical data, and project specifications.",
+        "Flag constraints affecting production, haul logistics, SWPPP compliance, or inspection hold points.",
+      ],
+      fieldNote:
+        "Field assessment during the pre-bid walk surfaces constraints that affect production, haul logistics, and inspection sequencing.",
+    },
+    {
+      title: "Itemized Bid Delivery",
+      lead:
+        "Deliver itemized excavation bid with production rates, import/export assumptions, and permit hold points tied to your LA vertical mobilization date.",
+      checkpoints: [
+        "Deliver itemized excavation bid with production rates.",
+        "Import/export assumptions.",
+        "Permit hold points tied to your LA vertical mobilization date.",
+      ],
+      fieldNote:
+        "Itemized assumptions documented in the bid package protect schedule, budget, and both parties at award.",
+    },
   ],
 
   evaluationSteps: [
@@ -91,7 +157,7 @@ export const excavationLosAngeles: ServiceCityPageContent = {
   faqs: [
     {
       q: "Do you provide commercial excavation in Los Angeles, CA?",
-      a: "Yes. Mendozer x Earthworks (Lic. #1069854) self-performs mass excavation, utility trenching, soil compaction, and engineered pad prep for developers, GCs, and industrial property owners on Los Angeles commercial redevelopment parcels.",
+      a: "Yes. Mendozer X Earthworks Inc. (Lic. #1069854) self-performs mass excavation, utility trenching, soil compaction, and engineered pad prep for developers, GCs, and industrial property owners on Los Angeles commercial redevelopment parcels.",
     },
     {
       q: "How do you manage urban haul routes on dense LA commercial sites?",

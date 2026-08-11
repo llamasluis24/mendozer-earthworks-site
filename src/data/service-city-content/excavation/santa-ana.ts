@@ -13,12 +13,78 @@ export const excavationSantaAna: ServiceCityPageContent = {
     "Commercial excavation in Santa Ana, CA. Urban OC infill pad prep, county seat agency coordination, dense staging earthwork, and Orange County grading permits for Santa Ana commercial redevelopments.",
 
   siteVisitItems: [
-    "Review civil grading plans and infill cut/fill quantities on dense Santa Ana urban parcels where adjacent building setbacks, alley access, and limited staging constrain earthwork production",
-    "Assess undocumented fill, high-plasticity clays, and shallow groundwater indicators from geotechnical reports on Orange County Santa Ana commercial infill redevelopment sites",
-    "Confirm City of Santa Ana and Orange County grading permit requirements, compaction testing schedules, and inspection hold points before mass excavation mobilizes on urban infill pads",
-    "Map tight haul routes, alley staging, and articulated truck access for export material on Santa Ana infill parcels where on-site stockpiling is not feasible within county seat redevelopment zones",
-    "Coordinate earthwork sequencing with county seat agency review timelines, SWPPP BMP placement, and storm drain inlet protection on active Santa Ana urban commercial job sites",
-    "Deliver itemized excavation bid with dense staging assumptions, phased production scope, and Orange County inspection sequencing within one business day",
+    {
+      title: "Plan & Document Review",
+      lead:
+        "Review civil grading plans and infill cut/fill quantities on dense Santa Ana urban parcels where adjacent building setbacks, alley access, and limited staging constrain earthwork production.",
+      checkpoints: [
+        "Review civil grading plans and infill cut/fill quantities on dense Santa Ana urban parcels where adjacent building setbacks.",
+        "Alley access.",
+        "Limited staging constrain earthwork production.",
+      ],
+      fieldNote:
+        "Early plan and document review keeps bid assumptions aligned with engineer-approved civil quantities before contract award.",
+    },
+    {
+      title: "Field Conditions Assessment",
+      lead:
+        "Assess undocumented fill, high-plasticity clays, and shallow groundwater indicators from geotechnical reports on Orange County Santa Ana commercial infill redevelopment sites.",
+      checkpoints: [
+        "Assess undocumented fill.",
+        "High-plasticity clays.",
+        "Shallow groundwater indicators from geotechnical reports on Orange County Santa Ana commercial infill redevelopment sites.",
+      ],
+      fieldNote:
+        "Field assessment during the pre-bid walk surfaces constraints that affect production, haul logistics, and inspection sequencing.",
+    },
+    {
+      title: "Specification Verification",
+      lead:
+        "Confirm City of Santa Ana and Orange County grading permit requirements, compaction testing schedules, and inspection hold points before mass excavation mobilizes on urban infill pads.",
+      checkpoints: [
+        "Confirm City of Santa Ana and Orange County grading permit requirements.",
+        "Compaction testing schedules.",
+        "Inspection hold points before mass excavation mobilizes on urban infill pads.",
+      ],
+      fieldNote:
+        "Verified specifications before mobilization protect compaction acceptance, drainage performance, and agency sign-off.",
+    },
+    {
+      title: "Inspection & Schedule Mapping",
+      lead:
+        "Map tight haul routes, alley staging, and articulated truck access for export material on Santa Ana infill parcels where on-site stockpiling is not feasible within county seat redevelopment zones.",
+      checkpoints: [
+        "Map tight haul routes.",
+        "Alley staging.",
+        "Articulated truck access for export material on Santa Ana infill parcels where on-site stockpiling is not feasible within county seat redevelopment zones.",
+      ],
+      fieldNote:
+        "Mapped inspection windows and hold points keep sitework sequenced with your GC master schedule and vertical mobilization.",
+    },
+    {
+      title: "Trade Coordination Review",
+      lead:
+        "Coordinate earthwork sequencing with county seat agency review timelines, SWPPP BMP placement, and storm drain inlet protection on active Santa Ana urban commercial job sites.",
+      checkpoints: [
+        "Coordinate earthwork sequencing with county seat agency review timelines.",
+        "SWPPP BMP placement.",
+        "Storm drain inlet protection on active Santa Ana urban commercial job sites.",
+      ],
+      fieldNote:
+        "Utility and trade coordination mapped early avoids conflicts that delay pad certification and paving turnover.",
+    },
+    {
+      title: "Itemized Bid Delivery",
+      lead:
+        "Deliver itemized excavation bid with dense staging assumptions, phased production scope, and Orange County inspection sequencing within one business day.",
+      checkpoints: [
+        "Deliver itemized excavation bid with dense staging assumptions.",
+        "Phased production scope.",
+        "Orange County inspection sequencing within one business day.",
+      ],
+      fieldNote:
+        "Itemized assumptions documented in the bid package protect schedule, budget, and both parties at award.",
+    },
   ],
 
   evaluationSteps: [
@@ -90,7 +156,7 @@ export const excavationSantaAna: ServiceCityPageContent = {
   faqs: [
     {
       q: "Do you perform commercial excavation in Santa Ana, CA?",
-      a: "Yes. Mendozer x Earthworks (Lic. #1069854) self-performs mass excavation, cut/fill balancing, compaction, GPS utility trenching, and engineered pad prep on urban infill office, retail, and mixed-use commercial projects throughout Santa Ana and Orange County.",
+      a: "Yes. Mendozer X Earthworks Inc. (Lic. #1069854) self-performs mass excavation, cut/fill balancing, compaction, GPS utility trenching, and engineered pad prep on urban infill office, retail, and mixed-use commercial projects throughout Santa Ana and Orange County.",
     },
     {
       q: "Can you grade on dense urban infill parcels in Santa Ana?",

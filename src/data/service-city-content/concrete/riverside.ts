@@ -13,12 +13,78 @@ export const concreteRiverside: ServiceCityPageContent = {
     "Commercial concrete contractor in Riverside, CA. Warehouse slab-on-grade pours, structural footings, curb and gutter flatwork, and Riverside County pre-pour inspection coordination for logistics sites.",
 
   siteVisitItems: [
-    "Review structural and civil concrete plans, slab-on-grade specifications, and footing details on Riverside warehouse and distribution redevelopment parcels",
-    "Assess subgrade compaction certification, proof-roll results, and vapor barrier requirements before formwork mobilizes on Riverside County commercial pads",
-    "Confirm rebar placement, embed schedules, and dowel layouts against structural engineering drawings on Riverside logistics floor pours",
-    "Evaluate mix design, slump targets, and 28-day PSI strength specifications for heavy floor loading on Riverside distribution center slabs",
-    "Map pre-pour inspection hold points, curing compound protocols, and hot-weather pour scheduling with Riverside County building officials",
-    "Deliver itemized commercial concrete bid with pour quantities, formwork assumptions, and inspection sequencing within one business day",
+    {
+      title: "Plan & Document Review",
+      lead:
+        "Review structural and civil concrete plans, slab-on-grade specifications, and footing details on Riverside warehouse and distribution redevelopment parcels.",
+      checkpoints: [
+        "Review structural and civil concrete plans.",
+        "Slab-on-grade specifications.",
+        "Footing details on Riverside warehouse and distribution redevelopment parcels.",
+      ],
+      fieldNote:
+        "Early plan and document review keeps bid assumptions aligned with engineer-approved civil quantities before contract award.",
+    },
+    {
+      title: "Field Conditions Assessment",
+      lead:
+        "Assess subgrade compaction certification, proof-roll results, and vapor barrier requirements before formwork mobilizes on Riverside County commercial pads.",
+      checkpoints: [
+        "Assess subgrade compaction certification.",
+        "Proof-roll results.",
+        "Vapor barrier requirements before formwork mobilizes on Riverside County commercial pads.",
+      ],
+      fieldNote:
+        "Field assessment during the pre-bid walk surfaces constraints that affect production, haul logistics, and inspection sequencing.",
+    },
+    {
+      title: "Specification Verification",
+      lead:
+        "Confirm rebar placement, embed schedules, and dowel layouts against structural engineering drawings on Riverside logistics floor pours.",
+      checkpoints: [
+        "Confirm rebar placement.",
+        "Embed schedules.",
+        "Dowel layouts against structural engineering drawings on Riverside logistics floor pours.",
+      ],
+      fieldNote:
+        "Verified specifications before mobilization protect compaction acceptance, drainage performance, and agency sign-off.",
+    },
+    {
+      title: "Technical Evaluation",
+      lead:
+        "Evaluate mix design, slump targets, and 28-day PSI strength specifications for heavy floor loading on Riverside distribution center slabs.",
+      checkpoints: [
+        "Evaluate mix design.",
+        "Slump targets.",
+        "28-day PSI strength specifications for heavy floor loading on Riverside distribution center slabs.",
+      ],
+      fieldNote:
+        "Technical evaluation upfront reduces rework during production and prevents mid-project quantity disputes.",
+    },
+    {
+      title: "Inspection & Schedule Mapping",
+      lead:
+        "Map pre-pour inspection hold points, curing compound protocols, and hot-weather pour scheduling with Riverside County building officials.",
+      checkpoints: [
+        "Map pre-pour inspection hold points.",
+        "Curing compound protocols.",
+        "Hot-weather pour scheduling with Riverside County building officials.",
+      ],
+      fieldNote:
+        "Mapped inspection windows and hold points keep sitework sequenced with your GC master schedule and vertical mobilization.",
+    },
+    {
+      title: "Itemized Bid Delivery",
+      lead:
+        "Deliver itemized commercial concrete bid with pour quantities, formwork assumptions, and inspection sequencing within one business day.",
+      checkpoints: [
+        "Deliver itemized commercial concrete bid with pour quantities.",
+        "Formwork assumptions.",
+        "Inspection sequencing within one business day.",
+      ],
+      fieldNote:
+        "Itemized assumptions documented in the bid package protect schedule, budget, and both parties at award.",
+    },
   ],
 
   evaluationSteps: [
@@ -90,7 +156,7 @@ export const concreteRiverside: ServiceCityPageContent = {
   faqs: [
     {
       q: "Do you provide commercial concrete in Riverside, CA?",
-      a: "Yes. Mendozer x Earthworks (Lic. #1069854) self-performs commercial concrete including structural footings, slabs-on-grade, curb and gutter, sidewalks, and loading aprons on warehouse, logistics, and industrial projects throughout Riverside and Riverside County.",
+      a: "Yes. Mendozer X Earthworks Inc. (Lic. #1069854) self-performs commercial concrete including structural footings, slabs-on-grade, curb and gutter, sidewalks, and loading aprons on warehouse, logistics, and industrial projects throughout Riverside and Riverside County.",
     },
     {
       q: "Can you pour warehouse slabs-on-grade in Riverside?",

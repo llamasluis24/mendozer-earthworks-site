@@ -13,12 +13,78 @@ export const concreteBanning: ServiceCityPageContent = {
     "Commercial concrete contractor in Banning, CA. I-10 corridor slab-on-grade pours, desert-edge subgrade coordination, and Riverside County pre-pour inspection support for Pass area logistics and retail pads.",
 
   siteVisitItems: [
-    "Review structural and civil concrete plans, slab-on-grade specifications, and footing details on Banning I-10 corridor commercial and logistics redevelopment parcels",
-    "Assess desert-edge subgrade compaction certification, proof-roll results, and vapor barrier requirements before formwork mobilizes on Riverside County Pass area pads",
-    "Confirm rebar placement, embed schedules, and dowel layouts against structural engineering drawings on Banning distribution and retail floor pours",
-    "Evaluate mix design, slump targets, and 28-day PSI strength specifications for heavy floor loading on Banning commercial slabs subject to inland heat",
-    "Map pre-pour inspection hold points, curing compound protocols, and hot-weather pour scheduling with Riverside County building officials on Banning corridor sites",
-    "Deliver itemized commercial concrete bid with pour quantities, formwork assumptions, and inspection sequencing within one business day",
+    {
+      title: "Plan & Document Review",
+      lead:
+        "Review structural and civil concrete plans, slab-on-grade specifications, and footing details on Banning I-10 corridor commercial and logistics redevelopment parcels.",
+      checkpoints: [
+        "Review structural and civil concrete plans.",
+        "Slab-on-grade specifications.",
+        "Footing details on Banning I-10 corridor commercial and logistics redevelopment parcels.",
+      ],
+      fieldNote:
+        "Early plan and document review keeps bid assumptions aligned with engineer-approved civil quantities before contract award.",
+    },
+    {
+      title: "Field Conditions Assessment",
+      lead:
+        "Assess desert-edge subgrade compaction certification, proof-roll results, and vapor barrier requirements before formwork mobilizes on Riverside County Pass area pads.",
+      checkpoints: [
+        "Assess desert-edge subgrade compaction certification.",
+        "Proof-roll results.",
+        "Vapor barrier requirements before formwork mobilizes on Riverside County Pass area pads.",
+      ],
+      fieldNote:
+        "Field assessment during the pre-bid walk surfaces constraints that affect production, haul logistics, and inspection sequencing.",
+    },
+    {
+      title: "Specification Verification",
+      lead:
+        "Confirm rebar placement, embed schedules, and dowel layouts against structural engineering drawings on Banning distribution and retail floor pours.",
+      checkpoints: [
+        "Confirm rebar placement.",
+        "Embed schedules.",
+        "Dowel layouts against structural engineering drawings on Banning distribution and retail floor pours.",
+      ],
+      fieldNote:
+        "Verified specifications before mobilization protect compaction acceptance, drainage performance, and agency sign-off.",
+    },
+    {
+      title: "Technical Evaluation",
+      lead:
+        "Evaluate mix design, slump targets, and 28-day PSI strength specifications for heavy floor loading on Banning commercial slabs subject to inland heat.",
+      checkpoints: [
+        "Evaluate mix design.",
+        "Slump targets.",
+        "28-day PSI strength specifications for heavy floor loading on Banning commercial slabs subject to inland heat.",
+      ],
+      fieldNote:
+        "Technical evaluation upfront reduces rework during production and prevents mid-project quantity disputes.",
+    },
+    {
+      title: "Inspection & Schedule Mapping",
+      lead:
+        "Map pre-pour inspection hold points, curing compound protocols, and hot-weather pour scheduling with Riverside County building officials on Banning corridor sites.",
+      checkpoints: [
+        "Map pre-pour inspection hold points.",
+        "Curing compound protocols.",
+        "Hot-weather pour scheduling with Riverside County building officials on Banning corridor sites.",
+      ],
+      fieldNote:
+        "Mapped inspection windows and hold points keep sitework sequenced with your GC master schedule and vertical mobilization.",
+    },
+    {
+      title: "Itemized Bid Delivery",
+      lead:
+        "Deliver itemized commercial concrete bid with pour quantities, formwork assumptions, and inspection sequencing within one business day.",
+      checkpoints: [
+        "Deliver itemized commercial concrete bid with pour quantities.",
+        "Formwork assumptions.",
+        "Inspection sequencing within one business day.",
+      ],
+      fieldNote:
+        "Itemized assumptions documented in the bid package protect schedule, budget, and both parties at award.",
+    },
   ],
 
   evaluationSteps: [
@@ -90,7 +156,7 @@ export const concreteBanning: ServiceCityPageContent = {
   faqs: [
     {
       q: "Do you provide commercial concrete in Banning, CA?",
-      a: "Yes. Mendozer x Earthworks (Lic. #1069854) self-performs commercial concrete including structural footings, slabs-on-grade, curb and gutter, sidewalks, and loading aprons on warehouse, logistics, and retail projects throughout Banning and Riverside County.",
+      a: "Yes. Mendozer X Earthworks Inc. (Lic. #1069854) self-performs commercial concrete including structural footings, slabs-on-grade, curb and gutter, sidewalks, and loading aprons on warehouse, logistics, and retail projects throughout Banning and Riverside County.",
     },
     {
       q: "Can you pour warehouse slabs-on-grade along the Banning I-10 corridor?",

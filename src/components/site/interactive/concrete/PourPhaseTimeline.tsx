@@ -48,7 +48,7 @@ const PHASES = [
     title: "Strip & Protect",
     body: "Forms stripped after strength criteria met. Curing continues until agency and structural release for next trade.",
     image: stripImg,
-    alt: "Finished slab protected with safety barriers after form stripping",
+    alt: "Graded commercial pad with layout stakes — site protected and ready for next trade",
   },
 ];
 

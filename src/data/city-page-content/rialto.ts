@@ -89,7 +89,7 @@ export const cityPageRialto: CityPageContent = {
   faqs: [
     {
       q: "What commercial earthwork services do you provide in Rialto, CA?",
-      a: "Mendozer x Earthworks (Lic. #1069854) self-performs commercial excavation, grading, asphalt paving, and concrete flatwork for developers, GCs, municipalities, and property owners throughout Rialto and San Bernardino County.",
+      a: "Mendozer X Earthworks Inc. (Lic. #1069854) self-performs commercial excavation, grading, asphalt paving, and concrete flatwork for developers, GCs, municipalities, and property owners throughout Rialto and San Bernardino County.",
     },
     {
       q: "What types of commercial projects do you handle in Rialto?",

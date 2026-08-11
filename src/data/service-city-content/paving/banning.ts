@@ -13,12 +13,78 @@ export const pavingBanning: ServiceCityPageContent = {
     "Commercial asphalt paving in Banning, CA. I-10 corridor retail and commercial parking lots, desert-edge base prep, Riverside County asphalt inspection coordination, and SWPPP-compliant paving for Banning Pass area projects.",
 
   siteVisitItems: [
-    "Review civil asphalt plans, pavement section details, and parking lot specifications on Banning I-10 corridor commercial parcels where desert-edge soils affect aggregate base prep",
-    "Assess existing pavement condition, base course integrity, and full-depth reconstruction scope on Banning Pass area retail and hospitality parking areas",
-    "Confirm Riverside County paving permit requirements, asphalt density testing schedules, and inspection hold points before aggregate base mobilizes on Banning commercial sites",
-    "Map I-10 corridor truck access, fire lane routes, and phased traffic control for commercial parking turnover on active Banning Pass area redevelopment parcels",
-    "Evaluate aggregate base compaction, proof-roll results, and geotechnical recommendations for desert-edge soil conditions before asphalt tonnage is priced for Banning commercial lots",
-    "Deliver itemized commercial asphalt bid with tonnage assumptions, SWPPP prep scope, and Riverside County inspection sequencing within one business day",
+    {
+      title: "Plan & Document Review",
+      lead:
+        "Review civil asphalt plans, pavement section details, and parking lot specifications on Banning I-10 corridor commercial parcels where desert-edge soils affect aggregate base prep.",
+      checkpoints: [
+        "Review civil asphalt plans.",
+        "Pavement section details.",
+        "Parking lot specifications on Banning I-10 corridor commercial parcels where desert-edge soils affect aggregate base prep.",
+      ],
+      fieldNote:
+        "Early plan and document review keeps bid assumptions aligned with engineer-approved civil quantities before contract award.",
+    },
+    {
+      title: "Field Conditions Assessment",
+      lead:
+        "Assess existing pavement condition, base course integrity, and full-depth reconstruction scope on Banning Pass area retail and hospitality parking areas.",
+      checkpoints: [
+        "Assess existing pavement condition.",
+        "Base course integrity.",
+        "Full-depth reconstruction scope on Banning Pass area retail and hospitality parking areas.",
+      ],
+      fieldNote:
+        "Field assessment during the pre-bid walk surfaces constraints that affect production, haul logistics, and inspection sequencing.",
+    },
+    {
+      title: "Specification Verification",
+      lead:
+        "Confirm Riverside County paving permit requirements, asphalt density testing schedules, and inspection hold points before aggregate base mobilizes on Banning commercial sites.",
+      checkpoints: [
+        "Confirm Riverside County paving permit requirements.",
+        "Asphalt density testing schedules.",
+        "Inspection hold points before aggregate base mobilizes on Banning commercial sites.",
+      ],
+      fieldNote:
+        "Verified specifications before mobilization protect compaction acceptance, drainage performance, and agency sign-off.",
+    },
+    {
+      title: "Inspection & Schedule Mapping",
+      lead:
+        "Map I-10 corridor truck access, fire lane routes, and phased traffic control for commercial parking turnover on active Banning Pass area redevelopment parcels.",
+      checkpoints: [
+        "Map I-10 corridor truck access.",
+        "Fire lane routes.",
+        "Phased traffic control for commercial parking turnover on active Banning Pass area redevelopment parcels.",
+      ],
+      fieldNote:
+        "Mapped inspection windows and hold points keep sitework sequenced with your GC master schedule and vertical mobilization.",
+    },
+    {
+      title: "Technical Evaluation",
+      lead:
+        "Evaluate aggregate base compaction, proof-roll results, and geotechnical recommendations for desert-edge soil conditions before asphalt tonnage is priced for Banning commercial lots.",
+      checkpoints: [
+        "Evaluate aggregate base compaction.",
+        "Proof-roll results.",
+        "Geotechnical recommendations for desert-edge soil conditions before asphalt tonnage is priced for Banning commercial lots.",
+      ],
+      fieldNote:
+        "Technical evaluation upfront reduces rework during production and prevents mid-project quantity disputes.",
+    },
+    {
+      title: "Itemized Bid Delivery",
+      lead:
+        "Deliver itemized commercial asphalt bid with tonnage assumptions, SWPPP prep scope, and Riverside County inspection sequencing within one business day.",
+      checkpoints: [
+        "Deliver itemized commercial asphalt bid with tonnage assumptions.",
+        "SWPPP prep scope.",
+        "Riverside County inspection sequencing within one business day.",
+      ],
+      fieldNote:
+        "Itemized assumptions documented in the bid package protect schedule, budget, and both parties at award.",
+    },
   ],
 
   evaluationSteps: [
@@ -90,7 +156,7 @@ export const pavingBanning: ServiceCityPageContent = {
   faqs: [
     {
       q: "Do you provide commercial asphalt paving in Banning, CA?",
-      a: "Yes. Mendozer x Earthworks (Lic. #1069854) self-performs commercial asphalt paving, aggregate base installation, parking lot construction, and full-depth reconstruction on retail, hospitality, and commercial projects throughout Banning and Riverside County.",
+      a: "Yes. Mendozer X Earthworks Inc. (Lic. #1069854) self-performs commercial asphalt paving, aggregate base installation, parking lot construction, and full-depth reconstruction on retail, hospitality, and commercial projects throughout Banning and Riverside County.",
     },
     {
       q: "Can you pave commercial parking lots along the Banning I-10 corridor?",

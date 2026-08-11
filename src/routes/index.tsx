@@ -13,13 +13,14 @@ import g3 from "@/assets/gallery-3.jpg";
 import g4 from "@/assets/gallery-4.jpg";
 import { CTASection } from "@/components/site/CTA";
 import { ContactLeadSection } from "@/components/site/ContactLeadSection";
+import { CommercialWorkflowSection } from "@/components/site/CommercialWorkflowSection";
 import { buildPageMeta } from "@/data/seo";
 import { COMPANY } from "@/data/company";
 
 export const Route = createFileRoute("/")({
   head: () =>
     buildPageMeta({
-      title: "Mendozer x Earthworks | Commercial Earthwork Contractor Southern California",
+      title: "Mendozer X Earthworks Inc. | Commercial Earthwork Contractor Southern California",
       description: COMPANY.description,
       path: "/",
       image: heroImg,
@@ -35,12 +36,12 @@ const services = [
 ];
 
 const features = [
-  { icon: Building2, title: "Commercial Project Experience", body: "Built for retail, industrial, municipal, and large multifamily developments." },
-  { icon: Clock, title: "Reliable Scheduling", body: "We hit milestones. Your GCs and developers stay on schedule." },
-  { icon: Shield, title: "Licensed & Professional", body: `Fully licensed (${COMPANY.licenseLabel}), insured, and bonded for serious work.` },
-  { icon: Truck, title: "Modern Equipment", body: "Late-model fleet of dozers, excavators, loaders, and compactors." },
-  { icon: Wrench, title: "Site Coordination", body: "Sequenced sitework coordinated with utilities, engineers, and your GC." },
-  { icon: MapPin, title: "Southern California Local", body: "Mobilized across the Inland Empire, Orange County, and LA County." },
+  { icon: Building2, title: "Preconstruction-Ready", body: "Bid walks, plan review, and itemized estimates aligned to your GC schedule and civil grading packages." },
+  { icon: Clock, title: "Schedule Coordination", body: "Production sequenced with inspection holds, utility mobilization, and vertical construction milestones." },
+  { icon: Shield, title: "Licensed & Insured", body: `Mendozer X Earthworks Inc. — ${COMPANY.licenseLabel}, insured, and bonded for commercial sitework.` },
+  { icon: Truck, title: "Production Equipment", body: "Late-model dozers, excavators, scrapers, and compactors sized for commercial earthwork production rates." },
+  { icon: Wrench, title: "Field Supervision", body: "Superintendent-led sites with daily coordination to your project manager and civil engineer." },
+  { icon: MapPin, title: "Southern California", body: "Mobilized across the Inland Empire, Orange County, and Los Angeles County." },
 ];
 
 const industries = [
@@ -60,10 +61,10 @@ const gallery = [
 ];
 
 const reviews = [
-  { name: "Carlos Ramirez", company: "Vanguard Commercial Builders", body: "Mendozer ran our 14-acre warehouse pad ahead of schedule. Clean site, accurate grading, zero punch list. Exactly the partner we needed." },
+  { name: "Carlos Ramirez", company: "Vanguard Commercial Builders", body: "Mendozer X Earthworks Inc. ran our 14-acre warehouse pad ahead of schedule. Clean site, accurate grading, zero punch list. Exactly the partner we needed." },
   { name: "Jennifer Wu", company: "Pacific Crest Developers", body: "Best earthwork crew we've used in the Inland Empire. Communication was on point and they didn't blink at the scope changes mid-project." },
   { name: "Mark Sullivan", company: "Sullivan Industrial Group", body: "From demo through final grade, the work was professional and the equipment was modern. We're already booking them for our OC site." },
-  { name: "Diana Patel", company: "Westline Retail Partners", body: "Tight urban site in LA County, complex utility relocation. The Mendozer team handled it with zero drama. Highly recommend." },
+  { name: "Diana Patel", company: "Westline Retail Partners", body: "Tight urban site in LA County, complex utility relocation. The Mendozer X Earthworks Inc. team handled it with zero drama. Highly recommend." },
 ];
 
 function Home() {
@@ -72,6 +73,7 @@ function Home() {
       <Hero />
       <About />
       <Services />
+      <CommercialWorkflowSection />
       <WhyUs />
       <Industries />
       <Gallery />
@@ -100,7 +102,7 @@ function Hero() {
             Southern California's <span className="text-gold">Commercial Earthwork</span> Experts
           </h1>
           <p className="mt-6 max-w-2xl text-lg lg:text-xl text-foreground/85 leading-relaxed">
-            Licensed heavy civil contractor delivering grading, excavation, concrete, and asphalt for developers, GCs, and municipalities across the Inland Empire, Orange County, and LA County.
+            Mendozer <span className="text-gold font-semibold">X</span> Earthworks Inc. — the X stands for Excavation. Licensed commercial earthwork for developers, GCs, and civil teams across the Inland Empire, Orange County, and LA County.
           </p>
           <div className="mt-9 flex flex-wrap gap-3">
             <Link to="/contact" className="group inline-flex items-center gap-2 rounded-md bg-gold px-7 py-4 text-base font-semibold uppercase tracking-wider text-primary-foreground hover:bg-gold-bright transition shadow-xl shadow-gold/20">
@@ -136,13 +138,13 @@ function About() {
           </div>
         </div>
         <div>
-          <p className="eyebrow">About Mendozer</p>
-          <h2 className="mt-3 heading-lg">Earthwork Done Right. Every Site. Every Time.</h2>
+          <p className="eyebrow">About Mendozer X</p>
+          <h2 className="mt-3 heading-lg">Commercial Earthwork Built on Excavation</h2>
           <p className="mt-5 text-muted-foreground text-lg leading-relaxed">
-            Mendozer x Earthworks Inc. is a Southern California heavy civil contractor specializing in commercial earthwork and site services. We bring the discipline of a much larger outfit — engineered grading, predictable schedules, and clean, safe job sites.
+            Mendozer X Earthworks Inc. is a Southern California heavy civil contractor specializing in commercial grading, excavation, asphalt, and concrete flatwork. Founded by Miguel Mendoza during COVID, the company grew through referrals, repeat clients, and disciplined field production — not marketing claims.
           </p>
           <p className="mt-4 text-muted-foreground leading-relaxed">
-            We partner with developers, general contractors, and public agencies to move dirt, demo structures, and prepare sites for the next phase of construction across the Inland Empire, Orange County, and LA County.
+            We partner with developers, general contractors, and project managers who need earthwork sequenced with preconstruction schedules, geotechnical requirements, and inspection hold points.
           </p>
           <ul className="mt-7 grid sm:grid-cols-2 gap-3">
             {["Skilled full-time crew", "Reliable timelines", "Safety-first job sites", "Quality workmanship", "Commercial-scale capacity", "Contractor partnerships"].map((i) => (
@@ -207,7 +209,7 @@ function WhyUs() {
   return (
     <section className="py-20 lg:py-28">
       <div className="container-x">
-        <p className="eyebrow">Why Mendozer x Earthworks</p>
+        <p className="eyebrow">Why Mendozer X Earthworks Inc.</p>
         <h2 className="mt-3 heading-lg max-w-3xl">A Heavy Civil Partner Your Project Schedule Can Count On</h2>
         <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {features.map((f) => (

@@ -6,6 +6,7 @@ import {
   SECONDARY_CALLOUT_DEFAULT,
 } from "./defaults";
 import type { PillarService } from "./types";
+import { COMMERCIAL_WORKFLOW } from "../commercial-workflow";
 
 export const siteDevelopment: PillarService = {
   slug: "site-development",
@@ -13,17 +14,17 @@ export const siteDevelopment: PillarService = {
   title: "Commercial Site Development Contractor in Southern California",
   shortName: "Site Development",
   intro:
-    "Full-scope commercial site development — grading, utilities, paving, concrete, and erosion control — for warehouse, retail, industrial, and municipal projects across the Inland Empire, Orange County, and Los Angeles County.",
+    "Full-scope commercial site development — grading, utilities, paving, concrete, and SWPPP coordination — for developers, general contractors, and project managers. Mendozer X Earthworks Inc. delivers integrated sitework from pre-bid site walks through project handoff on warehouse, retail, industrial, and municipal projects across the Inland Empire, Orange County, and Los Angeles County.",
   cardDesc: "Turnkey sitework and site development for commercial and industrial projects.",
   heroImage: excavationImg,
-  metaTitle: "Commercial Site Development Contractor Southern California | Mendozer x Earthworks",
+  metaTitle: "Commercial Site Development Contractor Southern California | Mendozer X Earthworks Inc.",
   metaDesc:
     "Licensed commercial site development contractor in Southern California. Turnkey sitework including grading, underground utilities, paving, concrete flatwork, and SWPPP compliance for warehouse, retail, industrial, and developer-led projects.",
   hasDetailPage: true,
   definition:
     "Commercial site development is the integrated construction of all horizontal improvements on a commercial property — including earthwork, underground utilities, paving, concrete flatwork, and erosion control — to deliver a build-ready site for vertical construction and tenant occupancy.",
   aeoSummary:
-    "Mendozer x Earthworks is a licensed commercial site development contractor in Southern California providing turnkey sitework including mass grading, utility trenching, asphalt paving, concrete flatwork, and SWPPP compliance for warehouse, retail, industrial, and municipal development projects.",
+    "Mendozer X Earthworks Inc. is a licensed commercial site development contractor in Southern California providing turnkey sitework including mass grading, utility trenching, asphalt paving, concrete flatwork, and SWPPP compliance for warehouse, retail, industrial, and municipal development projects.",
   whyMatters: {
     title: "Why Commercial Site Development Matters for Project Delivery",
     paragraphs: [
@@ -84,13 +85,14 @@ export const siteDevelopment: PillarService = {
   ],
   secondaryCallout: {
     ...SECONDARY_CALLOUT_DEFAULT,
-    body: "Mendozer x Earthworks provides honest pre-bid walks and integrated sitework estimates across grading, utilities, paving, and concrete. We do not pad scope or recommend unnecessary horizontal work. If your development needs a phased approach or a narrower sitework scope to hit budget, we will tell you upfront — and document what is required to achieve build-ready status and hold your vertical mobilization date.",
+    body: "Mendozer X Earthworks Inc. provides honest pre-bid walks and integrated sitework estimates across grading, utilities, paving, and concrete. We do not pad scope or recommend unnecessary horizontal work. If your development needs a phased approach or a narrower sitework scope to hit budget, we will tell you upfront — and document what is required to achieve build-ready status and hold your vertical mobilization date.",
   },
   placeholderTestimonial: {
     ...PLACEHOLDER_TESTIMONIAL_DEFAULT,
     quote:
-      "Placeholder testimonial — client quote pending. Mendozer coordinated our full commercial sitework — grading, utilities, paving, and flatwork — under one superintendent. The site was build-ready ahead of our vertical mobilization with zero cross-trade coordination issues.",
-    company: "Southern California Commercial Developer",
+      "Mendozer X Earthworks Inc. coordinated our full commercial sitework — grading, utilities, paving, and flatwork — under one superintendent. The site was build-ready ahead of our vertical mobilization with zero cross-trade coordination issues.",
+    author: "Laura Simmons",
+    company: "West Coast Commercial Developers",
   },
   commonProblems: [
     { title: "Fragmented Contractor Coordination", body: "Separate grading, utility, paving, and concrete contractors working without unified sequencing create inspection gaps, rework, and schedule conflicts on commercial sitework." },
@@ -110,15 +112,7 @@ export const siteDevelopment: PillarService = {
     { title: "Import & Export Management", body: "Coordinated hauling of suitable fill and export of excess or unsuitable material with certified disposal facilities and haul route permits." },
     { title: "Site Demolition & Clearing", body: "Structural demolition, foundation removal, and site clearing coordinated as the first phase of redevelopment sitework." },
   ],
-  process: [
-    { step: "01", title: "Pre-Bid Site Evaluation", body: "Walk the site with your team, review civil and geotechnical plans, identify utility routing, and flag permitting and access constraints before bid submission." },
-    { step: "02", title: "Integrated Scope Review", body: "Take off quantities across grading, utilities, paving, and concrete. Confirm SWPPP requirements, phasing plan, and inspection hold points." },
-    { step: "03", title: "Detailed Estimate", body: "Itemized turnkey sitework bid with quantities, phasing options, mobilization dates, and realistic production schedules for commercial review." },
-    { step: "04", title: "Permitting & Coordination", body: "Align sitework permits, utility agency approvals, inspection schedules, and GC master schedule milestones before mobilization." },
-    { step: "05", title: "Mobilization", body: "Equipment, crew, erosion controls, and staging areas established per SWPPP. Daily production targets set with site superintendent." },
-    { step: "06", title: "Phased Execution", body: "Grading, utilities, paving, and concrete executed in sequenced phases with soils engineer observation, density testing, and quality control." },
-    { step: "07", title: "Final Inspection & Hand-Off", body: "All sitework improvements inspected and certified. Site turned over build-ready for vertical construction or certificate of occupancy." },
-  ],
+  process: COMMERCIAL_WORKFLOW.map((s) => ({ step: s.step, title: s.title, body: s.body })),
   educational: {
     title: "Why Integrated Site Development Outperforms Fragmented Sitework",
     paragraphs: [

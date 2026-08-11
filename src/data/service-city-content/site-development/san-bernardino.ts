@@ -12,12 +12,78 @@ export const siteDevelopmentSanBernardino: ServiceCityPageContent = {
     "Commercial site development in San Bernardino, CA. Industrial redevelopment sitework, municipal improvement packages, large-lot grading, and older site remediation with debris management.",
 
   siteVisitItems: [
-    "Review civil improvement plans and full horizontal scope on San Bernardino industrial redevelopment and municipal improvement parcels",
-    "Assess existing site conditions, older industrial structures, environmental review requirements, and demolition scope as first sitework phase",
-    "Confirm large-lot grading quantities, cut/fill balancing, and geotechnical pad certification on former industrial zone commercial sites",
-    "Evaluate debris management, recycling streams, and site clearing coordination before mass grading mobilizes on San Bernardino redevelopment projects",
-    "Map San Bernardino agency inspection requirements, utility sequencing, and phased sitework execution on large-lot commercial parcels",
-    "Deliver itemized turnkey sitework bid with demolition, grading, utility, paving, and remediation scope assumptions within one business day",
+    {
+      title: "Plan & Document Review",
+      lead:
+        "Review civil improvement plans and full horizontal scope on San Bernardino industrial redevelopment and municipal improvement parcels.",
+      checkpoints: [
+        "Review civil improvement plans and full horizontal scope on San Bernardino industrial redevelopment and municipal improvement parcels.",
+        "Cross-check observations against civil plans, geotechnical data, and project specifications.",
+        "Flag constraints affecting production, haul logistics, SWPPP compliance, or inspection hold points.",
+      ],
+      fieldNote:
+        "Early plan and document review keeps bid assumptions aligned with engineer-approved civil quantities before contract award.",
+    },
+    {
+      title: "Field Conditions Assessment",
+      lead:
+        "Assess existing site conditions, older industrial structures, environmental review requirements, and demolition scope as first sitework phase.",
+      checkpoints: [
+        "Assess existing site conditions.",
+        "Older industrial structures.",
+        "Environmental review requirements.",
+      ],
+      fieldNote:
+        "Field assessment during the pre-bid walk surfaces constraints that affect production, haul logistics, and inspection sequencing.",
+    },
+    {
+      title: "Specification Verification",
+      lead:
+        "Confirm large-lot grading quantities, cut/fill balancing, and geotechnical pad certification on former industrial zone commercial sites.",
+      checkpoints: [
+        "Confirm large-lot grading quantities.",
+        "Cut/fill balancing.",
+        "Geotechnical pad certification on former industrial zone commercial sites.",
+      ],
+      fieldNote:
+        "Verified specifications before mobilization protect compaction acceptance, drainage performance, and agency sign-off.",
+    },
+    {
+      title: "Technical Evaluation",
+      lead:
+        "Evaluate debris management, recycling streams, and site clearing coordination before mass grading mobilizes on San Bernardino redevelopment projects.",
+      checkpoints: [
+        "Evaluate debris management.",
+        "Recycling streams.",
+        "Site clearing coordination before mass grading mobilizes on San Bernardino redevelopment projects.",
+      ],
+      fieldNote:
+        "Technical evaluation upfront reduces rework during production and prevents mid-project quantity disputes.",
+    },
+    {
+      title: "Inspection & Schedule Mapping",
+      lead:
+        "Map San Bernardino agency inspection requirements, utility sequencing, and phased sitework execution on large-lot commercial parcels.",
+      checkpoints: [
+        "Map San Bernardino agency inspection requirements.",
+        "Utility sequencing.",
+        "Phased sitework execution on large-lot commercial parcels.",
+      ],
+      fieldNote:
+        "Mapped inspection windows and hold points keep sitework sequenced with your GC master schedule and vertical mobilization.",
+    },
+    {
+      title: "Itemized Bid Delivery",
+      lead:
+        "Deliver itemized turnkey sitework bid with demolition, grading, utility, paving, and remediation scope assumptions within one business day.",
+      checkpoints: [
+        "Deliver itemized turnkey sitework bid with demolition.",
+        "Cross-check observations against civil plans, geotechnical data, and project specifications.",
+        "Confirm bid assumptions, quantities, and schedule milestones align with preconstruction requirements.",
+      ],
+      fieldNote:
+        "Itemized assumptions documented in the bid package protect schedule, budget, and both parties at award.",
+    },
   ],
 
   evaluationSteps: [
@@ -89,7 +155,7 @@ export const siteDevelopmentSanBernardino: ServiceCityPageContent = {
   faqs: [
     {
       q: "Do you provide commercial site development in San Bernardino, CA?",
-      a: "Yes. Mendozer x Earthworks (Lic. #1069854) delivers turnkey commercial sitework including site clearing, grading, utility trenching, paving, concrete flatwork, and SWPPP compliance on industrial, municipal, and redevelopment projects throughout San Bernardino.",
+      a: "Yes. Mendozer X Earthworks Inc. (Lic. #1069854) delivers turnkey commercial sitework including site clearing, grading, utility trenching, paving, concrete flatwork, and SWPPP compliance on industrial, municipal, and redevelopment projects throughout San Bernardino.",
     },
     {
       q: "Can you handle industrial redevelopment sitework in San Bernardino?",

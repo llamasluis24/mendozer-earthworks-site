@@ -12,12 +12,78 @@ export const siteDevelopmentSantaAna: ServiceCityPageContent = {
     "Commercial site development in Santa Ana, CA. Urban OC infill sitework, county seat agency coordination, tight-lot horizontal packages, and multi-phase inspection for civic center corridor commercial redevelopment.",
 
   siteVisitItems: [
-    "Review civil improvement plans, grading profiles, and full horizontal scope across Santa Ana urban infill commercial and mixed-use redevelopment parcels near the Orange County civic center",
-    "Assess tight-lot staging constraints, subgrade compaction standards, and pad certification requirements before mass grading mobilizes on densely built Santa Ana commercial sites",
-    "Confirm underground utility routing, trenching sequences, and backfill compaction requirements coordinated with wet and dry utility contractors on infill parcels with limited access",
-    "Evaluate SWPPP BMP requirements, dust and noise control protocols, and storm season compliance across all Santa Ana sitework phases in urban OC corridors",
-    "Map phased sitework sequencing, traffic control, and City of Santa Ana / Orange County inspection hold points before vertical mobilization on infill redevelopments",
-    "Deliver itemized turnkey sitework bid with grading, utility, paving, concrete, and SWPPP scope assumptions within one business day",
+    {
+      title: "Plan & Document Review",
+      lead:
+        "Review civil improvement plans, grading profiles, and full horizontal scope across Santa Ana urban infill commercial and mixed-use redevelopment parcels near the Orange County civic center.",
+      checkpoints: [
+        "Review civil improvement plans.",
+        "Grading profiles.",
+        "Full horizontal scope across Santa Ana urban infill commercial and mixed-use redevelopment parcels near the Orange County civic center.",
+      ],
+      fieldNote:
+        "Early plan and document review keeps bid assumptions aligned with engineer-approved civil quantities before contract award.",
+    },
+    {
+      title: "Field Conditions Assessment",
+      lead:
+        "Assess tight-lot staging constraints, subgrade compaction standards, and pad certification requirements before mass grading mobilizes on densely built Santa Ana commercial sites.",
+      checkpoints: [
+        "Assess tight-lot staging constraints.",
+        "Subgrade compaction standards.",
+        "Pad certification requirements before mass grading mobilizes on densely built Santa Ana commercial sites.",
+      ],
+      fieldNote:
+        "Field assessment during the pre-bid walk surfaces constraints that affect production, haul logistics, and inspection sequencing.",
+    },
+    {
+      title: "Specification Verification",
+      lead:
+        "Confirm underground utility routing, trenching sequences, and backfill compaction requirements coordinated with wet and dry utility contractors on infill parcels with limited access.",
+      checkpoints: [
+        "Confirm underground utility routing.",
+        "Trenching sequences.",
+        "Backfill compaction requirements coordinated with wet and dry utility contractors on infill parcels with limited access.",
+      ],
+      fieldNote:
+        "Verified specifications before mobilization protect compaction acceptance, drainage performance, and agency sign-off.",
+    },
+    {
+      title: "Technical Evaluation",
+      lead:
+        "Evaluate SWPPP BMP requirements, dust and noise control protocols, and storm season compliance across all Santa Ana sitework phases in urban OC corridors.",
+      checkpoints: [
+        "Evaluate SWPPP BMP requirements.",
+        "Dust and noise control protocols.",
+        "Storm season compliance across all Santa Ana sitework phases in urban OC corridors.",
+      ],
+      fieldNote:
+        "Technical evaluation upfront reduces rework during production and prevents mid-project quantity disputes.",
+    },
+    {
+      title: "Inspection & Schedule Mapping",
+      lead:
+        "Map phased sitework sequencing, traffic control, and City of Santa Ana / Orange County inspection hold points before vertical mobilization on infill redevelopments.",
+      checkpoints: [
+        "Map phased sitework sequencing.",
+        "Traffic control.",
+        "City of Santa Ana / Orange County inspection hold points before vertical mobilization on infill redevelopments.",
+      ],
+      fieldNote:
+        "Mapped inspection windows and hold points keep sitework sequenced with your GC master schedule and vertical mobilization.",
+    },
+    {
+      title: "Itemized Bid Delivery",
+      lead:
+        "Deliver itemized turnkey sitework bid with grading, utility, paving, concrete, and SWPPP scope assumptions within one business day.",
+      checkpoints: [
+        "Deliver itemized turnkey sitework bid with grading.",
+        "Cross-check observations against civil plans, geotechnical data, and project specifications.",
+        "Confirm bid assumptions, quantities, and schedule milestones align with preconstruction requirements.",
+      ],
+      fieldNote:
+        "Itemized assumptions documented in the bid package protect schedule, budget, and both parties at award.",
+    },
   ],
 
   evaluationSteps: [
@@ -89,7 +155,7 @@ export const siteDevelopmentSantaAna: ServiceCityPageContent = {
   faqs: [
     {
       q: "Do you provide commercial site development in Santa Ana, CA?",
-      a: "Yes. Mendozer x Earthworks (Lic. #1069854) delivers turnkey commercial sitework including mass grading, utility trenching, storm drain, asphalt paving, concrete flatwork, and SWPPP compliance on commercial, mixed-use, and infill projects throughout Santa Ana and Orange County.",
+      a: "Yes. Mendozer X Earthworks Inc. (Lic. #1069854) delivers turnkey commercial sitework including mass grading, utility trenching, storm drain, asphalt paving, concrete flatwork, and SWPPP compliance on commercial, mixed-use, and infill projects throughout Santa Ana and Orange County.",
     },
     {
       q: "What does turnkey sitework include on Santa Ana urban infill projects?",

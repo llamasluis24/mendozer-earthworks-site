@@ -12,12 +12,78 @@ export const siteDevelopmentTemecula: ServiceCityPageContent = {
     "Commercial site development in Temecula, CA. Wine country retail sitework, hillside cut/fill coordination, master-planned commercial packages, and Riverside County multi-phase inspection for Temecula Valley horizontal improvements.",
 
   siteVisitItems: [
-    "Review civil improvement plans, hillside grading profiles, and full horizontal scope across Temecula master-planned commercial and wine country retail redevelopment parcels",
-    "Assess geotechnical requirements, hillside cut/fill quantities, retaining wall tie-ins, and pad certification standards before mass grading mobilizes on sloped Temecula Valley sites",
-    "Confirm underground utility routing, trenching sequences, and backfill compaction requirements coordinated with wet and dry utility contractors on multi-tenant retail pads",
-    "Evaluate SWPPP BMP requirements, sediment control from surrounding wine country terrain, and storm season compliance across all Temecula sitework phases",
-    "Map phased sitework sequencing, export routes, and Riverside County multi-agency inspection hold points before vertical mobilization on Temecula commercial districts",
-    "Deliver itemized turnkey sitework bid with grading, utility, paving, concrete, and SWPPP scope assumptions within one business day",
+    {
+      title: "Plan & Document Review",
+      lead:
+        "Review civil improvement plans, hillside grading profiles, and full horizontal scope across Temecula master-planned commercial and wine country retail redevelopment parcels.",
+      checkpoints: [
+        "Review civil improvement plans.",
+        "Hillside grading profiles.",
+        "Full horizontal scope across Temecula master-planned commercial and wine country retail redevelopment parcels.",
+      ],
+      fieldNote:
+        "Early plan and document review keeps bid assumptions aligned with engineer-approved civil quantities before contract award.",
+    },
+    {
+      title: "Field Conditions Assessment",
+      lead:
+        "Assess geotechnical requirements, hillside cut/fill quantities, retaining wall tie-ins, and pad certification standards before mass grading mobilizes on sloped Temecula Valley sites.",
+      checkpoints: [
+        "Assess geotechnical requirements.",
+        "Hillside cut/fill quantities.",
+        "Retaining wall tie-ins.",
+      ],
+      fieldNote:
+        "Field assessment during the pre-bid walk surfaces constraints that affect production, haul logistics, and inspection sequencing.",
+    },
+    {
+      title: "Specification Verification",
+      lead:
+        "Confirm underground utility routing, trenching sequences, and backfill compaction requirements coordinated with wet and dry utility contractors on multi-tenant retail pads.",
+      checkpoints: [
+        "Confirm underground utility routing.",
+        "Trenching sequences.",
+        "Backfill compaction requirements coordinated with wet and dry utility contractors on multi-tenant retail pads.",
+      ],
+      fieldNote:
+        "Verified specifications before mobilization protect compaction acceptance, drainage performance, and agency sign-off.",
+    },
+    {
+      title: "Technical Evaluation",
+      lead:
+        "Evaluate SWPPP BMP requirements, sediment control from surrounding wine country terrain, and storm season compliance across all Temecula sitework phases.",
+      checkpoints: [
+        "Evaluate SWPPP BMP requirements.",
+        "Sediment control from surrounding wine country terrain.",
+        "Storm season compliance across all Temecula sitework phases.",
+      ],
+      fieldNote:
+        "Technical evaluation upfront reduces rework during production and prevents mid-project quantity disputes.",
+    },
+    {
+      title: "Inspection & Schedule Mapping",
+      lead:
+        "Map phased sitework sequencing, export routes, and Riverside County multi-agency inspection hold points before vertical mobilization on Temecula commercial districts.",
+      checkpoints: [
+        "Map phased sitework sequencing.",
+        "Export routes.",
+        "Riverside County multi-agency inspection hold points before vertical mobilization on Temecula commercial districts.",
+      ],
+      fieldNote:
+        "Mapped inspection windows and hold points keep sitework sequenced with your GC master schedule and vertical mobilization.",
+    },
+    {
+      title: "Itemized Bid Delivery",
+      lead:
+        "Deliver itemized turnkey sitework bid with grading, utility, paving, concrete, and SWPPP scope assumptions within one business day.",
+      checkpoints: [
+        "Deliver itemized turnkey sitework bid with grading.",
+        "Cross-check observations against civil plans, geotechnical data, and project specifications.",
+        "Confirm bid assumptions, quantities, and schedule milestones align with preconstruction requirements.",
+      ],
+      fieldNote:
+        "Itemized assumptions documented in the bid package protect schedule, budget, and both parties at award.",
+    },
   ],
 
   evaluationSteps: [
@@ -89,7 +155,7 @@ export const siteDevelopmentTemecula: ServiceCityPageContent = {
   faqs: [
     {
       q: "Do you provide commercial site development in Temecula, CA?",
-      a: "Yes. Mendozer x Earthworks (Lic. #1069854) delivers turnkey commercial sitework including mass grading, utility trenching, storm drain, asphalt paving, concrete flatwork, and SWPPP compliance on retail, mixed-use, and commercial projects throughout Temecula and Riverside County.",
+      a: "Yes. Mendozer X Earthworks Inc. (Lic. #1069854) delivers turnkey commercial sitework including mass grading, utility trenching, storm drain, asphalt paving, concrete flatwork, and SWPPP compliance on retail, mixed-use, and commercial projects throughout Temecula and Riverside County.",
     },
     {
       q: "What does turnkey sitework include on Temecula wine country retail projects?",

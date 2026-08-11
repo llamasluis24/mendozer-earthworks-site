@@ -13,12 +13,78 @@ export const gradingRialto: ServiceCityPageContent = {
     "Commercial grading in Rialto, CA. BNSF-adjacent logistics pad prep, San Bernardino County large-lot grading, industrial cut/fill, and SWPPP compliance for Rialto warehouse and distribution redevelopments.",
 
   siteVisitItems: [
-    "Review civil grading plans and large-lot cut/fill quantities on Rialto BNSF-adjacent logistics parcels where rail corridor proximity and industrial soil conditions affect earthwork sequencing",
-    "Assess former industrial zone soils, undocumented fill, and unsuitable material zones from geotechnical reports on San Bernardino County Rialto warehouse and distribution redevelopment sites",
-    "Confirm San Bernardino County grading permit requirements, compaction testing frequency, and inspection hold points before mass excavation mobilizes on large-lot Rialto industrial pads",
-    "Map BNSF corridor haul routes, export staging, and articulated truck access for excess cut material on Rialto logistics parcels where multi-acre balance cannot absorb full grading volumes",
-    "Evaluate SWPPP BMP placement, track-out control, and sediment barriers required on expansive Rialto grading operations adjacent to active rail and trucking corridors",
-    "Deliver itemized grading bid with large-lot production rates, import/export assumptions, and San Bernardino County inspection sequencing within one business day",
+    {
+      title: "Plan & Document Review",
+      lead:
+        "Review civil grading plans and large-lot cut/fill quantities on Rialto BNSF-adjacent logistics parcels where rail corridor proximity and industrial soil conditions affect earthwork sequencing.",
+      checkpoints: [
+        "Review civil grading plans and large-lot cut/fill quantities on Rialto BNSF-adjacent logistics parcels where rail corridor proximity and industrial soil conditions affect earthwork sequencing.",
+        "Cross-check observations against civil plans, geotechnical data, and project specifications.",
+        "Flag constraints affecting production, haul logistics, SWPPP compliance, or inspection hold points.",
+      ],
+      fieldNote:
+        "Early plan and document review keeps bid assumptions aligned with engineer-approved civil quantities before contract award.",
+    },
+    {
+      title: "Field Conditions Assessment",
+      lead:
+        "Assess former industrial zone soils, undocumented fill, and unsuitable material zones from geotechnical reports on San Bernardino County Rialto warehouse and distribution redevelopment sites.",
+      checkpoints: [
+        "Assess former industrial zone soils.",
+        "Undocumented fill.",
+        "Unsuitable material zones from geotechnical reports on San Bernardino County Rialto warehouse and distribution redevelopment sites.",
+      ],
+      fieldNote:
+        "Field assessment during the pre-bid walk surfaces constraints that affect production, haul logistics, and inspection sequencing.",
+    },
+    {
+      title: "Specification Verification",
+      lead:
+        "Confirm San Bernardino County grading permit requirements, compaction testing frequency, and inspection hold points before mass excavation mobilizes on large-lot Rialto industrial pads.",
+      checkpoints: [
+        "Confirm San Bernardino County grading permit requirements.",
+        "Compaction testing frequency.",
+        "Inspection hold points before mass excavation mobilizes on large-lot Rialto industrial pads.",
+      ],
+      fieldNote:
+        "Verified specifications before mobilization protect compaction acceptance, drainage performance, and agency sign-off.",
+    },
+    {
+      title: "Inspection & Schedule Mapping",
+      lead:
+        "Map BNSF corridor haul routes, export staging, and articulated truck access for excess cut material on Rialto logistics parcels where multi-acre balance cannot absorb full grading volumes.",
+      checkpoints: [
+        "Map BNSF corridor haul routes.",
+        "Export staging.",
+        "Articulated truck access for excess cut material on Rialto logistics parcels where multi-acre balance cannot absorb full grading volumes.",
+      ],
+      fieldNote:
+        "Mapped inspection windows and hold points keep sitework sequenced with your GC master schedule and vertical mobilization.",
+    },
+    {
+      title: "Technical Evaluation",
+      lead:
+        "Evaluate SWPPP BMP placement, track-out control, and sediment barriers required on expansive Rialto grading operations adjacent to active rail and trucking corridors.",
+      checkpoints: [
+        "Evaluate SWPPP BMP placement.",
+        "Track-out control.",
+        "Sediment barriers required on expansive Rialto grading operations adjacent to active rail and trucking corridors.",
+      ],
+      fieldNote:
+        "Technical evaluation upfront reduces rework during production and prevents mid-project quantity disputes.",
+    },
+    {
+      title: "Itemized Bid Delivery",
+      lead:
+        "Deliver itemized grading bid with large-lot production rates, import/export assumptions, and San Bernardino County inspection sequencing within one business day.",
+      checkpoints: [
+        "Deliver itemized grading bid with large-lot production rates.",
+        "Import/export assumptions.",
+        "San Bernardino County inspection sequencing within one business day.",
+      ],
+      fieldNote:
+        "Itemized assumptions documented in the bid package protect schedule, budget, and both parties at award.",
+    },
   ],
 
   evaluationSteps: [
@@ -90,7 +156,7 @@ export const gradingRialto: ServiceCityPageContent = {
   faqs: [
     {
       q: "Do you perform commercial grading in Rialto, CA?",
-      a: "Yes. Mendozer x Earthworks (Lic. #1069854) self-performs mass excavation, large-lot cut/fill balancing, compaction, GPS fine grading, and engineered pad prep on warehouse, logistics, and industrial commercial projects throughout Rialto and San Bernardino County.",
+      a: "Yes. Mendozer X Earthworks Inc. (Lic. #1069854) self-performs mass excavation, large-lot cut/fill balancing, compaction, GPS fine grading, and engineered pad prep on warehouse, logistics, and industrial commercial projects throughout Rialto and San Bernardino County.",
     },
     {
       q: "Can you grade large-lot warehouse pads in Rialto?",

@@ -6,6 +6,7 @@ import {
   SECONDARY_CALLOUT_DEFAULT,
 } from "./defaults";
 import type { PillarService } from "./types";
+import { COMMERCIAL_WORKFLOW } from "../commercial-workflow";
 
 export const concrete: PillarService = {
   slug: "concrete",
@@ -13,23 +14,23 @@ export const concrete: PillarService = {
   title: "Commercial Flatwork & Site Concrete Contractor in Southern California",
   shortName: "Concrete",
   intro:
-    "Commercial flatwork, sidewalks, curbs and gutters, driveways, patios, stoops, steps, and ADA site improvements for commercial developers, general contractors, municipalities, and commercial builders across the Inland Empire, Orange County, and Los Angeles County.",
+    "Commercial flatwork, sidewalks, curbs and gutters, driveways, patios, stoops, steps, and ADA site improvements for developers, general contractors, and civil engineers. Mendozer X Earthworks Inc. executes site concrete to civil profiles with inspection-ready finishes and project closeout sequencing across the Inland Empire, Orange County, and Los Angeles County.",
   cardDesc: "Commercial flatwork, sidewalks, curbs, gutters, and site concrete — not structural foundations.",
   heroImage: concreteImg,
-  metaTitle: "Commercial Flatwork & Site Concrete Contractor Southern California | Mendozer x Earthworks",
+  metaTitle: "Commercial Flatwork & Site Concrete Contractor Southern California | Mendozer X Earthworks Inc.",
   metaDesc:
     "Licensed commercial flatwork contractor in Southern California. Sidewalks, curbs and gutters, driveways, patios, stoops, steps, and ADA site concrete for warehouses, retail, industrial, and municipal projects.",
   hasDetailPage: true,
   definition:
     "Commercial site concrete and flatwork encompasses the placement, finishing, and curing of concrete for sidewalks, curbs, gutters, driveways, patios, stoops, steps, and ADA improvements on commercial development sites — distinct from structural foundation systems.",
   aeoSummary:
-    "Mendozer x Earthworks is a licensed commercial flatwork contractor in Southern California specializing in site concrete — sidewalks, curbs and gutters, driveways, patios, stoops, steps, and ADA improvements — for warehouse, retail, industrial, and municipal projects. We do not perform structural foundation systems.",
+    "Mendozer X Earthworks Inc. is a licensed commercial flatwork contractor in Southern California specializing in site concrete — sidewalks, curbs and gutters, driveways, patios, stoops, steps, and ADA improvements — for warehouse, retail, industrial, and municipal projects. We do not perform structural foundation systems.",
   whyMatters: {
     title: "Why Commercial Flatwork Requires Site Concrete Expertise",
     paragraphs: [
       "Commercial site concrete is the horizontal improvements that make a development functional and compliant — sidewalks that connect buildings to parking, curbs and gutters that control stormwater, driveways and aprons that handle daily traffic, and ADA improvements that meet accessibility requirements. This is flatwork and site concrete, not structural foundation work. The specifications, forming methods, finish requirements, and inspection pathways are different — and treating them as the same scope leads to drainage failures, ADA rejections, and premature surface deterioration.",
       "On developer-led and GC-managed projects, site concrete is sequenced after underground utilities and grading certification, and before or alongside asphalt paving. Curbs and gutters must tie to civil drainage profiles. Sidewalks must drain properly and meet joint spacing requirements. ADA curb ramps require cross-slope tolerances measured in fractions of a percent. A flatwork contractor that pours before subgrade is certified or finishes without proper curing delivers surfaces that crack, pond water, and fail inspection.",
-      "Mendozer specializes in commercial flatwork and site concrete. We do not position our company as a structural foundation contractor — we focus on the horizontal concrete improvements that complete a commercial site. Southern California projects add complexity with strict ADA requirements, expansive soil subgrades requiring proper preparation, and agency inspection of profiles and finishes before acceptance.",
+      "Mendozer X Earthworks Inc. specializes in commercial flatwork and site concrete. We do not position our company as a structural foundation contractor — we focus on the horizontal concrete improvements that complete a commercial site. Southern California projects add complexity with strict ADA requirements, expansive soil subgrades requiring proper preparation, and agency inspection of profiles and finishes before acceptance.",
     ],
   },
   trustBar: [...COMMON_TRUST_BAR],
@@ -72,8 +73,8 @@ export const concrete: PillarService = {
     { title: "Steps", body: "Concrete steps and stair flatwork for site access, building entries, and grade transitions with proper riser/tread dimensions and drainage.", image: CONCRETE_IMAGES[7] },
     { title: "ADA Concrete Improvements", body: "Compliant curb ramps, detectable warning surfaces, accessible routes, and landing transitions per ADA and California Building Code requirements. Placeholder — certification details coming soon.", image: CONCRETE_IMAGES[8] },
     { title: "Loading & Utility Flatwork", body: "Dumpster pads, utility access slabs, and equipment pads — site concrete built for commercial use and maintenance access.", image: CONCRETE_IMAGES[9] },
-    { title: "Decorative Site Flatwork", body: "Exposed aggregate, colored concrete, and architectural finishes for commercial entry plazas and public-facing site improvements. Placeholder — finish portfolio coming soon.", image: CONCRETE_IMAGES[0] },
-    { title: "Flatwork Repair & Replacement", body: "Removal and replacement of failed sidewalk, curb, gutter, and driveway sections on commercial properties during renovation or redevelopment.", image: CONCRETE_IMAGES[1] },
+    { title: "Decorative Site Flatwork", body: "Exposed aggregate, colored concrete, and architectural finishes for commercial entry plazas and public-facing site improvements. Placeholder — finish portfolio coming soon.", image: CONCRETE_IMAGES[10] },
+    { title: "Flatwork Repair & Replacement", body: "Removal and replacement of failed sidewalk, curb, gutter, and driveway sections on commercial properties during renovation or redevelopment.", image: CONCRETE_IMAGES[11] },
   ],
   scopeIncludes: [
     "Pre-bid and pre-pour plan review with your civil engineer and GC superintendent",
@@ -87,7 +88,7 @@ export const concrete: PillarService = {
   secondaryCallout: {
     ...SECONDARY_CALLOUT_DEFAULT,
     title: "Site Concrete & Flatwork — Not Structural Foundations",
-    body: "Mendozer x Earthworks specializes in commercial flatwork and site concrete — sidewalks, curbs, gutters, driveways, patios, stoops, steps, and ADA improvements. We do not perform structural foundation systems such as spread footings, grade beams, or structural slabs-on-grade unless confirmed separately for a specific project. If your scope is site concrete, we provide honest quantity reviews and itemized estimates focused on flatwork production and inspection requirements.",
+    body: "Mendozer X Earthworks Inc. specializes in commercial flatwork and site concrete — sidewalks, curbs, gutters, driveways, patios, stoops, steps, and ADA improvements. We do not perform structural foundation systems such as spread footings, grade beams, or structural slabs-on-grade unless confirmed separately for a specific project. If your scope is site concrete, we provide honest quantity reviews and itemized estimates focused on flatwork production and inspection requirements.",
   },
   placeholderTestimonial: PLACEHOLDER_TESTIMONIAL_DEFAULT,
   commonProblems: [
@@ -108,24 +109,16 @@ export const concrete: PillarService = {
     { title: "ADA Site Improvements", body: "Compliant curb ramps, accessible routes, and detectable warning surfaces per ADA and CBC." },
     { title: "Flatwork Repair", body: "Removal and replacement of failed sidewalk, curb, and driveway sections on commercial properties." },
   ],
-  process: [
-    { step: "01", title: "Pre-Bid Plan Review", body: "Review civil flatwork plans with your team, confirm subgrade requirements, and identify formwork, profile, and pour sequencing constraints." },
-    { step: "02", title: "Scope & Spec Review", body: "Confirm concrete mix designs, finish specifications, ADA requirements, and inspection hold points for each flatwork category." },
-    { step: "03", title: "Detailed Estimate", body: "Itemized bid with concrete yardage, formwork requirements, and realistic pour schedules for commercial review." },
-    { step: "04", title: "Scheduling & Coordination", body: "Align pour dates with subgrade certification, underground completion, paving, and city inspection windows." },
-    { step: "05", title: "Form & Prep", body: "Formwork set to civil profiles, subgrade confirmed, and pre-pour inspection completed before concrete delivery." },
-    { step: "06", title: "Pour & Finish", body: "Concrete placed, finished, jointed, and cured to specification for sidewalks, curbs, driveways, and site flatwork." },
-    { step: "07", title: "Inspection & Hand-Off", body: "Final inspection cleared and flatwork turned over ready for paving, striping, landscaping, or certificate of occupancy." },
-  ],
+  process: COMMERCIAL_WORKFLOW.map((s) => ({ step: s.step, title: s.title, body: s.body })),
   educational: {
     title: "Commercial Flatwork vs. Structural Foundations",
     paragraphs: [
       "Commercial concrete work falls into two distinct categories. Structural foundations — spread footings, grade beams, structural slabs-on-grade, post-tension systems — transfer building loads to engineered subgrade and require structural engineering, rebar inspection, and compressive strength verification tied to the building's structural system. Site concrete and flatwork — sidewalks, curbs, gutters, driveways, patios, stoops, steps — are horizontal improvements that control drainage, pedestrian circulation, and site accessibility. They follow civil engineering profiles, not structural reinforcement schedules.",
-      "Mendozer specializes in the second category. Our crews form, pour, finish, and cure commercial flatwork to civil plan profiles with proper joint layout, drainage slopes, and curing protocols. We coordinate with your civil engineer for curb and gutter flow lines, with inspectors for ADA ramp compliance, and with your GC for pour sequencing alongside paving and landscaping. This is site completion concrete — the work that makes a commercial development functional, accessible, and ready for occupancy.",
-      "Positioning a contractor for the wrong concrete scope creates project risk. Foundation contractors may not prioritize sidewalk drainage profiles or ADA landing dimensions. Flatwork specialists may not carry structural engineering coordination capacity. Mendozer is transparent about our scope: commercial flatwork and site concrete for developers, GCs, municipalities, and commercial builders. Structural foundation systems are outside our standard scope unless confirmed separately for a specific engagement.",
+      "Mendozer X Earthworks Inc. specializes in the second category. Our crews form, pour, finish, and cure commercial flatwork to civil plan profiles with proper joint layout, drainage slopes, and curing protocols. We coordinate with your civil engineer for curb and gutter flow lines, with inspectors for ADA ramp compliance, and with your GC for pour sequencing alongside paving and landscaping. This is site completion concrete — the work that makes a commercial development functional, accessible, and ready for occupancy.",
+      "Positioning a contractor for the wrong concrete scope creates project risk. Foundation contractors may not prioritize sidewalk drainage profiles or ADA landing dimensions. Flatwork specialists may not carry structural engineering coordination capacity. Mendozer X Earthworks Inc. is transparent about our scope: commercial flatwork and site concrete for developers, GCs, municipalities, and commercial builders. Structural foundation systems are outside our standard scope unless confirmed separately for a specific engagement.",
     ],
     callout:
-      "Commercial developers and GCs should match concrete scope to contractor capability. Site concrete and flatwork require civil profile accuracy, ADA compliance, and drainage performance — not structural rebar schedules. Mendozer delivers commercial flatwork built for site completion and long-term performance.",
+      "Commercial developers and GCs should match concrete scope to contractor capability. Site concrete and flatwork require civil profile accuracy, ADA compliance, and drainage performance — not structural rebar schedules. Mendozer X Earthworks Inc. delivers commercial flatwork built for site completion and long-term performance.",
   },
   commercialBenefits: [
     { title: "Commercial Flatwork", body: "Site concrete placement and finishing for aprons, walkways, and horizontal improvements." },
@@ -150,7 +143,7 @@ export const concrete: PillarService = {
     { q: "Do you install commercial sidewalks?", a: "Yes. We construct commercial sidewalks and pedestrian walkways with proper slope-to-drain, control joint spacing, and specified finishes per civil engineering plans." },
     { q: "Do you perform curb and gutter work?", a: "Yes. We install formed and extruded curb and gutter tied to civil plan profiles, drainage flow lines, and storm drain structure connections." },
     { q: "What types of flatwork do you specialize in?", a: "We specialize in commercial site concrete and flatwork — sidewalks, curbs and gutters, driveways, patios, California rooms, stoops, steps, ADA improvements, equipment pads, and loading aprons. We focus on horizontal site improvements, not structural foundation systems." },
-    { q: "Do you pour structural foundations?", a: "No — not as standard scope. Mendozer specializes in commercial flatwork and site concrete. Structural foundation systems such as spread footings, grade beams, and structural slabs-on-grade are outside our standard offering unless confirmed separately for a specific project." },
+    { q: "Do you pour structural foundations?", a: "No — not as standard scope. Mendozer X Earthworks Inc. specializes in commercial flatwork and site concrete. Structural foundation systems such as spread footings, grade beams, and structural slabs-on-grade are outside our standard offering unless confirmed separately for a specific project." },
     { q: "Do you build ADA-compliant curb ramps?", a: "Yes. We construct curb ramps with proper cross-slopes, landing dimensions, detectable warning surfaces, and grade transitions per ADA and California Building Code requirements. Placeholder — additional certification details will be added as confirmed." },
     { q: "Can you pour driveways and patios on commercial sites?", a: "Yes. We install concrete driveways, approach slabs, patios, and outdoor tenant flatwork with proper subgrade preparation, joint layout, and specified finishes." },
     { q: "Do you coordinate with civil engineers?", a: "Yes. We work directly with your civil engineer for curb and gutter profiles, sidewalk grades, drainage tie-ins, and ADA ramp locations." },

@@ -14,12 +14,78 @@ export const pavingSanBernardino: ServiceCityPageContent = {
     "Commercial asphalt paving in San Bernardino, CA. Industrial yard overlays, municipal paving programs, large-lot reconstruction, and mill-and-overlay for older pavement failure on Inland Empire commercial and industrial properties.",
 
   siteVisitItems: [
-    "Walk existing San Bernardino industrial yard pavement and document rutting, alligator cracking, reflective failure, and remaining structural capacity for overlay vs. full-depth reconstruction",
-    "Review civil paving plans, heavy-load section details, and aggregate base specifications for large-lot commercial and municipal parking reconstruction on San Bernardino redevelopment parcels",
-    "Assess subgrade conditions, drainage flow lines, and catch basin tie-ins on older San Bernardino pavement where decades of truck traffic and deferred maintenance accelerated structural failure",
-    "Confirm City of San Bernardino paving permit pathway, compaction testing requirements, and municipal inspection hold points for public improvement and agency-funded commercial projects",
-    "Map haul routes, staging areas, and phased traffic control for large-lot paving on expansive San Bernardino industrial properties where full-lot closure is not feasible during active operations",
-    "Deliver itemized paving bid with overlay tonnage, reconstruction quantities, base course assumptions, and production rates tied to San Bernardino municipal and industrial redevelopment schedules",
+    {
+      title: "Pre-Bid Site Walk",
+      lead:
+        "Walk existing San Bernardino industrial yard pavement and document rutting, alligator cracking, reflective failure, and remaining structural capacity for overlay vs. full-depth reconstruction.",
+      checkpoints: [
+        "Walk existing San Bernardino industrial yard pavement and document rutting.",
+        "Alligator cracking.",
+        "Reflective failure.",
+      ],
+      fieldNote:
+        "Early plan and document review keeps bid assumptions aligned with engineer-approved civil quantities before contract award.",
+    },
+    {
+      title: "Plan & Document Review",
+      lead:
+        "Review civil paving plans, heavy-load section details, and aggregate base specifications for large-lot commercial and municipal parking reconstruction on San Bernardino redevelopment parcels.",
+      checkpoints: [
+        "Review civil paving plans.",
+        "Heavy-load section details.",
+        "Aggregate base specifications for large-lot commercial and municipal parking reconstruction on San Bernardino redevelopment parcels.",
+      ],
+      fieldNote:
+        "Early plan and document review keeps bid assumptions aligned with engineer-approved civil quantities before contract award.",
+    },
+    {
+      title: "Field Conditions Assessment",
+      lead:
+        "Assess subgrade conditions, drainage flow lines, and catch basin tie-ins on older San Bernardino pavement where decades of truck traffic and deferred maintenance accelerated structural failure.",
+      checkpoints: [
+        "Assess subgrade conditions.",
+        "Drainage flow lines.",
+        "Catch basin tie-ins on older San Bernardino pavement where decades of truck traffic and deferred maintenance accelerated structural failure.",
+      ],
+      fieldNote:
+        "Field assessment during the pre-bid walk surfaces constraints that affect production, haul logistics, and inspection sequencing.",
+    },
+    {
+      title: "Specification Verification",
+      lead:
+        "Confirm City of San Bernardino paving permit pathway, compaction testing requirements, and municipal inspection hold points for public improvement and agency-funded commercial projects.",
+      checkpoints: [
+        "Confirm City of San Bernardino paving permit pathway.",
+        "Compaction testing requirements.",
+        "Municipal inspection hold points for public improvement and agency-funded commercial projects.",
+      ],
+      fieldNote:
+        "Verified specifications before mobilization protect compaction acceptance, drainage performance, and agency sign-off.",
+    },
+    {
+      title: "Inspection & Schedule Mapping",
+      lead:
+        "Map haul routes, staging areas, and phased traffic control for large-lot paving on expansive San Bernardino industrial properties where full-lot closure is not feasible during active operations.",
+      checkpoints: [
+        "Map haul routes.",
+        "Staging areas.",
+        "Phased traffic control for large-lot paving on expansive San Bernardino industrial properties where full-lot closure is not feasible during active operations.",
+      ],
+      fieldNote:
+        "Mapped inspection windows and hold points keep sitework sequenced with your GC master schedule and vertical mobilization.",
+    },
+    {
+      title: "Itemized Bid Delivery",
+      lead:
+        "Deliver itemized paving bid with overlay tonnage, reconstruction quantities, base course assumptions, and production rates tied to San Bernardino municipal and industrial redevelopment schedules.",
+      checkpoints: [
+        "Deliver itemized paving bid with overlay tonnage.",
+        "Reconstruction quantities.",
+        "Base course assumptions.",
+      ],
+      fieldNote:
+        "Itemized assumptions documented in the bid package protect schedule, budget, and both parties at award.",
+    },
   ],
 
   evaluationSteps: [
@@ -91,7 +157,7 @@ export const pavingSanBernardino: ServiceCityPageContent = {
   faqs: [
     {
       q: "Do you provide commercial asphalt paving in San Bernardino, CA?",
-      a: "Yes. Mendozer x Earthworks (Lic. #1069854) self-performs commercial asphalt paving, mill-and-overlay, full-depth reconstruction, and aggregate base installation on industrial yards, municipal improvements, and large-lot commercial properties in San Bernardino and the Inland Empire.",
+      a: "Yes. Mendozer X Earthworks Inc. (Lic. #1069854) self-performs commercial asphalt paving, mill-and-overlay, full-depth reconstruction, and aggregate base installation on industrial yards, municipal improvements, and large-lot commercial properties in San Bernardino and the Inland Empire.",
     },
     {
       q: "Can you overlay aging San Bernardino industrial yard pavement?",

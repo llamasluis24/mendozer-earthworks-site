@@ -14,12 +14,78 @@ export const demolitionAnaheim: ServiceCityPageContent = {
     "Commercial demolition contractor in Anaheim, CA. Phased structural takedown near active retail and hospitality, after-hours demolition, and OC agency-compliant dust and noise control for corridor redevelopment projects.",
 
   siteVisitItems: [
-    "Walk existing commercial structures and document phased demolition boundaries adjacent to active Anaheim retail, restaurant, and hospitality operations",
-    "Confirm after-hours work windows, noise ordinance limits, and dust suppression requirements with City of Anaheim building division on corridor redevelopment sites",
-    "Map ADA-accessible corridor adjacency and pedestrian pathway protection during phased structural takedown near Anaheim commercial districts",
-    "Verify utility disconnect and cap documentation for gas, electric, water, sewer, and fire lines on partially operational Anaheim commercial properties",
-    "Assess debris staging, screened containment, and haul routes that maintain OC agency SWPPP and noise compliance near occupied tenant pads",
-    "Deliver itemized demolition bid with phased production rates, after-hours allowances, and dust control methods tied to Anaheim corridor redevelopment schedules",
+    {
+      title: "Pre-Bid Site Walk",
+      lead:
+        "Walk existing commercial structures and document phased demolition boundaries adjacent to active Anaheim retail, restaurant, and hospitality operations.",
+      checkpoints: [
+        "Walk existing commercial structures and document phased demolition boundaries adjacent to active Anaheim retail.",
+        "Cross-check observations against civil plans, geotechnical data, and project specifications.",
+        "Flag constraints affecting production, haul logistics, SWPPP compliance, or inspection hold points.",
+      ],
+      fieldNote:
+        "Early plan and document review keeps bid assumptions aligned with engineer-approved civil quantities before contract award.",
+    },
+    {
+      title: "Specification Verification",
+      lead:
+        "Confirm after-hours work windows, noise ordinance limits, and dust suppression requirements with City of Anaheim building division on corridor redevelopment sites.",
+      checkpoints: [
+        "Confirm after-hours work windows.",
+        "Noise ordinance limits.",
+        "Dust suppression requirements with City of Anaheim building division on corridor redevelopment sites.",
+      ],
+      fieldNote:
+        "Verified specifications before mobilization protect compaction acceptance, drainage performance, and agency sign-off.",
+    },
+    {
+      title: "Inspection & Schedule Mapping",
+      lead:
+        "Map ADA-accessible corridor adjacency and pedestrian pathway protection during phased structural takedown near Anaheim commercial districts.",
+      checkpoints: [
+        "Map ADA-accessible corridor adjacency and pedestrian pathway protection during phased structural takedown near Anaheim commercial districts.",
+        "Cross-check observations against civil plans, geotechnical data, and project specifications.",
+        "Flag constraints affecting production, haul logistics, SWPPP compliance, or inspection hold points.",
+      ],
+      fieldNote:
+        "Mapped inspection windows and hold points keep sitework sequenced with your GC master schedule and vertical mobilization.",
+    },
+    {
+      title: "Field Verification",
+      lead:
+        "Verify utility disconnect and cap documentation for gas, electric, water, sewer, and fire lines on partially operational Anaheim commercial properties.",
+      checkpoints: [
+        "Verify utility disconnect and cap documentation for gas.",
+        "Cross-check observations against civil plans, geotechnical data, and project specifications.",
+        "Flag constraints affecting production, haul logistics, SWPPP compliance, or inspection hold points.",
+      ],
+      fieldNote:
+        "Pre-mobilization verification prevents stop-work orders and rework that stall downstream trades.",
+    },
+    {
+      title: "Field Conditions Assessment",
+      lead:
+        "Assess debris staging, screened containment, and haul routes that maintain OC agency SWPPP and noise compliance near occupied tenant pads.",
+      checkpoints: [
+        "Assess debris staging.",
+        "Screened containment.",
+        "Haul routes that maintain OC agency SWPPP and noise compliance near occupied tenant pads.",
+      ],
+      fieldNote:
+        "Field assessment during the pre-bid walk surfaces constraints that affect production, haul logistics, and inspection sequencing.",
+    },
+    {
+      title: "Itemized Bid Delivery",
+      lead:
+        "Deliver itemized demolition bid with phased production rates, after-hours allowances, and dust control methods tied to Anaheim corridor redevelopment schedules.",
+      checkpoints: [
+        "Deliver itemized demolition bid with phased production rates.",
+        "After-hours allowances.",
+        "Dust control methods tied to Anaheim corridor redevelopment schedules.",
+      ],
+      fieldNote:
+        "Itemized assumptions documented in the bid package protect schedule, budget, and both parties at award.",
+    },
   ],
 
   evaluationSteps: [
@@ -91,7 +157,7 @@ export const demolitionAnaheim: ServiceCityPageContent = {
   faqs: [
     {
       q: "Do you provide commercial demolition in Anaheim, CA?",
-      a: "Yes. Mendozer x Earthworks provides licensed commercial demolition for developers, GCs, and commercial property owners in Anaheim and Orange County. We self-perform phased structural takedown, foundation removal, and site clearing on retail, hospitality, and corridor redevelopment projects.",
+      a: "Yes. Mendozer X Earthworks Inc. provides licensed commercial demolition for developers, GCs, and commercial property owners in Anaheim and Orange County. We self-perform phased structural takedown, foundation removal, and site clearing on retail, hospitality, and corridor redevelopment projects.",
     },
     {
       q: "Can you demolish buildings near active Anaheim retail and hospitality tenants?",

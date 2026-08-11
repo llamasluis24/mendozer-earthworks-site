@@ -89,7 +89,7 @@ export const cityPageIrvine: CityPageContent = {
   faqs: [
     {
       q: "What commercial earthwork services do you provide in Irvine, CA?",
-      a: "Mendozer x Earthworks (Lic. #1069854) self-performs commercial excavation, grading, demolition, asphalt paving, concrete flatwork, and full site development for developers, GCs, municipalities, and property owners throughout Irvine and Orange County.",
+      a: "Mendozer X Earthworks Inc. (Lic. #1069854) self-performs commercial excavation, grading, demolition, asphalt paving, concrete flatwork, and full site development for developers, GCs, municipalities, and property owners throughout Irvine and Orange County.",
     },
     {
       q: "What types of commercial projects do you handle in Irvine?",

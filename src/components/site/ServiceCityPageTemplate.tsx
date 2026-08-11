@@ -125,7 +125,7 @@ export function ServiceCityPageTemplate({ service, city, resolved }: Props) {
       </section>
 
       <BenefitGrid
-        eyebrow="Why Mendozer"
+        eyebrow="Why Mendozer X"
         title="Why Developers and GCs Call Us"
         items={pageContent.localBenefits}
         variant="alt"

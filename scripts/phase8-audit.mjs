@@ -94,7 +94,12 @@ for (const service of services) {
       if (!hasField(content, field)) errors.push(`${key}: missing ${field}`);
     }
 
-    const visitItems = (content.match(/siteVisitItems:\s*\[([\s\S]*?)\n\s*\],/)?.[1].match(/"/g) ?? []).length / 2;
+    const visitBlockStart = content.indexOf("siteVisitItems:");
+    const visitBlockEnd = content.indexOf("evaluationSteps:", visitBlockStart);
+    const visitItems =
+      visitBlockStart === -1 || visitBlockEnd === -1
+        ? 0
+        : (content.slice(visitBlockStart, visitBlockEnd).match(/^\s+title:/gm) ?? []).length;
     if (visitItems < 6) warnings.push(`${key}: ${visitItems} siteVisitItems (target 6)`);
   }
 }

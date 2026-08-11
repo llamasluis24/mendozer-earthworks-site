@@ -14,12 +14,78 @@ export const pavingPasadena: ServiceCityPageContent = {
     "Commercial asphalt paving in Pasadena, CA. Urban LA foothills parking lots, tight staging asphalt work, multi-agency permit coordination, and Los Angeles County inspection compliance for Pasadena commercial redevelopments.",
 
   siteVisitItems: [
-    "Review civil asphalt plans, pavement section details, and parking lot specifications on Pasadena urban foothill parcels where tight staging, hillside adjacency, and multi-agency permits affect asphalt sequencing",
-    "Assess existing pavement condition, base course integrity, and full-depth reconstruction scope on Pasadena office, retail, and mixed-use commercial parking areas along Colorado Boulevard corridor redevelopments",
-    "Confirm City of Pasadena, Los Angeles County, and multi-agency asphalt paving permit requirements, density testing schedules, and inspection hold points before aggregate base mobilizes",
-    "Map tight haul routes, alley staging, and phased traffic control for commercial parking turnover on constrained Pasadena urban parcels where foothill topography limits equipment and material access",
-    "Coordinate asphalt prep sequencing with multi-agency review timelines, SWPPP BMP placement, and storm drain inlet protection on active Pasadena commercial job sites",
-    "Deliver itemized commercial asphalt bid with tight staging assumptions, phased asphalt scope, and multi-agency inspection sequencing within one business day",
+    {
+      title: "Plan & Document Review",
+      lead:
+        "Review civil asphalt plans, pavement section details, and parking lot specifications on Pasadena urban foothill parcels where tight staging, hillside adjacency, and multi-agency permits affect asphalt sequencing.",
+      checkpoints: [
+        "Review civil asphalt plans.",
+        "Pavement section details.",
+        "Parking lot specifications on Pasadena urban foothill parcels where tight staging.",
+      ],
+      fieldNote:
+        "Early plan and document review keeps bid assumptions aligned with engineer-approved civil quantities before contract award.",
+    },
+    {
+      title: "Field Conditions Assessment",
+      lead:
+        "Assess existing pavement condition, base course integrity, and full-depth reconstruction scope on Pasadena office, retail, and mixed-use commercial parking areas along Colorado Boulevard corridor redevelopments.",
+      checkpoints: [
+        "Assess existing pavement condition.",
+        "Base course integrity.",
+        "Full-depth reconstruction scope on Pasadena office.",
+      ],
+      fieldNote:
+        "Field assessment during the pre-bid walk surfaces constraints that affect production, haul logistics, and inspection sequencing.",
+    },
+    {
+      title: "Specification Verification",
+      lead:
+        "Confirm City of Pasadena, Los Angeles County, and multi-agency asphalt paving permit requirements, density testing schedules, and inspection hold points before aggregate base mobilizes.",
+      checkpoints: [
+        "Confirm City of Pasadena.",
+        "Los Angeles County.",
+        "Multi-agency asphalt paving permit requirements.",
+      ],
+      fieldNote:
+        "Verified specifications before mobilization protect compaction acceptance, drainage performance, and agency sign-off.",
+    },
+    {
+      title: "Inspection & Schedule Mapping",
+      lead:
+        "Map tight haul routes, alley staging, and phased traffic control for commercial parking turnover on constrained Pasadena urban parcels where foothill topography limits equipment and material access.",
+      checkpoints: [
+        "Map tight haul routes.",
+        "Alley staging.",
+        "Phased traffic control for commercial parking turnover on constrained Pasadena urban parcels where foothill topography limits equipment and material access.",
+      ],
+      fieldNote:
+        "Mapped inspection windows and hold points keep sitework sequenced with your GC master schedule and vertical mobilization.",
+    },
+    {
+      title: "Trade Coordination Review",
+      lead:
+        "Coordinate asphalt prep sequencing with multi-agency review timelines, SWPPP BMP placement, and storm drain inlet protection on active Pasadena commercial job sites.",
+      checkpoints: [
+        "Coordinate asphalt prep sequencing with multi-agency review timelines.",
+        "SWPPP BMP placement.",
+        "Storm drain inlet protection on active Pasadena commercial job sites.",
+      ],
+      fieldNote:
+        "Utility and trade coordination mapped early avoids conflicts that delay pad certification and paving turnover.",
+    },
+    {
+      title: "Itemized Bid Delivery",
+      lead:
+        "Deliver itemized commercial asphalt bid with tight staging assumptions, phased asphalt scope, and multi-agency inspection sequencing within one business day.",
+      checkpoints: [
+        "Deliver itemized commercial asphalt bid with tight staging assumptions.",
+        "Phased asphalt scope.",
+        "Multi-agency inspection sequencing within one business day.",
+      ],
+      fieldNote:
+        "Itemized assumptions documented in the bid package protect schedule, budget, and both parties at award.",
+    },
   ],
 
   evaluationSteps: [
@@ -91,7 +157,7 @@ export const pavingPasadena: ServiceCityPageContent = {
   faqs: [
     {
       q: "Do you provide commercial asphalt paving in Pasadena, CA?",
-      a: "Yes. Mendozer x Earthworks (Lic. #1069854) self-performs commercial asphalt paving, aggregate base installation, parking lot construction, and full-depth reconstruction on office, retail, and mixed-use commercial projects throughout Pasadena and Los Angeles County.",
+      a: "Yes. Mendozer X Earthworks Inc. (Lic. #1069854) self-performs commercial asphalt paving, aggregate base installation, parking lot construction, and full-depth reconstruction on office, retail, and mixed-use commercial projects throughout Pasadena and Los Angeles County.",
     },
     {
       q: "Can you pave on tight urban foothill parcels in Pasadena?",

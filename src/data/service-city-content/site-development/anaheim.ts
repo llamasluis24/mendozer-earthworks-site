@@ -12,12 +12,78 @@ export const siteDevelopmentAnaheim: ServiceCityPageContent = {
     "Commercial site development in Anaheim, CA. After-hours sitework near active retail, OC agency standards, ADA path-of-travel packages, and high-visibility dust and noise controls.",
 
   siteVisitItems: [
-    "Review civil improvement plans and full horizontal scope on Anaheim retail center and commercial TI redevelopment parcels",
-    "Assess after-hours sitework feasibility, dust and noise control requirements, and phased execution near active retail and hospitality operations",
-    "Confirm ADA path-of-travel sitework scope including curb ramps, sidewalk improvements, and parking lot reconstruction per Orange County standards",
-    "Evaluate integrated grading, utility trenching, paving, and flatwork sequencing aligned with Anaheim certificate of occupancy milestones",
-    "Map Orange County agency inspection hold points, traffic control requirements, and high-visibility site management protocols",
-    "Deliver itemized turnkey sitework bid with after-hours allowances, ADA scope, and OC inspection sequencing within one business day",
+    {
+      title: "Plan & Document Review",
+      lead:
+        "Review civil improvement plans and full horizontal scope on Anaheim retail center and commercial TI redevelopment parcels.",
+      checkpoints: [
+        "Review civil improvement plans and full horizontal scope on Anaheim retail center and commercial TI redevelopment parcels.",
+        "Cross-check observations against civil plans, geotechnical data, and project specifications.",
+        "Flag constraints affecting production, haul logistics, SWPPP compliance, or inspection hold points.",
+      ],
+      fieldNote:
+        "Early plan and document review keeps bid assumptions aligned with engineer-approved civil quantities before contract award.",
+    },
+    {
+      title: "Field Conditions Assessment",
+      lead:
+        "Assess after-hours sitework feasibility, dust and noise control requirements, and phased execution near active retail and hospitality operations.",
+      checkpoints: [
+        "Assess after-hours sitework feasibility.",
+        "Dust and noise control requirements.",
+        "Phased execution near active retail and hospitality operations.",
+      ],
+      fieldNote:
+        "Field assessment during the pre-bid walk surfaces constraints that affect production, haul logistics, and inspection sequencing.",
+    },
+    {
+      title: "Specification Verification",
+      lead:
+        "Confirm ADA path-of-travel sitework scope including curb ramps, sidewalk improvements, and parking lot reconstruction per Orange County standards.",
+      checkpoints: [
+        "Confirm ADA path-of-travel sitework scope including curb ramps.",
+        "Sidewalk improvements.",
+        "Parking lot reconstruction per Orange County standards.",
+      ],
+      fieldNote:
+        "Verified specifications before mobilization protect compaction acceptance, drainage performance, and agency sign-off.",
+    },
+    {
+      title: "Technical Evaluation",
+      lead:
+        "Evaluate integrated grading, utility trenching, paving, and flatwork sequencing aligned with Anaheim certificate of occupancy milestones.",
+      checkpoints: [
+        "Evaluate integrated grading.",
+        "Utility trenching.",
+        "Flatwork sequencing aligned with Anaheim certificate of occupancy milestones.",
+      ],
+      fieldNote:
+        "Technical evaluation upfront reduces rework during production and prevents mid-project quantity disputes.",
+    },
+    {
+      title: "Inspection & Schedule Mapping",
+      lead:
+        "Map Orange County agency inspection hold points, traffic control requirements, and high-visibility site management protocols.",
+      checkpoints: [
+        "Map Orange County agency inspection hold points.",
+        "Traffic control requirements.",
+        "High-visibility site management protocols.",
+      ],
+      fieldNote:
+        "Mapped inspection windows and hold points keep sitework sequenced with your GC master schedule and vertical mobilization.",
+    },
+    {
+      title: "Itemized Bid Delivery",
+      lead:
+        "Deliver itemized turnkey sitework bid with after-hours allowances, ADA scope, and OC inspection sequencing within one business day.",
+      checkpoints: [
+        "Deliver itemized turnkey sitework bid with after-hours allowances.",
+        "Cross-check observations against civil plans, geotechnical data, and project specifications.",
+        "Confirm bid assumptions, quantities, and schedule milestones align with preconstruction requirements.",
+      ],
+      fieldNote:
+        "Itemized assumptions documented in the bid package protect schedule, budget, and both parties at award.",
+    },
   ],
 
   evaluationSteps: [
@@ -89,7 +155,7 @@ export const siteDevelopmentAnaheim: ServiceCityPageContent = {
   faqs: [
     {
       q: "Do you provide commercial site development in Anaheim, CA?",
-      a: "Yes. Mendozer x Earthworks (Lic. #1069854) delivers turnkey commercial sitework including grading, utility trenching, paving, concrete flatwork, ADA improvements, and SWPPP compliance on retail, hospitality, and commercial projects throughout Anaheim and Orange County.",
+      a: "Yes. Mendozer X Earthworks Inc. (Lic. #1069854) delivers turnkey commercial sitework including grading, utility trenching, paving, concrete flatwork, ADA improvements, and SWPPP compliance on retail, hospitality, and commercial projects throughout Anaheim and Orange County.",
     },
     {
       q: "Do you perform after-hours sitework in Anaheim?",

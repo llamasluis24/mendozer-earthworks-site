@@ -12,12 +12,78 @@ export const concreteSanBernardino: ServiceCityPageContent = {
     "Commercial concrete in San Bernardino, CA. Municipal flatwork, industrial yard slabs, large-lot curb and gutter pours, and agency inspection coordination on redevelopment sites.",
 
   siteVisitItems: [
-    "Review structural and civil concrete plans, industrial yard slab specifications, and municipal flatwork scope on San Bernardino redevelopment and improvement parcels",
-    "Assess existing slab and flatwork condition, demolition boundaries, and reconstruction requirements on older San Bernardino industrial site redevelopments",
-    "Confirm rebar placement, footing details, and forming requirements on large-lot San Bernardino commercial pours with agency inspection dependencies",
-    "Evaluate mix design, slump, and strength specifications for industrial yard flatwork and heavy-load slab sections on San Bernardino commercial sites",
-    "Map pre-pour inspection hold points, curing protocols, and phased pour sequencing on San Bernardino municipal and industrial improvement schedules",
-    "Deliver itemized commercial concrete bid with pour quantities, formwork assumptions, and agency inspection sequencing within one business day",
+    {
+      title: "Plan & Document Review",
+      lead:
+        "Review structural and civil concrete plans, industrial yard slab specifications, and municipal flatwork scope on San Bernardino redevelopment and improvement parcels.",
+      checkpoints: [
+        "Review structural and civil concrete plans.",
+        "Industrial yard slab specifications.",
+        "Municipal flatwork scope on San Bernardino redevelopment and improvement parcels.",
+      ],
+      fieldNote:
+        "Early plan and document review keeps bid assumptions aligned with engineer-approved civil quantities before contract award.",
+    },
+    {
+      title: "Field Conditions Assessment",
+      lead:
+        "Assess existing slab and flatwork condition, demolition boundaries, and reconstruction requirements on older San Bernardino industrial site redevelopments.",
+      checkpoints: [
+        "Assess existing slab and flatwork condition.",
+        "Demolition boundaries.",
+        "Reconstruction requirements on older San Bernardino industrial site redevelopments.",
+      ],
+      fieldNote:
+        "Field assessment during the pre-bid walk surfaces constraints that affect production, haul logistics, and inspection sequencing.",
+    },
+    {
+      title: "Specification Verification",
+      lead:
+        "Confirm rebar placement, footing details, and forming requirements on large-lot San Bernardino commercial pours with agency inspection dependencies.",
+      checkpoints: [
+        "Confirm rebar placement.",
+        "Footing details.",
+        "Forming requirements on large-lot San Bernardino commercial pours with agency inspection dependencies.",
+      ],
+      fieldNote:
+        "Verified specifications before mobilization protect compaction acceptance, drainage performance, and agency sign-off.",
+    },
+    {
+      title: "Technical Evaluation",
+      lead:
+        "Evaluate mix design, slump, and strength specifications for industrial yard flatwork and heavy-load slab sections on San Bernardino commercial sites.",
+      checkpoints: [
+        "Evaluate mix design.",
+        "Cross-check observations against civil plans, geotechnical data, and project specifications.",
+        "Flag constraints affecting production, haul logistics, SWPPP compliance, or inspection hold points.",
+      ],
+      fieldNote:
+        "Technical evaluation upfront reduces rework during production and prevents mid-project quantity disputes.",
+    },
+    {
+      title: "Inspection & Schedule Mapping",
+      lead:
+        "Map pre-pour inspection hold points, curing protocols, and phased pour sequencing on San Bernardino municipal and industrial improvement schedules.",
+      checkpoints: [
+        "Map pre-pour inspection hold points.",
+        "Curing protocols.",
+        "Phased pour sequencing on San Bernardino municipal and industrial improvement schedules.",
+      ],
+      fieldNote:
+        "Mapped inspection windows and hold points keep sitework sequenced with your GC master schedule and vertical mobilization.",
+    },
+    {
+      title: "Itemized Bid Delivery",
+      lead:
+        "Deliver itemized commercial concrete bid with pour quantities, formwork assumptions, and agency inspection sequencing within one business day.",
+      checkpoints: [
+        "Deliver itemized commercial concrete bid with pour quantities.",
+        "Formwork assumptions.",
+        "Agency inspection sequencing within one business day.",
+      ],
+      fieldNote:
+        "Itemized assumptions documented in the bid package protect schedule, budget, and both parties at award.",
+    },
   ],
 
   evaluationSteps: [
@@ -89,7 +155,7 @@ export const concreteSanBernardino: ServiceCityPageContent = {
   faqs: [
     {
       q: "Do you provide commercial concrete in San Bernardino, CA?",
-      a: "Yes. Mendozer x Earthworks (Lic. #1069854) self-performs commercial concrete including structural footings, industrial yard slabs, curb and gutter, sidewalks, and municipal flatwork on commercial projects throughout San Bernardino.",
+      a: "Yes. Mendozer X Earthworks Inc. (Lic. #1069854) self-performs commercial concrete including structural footings, industrial yard slabs, curb and gutter, sidewalks, and municipal flatwork on commercial projects throughout San Bernardino.",
     },
     {
       q: "Can you reconstruct flatwork on older San Bernardino industrial sites?",

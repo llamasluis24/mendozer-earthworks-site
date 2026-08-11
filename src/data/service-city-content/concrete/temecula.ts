@@ -13,12 +13,78 @@ export const concreteTemecula: ServiceCityPageContent = {
     "Commercial concrete contractor in Temecula, CA. Wine country retail slab pours, hillside pad footings, and Riverside County pre-pour inspection coordination for master-planned commercial developments.",
 
   siteVisitItems: [
-    "Review structural and civil concrete plans, slab-on-grade specifications, and footing details on Temecula wine country retail and master-planned commercial redevelopment parcels",
-    "Assess hillside cut-and-fill subgrade compaction certification, proof-roll results, and vapor barrier requirements before formwork mobilizes on graded Temecula commercial pads",
-    "Confirm rebar placement, embed schedules, and dowel layouts against structural engineering drawings on Temecula retail and mixed-use floor pours",
-    "Evaluate mix design, slump targets, and 28-day PSI strength specifications for heavy floor loading on Temecula commercial slabs with tenant-specific finish requirements",
-    "Map pre-pour inspection hold points, curing compound protocols, and placement scheduling with Riverside County building officials on Temecula master-planned sites",
-    "Deliver itemized commercial concrete bid with pour quantities, formwork assumptions, and inspection sequencing within one business day",
+    {
+      title: "Plan & Document Review",
+      lead:
+        "Review structural and civil concrete plans, slab-on-grade specifications, and footing details on Temecula wine country retail and master-planned commercial redevelopment parcels.",
+      checkpoints: [
+        "Review structural and civil concrete plans.",
+        "Slab-on-grade specifications.",
+        "Footing details on Temecula wine country retail and master-planned commercial redevelopment parcels.",
+      ],
+      fieldNote:
+        "Early plan and document review keeps bid assumptions aligned with engineer-approved civil quantities before contract award.",
+    },
+    {
+      title: "Field Conditions Assessment",
+      lead:
+        "Assess hillside cut-and-fill subgrade compaction certification, proof-roll results, and vapor barrier requirements before formwork mobilizes on graded Temecula commercial pads.",
+      checkpoints: [
+        "Assess hillside cut-and-fill subgrade compaction certification.",
+        "Proof-roll results.",
+        "Vapor barrier requirements before formwork mobilizes on graded Temecula commercial pads.",
+      ],
+      fieldNote:
+        "Field assessment during the pre-bid walk surfaces constraints that affect production, haul logistics, and inspection sequencing.",
+    },
+    {
+      title: "Specification Verification",
+      lead:
+        "Confirm rebar placement, embed schedules, and dowel layouts against structural engineering drawings on Temecula retail and mixed-use floor pours.",
+      checkpoints: [
+        "Confirm rebar placement.",
+        "Embed schedules.",
+        "Dowel layouts against structural engineering drawings on Temecula retail and mixed-use floor pours.",
+      ],
+      fieldNote:
+        "Verified specifications before mobilization protect compaction acceptance, drainage performance, and agency sign-off.",
+    },
+    {
+      title: "Technical Evaluation",
+      lead:
+        "Evaluate mix design, slump targets, and 28-day PSI strength specifications for heavy floor loading on Temecula commercial slabs with tenant-specific finish requirements.",
+      checkpoints: [
+        "Evaluate mix design.",
+        "Slump targets.",
+        "28-day PSI strength specifications for heavy floor loading on Temecula commercial slabs with tenant-specific finish requirements.",
+      ],
+      fieldNote:
+        "Technical evaluation upfront reduces rework during production and prevents mid-project quantity disputes.",
+    },
+    {
+      title: "Inspection & Schedule Mapping",
+      lead:
+        "Map pre-pour inspection hold points, curing compound protocols, and placement scheduling with Riverside County building officials on Temecula master-planned sites.",
+      checkpoints: [
+        "Map pre-pour inspection hold points.",
+        "Curing compound protocols.",
+        "Placement scheduling with Riverside County building officials on Temecula master-planned sites.",
+      ],
+      fieldNote:
+        "Mapped inspection windows and hold points keep sitework sequenced with your GC master schedule and vertical mobilization.",
+    },
+    {
+      title: "Itemized Bid Delivery",
+      lead:
+        "Deliver itemized commercial concrete bid with pour quantities, formwork assumptions, and inspection sequencing within one business day.",
+      checkpoints: [
+        "Deliver itemized commercial concrete bid with pour quantities.",
+        "Formwork assumptions.",
+        "Inspection sequencing within one business day.",
+      ],
+      fieldNote:
+        "Itemized assumptions documented in the bid package protect schedule, budget, and both parties at award.",
+    },
   ],
 
   evaluationSteps: [
@@ -90,7 +156,7 @@ export const concreteTemecula: ServiceCityPageContent = {
   faqs: [
     {
       q: "Do you provide commercial concrete in Temecula, CA?",
-      a: "Yes. Mendozer x Earthworks (Lic. #1069854) self-performs commercial concrete including structural footings, slabs-on-grade, curb and gutter, sidewalks, and loading aprons on retail, mixed-use, and master-planned commercial projects throughout Temecula and Riverside County.",
+      a: "Yes. Mendozer X Earthworks Inc. (Lic. #1069854) self-performs commercial concrete including structural footings, slabs-on-grade, curb and gutter, sidewalks, and loading aprons on retail, mixed-use, and master-planned commercial projects throughout Temecula and Riverside County.",
     },
     {
       q: "Can you pour retail slabs-on-grade in Temecula wine country?",

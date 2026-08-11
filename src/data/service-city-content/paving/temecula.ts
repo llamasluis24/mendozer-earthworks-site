@@ -13,12 +13,78 @@ export const pavingTemecula: ServiceCityPageContent = {
     "Commercial asphalt paving in Temecula, CA. Wine country retail parking lots, master-planned commercial asphalt, hillside drainage coordination, and Riverside County inspection compliance for Temecula Valley projects.",
 
   siteVisitItems: [
-    "Review civil asphalt plans, pavement section details, and wine country retail parking specifications on Temecula master-planned commercial parcels with hillside drainage tie-ins",
-    "Assess existing pavement condition, base course integrity, and full-depth reconstruction scope on Temecula Valley retail, hospitality, and commercial parking areas",
-    "Confirm Riverside County asphalt paving permit requirements, density testing schedules, and inspection hold points before aggregate base mobilizes on Temecula commercial sites",
-    "Map phased traffic control, fire lane routes, and parking structure approach lanes on master-planned Temecula commercial districts where multi-tenant asphalt turnover supports retail delivery schedules",
-    "Evaluate aggregate base compaction, proof-roll results, and geotechnical recommendations for hillside drainage coordination before asphalt tonnage is priced for Temecula commercial lots",
-    "Deliver itemized commercial asphalt bid with tonnage assumptions, SWPPP prep scope, and Riverside County inspection sequencing within one business day",
+    {
+      title: "Plan & Document Review",
+      lead:
+        "Review civil asphalt plans, pavement section details, and wine country retail parking specifications on Temecula master-planned commercial parcels with hillside drainage tie-ins.",
+      checkpoints: [
+        "Review civil asphalt plans.",
+        "Pavement section details.",
+        "Wine country retail parking specifications on Temecula master-planned commercial parcels with hillside drainage tie-ins.",
+      ],
+      fieldNote:
+        "Early plan and document review keeps bid assumptions aligned with engineer-approved civil quantities before contract award.",
+    },
+    {
+      title: "Field Conditions Assessment",
+      lead:
+        "Assess existing pavement condition, base course integrity, and full-depth reconstruction scope on Temecula Valley retail, hospitality, and commercial parking areas.",
+      checkpoints: [
+        "Assess existing pavement condition.",
+        "Base course integrity.",
+        "Full-depth reconstruction scope on Temecula Valley retail.",
+      ],
+      fieldNote:
+        "Field assessment during the pre-bid walk surfaces constraints that affect production, haul logistics, and inspection sequencing.",
+    },
+    {
+      title: "Specification Verification",
+      lead:
+        "Confirm Riverside County asphalt paving permit requirements, density testing schedules, and inspection hold points before aggregate base mobilizes on Temecula commercial sites.",
+      checkpoints: [
+        "Confirm Riverside County asphalt paving permit requirements.",
+        "Density testing schedules.",
+        "Inspection hold points before aggregate base mobilizes on Temecula commercial sites.",
+      ],
+      fieldNote:
+        "Verified specifications before mobilization protect compaction acceptance, drainage performance, and agency sign-off.",
+    },
+    {
+      title: "Inspection & Schedule Mapping",
+      lead:
+        "Map phased traffic control, fire lane routes, and parking structure approach lanes on master-planned Temecula commercial districts where multi-tenant asphalt turnover supports retail delivery schedules.",
+      checkpoints: [
+        "Map phased traffic control.",
+        "Fire lane routes.",
+        "Parking structure approach lanes on master-planned Temecula commercial districts where multi-tenant asphalt turnover supports retail delivery schedules.",
+      ],
+      fieldNote:
+        "Mapped inspection windows and hold points keep sitework sequenced with your GC master schedule and vertical mobilization.",
+    },
+    {
+      title: "Technical Evaluation",
+      lead:
+        "Evaluate aggregate base compaction, proof-roll results, and geotechnical recommendations for hillside drainage coordination before asphalt tonnage is priced for Temecula commercial lots.",
+      checkpoints: [
+        "Evaluate aggregate base compaction.",
+        "Proof-roll results.",
+        "Geotechnical recommendations for hillside drainage coordination before asphalt tonnage is priced for Temecula commercial lots.",
+      ],
+      fieldNote:
+        "Technical evaluation upfront reduces rework during production and prevents mid-project quantity disputes.",
+    },
+    {
+      title: "Itemized Bid Delivery",
+      lead:
+        "Deliver itemized commercial asphalt bid with tonnage assumptions, SWPPP prep scope, and Riverside County inspection sequencing within one business day.",
+      checkpoints: [
+        "Deliver itemized commercial asphalt bid with tonnage assumptions.",
+        "SWPPP prep scope.",
+        "Riverside County inspection sequencing within one business day.",
+      ],
+      fieldNote:
+        "Itemized assumptions documented in the bid package protect schedule, budget, and both parties at award.",
+    },
   ],
 
   evaluationSteps: [
@@ -90,7 +156,7 @@ export const pavingTemecula: ServiceCityPageContent = {
   faqs: [
     {
       q: "Do you provide commercial asphalt paving in Temecula, CA?",
-      a: "Yes. Mendozer x Earthworks (Lic. #1069854) self-performs commercial asphalt paving, aggregate base installation, parking lot construction, and full-depth reconstruction on wine country retail, hospitality, and master-planned commercial projects throughout Temecula and Riverside County.",
+      a: "Yes. Mendozer X Earthworks Inc. (Lic. #1069854) self-performs commercial asphalt paving, aggregate base installation, parking lot construction, and full-depth reconstruction on wine country retail, hospitality, and master-planned commercial projects throughout Temecula and Riverside County.",
     },
     {
       q: "Can you pave wine country retail parking lots in Temecula?",

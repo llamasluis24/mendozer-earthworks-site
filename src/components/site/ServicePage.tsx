@@ -146,7 +146,7 @@ export function ServicePage(p: PillarService) {
       </section>
 
       <BenefitGrid
-        eyebrow="Why Mendozer"
+        eyebrow="Why Mendozer X"
         title="Commercial Benefits for Developers & GCs"
         items={p.commercialBenefits}
       />

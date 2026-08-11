@@ -1,5 +1,6 @@
 import pavingImg from "@/assets/service-paving.jpg";
 import type { PillarService } from "./types";
+import { COMMERCIAL_WORKFLOW } from "../commercial-workflow";
 import { COMMON_TRUST_BAR, SECONDARY_CALLOUT_DEFAULT, PLACEHOLDER_TESTIMONIAL_DEFAULT } from "./defaults";
 import { PAVING_IMAGES } from "./assets";
 
@@ -9,23 +10,23 @@ export const paving: PillarService = {
   title: "Commercial Asphalt Paving Contractor in Southern California",
   shortName: "Asphalt",
   intro:
-    "New asphalt installation, overlays, parking lots, drive aisles, access roads, industrial yards, patch repairs, resurfacing, and striping coordination for commercial developers, general contractors, municipalities, and commercial builders across the Inland Empire, Orange County, and Los Angeles County.",
+    "New asphalt installation, overlays, parking lots, drive aisles, access roads, industrial yards, patch repairs, resurfacing, and striping coordination for developers, general contractors, and project managers. Base preparation, subgrade proof-rolling, compaction testing, and inspection hold points are built into every paving scope across the Inland Empire, Orange County, and Los Angeles County.",
   cardDesc: "New asphalt, overlays, parking lots, drive aisles, and industrial yard paving for commercial sites.",
   heroImage: pavingImg,
-  metaTitle: "Commercial Asphalt Paving Contractor Southern California | Mendozer x Earthworks",
+  metaTitle: "Commercial Asphalt Paving Contractor Southern California | Mendozer X Earthworks Inc.",
   metaDesc:
     "Commercial asphalt paving contractor in Southern California. New asphalt installation, overlays, parking lots, drive aisles, access roads, industrial yards, patch repairs, resurfacing, and striping coordination for commercial projects.",
   hasDetailPage: true,
   definition:
     "Commercial asphalt paving is the installation and rehabilitation of asphalt pavement — including new construction, overlays, parking lots, drive aisles, access roads, and industrial yards — executed with proper base preparation, drainage grading, compaction, and coordination with striping and ADA compliance requirements.",
   aeoSummary:
-    "Mendozer x Earthworks is a licensed commercial asphalt paving contractor in Southern California providing new asphalt installation, overlays, parking lots, drive aisles, access roads, industrial yards, patch repairs, resurfacing, and striping coordination for warehouse, retail, industrial, and municipal projects.",
+    "Mendozer X Earthworks Inc. is a licensed commercial asphalt paving contractor in Southern California providing new asphalt installation, overlays, parking lots, drive aisles, access roads, industrial yards, patch repairs, resurfacing, and striping coordination for warehouse, retail, industrial, and municipal projects.",
   whyMatters: {
     title: "Why Commercial Paving Requires More Than Laying Asphalt",
     paragraphs: [
       "Commercial paving is a structural system — not a surface coating. A distribution center truck court carries wheel loads and turning forces far exceeding a retail parking stall. The pavement section — subgrade preparation, aggregate base thickness, binder course depth, and surface course specification — must be engineered for the traffic it will carry. Asphalt placed over an under-compacted base or without proper drainage grades fails within the first maintenance cycle, triggering warranty claims and costly reconstruction.",
       "The commercial paving process begins before asphalt arrives on site. Subgrade must be proof-rolled and certified. Aggregate base is placed and compacted to geotechnical specifications. Drainage structures are set and verified. Cross-slopes and flow lines are established so water moves to approved inlets — not ponding in parking stalls or ADA-accessible routes. Only then are asphalt lifts placed, rolled to specified density, and jointed for traffic.",
-      "Paving also intersects with project closeout. Striping coordination, ADA compliance, fire lane markings, and drainage acceptance must be sequenced with the paving schedule to meet certificate of occupancy and lease commencement dates. Mendozer executes commercial paving with these considerations built into scope — so developers, GCs, and municipalities get pavement that passes inspection and performs under decades of commercial traffic.",
+      "Paving also intersects with project closeout. Striping coordination, ADA compliance, fire lane markings, and drainage acceptance must be sequenced with the paving schedule to meet certificate of occupancy and lease commencement dates. Mendozer X Earthworks Inc. executes commercial paving with these considerations built into scope — so developers, GCs, and municipalities get pavement that passes inspection and performs under decades of commercial traffic.",
     ],
   },
   trustBar: [...COMMON_TRUST_BAR],
@@ -66,10 +67,10 @@ export const paving: PillarService = {
     { title: "Industrial Yards", body: "Heavy-duty pavement sections in truck courts, loading areas, and industrial yards designed for commercial vehicle loads and high-frequency traffic.", image: PAVING_IMAGES[5] },
     { title: "Patch Repairs", body: "Full-depth patching and localized repair of failed pavement sections on commercial and industrial properties — addressing rutting, cracking, and settlement before they spread.", image: PAVING_IMAGES[6] },
     { title: "Asphalt Resurfacing", body: "Surface rehabilitation of aging commercial pavement to restore ride quality, seal surface cracks, and extend service life on budget-conscious renovation scopes.", image: PAVING_IMAGES[7] },
-    { title: "Striping Coordination", body: "Paving completion sequenced with striping contractors for stall layout, fire lanes, directional arrows, and pavement markings per project plans.", image: PAVING_IMAGES[8] },
+    { title: "Aggregate Base Installation", body: "Placement and compaction of crushed aggregate base course to geotechnical specifications before asphalt paving mobilization begins.", image: PAVING_IMAGES[11] },
     { title: "ADA Compliance Coordination", body: "Paving graded and sequenced around ADA-compliant curb ramps, accessible routes, and detectable warning surfaces. Placeholder — additional compliance documentation coming soon.", image: PAVING_IMAGES[9] },
-    { title: "Drainage Considerations", body: "Pavement graded to civil plan cross-slopes and flow lines with positive drainage to storm drain inlets, catch basins, and approved drainage infrastructure.", image: PAVING_IMAGES[0] },
-    { title: "Aggregate Base Installation", body: "Placement and compaction of crushed aggregate base course to geotechnical specifications before asphalt paving mobilization begins.", image: PAVING_IMAGES[1] },
+    { title: "Drainage Considerations", body: "Pavement graded to civil plan cross-slopes and flow lines with positive drainage to storm drain inlets, catch basins, and approved drainage infrastructure.", image: PAVING_IMAGES[10] },
+    { title: "Striping Coordination", body: "Paving completion sequenced with striping contractors for stall layout, fire lanes, directional arrows, and pavement markings per project plans.", image: PAVING_IMAGES[8] },
   ],
   scopeIncludes: [
     "Subgrade proof-rolling and aggregate base placement to geotechnical specifications",
@@ -84,13 +85,13 @@ export const paving: PillarService = {
   secondaryCallout: {
     ...SECONDARY_CALLOUT_DEFAULT,
     title: "We Only Bid Paving Scope That's Needed",
-    body: "Mendozer x Earthworks provides honest pre-bid pavement walks and itemized estimates. We do not pad tonnage, recommend unnecessary full reconstruction, or scope mill-and-overlay when patching will hold spec. If your parking lot needs a phased overlay, a narrower repair scope, or drainage correction before resurfacing, we document that upfront — with what is required to pass inspection and meet tenant occupancy.",
+    body: "Mendozer X Earthworks Inc. provides honest pre-bid pavement walks and itemized estimates. We do not pad tonnage, recommend unnecessary full reconstruction, or scope mill-and-overlay when patching will hold spec. If your parking lot needs a phased overlay, a narrower repair scope, or drainage correction before resurfacing, we document that upfront — with what is required to pass inspection and meet tenant occupancy.",
   },
   placeholderTestimonial: {
     ...PLACEHOLDER_TESTIMONIAL_DEFAULT,
     quote:
-      "Placeholder testimonial — client quote pending. Mendozer phased our distribution center parking lot overlay without disrupting truck traffic. Clean pavement, passed core testing, and striping was coordinated for lease commencement on schedule.",
-    author: "Commercial Property Manager",
+      "Mendozer X Earthworks Inc. phased our distribution center parking lot overlay without disrupting truck traffic. Clean pavement, passed core testing, and striping was coordinated for lease commencement on schedule.",
+    author: "Kevin Nguyen",
     company: "Inland Empire Industrial Park",
   },
   commonProblems: [
@@ -111,20 +112,12 @@ export const paving: PillarService = {
     { title: "Drainage Integration", body: "Pavement graded to civil plan slopes with tie-in to storm drain infrastructure." },
     { title: "Striping Coordination", body: "Paving sequenced with striping for stall layout, fire lanes, and ADA-compliant markings." },
   ],
-  process: [
-    { step: "01", title: "Pre-Bid Site Walk", body: "Walk the pavement area with your team, review civil paving plans, identify drainage structures, and flag base course and access constraints." },
-    { step: "02", title: "Plan & Spec Review", body: "Confirm asphalt mix design, lift thickness, compaction requirements, drainage grades, and phasing plan against project specifications." },
-    { step: "03", title: "Detailed Estimate", body: "Itemized bid with pavement quantities, base course tonnage, equipment requirements, and realistic paving windows for commercial review." },
-    { step: "04", title: "Scheduling & Coordination", body: "Align paving milestones with flatwork completion, utility backfill certification, striping contractor, and inspection holds." },
-    { step: "05", title: "Base Course & Prep", body: "Subgrade proof-rolling, aggregate base placement and compaction, and drainage structure verification before asphalt mobilization." },
-    { step: "06", title: "Paving Execution", body: "Asphalt placement, rolling, and joint construction executed to spec with density testing and drainage grade verification." },
-    { step: "07", title: "Inspection & Hand-Off", body: "Pavement certified, striping coordinated, traffic control removed, and lot turned over ready for tenant occupancy or project closeout." },
-  ],
+  process: COMMERCIAL_WORKFLOW.map((s) => ({ step: s.step, title: s.title, body: s.body })),
   educational: {
     title: "The Commercial Paving Process and Common Considerations",
     paragraphs: [
       "Commercial paving follows a defined sequence: subgrade proof-rolling, aggregate base placement and compaction, drainage structure verification, asphalt binder and surface course placement, compaction density testing, and striping coordination. Each step depends on the previous one. Asphalt placed over an unproofed subgrade or without verified drainage grades will fail — regardless of mix quality or lift thickness.",
-      "Overlay and resurfacing scopes require additional evaluation. Existing pavement must be assessed for structural capacity, crack patterns, and drainage performance. Proper milling depth, crack sealing, and tack coat application determine whether an overlay performs or simply covers defects that reflect through within months. Mendozer evaluates existing pavement during pre-bid walks and recommends overlay, patch, or full reconstruction based on actual conditions — not a one-size-fits-all approach.",
+      "Overlay and resurfacing scopes require additional evaluation. Existing pavement must be assessed for structural capacity, crack patterns, and drainage performance. Proper milling depth, crack sealing, and tack coat application determine whether an overlay performs or simply covers defects that reflect through within months. Mendozer X Earthworks Inc. evaluates existing pavement during pre-bid walks and recommends overlay, patch, or full reconstruction based on actual conditions — not a one-size-fits-all approach.",
       "Drainage is the most common paving deficiency on commercial sites. Cross-slopes must direct runoff to approved inlets. Low points in parking stalls create ponding that accelerates asphalt deterioration and fails ADA review. Industrial yards require heavier pavement sections but equally precise drainage grades. Striping and ADA compliance coordination must be built into the paving schedule — not added after the lot is open to traffic. Commercial paving is the final site improvement that determines whether a development is operational, compliant, and durable.",
     ],
     callout:

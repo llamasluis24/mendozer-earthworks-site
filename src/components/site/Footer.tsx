@@ -12,9 +12,9 @@ export function Footer() {
       <div className="container-x py-16 grid gap-12 lg:grid-cols-4">
         <div>
           <div className="flex items-center gap-3">
-            <img src={logo} alt="Mendozer x Earthworks Inc." width={64} height={64} className="h-16 w-16 object-contain" loading="lazy" />
+            <img src={logo} alt="Mendozer X Earthworks Inc." width={64} height={64} className="h-16 w-16 object-contain" loading="lazy" />
             <div>
-              <div className="font-display text-base tracking-[0.18em] text-gold">MENDOZER</div>
+              <div className="font-display text-sm tracking-[0.18em] text-gold">MENDOZER <span className="text-gold-bright">X</span></div>
               <div className="font-display text-xs tracking-[0.18em] text-foreground/80">EARTHWORKS INC.</div>
             </div>
           </div>

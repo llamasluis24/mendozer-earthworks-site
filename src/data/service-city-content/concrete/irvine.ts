@@ -12,12 +12,78 @@ export const concreteIrvine: ServiceCityPageContent = {
     "Commercial concrete in Irvine, CA. Office and tech campus flatwork, strict OC finish tolerances, utility-dense forming, and master-plan aesthetic standards for commercial developments.",
 
   siteVisitItems: [
-    "Review structural and civil concrete plans, campus flatwork specifications, and finish requirements on Irvine office park and tech campus commercial redevelopment parcels",
-    "Assess utility-dense forming constraints, underground MEP coordination, and embed clearance requirements before slab pours on Irvine commercial sites",
-    "Confirm FF/FL tolerance requirements, architectural finish specifications, and broom/trowel standards aligned with Irvine master-plan aesthetic requirements",
-    "Evaluate mix design, slump, and strength specifications for office campus sidewalk, curb, and structural flatwork on Irvine commercial projects",
-    "Map pre-pour inspection windows, curing protocols, and City of Irvine engineering hold points before certificate of occupancy milestones",
-    "Deliver itemized commercial concrete bid with flatwork quantities, utility coordination allowances, and Irvine inspection sequencing within one business day",
+    {
+      title: "Plan & Document Review",
+      lead:
+        "Review structural and civil concrete plans, campus flatwork specifications, and finish requirements on Irvine office park and tech campus commercial redevelopment parcels.",
+      checkpoints: [
+        "Review structural and civil concrete plans.",
+        "Campus flatwork specifications.",
+        "Finish requirements on Irvine office park and tech campus commercial redevelopment parcels.",
+      ],
+      fieldNote:
+        "Early plan and document review keeps bid assumptions aligned with engineer-approved civil quantities before contract award.",
+    },
+    {
+      title: "Field Conditions Assessment",
+      lead:
+        "Assess utility-dense forming constraints, underground MEP coordination, and embed clearance requirements before slab pours on Irvine commercial sites.",
+      checkpoints: [
+        "Assess utility-dense forming constraints.",
+        "Underground MEP coordination.",
+        "Embed clearance requirements before slab pours on Irvine commercial sites.",
+      ],
+      fieldNote:
+        "Field assessment during the pre-bid walk surfaces constraints that affect production, haul logistics, and inspection sequencing.",
+    },
+    {
+      title: "Specification Verification",
+      lead:
+        "Confirm FF/FL tolerance requirements, architectural finish specifications, and broom/trowel standards aligned with Irvine master-plan aesthetic requirements.",
+      checkpoints: [
+        "Confirm FF/FL tolerance requirements.",
+        "Architectural finish specifications.",
+        "Broom/trowel standards aligned with Irvine master-plan aesthetic requirements.",
+      ],
+      fieldNote:
+        "Verified specifications before mobilization protect compaction acceptance, drainage performance, and agency sign-off.",
+    },
+    {
+      title: "Technical Evaluation",
+      lead:
+        "Evaluate mix design, slump, and strength specifications for office campus sidewalk, curb, and structural flatwork on Irvine commercial projects.",
+      checkpoints: [
+        "Evaluate mix design.",
+        "Strength specifications for office campus sidewalk.",
+        "Structural flatwork on Irvine commercial projects.",
+      ],
+      fieldNote:
+        "Technical evaluation upfront reduces rework during production and prevents mid-project quantity disputes.",
+    },
+    {
+      title: "Inspection & Schedule Mapping",
+      lead:
+        "Map pre-pour inspection windows, curing protocols, and City of Irvine engineering hold points before certificate of occupancy milestones.",
+      checkpoints: [
+        "Map pre-pour inspection windows.",
+        "Curing protocols.",
+        "City of Irvine engineering hold points before certificate of occupancy milestones.",
+      ],
+      fieldNote:
+        "Mapped inspection windows and hold points keep sitework sequenced with your GC master schedule and vertical mobilization.",
+    },
+    {
+      title: "Itemized Bid Delivery",
+      lead:
+        "Deliver itemized commercial concrete bid with flatwork quantities, utility coordination allowances, and Irvine inspection sequencing within one business day.",
+      checkpoints: [
+        "Deliver itemized commercial concrete bid with flatwork quantities.",
+        "Utility coordination allowances.",
+        "Irvine inspection sequencing within one business day.",
+      ],
+      fieldNote:
+        "Itemized assumptions documented in the bid package protect schedule, budget, and both parties at award.",
+    },
   ],
 
   evaluationSteps: [
@@ -89,7 +155,7 @@ export const concreteIrvine: ServiceCityPageContent = {
   faqs: [
     {
       q: "Do you provide commercial concrete in Irvine, CA?",
-      a: "Yes. Mendozer x Earthworks (Lic. #1069854) self-performs commercial concrete including structural footings, campus flatwork, sidewalk, curb and gutter, and architectural pours on office, tech, and commercial projects throughout Irvine.",
+      a: "Yes. Mendozer X Earthworks Inc. (Lic. #1069854) self-performs commercial concrete including structural footings, campus flatwork, sidewalk, curb and gutter, and architectural pours on office, tech, and commercial projects throughout Irvine.",
     },
     {
       q: "Can you pour office and tech campus flatwork in Irvine?",

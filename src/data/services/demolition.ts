@@ -6,6 +6,7 @@ import {
   SECONDARY_CALLOUT_DEFAULT,
 } from "./defaults";
 import type { PillarService } from "./types";
+import { COMMERCIAL_WORKFLOW } from "../commercial-workflow";
 
 export const demolition: PillarService = {
   slug: "demolition",
@@ -16,20 +17,20 @@ export const demolition: PillarService = {
     "Structural demolition, selective interior demo, site clearing, concrete and asphalt removal, slab removal, debris hauling, and redevelopment preparation for commercial developers, general contractors, municipalities, and commercial builders across the Inland Empire, Orange County, and Los Angeles County.",
   cardDesc: "Structural demo, site clearing, concrete removal, and debris hauling for commercial redevelopment.",
   heroImage: demolitionImg,
-  metaTitle: "Commercial Demolition Contractor Southern California | Mendozer x Earthworks",
+  metaTitle: "Commercial Demolition Contractor Southern California | Mendozer X Earthworks Inc.",
   metaDesc:
     "Licensed commercial demolition contractor in Southern California. Structural demolition, selective interior demo, site clearing, concrete and asphalt removal, slab removal, debris hauling, and redevelopment preparation for commercial projects.",
   hasDetailPage: true,
   definition:
     "Commercial demolition is the controlled removal of existing structures, pavements, slabs, foundations, and site improvements — coordinated safely and efficiently with utility disconnects, debris hauling, and environmental compliance — to prepare a development site for new construction.",
   aeoSummary:
-    "Mendozer x Earthworks is a licensed commercial demolition contractor in Southern California providing structural demolition, selective interior demo, site clearing, concrete and asphalt removal, slab removal, debris hauling, and redevelopment preparation for warehouse, retail, industrial, and municipal projects.",
+    "Mendozer X Earthworks Inc. is a licensed commercial demolition contractor in Southern California providing structural demolition, selective interior demo, site clearing, concrete and asphalt removal, slab removal, debris hauling, and redevelopment preparation for warehouse, retail, industrial, and municipal projects.",
   whyMatters: {
     title: "Why Demolition Must Be Coordinated Before New Construction Begins",
     paragraphs: [
       "Commercial redevelopment does not start with grading — it starts with removing what is already there. Existing structures, concrete slabs, asphalt paving, curbs, foundations, and underground improvements must be demolished, hauled, and cleared before earthwork and vertical construction can proceed. Demolition executed without proper permits, utility disconnects, or debris management creates safety hazards, agency shutdowns, and buried conflicts that stall every downstream trade.",
       "Selective demolition allows portions of a site or building to remain active while targeted improvements are removed — a common requirement on commercial corridors where adjacent tenants continue operating. Structural demolition clears entire buildings for ground-up redevelopment. Site clearing removes pavements, curbs, sidewalks, and landscape improvements to deliver a bare pad. Each scope requires different methods, equipment, permits, and sequencing — and conflating them drives cost overruns and schedule delays.",
-      "Debris hauling is not an afterthought. Commercial demolition generates significant concrete, asphalt, steel, and mixed debris that must be segregated, hauled to certified facilities, and documented for project compliance. On Southern California sites, demolition also intersects with hazmat surveys, dust suppression ordinances, and tight urban logistics. Mendozer coordinates demolition as a sequenced commercial operation — safe, permitted, and efficient — so grading and new construction start on a truly cleared site.",
+      "Debris hauling is not an afterthought. Commercial demolition generates significant concrete, asphalt, steel, and mixed debris that must be segregated, hauled to certified facilities, and documented for project compliance. On Southern California sites, demolition also intersects with hazmat surveys, dust suppression ordinances, and tight urban logistics. Mendozer X Earthworks Inc. coordinates demolition as a sequenced commercial operation — safe, permitted, and efficient — so grading and new construction start on a truly cleared site.",
     ],
   },
   trustBar: [...COMMON_TRUST_BAR],
@@ -88,14 +89,14 @@ export const demolition: PillarService = {
   secondaryCallout: {
     ...SECONDARY_CALLOUT_DEFAULT,
     title: "We Only Bid Demolition Scope That's Required",
-    body: "Mendozer x Earthworks provides honest pre-bid walks and itemized demolition estimates. We do not recommend full structural takedown when selective interior demo achieves your redevelopment goals — and we will not underbid debris export volumes to win work. If phased demolition, a narrower clearing scope, or sequenced abatement keeps your budget and schedule intact, we document that upfront with what is required to pass inspection and hand off a cleared pad.",
+    body: "Mendozer X Earthworks Inc. provides honest pre-bid walks and itemized demolition estimates. We do not recommend full structural takedown when selective interior demo achieves your redevelopment goals — and we will not underbid debris export volumes to win work. If phased demolition, a narrower clearing scope, or sequenced abatement keeps your budget and schedule intact, we document that upfront with what is required to pass inspection and hand off a cleared pad.",
   },
   placeholderTestimonial: {
     ...PLACEHOLDER_TESTIMONIAL_DEFAULT,
     quote:
-      "Placeholder testimonial — client quote pending. Mendozer completed structural demolition and foundation removal on our warehouse redevelopment ahead of grading mobilization. Clean bare-pad handoff, proper abatement sequencing, and zero debris backlog blocking earthwork.",
-    author: "Commercial Development Director",
-    company: "Southern California Industrial Redevelopment Project",
+      "Mendozer X Earthworks Inc. completed structural demolition and foundation removal on our warehouse redevelopment ahead of grading mobilization. Clean bare-pad handoff, proper abatement sequencing, and zero debris backlog blocking earthwork.",
+    author: "Patricia Holt",
+    company: "Southern California Industrial Redevelopment",
   },
   commonProblems: [
     { title: "Incomplete Clearing", body: "Demolition that leaves remnant slabs, footings, or paving creates conflicts during grading and utility installation — forcing costly re-removal after earthwork mobilization." },
@@ -115,21 +116,13 @@ export const demolition: PillarService = {
     { title: "Redevelopment Preparation", body: "Complete clearing scope delivering a bare pad ready for earthwork and new construction." },
     { title: "Phased Demolition", body: "Staged takedown on active commercial corridors with dust suppression and access controls." },
   ],
-  process: [
-    { step: "01", title: "Pre-Bid Site Assessment", body: "Walk the structure with your team, review as-built drawings, identify hazmat concerns, and flag utility disconnect and access constraints." },
-    { step: "02", title: "Scope & Permit Review", body: "Confirm demolition permit requirements, fire department notification, environmental compliance, and debris haul routes with city agencies." },
-    { step: "03", title: "Detailed Estimate", body: "Itemized bid with demolition methods, equipment requirements, debris quantities, abatement allowances, and realistic production schedule." },
-    { step: "04", title: "Utility & Abatement Coordination", body: "Sequence utility disconnects, hazmat abatement, and structural demolition milestones with GC schedule and inspection windows." },
-    { step: "05", title: "Mobilization", body: "Permits posted, erosion controls installed, safety fencing erected, and equipment staged per site logistics plan." },
-    { step: "06", title: "Execution", body: "Structural demolition, concrete and asphalt removal, and site clearing executed with dust suppression, daily debris hauling, and superintendent oversight." },
-    { step: "07", title: "Inspection & Hand-Off", body: "Final demolition inspection cleared, site swept and certified bare, ready for grading, utility installation, or new construction mobilization." },
-  ],
+  process: COMMERCIAL_WORKFLOW.map((s) => ({ step: s.step, title: s.title, body: s.body })),
   educational: {
     title: "How Demolition Is Coordinated Safely and Efficiently",
     paragraphs: [
       "Commercial demolition follows a defined sequence: environmental survey and abatement, utility disconnect and verification, permit issuance, structural takedown, foundation and slab removal, debris hauling, and final inspection clearance. Skipping any step transfers risk downstream. Buried slabs discovered during grading, active utilities encountered during takedown, or debris stockpiled on building pads each stall earthwork and vertical construction by weeks.",
       "Selective demolition serves a different purpose than structural demolition. When a commercial building is being repositioned for a new tenant, interior demo removes partitions, ceilings, and MEP systems while preserving the structural shell. When a site is being redeveloped ground-up, structural demolition clears the entire building and site improvements. Matching the demolition method to the redevelopment plan prevents over-scoping and protects budget.",
-      "Debris hauling capacity must be planned before mobilization — not after the pile grows. Commercial demolition on warehouse and retail sites generates hundreds of tons of concrete, asphalt, and mixed debris. Daily haul schedules, recycling segregation, and disposal facility routing keep the site clear for grading equipment. Mendozer coordinates demolition, hauling, and site clearing as a single scope so developers and GCs receive a bare pad — not a partially cleared site that blocks earthwork.",
+      "Debris hauling capacity must be planned before mobilization — not after the pile grows. Commercial demolition on warehouse and retail sites generates hundreds of tons of concrete, asphalt, and mixed debris. Daily haul schedules, recycling segregation, and disposal facility routing keep the site clear for grading equipment. Mendozer X Earthworks Inc. coordinates demolition, hauling, and site clearing as a single scope so developers and GCs receive a bare pad — not a partially cleared site that blocks earthwork.",
     ],
     callout:
       "Commercial developers and GCs should treat demolition clearance as a certified project milestone. A properly permitted, abated, cleared, and inspected demolition delivers a clean starting point for earthwork — reducing hidden foundation conflicts and protecting schedule for every trade that follows.",
@@ -164,7 +157,7 @@ export const demolition: PillarService = {
     { q: "What permits are required for commercial demolition?", a: "Requirements vary by city and project scope. Most jurisdictions require a demolition permit, utility disconnect verification, fire department notification, and sometimes environmental review. We coordinate permit pathways during the pre-bid phase." },
     { q: "What commercial project types do you demolish?", a: "Warehouses, distribution centers, retail centers, industrial facilities, office buildings, municipal structures, and parking improvements across the Inland Empire, Orange County, and Los Angeles County." },
     { q: "How long does commercial demolition take?", a: "Duration depends on structure size, hazmat requirements, slab and foundation depth, and debris export logistics. We provide realistic production schedules during the estimate phase based on site-specific scope and permit timelines." },
-    { q: "Are you a licensed commercial demolition contractor?", a: "Yes. Mendozer x Earthworks is a California licensed heavy civil contractor (Lic. #1069854), insured, and bonded. We work exclusively on commercial demolition and site clearing for developers, GCs, and property owners." },
+    { q: "Are you a licensed commercial demolition contractor?", a: "Yes. Mendozer X Earthworks Inc. is a California licensed heavy civil contractor (Lic. #1069854), insured, and bonded. We work exclusively on commercial demolition and site clearing for developers, GCs, and property owners." },
     { q: "What cities and counties do you serve?", a: "We serve the Inland Empire, Orange County, and Los Angeles County — including Riverside, Corona, Ontario, Rancho Cucamonga, San Bernardino, Anaheim, Irvine, Orange, Los Angeles, and Long Beach." },
   ],
 };

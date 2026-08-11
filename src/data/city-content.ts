@@ -60,10 +60,10 @@ function defaultHonestCallout() {
 export const CITY_CONTENT: Record<string, CityContent> = {
   riverside: {
     about:
-      "Riverside's commercial corridor continues to expand with warehouse, logistics, and retail development across Riverside County. Mendozer x Earthworks (Lic. #1069854) supports developers and GCs on mass grading, excavation, asphalt paving, and concrete flatwork for build-to-suit and speculative commercial projects throughout the city.",
+      "Riverside's commercial corridor continues to expand with warehouse, logistics, and retail development across Riverside County. Mendozer X Earthworks Inc. (Lic. #1069854) supports developers and GCs on mass grading, excavation, asphalt paving, and concrete flatwork for build-to-suit and speculative commercial projects throughout the city.",
     aboutExtended: [
       "Riverside sits at the center of Inland Empire commercial growth, with warehouse, logistics, and retail development driving consistent demand for licensed earthwork contractors. Developers and GCs building in Riverside need partners who understand Riverside County soils, SWPPP requirements, and the inspection standards that gate vertical construction mobilization.",
-      "From large-format distribution pads along major corridors to retail center improvements and municipal concrete work, commercial sitework in Riverside demands accurate cut/fill planning, geotech-coordinated compaction, and sequencing that keeps GC master schedules intact. Mendozer x Earthworks mobilizes with commercial-grade equipment and superintendent-led crews for projects across the city.",
+      "From large-format distribution pads along major corridors to retail center improvements and municipal concrete work, commercial sitework in Riverside demands accurate cut/fill planning, geotech-coordinated compaction, and sequencing that keeps GC master schedules intact. Mendozer X Earthworks Inc. mobilizes with commercial-grade equipment and superintendent-led crews for projects across the city.",
       "We partner with commercial developers, general contractors, municipalities, and industrial property owners on excavation, grading, asphalt paving, and concrete flatwork — with honest pre-bid walks and itemized estimates that reflect what your Riverside project actually needs.",
     ],
     projectTypes: ["Warehouse & distribution pad grading", "Retail parking lot paving", "Industrial site excavation", "Commercial concrete flatwork", "Municipal curb and gutter improvements"],
@@ -73,7 +73,7 @@ export const CITY_CONTENT: Record<string, CityContent> = {
       "Commercial sitework in Riverside begins with understanding the soils beneath your pad. Alluvial deposits across Riverside County vary in compaction characteristics, and geotechnical reports define the moisture conditioning, lift thickness, and density testing required before structural footings or paving subgrades are approved. Skipping this step on warehouse and retail projects leads to settlement, failed inspections, and schedule delays that ripple through every downstream trade.",
       "Riverside's seasonal rainfall makes SWPPP compliance a year-round concern on active grading sites. BMPs must remain functional throughout construction, and track-out control on commercial corridors protects both agency standing and adjacent business operations. Developers and GCs who treat erosion control as an afterthought face stop-work orders that halt grading until compliance is restored.",
       "Utility sequencing is another critical factor on Riverside commercial parcels. Wet and dry utility installation must align with mass excavation, trench backfill, and fine grading phases. Earthwork contractors who run ahead of utility relocation create conflict, damage, and costly rework on developer-led schedules.",
-      "Finally, Riverside commercial projects increasingly require phased execution near occupied retail and industrial operations. Dust control, access management, and after-hours paving windows must be planned during pre-bid — not improvised after mobilization. Mendozer x Earthworks documents phasing assumptions upfront so your GC team can hold tenant delivery and certificate-of-occupancy dates.",
+      "Finally, Riverside commercial projects increasingly require phased execution near occupied retail and industrial operations. Dust control, access management, and after-hours paving windows must be planned during pre-bid — not improvised after mobilization. Mendozer X Earthworks Inc. documents phasing assumptions upfront so your GC team can hold tenant delivery and certificate-of-occupancy dates.",
     ],
     localIssues: [
       { title: "Alluvial Soil Variability", body: "Riverside County alluvial soils change across short distances. Pad preparation without test pit verification risks encountering unsuitable material mid-grade." },
@@ -89,11 +89,11 @@ export const CITY_CONTENT: Record<string, CityContent> = {
 
   banning: {
     about:
-      "Banning's I-10 corridor and Pass area logistics zones drive commercial grading, excavation, paving, and concrete demand at the desert edge of Riverside County. Mendozer x Earthworks (Lic. #1069854) supports developers and GCs on commercial pads, truck courts, and retail sitework where haul logistics and Riverside County inspection standards shape every schedule.",
+      "Banning's I-10 corridor and Pass area logistics zones drive commercial grading, excavation, paving, and concrete demand at the desert edge of Riverside County. Mendozer X Earthworks Inc. (Lic. #1069854) supports developers and GCs on commercial pads, truck courts, and retail sitework where haul logistics and Riverside County inspection standards shape every schedule.",
     aboutExtended: [
       "Banning sits at the gateway between the Inland Empire and desert commercial corridors, with I-10 frontage parcels attracting retail, logistics support, and service commercial development. Desert-edge soils, seasonal wind exposure, and Pass area haul logistics add complexity that generic earthwork bids often underestimate on Banning commercial sites.",
       "Commercial grading in Banning requires geotech-coordinated compaction on variable desert-edge soils, planned export routes through the Pass corridor, and Riverside County inspection sequencing that keeps pad certification on track. Developers and GCs need contractors who price haul distance, moisture conditioning, and SWPPP compliance as production requirements — not change-order surprises.",
-      "Mendozer x Earthworks delivers licensed commercial excavation, grading, asphalt paving, and concrete flatwork across Banning with superintendent communication, itemized estimates, and equipment sized for I-10 corridor commercial production rates.",
+      "Mendozer X Earthworks Inc. delivers licensed commercial excavation, grading, asphalt paving, and concrete flatwork across Banning with superintendent communication, itemized estimates, and equipment sized for I-10 corridor commercial production rates.",
     ],
     projectTypes: ["I-10 corridor commercial pad grading", "Retail and service center paving", "Truck court asphalt reconstruction", "Commercial concrete flatwork", "Desert-edge parcel excavation"],
     localChallenges: ["Desert-edge soil variability and moisture conditioning", "Pass area haul logistics and export routing", "Riverside County grading and compaction inspections", "Wind-driven dust control on exposed grading sites"],
@@ -118,11 +118,11 @@ export const CITY_CONTENT: Record<string, CityContent> = {
 
   temecula: {
     about:
-      "Temecula's wine country retail growth and master-planned commercial corridors demand precise hillside grading, excavation, paving, and concrete work under Riverside County standards. Mendozer x Earthworks (Lic. #1069854) partners with developers and GCs on commercial pads, parking improvements, and flatwork across Temecula's expanding commercial zones.",
+      "Temecula's wine country retail growth and master-planned commercial corridors demand precise hillside grading, excavation, paving, and concrete work under Riverside County standards. Mendozer X Earthworks Inc. (Lic. #1069854) partners with developers and GCs on commercial pads, parking improvements, and flatwork across Temecula's expanding commercial zones.",
     aboutExtended: [
       "Temecula combines wine country tourism-driven retail expansion with master-planned commercial development on hillside and valley-floor parcels throughout Riverside County. Commercial earthwork here requires cut slope management, storm drain integration, and finish-quality paving and concrete that meet both city engineering standards and developer design expectations.",
       "Hillside grading on Temecula commercial sites adds embankment finishing, erosion control, and geotech-coordinated compaction programs that must be sequenced before pad certification and vertical mobilization. Retail pad preparation, parking lot reconstruction, and commercial flatwork must align with GC master schedules tied to lease execution and tenant delivery.",
-      "Mendozer x Earthworks provides licensed commercial excavation, grading, asphalt paving, and concrete flatwork across Temecula with GPS grading capability, SWPPP-compliant job sites, and superintendent communication aligned with Riverside County inspection requirements.",
+      "Mendozer X Earthworks Inc. provides licensed commercial excavation, grading, asphalt paving, and concrete flatwork across Temecula with GPS grading capability, SWPPP-compliant job sites, and superintendent communication aligned with Riverside County inspection requirements.",
     ],
     projectTypes: ["Master-planned commercial pad grading", "Retail center parking lot paving", "Hillside commercial excavation", "Commercial concrete flatwork", "Wine country corridor improvements"],
     localChallenges: ["Hillside grading and cut slope management", "Master-planned community design standards", "Riverside County inspection coordination", "Storm drain integration on commercial pads"],
@@ -147,11 +147,11 @@ export const CITY_CONTENT: Record<string, CityContent> = {
 
   "san-bernardino": {
     about:
-      "San Bernardino commercial projects range from industrial pad grading to municipal paving and retail concrete improvements across San Bernardino County. Mendozer x Earthworks (Lic. #1069854) delivers licensed excavation, grading, asphalt paving, and concrete flatwork with reliable mobilization and professional site management.",
+      "San Bernardino commercial projects range from industrial pad grading to municipal paving and retail concrete improvements across San Bernardino County. Mendozer X Earthworks Inc. (Lic. #1069854) delivers licensed excavation, grading, asphalt paving, and concrete flatwork with reliable mobilization and professional site management.",
     aboutExtended: [
       "San Bernardino's commercial landscape includes industrial pad preparation, warehouse grading, and municipal improvements across large parcels throughout San Bernardino County. Mass excavation, cut/fill balancing, and geotech-coordinated compaction programs set the foundation for every commercial build in the city.",
       "Large-lot grading in San Bernardino industrial zones involves significant cut/fill volumes, export planning, and agency inspection sequencing that must align with developer and GC master schedules. Truck court paving, commercial concrete flatwork, and parking lot reconstruction follow pad certification with tight tolerance requirements.",
-      "Mendozer x Earthworks supports developers, municipalities, and GCs across San Bernardino with commercial-grade equipment, superintendent communication, and itemized estimates that reflect realistic production on San Bernardino County commercial parcels.",
+      "Mendozer X Earthworks Inc. supports developers, municipalities, and GCs across San Bernardino with commercial-grade equipment, superintendent communication, and itemized estimates that reflect realistic production on San Bernardino County commercial parcels.",
     ],
     projectTypes: ["Industrial pad grading and excavation", "Large-lot commercial earthwork", "Municipal paving improvements", "Warehouse truck court asphalt", "Commercial concrete flatwork"],
     localChallenges: ["Large-lot cut/fill on industrial parcels", "Coordination with San Bernardino County agency requirements", "Export hauling from expansive commercial sites", "Compaction standards on structural warehouse pads"],
@@ -176,11 +176,11 @@ export const CITY_CONTENT: Record<string, CityContent> = {
 
   rialto: {
     about:
-      "Rialto's Inland Empire industrial corridor and BNSF-adjacent logistics zones drive demand for large-lot grading, excavation, paving, and concrete on San Bernardino County commercial parcels. Mendozer x Earthworks (Lic. #1069854) supports developers and GCs on warehouse pads, industrial yards, and commercial improvements throughout Rialto.",
+      "Rialto's Inland Empire industrial corridor and BNSF-adjacent logistics zones drive demand for large-lot grading, excavation, paving, and concrete on San Bernardino County commercial parcels. Mendozer X Earthworks Inc. (Lic. #1069854) supports developers and GCs on warehouse pads, industrial yards, and commercial improvements throughout Rialto.",
     aboutExtended: [
       "Rialto sits at the intersection of Inland Empire industrial growth and rail-adjacent logistics development, with large-format commercial parcels requiring production-scale earthwork under San Bernardino County standards. Warehouse pad grading, truck court paving, and industrial yard improvements bind earthwork completion to tenant delivery milestones.",
       "BNSF corridor adjacency adds haul route planning, noise and dust management, and phased access requirements on Rialto commercial sites near active rail and logistics operations. Large-lot grading on industrial parcels demands accurate quantity takeoffs, export logistics, and compaction programs sized for structural pad certification.",
-      "Mendozer x Earthworks delivers licensed commercial excavation, grading, asphalt paving, and concrete flatwork across Rialto with superintendent-led crews, itemized estimates, and equipment fleets sized for industrial-scale production rates.",
+      "Mendozer X Earthworks Inc. delivers licensed commercial excavation, grading, asphalt paving, and concrete flatwork across Rialto with superintendent-led crews, itemized estimates, and equipment fleets sized for industrial-scale production rates.",
     ],
     projectTypes: ["Large-lot industrial pad grading", "BNSF-adjacent warehouse sitework", "Industrial yard asphalt paving", "Commercial concrete flatwork", "Logistics corridor truck courts"],
     localChallenges: ["Large-lot grading on industrial parcels", "BNSF and logistics corridor adjacency", "San Bernardino County inspection coordination", "Heavy-duty paving for industrial traffic"],
@@ -205,11 +205,11 @@ export const CITY_CONTENT: Record<string, CityContent> = {
 
   anaheim: {
     about:
-      "Anaheim's commercial landscape includes retail, hospitality, and industrial development with complex scheduling and access requirements across Orange County. Mendozer x Earthworks (Lic. #1069854) provides commercial grading, excavation, asphalt paving, and concrete flatwork for projects that must minimize disruption to active commercial operations.",
+      "Anaheim's commercial landscape includes retail, hospitality, and industrial development with complex scheduling and access requirements across Orange County. Mendozer X Earthworks Inc. (Lic. #1069854) provides commercial grading, excavation, asphalt paving, and concrete flatwork for projects that must minimize disruption to active commercial operations.",
     aboutExtended: [
       "Anaheim combines high-visibility commercial corridors with active retail, hospitality, and entertainment operations that demand phased sitework execution. Developers and GCs need earthwork contractors who work after-hours, manage dust and noise, and maintain access for adjacent tenants throughout grading and paving phases.",
       "Orange County agency inspection standards in Anaheim require documentation-ready grading, paving core thickness, and concrete flatwork compliance. ADA path-of-travel improvements and parking lot reconstruction must meet strict tolerance before certificate of occupancy on commercial tenant improvement projects.",
-      "Mendozer x Earthworks provides commercial excavation, grading, asphalt paving, and concrete flatwork across Anaheim with phased execution plans, traffic control coordination, and superintendent communication aligned with your GC schedule.",
+      "Mendozer X Earthworks Inc. provides commercial excavation, grading, asphalt paving, and concrete flatwork across Anaheim with phased execution plans, traffic control coordination, and superintendent communication aligned with your GC schedule.",
     ],
     projectTypes: ["Retail parking lot reconstruction", "Commercial pad grading", "Industrial site excavation", "After-hours asphalt paving", "ADA concrete path-of-travel improvements"],
     localChallenges: ["After-hours and phased work near active retail", "High-visibility sites requiring dust and noise control", "Orange County agency inspection standards", "Traffic control on high-volume commercial corridors"],
@@ -234,11 +234,11 @@ export const CITY_CONTENT: Record<string, CityContent> = {
 
   "santa-ana": {
     about:
-      "Santa Ana's urban Orange County infill and county seat agency standards create dense staging challenges for commercial grading, excavation, paving, and concrete work. Mendozer x Earthworks (Lic. #1069854) supports developers and GCs on retail and industrial tenant improvements where tight sites and strict inspection requirements shape every schedule.",
+      "Santa Ana's urban Orange County infill and county seat agency standards create dense staging challenges for commercial grading, excavation, paving, and concrete work. Mendozer X Earthworks Inc. (Lic. #1069854) supports developers and GCs on retail and industrial tenant improvements where tight sites and strict inspection requirements shape every schedule.",
     aboutExtended: [
       "Santa Ana functions as Orange County's county seat, with commercial redevelopment, retail tenant improvements, and industrial sitework occurring on dense urban parcels with limited staging and strict agency oversight. Commercial earthwork contractors must navigate multi-layered permit requirements, confined equipment access, and inspection standards enforced across county and city jurisdictions.",
       "Urban infill grading and paving on Santa Ana commercial sites demands creative mobilization plans, sequenced haul routes, and phased execution that preserves adjacent tenant operations. Retail pad preparation, parking lot reconstruction, and commercial concrete flatwork must meet Orange County tolerance standards on schedules with minimal horizontal float.",
-      "Mendozer x Earthworks delivers licensed commercial excavation, grading, asphalt paving, and concrete flatwork across Santa Ana with superintendent communication, itemized estimates, and execution plans scoped for dense urban commercial parcels.",
+      "Mendozer X Earthworks Inc. delivers licensed commercial excavation, grading, asphalt paving, and concrete flatwork across Santa Ana with superintendent communication, itemized estimates, and execution plans scoped for dense urban commercial parcels.",
     ],
     projectTypes: ["Urban commercial infill grading", "Retail and industrial TI paving", "Dense-parcel excavation", "Commercial concrete flatwork", "Parking lot reconstruction"],
     localChallenges: ["Dense urban staging and equipment access", "County seat agency inspection standards", "Phased work near occupied retail and industrial tenants", "Confined haul routes on infill commercial parcels"],
@@ -263,11 +263,11 @@ export const CITY_CONTENT: Record<string, CityContent> = {
 
   irvine: {
     about:
-      "Irvine sets a high bar for commercial construction quality and agency compliance across Orange County. Mendozer x Earthworks (Lic. #1069854) supports master-planned commercial development with precise grading, asphalt paving, concrete flatwork, and clean job sites coordinated with Irvine's engineering and inspection requirements.",
+      "Irvine sets a high bar for commercial construction quality and agency compliance across Orange County. Mendozer X Earthworks Inc. (Lic. #1069854) supports master-planned commercial development with precise grading, asphalt paving, concrete flatwork, and clean job sites coordinated with Irvine's engineering and inspection requirements.",
     aboutExtended: [
       "Irvine's master-planned commercial environment demands precision on every sitework phase — from grading tolerances to pavement finish quality and concrete flatwork aesthetics. Developers and GCs building in Irvine need contractors who treat Orange County agency compliance as a production requirement, not a punch-list afterthought.",
       "Office campuses, tech parks, and commercial retail in Irvine involve utility-dense sites with careful sequencing between excavation, underground installation, and fine grading. Scope gaps between trades create schedule risk that pre-bid coordination must address before pad certification.",
-      "Mendozer x Earthworks delivers commercial excavation, grading, asphalt paving, and concrete flatwork across Irvine with GPS grading, SWPPP-compliant job sites, and superintendent communication aligned with Irvine's engineering standards.",
+      "Mendozer X Earthworks Inc. delivers commercial excavation, grading, asphalt paving, and concrete flatwork across Irvine with GPS grading, SWPPP-compliant job sites, and superintendent communication aligned with Irvine's engineering standards.",
     ],
     projectTypes: ["Office and tech campus grading", "Commercial pad excavation", "Structured parking area paving", "Landscape-adjacent concrete flatwork", "Retail center asphalt improvements"],
     localChallenges: ["Strict city engineering and inspection standards", "Coordination within master-planned communities", "High design standards for commercial finishes", "Utility-dense sites requiring careful sequencing"],
@@ -292,11 +292,11 @@ export const CITY_CONTENT: Record<string, CityContent> = {
 
   "los-angeles": {
     about:
-      "Los Angeles commercial construction demands contractors who can execute in dense urban environments with complex permitting, utility conflicts, and strict agency oversight across Los Angeles County. Mendozer x Earthworks (Lic. #1069854) provides commercial grading, excavation, asphalt paving, and concrete flatwork for industrial, retail, and commercial improvement projects.",
+      "Los Angeles commercial construction demands contractors who can execute in dense urban environments with complex permitting, utility conflicts, and strict agency oversight across Los Angeles County. Mendozer X Earthworks Inc. (Lic. #1069854) provides commercial grading, excavation, asphalt paving, and concrete flatwork for industrial, retail, and commercial improvement projects.",
     aboutExtended: [
       "Los Angeles commercial sitework operates in one of the most complex regulatory and logistical environments in the country. Dense urban staging, utility conflicts, multi-agency permitting, and community impact requirements demand experienced commercial earthwork contractors who plan production before mobilization.",
       "Industrial yard reconstruction, commercial pad grading, and distribution facility sitework across Los Angeles County require haul route planning, dust and noise management, and sequencing that keeps GC schedules moving despite site constraints.",
-      "Mendozer x Earthworks partners with developers and GCs on Los Angeles County commercial projects — with superintendent accountability, itemized estimates, and execution plans that account for urban grading, paving, and concrete realities.",
+      "Mendozer X Earthworks Inc. partners with developers and GCs on Los Angeles County commercial projects — with superintendent accountability, itemized estimates, and execution plans that account for urban grading, paving, and concrete realities.",
     ],
     projectTypes: ["Urban commercial pad grading", "Industrial yard asphalt reconstruction", "Commercial excavation and fine grading", "Municipal concrete improvements", "Distribution facility paving"],
     localChallenges: ["Dense urban staging and haul routes", "Complex utility relocation sequencing", "Los Angeles County and city-specific permit requirements", "Dust, noise, and community impact management"],
@@ -321,11 +321,11 @@ export const CITY_CONTENT: Record<string, CityContent> = {
 
   pasadena: {
     about:
-      "Pasadena's urban Los Angeles County foothill setting combines tight staging, multi-agency permits, and historic corridor adjacency on commercial grading, excavation, paving, and concrete projects. Mendozer x Earthworks (Lic. #1069854) supports developers and GCs on commercial improvements where foothill topography and dense urban conditions shape every schedule.",
+      "Pasadena's urban Los Angeles County foothill setting combines tight staging, multi-agency permits, and historic corridor adjacency on commercial grading, excavation, paving, and concrete projects. Mendozer X Earthworks Inc. (Lic. #1069854) supports developers and GCs on commercial improvements where foothill topography and dense urban conditions shape every schedule.",
     aboutExtended: [
       "Pasadena commercial sitework occurs along historic corridors and foothill urban parcels where staging is limited, permit pathways cross multiple agencies, and community visibility is high. Commercial grading, parking reconstruction, and concrete flatwork must proceed with dust control, noise management, and access plans scoped during pre-bid — not improvised after mobilization.",
       "Foothill topography on Pasadena commercial sites adds cut/fill complexity, drainage integration, and geotech-coordinated compaction that must align with Los Angeles County inspection standards. Retail tenant improvements, office park paving, and municipal concrete work bind horizontal completion to certificate-of-occupancy milestones.",
-      "Mendozer x Earthworks delivers licensed commercial excavation, grading, asphalt paving, and concrete flatwork across Pasadena with superintendent communication, phased execution plans, and itemized estimates reflecting urban foothill site realities.",
+      "Mendozer X Earthworks Inc. delivers licensed commercial excavation, grading, asphalt paving, and concrete flatwork across Pasadena with superintendent communication, phased execution plans, and itemized estimates reflecting urban foothill site realities.",
     ],
     projectTypes: ["Historic corridor commercial grading", "Urban foothill pad excavation", "Commercial parking lot paving", "Municipal concrete improvements", "Retail tenant improvement flatwork"],
     localChallenges: ["Tight staging on urban foothill parcels", "Multi-agency permit coordination", "Historic corridor adjacency and community visibility", "Foothill cut/fill and drainage integration"],
@@ -390,10 +390,10 @@ const SERVICE_ISSUE_ANGLES: Record<string, (city: City, base: CityContent) => { 
 
 export function getCityContent(city: City): CityContent {
   return CITY_CONTENT[city.slug] ?? {
-    about: `Mendozer x Earthworks (Lic. #1069854) provides commercial excavation, grading, asphalt paving, and concrete flatwork in ${city.name}, CA and throughout ${city.county}.`,
+    about: `Mendozer X Earthworks Inc. (Lic. #1069854) provides commercial excavation, grading, asphalt paving, and concrete flatwork in ${city.name}, CA and throughout ${city.county}.`,
     aboutExtended: [
       `Commercial earthwork in ${city.name}, CA requires contractors who understand ${city.county} soils, agency standards, and developer-led schedule demands.`,
-      `Mendozer x Earthworks partners with developers, GCs, municipalities, and industrial property owners on grading, excavation, paving, and concrete across ${city.name}.`,
+      `Mendozer X Earthworks Inc. partners with developers, GCs, municipalities, and industrial property owners on grading, excavation, paving, and concrete across ${city.name}.`,
     ],
     projectTypes: ["Commercial grading", "Industrial sitework", "Retail paving", "Warehouse pad prep", "Municipal improvements"],
     localChallenges: ["Agency inspection coordination", "Soils and compaction requirements", "Utility sequencing", "Commercial schedule discipline"],

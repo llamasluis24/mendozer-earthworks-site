@@ -12,12 +12,78 @@ export const siteDevelopmentIrvine: ServiceCityPageContent = {
     "Commercial site development in Irvine, CA. Office and tech campus sitework, strict OC finish standards, utility-dense sequencing, and master-plan aesthetic compliance for commercial developments.",
 
   siteVisitItems: [
-    "Review civil improvement plans and full horizontal scope on Irvine office park and tech campus commercial development parcels",
-    "Assess utility-dense site conditions, underground MEP routing, and trenching sequences affecting grading and paving mobilization",
-    "Confirm City of Irvine engineering standards, finish tolerances, and master-planned community aesthetic requirements across sitework",
-    "Evaluate integrated grading, storm drain, utility trenching, paving, and landscape-adjacent flatwork sequencing on Irvine campus projects",
-    "Map multi-phase inspection hold points, pad certification standards, and OC agency requirements before vertical mobilization",
-    "Deliver itemized turnkey sitework bid with utility coordination allowances, finish standard compliance, and phasing assumptions within one business day",
+    {
+      title: "Plan & Document Review",
+      lead:
+        "Review civil improvement plans and full horizontal scope on Irvine office park and tech campus commercial development parcels.",
+      checkpoints: [
+        "Review civil improvement plans and full horizontal scope on Irvine office park and tech campus commercial development parcels.",
+        "Cross-check observations against civil plans, geotechnical data, and project specifications.",
+        "Flag constraints affecting production, haul logistics, SWPPP compliance, or inspection hold points.",
+      ],
+      fieldNote:
+        "Early plan and document review keeps bid assumptions aligned with engineer-approved civil quantities before contract award.",
+    },
+    {
+      title: "Field Conditions Assessment",
+      lead:
+        "Assess utility-dense site conditions, underground MEP routing, and trenching sequences affecting grading and paving mobilization.",
+      checkpoints: [
+        "Assess utility-dense site conditions.",
+        "Underground MEP routing.",
+        "Trenching sequences affecting grading and paving mobilization.",
+      ],
+      fieldNote:
+        "Field assessment during the pre-bid walk surfaces constraints that affect production, haul logistics, and inspection sequencing.",
+    },
+    {
+      title: "Specification Verification",
+      lead:
+        "Confirm City of Irvine engineering standards, finish tolerances, and master-planned community aesthetic requirements across sitework.",
+      checkpoints: [
+        "Confirm City of Irvine engineering standards.",
+        "Finish tolerances.",
+        "Master-planned community aesthetic requirements across sitework.",
+      ],
+      fieldNote:
+        "Verified specifications before mobilization protect compaction acceptance, drainage performance, and agency sign-off.",
+    },
+    {
+      title: "Technical Evaluation",
+      lead:
+        "Evaluate integrated grading, storm drain, utility trenching, paving, and landscape-adjacent flatwork sequencing on Irvine campus projects.",
+      checkpoints: [
+        "Evaluate integrated grading.",
+        "Storm drain.",
+        "Utility trenching.",
+      ],
+      fieldNote:
+        "Technical evaluation upfront reduces rework during production and prevents mid-project quantity disputes.",
+    },
+    {
+      title: "Inspection & Schedule Mapping",
+      lead:
+        "Map multi-phase inspection hold points, pad certification standards, and OC agency requirements before vertical mobilization.",
+      checkpoints: [
+        "Map multi-phase inspection hold points.",
+        "Pad certification standards.",
+        "OC agency requirements before vertical mobilization.",
+      ],
+      fieldNote:
+        "Mapped inspection windows and hold points keep sitework sequenced with your GC master schedule and vertical mobilization.",
+    },
+    {
+      title: "Itemized Bid Delivery",
+      lead:
+        "Deliver itemized turnkey sitework bid with utility coordination allowances, finish standard compliance, and phasing assumptions within one business day.",
+      checkpoints: [
+        "Deliver itemized turnkey sitework bid with utility coordination allowances.",
+        "Finish standard compliance.",
+        "Phasing assumptions within one business day.",
+      ],
+      fieldNote:
+        "Itemized assumptions documented in the bid package protect schedule, budget, and both parties at award.",
+    },
   ],
 
   evaluationSteps: [
@@ -89,7 +155,7 @@ export const siteDevelopmentIrvine: ServiceCityPageContent = {
   faqs: [
     {
       q: "Do you provide commercial site development in Irvine, CA?",
-      a: "Yes. Mendozer x Earthworks (Lic. #1069854) delivers turnkey commercial sitework including grading, utility trenching, storm drain, paving, concrete flatwork, and SWPPP compliance on office, tech campus, and commercial projects throughout Irvine.",
+      a: "Yes. Mendozer X Earthworks Inc. (Lic. #1069854) delivers turnkey commercial sitework including grading, utility trenching, storm drain, paving, concrete flatwork, and SWPPP compliance on office, tech campus, and commercial projects throughout Irvine.",
     },
     {
       q: "Can you deliver office and tech campus sitework in Irvine?",

@@ -89,7 +89,7 @@ export const cityPageSantaAna: CityPageContent = {
   faqs: [
     {
       q: "What commercial earthwork services do you provide in Santa Ana, CA?",
-      a: "Mendozer x Earthworks (Lic. #1069854) self-performs commercial excavation, grading, asphalt paving, and concrete flatwork for developers, GCs, municipalities, and property owners throughout Santa Ana and Orange County.",
+      a: "Mendozer X Earthworks Inc. (Lic. #1069854) self-performs commercial excavation, grading, asphalt paving, and concrete flatwork for developers, GCs, municipalities, and property owners throughout Santa Ana and Orange County.",
     },
     {
       q: "What types of commercial projects do you handle in Santa Ana?",

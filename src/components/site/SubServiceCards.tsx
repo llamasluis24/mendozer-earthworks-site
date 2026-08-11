@@ -18,9 +18,6 @@ export function SubServiceCards({
             <article key={item.title} className="rounded-xl border border-border bg-card overflow-hidden hover:border-gold/60 transition group">
               <div className="aspect-[16/10] overflow-hidden relative">
                 <img src={item.image} alt={item.title} className="h-full w-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
-                <figcaption className="absolute bottom-2 left-2 text-[10px] uppercase tracking-wider bg-charcoal/80 text-foreground/70 px-2 py-0.5 rounded">
-                  Placeholder — project photo coming soon
-                </figcaption>
               </div>
               <div className="p-5">
                 <h3 className="font-display text-base tracking-wide">{item.title}</h3>

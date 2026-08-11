@@ -12,12 +12,78 @@ export const demolitionIrvine: ServiceCityPageContent = {
     "Commercial demolition contractor in Irvine, CA. Selective office and tech campus takedown, utility-dense site clearing, and foundation removal coordinated with City of Irvine engineering standards on master-planned redevelopment parcels.",
 
   siteVisitItems: [
-    "Inventory office, R&D, and tech campus structures and document selective demolition boundaries on Irvine master-planned redevelopment parcels",
-    "Map underground utilities, fiber corridors, and shared campus infrastructure before structural takedown is scoped on utility-dense Irvine commercial sites",
-    "Confirm demolition permit pathway with City of Irvine building division, engineering review, and fire department notification requirements",
-    "Assess haul routes, debris staging, and export logistics against Irvine design standards and campus access controls on active commercial properties",
-    "Evaluate noise, dust, and vibration controls required near occupied office tenants and adjacent tech campus operations during phased Irvine demolition",
-    "Deliver itemized demolition bid with selective demo sequencing tied to tenant delivery and civil mobilization milestones on Irvine schedules",
+    {
+      title: "Inventory Office",
+      lead:
+        "Inventory office, R&D, and tech campus structures and document selective demolition boundaries on Irvine master-planned redevelopment parcels.",
+      checkpoints: [
+        "Inventory office.",
+        "Cross-check observations against civil plans, geotechnical data, and project specifications.",
+        "Flag constraints affecting production, haul logistics, SWPPP compliance, or inspection hold points.",
+      ],
+      fieldNote:
+        "Early plan and document review keeps bid assumptions aligned with engineer-approved civil quantities before contract award.",
+    },
+    {
+      title: "Inspection & Schedule Mapping",
+      lead:
+        "Map underground utilities, fiber corridors, and shared campus infrastructure before structural takedown is scoped on utility-dense Irvine commercial sites.",
+      checkpoints: [
+        "Map underground utilities.",
+        "Fiber corridors.",
+        "Shared campus infrastructure before structural takedown is scoped on utility-dense Irvine commercial sites.",
+      ],
+      fieldNote:
+        "Mapped inspection windows and hold points keep sitework sequenced with your GC master schedule and vertical mobilization.",
+    },
+    {
+      title: "Specification Verification",
+      lead:
+        "Confirm demolition permit pathway with City of Irvine building division, engineering review, and fire department notification requirements.",
+      checkpoints: [
+        "Confirm demolition permit pathway with City of Irvine building division.",
+        "Engineering review.",
+        "Fire department notification requirements.",
+      ],
+      fieldNote:
+        "Verified specifications before mobilization protect compaction acceptance, drainage performance, and agency sign-off.",
+    },
+    {
+      title: "Field Conditions Assessment",
+      lead:
+        "Assess haul routes, debris staging, and export logistics against Irvine design standards and campus access controls on active commercial properties.",
+      checkpoints: [
+        "Assess haul routes.",
+        "Debris staging.",
+        "Export logistics against Irvine design standards and campus access controls on active commercial properties.",
+      ],
+      fieldNote:
+        "Field assessment during the pre-bid walk surfaces constraints that affect production, haul logistics, and inspection sequencing.",
+    },
+    {
+      title: "Technical Evaluation",
+      lead:
+        "Evaluate noise, dust, and vibration controls required near occupied office tenants and adjacent tech campus operations during phased Irvine demolition.",
+      checkpoints: [
+        "Evaluate noise.",
+        "Cross-check observations against civil plans, geotechnical data, and project specifications.",
+        "Flag constraints affecting production, haul logistics, SWPPP compliance, or inspection hold points.",
+      ],
+      fieldNote:
+        "Technical evaluation upfront reduces rework during production and prevents mid-project quantity disputes.",
+    },
+    {
+      title: "Itemized Bid Delivery",
+      lead:
+        "Deliver itemized demolition bid with selective demo sequencing tied to tenant delivery and civil mobilization milestones on Irvine schedules.",
+      checkpoints: [
+        "Deliver itemized demolition bid with selective demo sequencing tied to tenant delivery and civil mobilization milestones on Irvine schedules.",
+        "Cross-check observations against civil plans, geotechnical data, and project specifications.",
+        "Confirm bid assumptions, quantities, and schedule milestones align with preconstruction requirements.",
+      ],
+      fieldNote:
+        "Itemized assumptions documented in the bid package protect schedule, budget, and both parties at award.",
+    },
   ],
 
   evaluationSteps: [
@@ -89,7 +155,7 @@ export const demolitionIrvine: ServiceCityPageContent = {
   faqs: [
     {
       q: "Do you provide commercial demolition in Irvine, CA?",
-      a: "Yes. Mendozer x Earthworks provides licensed commercial demolition for developers, GCs, and commercial property owners in Irvine and Orange County. We self-perform selective office demo, tech campus structural takedown, foundation removal, and site clearing on master-planned redevelopment parcels.",
+      a: "Yes. Mendozer X Earthworks Inc. provides licensed commercial demolition for developers, GCs, and commercial property owners in Irvine and Orange County. We self-perform selective office demo, tech campus structural takedown, foundation removal, and site clearing on master-planned redevelopment parcels.",
     },
     {
       q: "What types of demolition do you handle in Irvine?",

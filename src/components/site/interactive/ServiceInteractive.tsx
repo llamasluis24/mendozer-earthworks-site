@@ -9,8 +9,8 @@ import { SiteworkMilestonePath } from "./site-development/SiteworkMilestonePath"
 const INTERACTIVE_COPY: Record<string, { eyebrow: string; title: string; subtitle: string }> = {
   grading: {
     eyebrow: "Try It",
-    title: "Import & Export Dirt Simulator",
-    subtitle: "Export cut material off-site or import fill to build up the pad — watch windrows, haul trucks, and volume change on a graded commercial parcel.",
+    title: "Earthwork Quantity & Soil Factor Calculator",
+    subtitle: "Adjust cut/fill depth, expansion, and shrink factors to see bank, loose, and compacted cubic yard differences — and why geotechnical reports matter before bid packages go out.",
   },
   excavation: {
     eyebrow: "Try It",

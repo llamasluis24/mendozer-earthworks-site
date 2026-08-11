@@ -12,12 +12,78 @@ export const concreteAnaheim: ServiceCityPageContent = {
     "Commercial concrete in Anaheim, CA. ADA path-of-travel ramps, after-hours flatwork near active retail, OC inspection standards, and curb/sidewalk pours on high-visibility sites.",
 
   siteVisitItems: [
-    "Review civil flatwork plans, ADA ramp details, and path-of-travel improvement scope on Anaheim retail center and commercial TI redevelopment parcels",
-    "Assess after-hours pour feasibility, noise and haul restrictions, and phased flatwork sequencing near active Anaheim retail and hospitality operations",
-    "Confirm curb ramp cross-slopes, landing dimensions, and detectable warning surface requirements per Orange County inspection standards",
-    "Evaluate mix design, finish specifications, and broom/trowel requirements for high-visibility Anaheim commercial flatwork sites",
-    "Map pre-pour inspection windows, curing protocols, and OC agency hold points before certificate of occupancy on Anaheim commercial projects",
-    "Deliver itemized commercial concrete bid with flatwork quantities, after-hours allowances, and OC inspection sequencing within one business day",
+    {
+      title: "Plan & Document Review",
+      lead:
+        "Review civil flatwork plans, ADA ramp details, and path-of-travel improvement scope on Anaheim retail center and commercial TI redevelopment parcels.",
+      checkpoints: [
+        "Review civil flatwork plans.",
+        "ADA ramp details.",
+        "Path-of-travel improvement scope on Anaheim retail center and commercial TI redevelopment parcels.",
+      ],
+      fieldNote:
+        "Early plan and document review keeps bid assumptions aligned with engineer-approved civil quantities before contract award.",
+    },
+    {
+      title: "Field Conditions Assessment",
+      lead:
+        "Assess after-hours pour feasibility, noise and haul restrictions, and phased flatwork sequencing near active Anaheim retail and hospitality operations.",
+      checkpoints: [
+        "Assess after-hours pour feasibility.",
+        "Noise and haul restrictions.",
+        "Phased flatwork sequencing near active Anaheim retail and hospitality operations.",
+      ],
+      fieldNote:
+        "Field assessment during the pre-bid walk surfaces constraints that affect production, haul logistics, and inspection sequencing.",
+    },
+    {
+      title: "Specification Verification",
+      lead:
+        "Confirm curb ramp cross-slopes, landing dimensions, and detectable warning surface requirements per Orange County inspection standards.",
+      checkpoints: [
+        "Confirm curb ramp cross-slopes.",
+        "Landing dimensions.",
+        "Detectable warning surface requirements per Orange County inspection standards.",
+      ],
+      fieldNote:
+        "Verified specifications before mobilization protect compaction acceptance, drainage performance, and agency sign-off.",
+    },
+    {
+      title: "Technical Evaluation",
+      lead:
+        "Evaluate mix design, finish specifications, and broom/trowel requirements for high-visibility Anaheim commercial flatwork sites.",
+      checkpoints: [
+        "Evaluate mix design.",
+        "Finish specifications.",
+        "Broom/trowel requirements for high-visibility Anaheim commercial flatwork sites.",
+      ],
+      fieldNote:
+        "Technical evaluation upfront reduces rework during production and prevents mid-project quantity disputes.",
+    },
+    {
+      title: "Inspection & Schedule Mapping",
+      lead:
+        "Map pre-pour inspection windows, curing protocols, and OC agency hold points before certificate of occupancy on Anaheim commercial projects.",
+      checkpoints: [
+        "Map pre-pour inspection windows.",
+        "Curing protocols.",
+        "OC agency hold points before certificate of occupancy on Anaheim commercial projects.",
+      ],
+      fieldNote:
+        "Mapped inspection windows and hold points keep sitework sequenced with your GC master schedule and vertical mobilization.",
+    },
+    {
+      title: "Itemized Bid Delivery",
+      lead:
+        "Deliver itemized commercial concrete bid with flatwork quantities, after-hours allowances, and OC inspection sequencing within one business day.",
+      checkpoints: [
+        "Deliver itemized commercial concrete bid with flatwork quantities.",
+        "After-hours allowances.",
+        "OC inspection sequencing within one business day.",
+      ],
+      fieldNote:
+        "Itemized assumptions documented in the bid package protect schedule, budget, and both parties at award.",
+    },
   ],
 
   evaluationSteps: [
@@ -89,7 +155,7 @@ export const concreteAnaheim: ServiceCityPageContent = {
   faqs: [
     {
       q: "Do you provide commercial concrete in Anaheim, CA?",
-      a: "Yes. Mendozer x Earthworks (Lic. #1069854) self-performs commercial concrete including ADA ramps, sidewalk, curb and gutter, slabs-on-grade, and TI flatwork on retail, hospitality, and commercial projects throughout Anaheim and Orange County.",
+      a: "Yes. Mendozer X Earthworks Inc. (Lic. #1069854) self-performs commercial concrete including ADA ramps, sidewalk, curb and gutter, slabs-on-grade, and TI flatwork on retail, hospitality, and commercial projects throughout Anaheim and Orange County.",
     },
     {
       q: "Can you pour ADA-compliant curb ramps in Anaheim?",

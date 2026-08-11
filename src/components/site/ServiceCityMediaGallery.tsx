@@ -30,9 +30,6 @@ export function ServiceCityMediaGallery({
                   className="h-full w-full object-cover group-hover:scale-105 transition-transform duration-500"
                   loading="lazy"
                 />
-                <span className="absolute bottom-2 left-2 text-[10px] uppercase tracking-wider bg-charcoal/80 text-foreground/70 px-2 py-0.5 rounded">
-                  Placeholder
-                </span>
               </div>
               <p className="p-3 text-xs text-muted-foreground leading-relaxed">{photo.caption}</p>
             </button>

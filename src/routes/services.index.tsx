@@ -18,7 +18,7 @@ const ICONS: Record<string, React.ComponentType<{ className?: string }>> = {
 export const Route = createFileRoute("/services/")({
   head: () =>
     buildPageMeta({
-      title: "Commercial Earthwork Services | Mendozer x Earthworks",
+      title: "Commercial Earthwork Services | Mendozer X Earthworks Inc.",
       description:
         "Commercial grading, excavation, concrete, and asphalt services in Southern California for developers and GCs.",
       path: "/services",

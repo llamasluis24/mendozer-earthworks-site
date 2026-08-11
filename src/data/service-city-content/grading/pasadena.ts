@@ -13,12 +13,78 @@ export const gradingPasadena: ServiceCityPageContent = {
     "Commercial grading in Pasadena, CA. Urban LA foothills pad prep, tight staging earthwork, multi-agency permit coordination, and Los Angeles County grading compliance for Pasadena commercial redevelopments.",
 
   siteVisitItems: [
-    "Review civil grading plans and cut/fill quantities on Pasadena urban foothill parcels where tight staging, hillside adjacency, and multi-agency permit pathways affect earthwork sequencing",
-    "Assess decomposed granite, expansive clay, and foothill soil profiles from geotechnical reports on Los Angeles County Pasadena commercial redevelopment sites",
-    "Confirm City of Pasadena, Los Angeles County, and multi-agency grading permit requirements, compaction testing schedules, and inspection hold points before mass excavation mobilizes",
-    "Map tight haul routes, alley staging, and limited equipment access for export material on Pasadena urban parcels where foothill topography and adjacent building setbacks constrain production",
-    "Coordinate earthwork sequencing with multi-agency review timelines, SWPPP BMP placement, and storm drain inlet protection on active Pasadena commercial job sites",
-    "Deliver itemized grading bid with tight staging assumptions, phased production scope, and multi-agency inspection sequencing within one business day",
+    {
+      title: "Plan & Document Review",
+      lead:
+        "Review civil grading plans and cut/fill quantities on Pasadena urban foothill parcels where tight staging, hillside adjacency, and multi-agency permit pathways affect earthwork sequencing.",
+      checkpoints: [
+        "Review civil grading plans and cut/fill quantities on Pasadena urban foothill parcels where tight staging.",
+        "Hillside adjacency.",
+        "Multi-agency permit pathways affect earthwork sequencing.",
+      ],
+      fieldNote:
+        "Early plan and document review keeps bid assumptions aligned with engineer-approved civil quantities before contract award.",
+    },
+    {
+      title: "Field Conditions Assessment",
+      lead:
+        "Assess decomposed granite, expansive clay, and foothill soil profiles from geotechnical reports on Los Angeles County Pasadena commercial redevelopment sites.",
+      checkpoints: [
+        "Assess decomposed granite.",
+        "Expansive clay.",
+        "Foothill soil profiles from geotechnical reports on Los Angeles County Pasadena commercial redevelopment sites.",
+      ],
+      fieldNote:
+        "Field assessment during the pre-bid walk surfaces constraints that affect production, haul logistics, and inspection sequencing.",
+    },
+    {
+      title: "Specification Verification",
+      lead:
+        "Confirm City of Pasadena, Los Angeles County, and multi-agency grading permit requirements, compaction testing schedules, and inspection hold points before mass excavation mobilizes.",
+      checkpoints: [
+        "Confirm City of Pasadena.",
+        "Los Angeles County.",
+        "Multi-agency grading permit requirements.",
+      ],
+      fieldNote:
+        "Verified specifications before mobilization protect compaction acceptance, drainage performance, and agency sign-off.",
+    },
+    {
+      title: "Inspection & Schedule Mapping",
+      lead:
+        "Map tight haul routes, alley staging, and limited equipment access for export material on Pasadena urban parcels where foothill topography and adjacent building setbacks constrain production.",
+      checkpoints: [
+        "Map tight haul routes.",
+        "Alley staging.",
+        "Limited equipment access for export material on Pasadena urban parcels where foothill topography and adjacent building setbacks constrain production.",
+      ],
+      fieldNote:
+        "Mapped inspection windows and hold points keep sitework sequenced with your GC master schedule and vertical mobilization.",
+    },
+    {
+      title: "Trade Coordination Review",
+      lead:
+        "Coordinate earthwork sequencing with multi-agency review timelines, SWPPP BMP placement, and storm drain inlet protection on active Pasadena commercial job sites.",
+      checkpoints: [
+        "Coordinate earthwork sequencing with multi-agency review timelines.",
+        "SWPPP BMP placement.",
+        "Storm drain inlet protection on active Pasadena commercial job sites.",
+      ],
+      fieldNote:
+        "Utility and trade coordination mapped early avoids conflicts that delay pad certification and paving turnover.",
+    },
+    {
+      title: "Itemized Bid Delivery",
+      lead:
+        "Deliver itemized grading bid with tight staging assumptions, phased production scope, and multi-agency inspection sequencing within one business day.",
+      checkpoints: [
+        "Deliver itemized grading bid with tight staging assumptions.",
+        "Phased production scope.",
+        "Multi-agency inspection sequencing within one business day.",
+      ],
+      fieldNote:
+        "Itemized assumptions documented in the bid package protect schedule, budget, and both parties at award.",
+    },
   ],
 
   evaluationSteps: [
@@ -90,7 +156,7 @@ export const gradingPasadena: ServiceCityPageContent = {
   faqs: [
     {
       q: "Do you perform commercial grading in Pasadena, CA?",
-      a: "Yes. Mendozer x Earthworks (Lic. #1069854) self-performs mass excavation, cut/fill balancing, compaction, GPS fine grading, and engineered pad prep on office, retail, and mixed-use commercial projects throughout Pasadena and Los Angeles County.",
+      a: "Yes. Mendozer X Earthworks Inc. (Lic. #1069854) self-performs mass excavation, cut/fill balancing, compaction, GPS fine grading, and engineered pad prep on office, retail, and mixed-use commercial projects throughout Pasadena and Los Angeles County.",
     },
     {
       q: "Can you grade on tight urban foothill parcels in Pasadena?",

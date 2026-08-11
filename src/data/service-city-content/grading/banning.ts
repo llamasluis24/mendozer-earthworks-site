@@ -13,12 +13,78 @@ export const gradingBanning: ServiceCityPageContent = {
     "Commercial grading in Banning, CA. Pass area desert-edge soils, I-10 corridor pad prep, Riverside County grading permits, and SWPPP compliance for Banning commercial and retail redevelopment.",
 
   siteVisitItems: [
-    "Review civil grading plans and cut/fill quantities on Banning I-10 corridor commercial parcels where desert-edge soils and wind exposure affect compaction and fine grading schedules",
-    "Assess decomposed granite, caliche, and high-plasticity desert-edge soil profiles from geotechnical reports on Riverside County Banning Pass area redevelopment sites",
-    "Confirm Riverside County grading permit requirements, compaction testing frequency, and inspection hold points before mass excavation mobilizes on Banning commercial pads",
-    "Map I-10 corridor haul routes, export staging, and articulated truck access for excess cut material on Banning parcels where on-site balance cannot absorb Pass area grading volumes",
-    "Evaluate SWPPP BMP placement, dust suppression, and wind-season erosion controls required on exposed Banning grading sites along the desert-edge commercial corridor",
-    "Deliver itemized grading bid with desert soil conditioning assumptions, GPS fine grading scope, and Riverside County inspection sequencing within one business day",
+    {
+      title: "Plan & Document Review",
+      lead:
+        "Review civil grading plans and cut/fill quantities on Banning I-10 corridor commercial parcels where desert-edge soils and wind exposure affect compaction and fine grading schedules.",
+      checkpoints: [
+        "Review civil grading plans and cut/fill quantities on Banning I-10 corridor commercial parcels where desert-edge soils and wind exposure affect compaction and fine grading schedules.",
+        "Cross-check observations against civil plans, geotechnical data, and project specifications.",
+        "Flag constraints affecting production, haul logistics, SWPPP compliance, or inspection hold points.",
+      ],
+      fieldNote:
+        "Early plan and document review keeps bid assumptions aligned with engineer-approved civil quantities before contract award.",
+    },
+    {
+      title: "Field Conditions Assessment",
+      lead:
+        "Assess decomposed granite, caliche, and high-plasticity desert-edge soil profiles from geotechnical reports on Riverside County Banning Pass area redevelopment sites.",
+      checkpoints: [
+        "Assess decomposed granite.",
+        "Cross-check observations against civil plans, geotechnical data, and project specifications.",
+        "Flag constraints affecting production, haul logistics, SWPPP compliance, or inspection hold points.",
+      ],
+      fieldNote:
+        "Field assessment during the pre-bid walk surfaces constraints that affect production, haul logistics, and inspection sequencing.",
+    },
+    {
+      title: "Specification Verification",
+      lead:
+        "Confirm Riverside County grading permit requirements, compaction testing frequency, and inspection hold points before mass excavation mobilizes on Banning commercial pads.",
+      checkpoints: [
+        "Confirm Riverside County grading permit requirements.",
+        "Compaction testing frequency.",
+        "Inspection hold points before mass excavation mobilizes on Banning commercial pads.",
+      ],
+      fieldNote:
+        "Verified specifications before mobilization protect compaction acceptance, drainage performance, and agency sign-off.",
+    },
+    {
+      title: "Inspection & Schedule Mapping",
+      lead:
+        "Map I-10 corridor haul routes, export staging, and articulated truck access for excess cut material on Banning parcels where on-site balance cannot absorb Pass area grading volumes.",
+      checkpoints: [
+        "Map I-10 corridor haul routes.",
+        "Export staging.",
+        "Articulated truck access for excess cut material on Banning parcels where on-site balance cannot absorb Pass area grading volumes.",
+      ],
+      fieldNote:
+        "Mapped inspection windows and hold points keep sitework sequenced with your GC master schedule and vertical mobilization.",
+    },
+    {
+      title: "Technical Evaluation",
+      lead:
+        "Evaluate SWPPP BMP placement, dust suppression, and wind-season erosion controls required on exposed Banning grading sites along the desert-edge commercial corridor.",
+      checkpoints: [
+        "Evaluate SWPPP BMP placement.",
+        "Dust suppression.",
+        "Wind-season erosion controls required on exposed Banning grading sites along the desert-edge commercial corridor.",
+      ],
+      fieldNote:
+        "Technical evaluation upfront reduces rework during production and prevents mid-project quantity disputes.",
+    },
+    {
+      title: "Itemized Bid Delivery",
+      lead:
+        "Deliver itemized grading bid with desert soil conditioning assumptions, GPS fine grading scope, and Riverside County inspection sequencing within one business day.",
+      checkpoints: [
+        "Deliver itemized grading bid with desert soil conditioning assumptions.",
+        "GPS fine grading scope.",
+        "Riverside County inspection sequencing within one business day.",
+      ],
+      fieldNote:
+        "Itemized assumptions documented in the bid package protect schedule, budget, and both parties at award.",
+    },
   ],
 
   evaluationSteps: [
@@ -90,7 +156,7 @@ export const gradingBanning: ServiceCityPageContent = {
   faqs: [
     {
       q: "Do you perform commercial grading in Banning, CA?",
-      a: "Yes. Mendozer x Earthworks (Lic. #1069854) self-performs mass excavation, cut/fill balancing, compaction, GPS fine grading, and engineered pad prep on commercial and retail projects throughout Banning and Riverside County.",
+      a: "Yes. Mendozer X Earthworks Inc. (Lic. #1069854) self-performs mass excavation, cut/fill balancing, compaction, GPS fine grading, and engineered pad prep on commercial and retail projects throughout Banning and Riverside County.",
     },
     {
       q: "How do desert-edge soils affect excavation on Banning commercial pads?",

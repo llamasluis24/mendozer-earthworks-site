@@ -13,12 +13,78 @@ export const excavationAnaheim: ServiceCityPageContent = {
     "Commercial excavation in Anaheim, CA. Phased grading near active retail corridors, OC inspection-standard excavation sequencing, and visible-corridor dust control for Orange County commercial redevelopments.",
 
   siteVisitItems: [
-    "Walk Anaheim commercial redevelopment parcels and document phased grading boundaries adjacent to active retail, restaurant, and hospitality tenant operations",
-    "Confirm OC agency grading inspection standards, dust suppression requirements, and SWPPP BMP enforcement for visible commercial corridor earthwork sites",
-    "Map pedestrian corridor adjacency, ADA-accessible pathway protection, and tenant access routes during phased mass grading near occupied Anaheim retail pads",
-    "Review civil grading plans, cut/fill quantities, and utility trench sequencing against geotechnical recommendations on corridor redevelopment parcels",
-    "Assess water truck coverage, screened stockpile containment, and track-out control methods required on high-visibility Anaheim commercial grading operations",
-    "Deliver itemized grading bid with phased production rates, dust control protocols, OC inspection hold points, and excavation sequencing milestones tied to vertical construction schedules",
+    {
+      title: "Pre-Bid Site Walk",
+      lead:
+        "Walk Anaheim commercial redevelopment parcels and document phased grading boundaries adjacent to active retail, restaurant, and hospitality tenant operations.",
+      checkpoints: [
+        "Walk Anaheim commercial redevelopment parcels and document phased grading boundaries adjacent to active retail.",
+        "Cross-check observations against civil plans, geotechnical data, and project specifications.",
+        "Flag constraints affecting production, haul logistics, SWPPP compliance, or inspection hold points.",
+      ],
+      fieldNote:
+        "Early plan and document review keeps bid assumptions aligned with engineer-approved civil quantities before contract award.",
+    },
+    {
+      title: "Specification Verification",
+      lead:
+        "Confirm OC agency grading inspection standards, dust suppression requirements, and SWPPP BMP enforcement for visible commercial corridor earthwork sites.",
+      checkpoints: [
+        "Confirm OC agency grading inspection standards.",
+        "Dust suppression requirements.",
+        "SWPPP BMP enforcement for visible commercial corridor earthwork sites.",
+      ],
+      fieldNote:
+        "Verified specifications before mobilization protect compaction acceptance, drainage performance, and agency sign-off.",
+    },
+    {
+      title: "Inspection & Schedule Mapping",
+      lead:
+        "Map pedestrian corridor adjacency, ADA-accessible pathway protection, and tenant access routes during phased mass grading near occupied Anaheim retail pads.",
+      checkpoints: [
+        "Map pedestrian corridor adjacency.",
+        "ADA-accessible pathway protection.",
+        "Tenant access routes during phased mass grading near occupied Anaheim retail pads.",
+      ],
+      fieldNote:
+        "Mapped inspection windows and hold points keep sitework sequenced with your GC master schedule and vertical mobilization.",
+    },
+    {
+      title: "Plan & Document Review",
+      lead:
+        "Review civil grading plans, cut/fill quantities, and utility trench sequencing against geotechnical recommendations on corridor redevelopment parcels.",
+      checkpoints: [
+        "Review civil grading plans.",
+        "Cut/fill quantities.",
+        "Utility trench sequencing against geotechnical recommendations on corridor redevelopment parcels.",
+      ],
+      fieldNote:
+        "Early plan and document review keeps bid assumptions aligned with engineer-approved civil quantities before contract award.",
+    },
+    {
+      title: "Field Conditions Assessment",
+      lead:
+        "Assess water truck coverage, screened stockpile containment, and track-out control methods required on high-visibility Anaheim commercial grading operations.",
+      checkpoints: [
+        "Assess water truck coverage.",
+        "Screened stockpile containment.",
+        "Track-out control methods required on high-visibility Anaheim commercial grading operations.",
+      ],
+      fieldNote:
+        "Field assessment during the pre-bid walk surfaces constraints that affect production, haul logistics, and inspection sequencing.",
+    },
+    {
+      title: "Itemized Bid Delivery",
+      lead:
+        "Deliver itemized grading bid with phased production rates, dust control protocols, OC inspection hold points, and excavation sequencing milestones tied to vertical construction schedules.",
+      checkpoints: [
+        "Deliver itemized grading bid with phased production rates.",
+        "Dust control protocols.",
+        "OC inspection hold points.",
+      ],
+      fieldNote:
+        "Itemized assumptions documented in the bid package protect schedule, budget, and both parties at award.",
+    },
   ],
 
   evaluationSteps: [
@@ -90,7 +156,7 @@ export const excavationAnaheim: ServiceCityPageContent = {
   faqs: [
     {
       q: "Do you provide commercial excavation in Anaheim, CA?",
-      a: "Yes. Mendozer x Earthworks (Lic. #1069854) self-performs mass excavation, utility trenching, and excavation sequencing on commercial, retail, and developer-led projects across Anaheim and Orange County.",
+      a: "Yes. Mendozer X Earthworks Inc. (Lic. #1069854) self-performs mass excavation, utility trenching, and excavation sequencing on commercial, retail, and developer-led projects across Anaheim and Orange County.",
     },
     {
       q: "Can you grade near active Anaheim retail and hospitality tenants?",

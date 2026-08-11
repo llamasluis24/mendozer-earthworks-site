@@ -12,12 +12,78 @@ export const demolitionPasadena: ServiceCityPageContent = {
     "Licensed commercial demolition in Pasadena, CA. Urban LA foothills structural takedown, tight staging site clearing, and multi-agency permit coordination for Colorado Boulevard corridor commercial redevelopment.",
 
   siteVisitItems: [
-    "Walk existing commercial or mixed-use structures and document load-bearing systems, slab thickness, and foundation depth for Pasadena urban foothills redevelopment parcels",
-    "Review Phase I/II environmental reports and asbestos survey status before structural demolition is scoped on Pasadena Colorado Boulevard corridor commercial sites",
-    "Verify gas, electric, water, sewer, and fire line disconnect documentation with your utility coordinator on active Pasadena tight-staging job sites",
-    "Assess haul routes, debris staging, and export logistics for Pasadena urban foothills commercial sites with SWPPP and dust control requirements",
-    "Identify adjacent occupied tenant operations requiring phased demolition access and noise suppression near Pasadena Colorado Boulevard commercial corridors",
-    "Deliver itemized demolition estimate with permit assumptions, abatement allowances, and debris export quantities within one business day",
+    {
+      title: "Pre-Bid Site Walk",
+      lead:
+        "Walk existing commercial or mixed-use structures and document load-bearing systems, slab thickness, and foundation depth for Pasadena urban foothills redevelopment parcels.",
+      checkpoints: [
+        "Walk existing commercial or mixed-use structures and document load-bearing systems.",
+        "Slab thickness.",
+        "Foundation depth for Pasadena urban foothills redevelopment parcels.",
+      ],
+      fieldNote:
+        "Early plan and document review keeps bid assumptions aligned with engineer-approved civil quantities before contract award.",
+    },
+    {
+      title: "Plan & Document Review",
+      lead:
+        "Review Phase I/II environmental reports and asbestos survey status before structural demolition is scoped on Pasadena Colorado Boulevard corridor commercial sites.",
+      checkpoints: [
+        "Review Phase I/II environmental reports and asbestos survey status before structural demolition is scoped on Pasadena Colorado Boulevard corridor commercial sites.",
+        "Cross-check observations against civil plans, geotechnical data, and project specifications.",
+        "Flag constraints affecting production, haul logistics, SWPPP compliance, or inspection hold points.",
+      ],
+      fieldNote:
+        "Early plan and document review keeps bid assumptions aligned with engineer-approved civil quantities before contract award.",
+    },
+    {
+      title: "Field Verification",
+      lead:
+        "Verify gas, electric, water, sewer, and fire line disconnect documentation with your utility coordinator on active Pasadena tight-staging job sites.",
+      checkpoints: [
+        "Verify gas.",
+        "Cross-check observations against civil plans, geotechnical data, and project specifications.",
+        "Flag constraints affecting production, haul logistics, SWPPP compliance, or inspection hold points.",
+      ],
+      fieldNote:
+        "Pre-mobilization verification prevents stop-work orders and rework that stall downstream trades.",
+    },
+    {
+      title: "Field Conditions Assessment",
+      lead:
+        "Assess haul routes, debris staging, and export logistics for Pasadena urban foothills commercial sites with SWPPP and dust control requirements.",
+      checkpoints: [
+        "Assess haul routes.",
+        "Debris staging.",
+        "Export logistics for Pasadena urban foothills commercial sites with SWPPP and dust control requirements.",
+      ],
+      fieldNote:
+        "Field assessment during the pre-bid walk surfaces constraints that affect production, haul logistics, and inspection sequencing.",
+    },
+    {
+      title: "Identify Adjacent Occupied Tenant Operations Requiri",
+      lead:
+        "Identify adjacent occupied tenant operations requiring phased demolition access and noise suppression near Pasadena Colorado Boulevard commercial corridors.",
+      checkpoints: [
+        "Identify adjacent occupied tenant operations requiring phased demolition access and noise suppression near Pasadena Colorado Boulevard commercial corridors.",
+        "Cross-check observations against civil plans, geotechnical data, and project specifications.",
+        "Flag constraints affecting production, haul logistics, SWPPP compliance, or inspection hold points.",
+      ],
+      fieldNote:
+        "Early plan and document review keeps bid assumptions aligned with engineer-approved civil quantities before contract award.",
+    },
+    {
+      title: "Itemized Bid Delivery",
+      lead:
+        "Deliver itemized demolition estimate with permit assumptions, abatement allowances, and debris export quantities within one business day.",
+      checkpoints: [
+        "Deliver itemized demolition estimate with permit assumptions.",
+        "Abatement allowances.",
+        "Debris export quantities within one business day.",
+      ],
+      fieldNote:
+        "Itemized assumptions documented in the bid package protect schedule, budget, and both parties at award.",
+    },
   ],
 
   evaluationSteps: [
@@ -89,7 +155,7 @@ export const demolitionPasadena: ServiceCityPageContent = {
   faqs: [
     {
       q: "Do you handle commercial demolition in Pasadena, CA?",
-      a: "Yes. Mendozer x Earthworks (Lic. #1069854) is a licensed commercial demolition contractor serving developers, GCs, and property owners in Pasadena and Los Angeles County. We self-perform structural takedown, foundation removal, and site clearing on urban foothills, mixed-use, and commercial redevelopment projects along the Colorado Boulevard corridor.",
+      a: "Yes. Mendozer X Earthworks Inc. (Lic. #1069854) is a licensed commercial demolition contractor serving developers, GCs, and property owners in Pasadena and Los Angeles County. We self-perform structural takedown, foundation removal, and site clearing on urban foothills, mixed-use, and commercial redevelopment projects along the Colorado Boulevard corridor.",
     },
     {
       q: "What demolition projects do you take on in Pasadena?",

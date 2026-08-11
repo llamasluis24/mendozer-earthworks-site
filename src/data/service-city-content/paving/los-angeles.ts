@@ -14,12 +14,78 @@ export const pavingLosAngeles: ServiceCityPageContent = {
     "Commercial asphalt paving in Los Angeles, CA. Urban traffic phasing, multi-agency permit coordination, industrial yard reconstruction, and community impact controls for warehouse, logistics, and industrial redevelopment sites.",
 
   siteVisitItems: [
-    "Review civil paving plans, pavement section details, and industrial yard reconstruction scope on Los Angeles warehouse and logistics redevelopment parcels",
-    "Assess existing pavement condition, failed base courses, and full-depth reconstruction requirements on dense LA commercial corridors with active tenant adjacency",
-    "Confirm aggregate base compaction status, subgrade proof-roll results, and geotechnical recommendations before heavy-duty asphalt sections are priced",
-    "Map urban traffic phasing zones, fire lane routes, haul material staging, and multi-agency permit assumptions across City of Los Angeles and LA County jurisdictions",
-    "Evaluate community impact controls — dust, noise, track-out, and work-hour restrictions — required near occupied tenants and residential adjacency during LA paving operations",
-    "Deliver itemized commercial paving bid with tonnage assumptions, urban phasing schedules, and permit pathway notes within one business day",
+    {
+      title: "Plan & Document Review",
+      lead:
+        "Review civil paving plans, pavement section details, and industrial yard reconstruction scope on Los Angeles warehouse and logistics redevelopment parcels.",
+      checkpoints: [
+        "Review civil paving plans.",
+        "Pavement section details.",
+        "Industrial yard reconstruction scope on Los Angeles warehouse and logistics redevelopment parcels.",
+      ],
+      fieldNote:
+        "Early plan and document review keeps bid assumptions aligned with engineer-approved civil quantities before contract award.",
+    },
+    {
+      title: "Field Conditions Assessment",
+      lead:
+        "Assess existing pavement condition, failed base courses, and full-depth reconstruction requirements on dense LA commercial corridors with active tenant adjacency.",
+      checkpoints: [
+        "Assess existing pavement condition.",
+        "Failed base courses.",
+        "Full-depth reconstruction requirements on dense LA commercial corridors with active tenant adjacency.",
+      ],
+      fieldNote:
+        "Field assessment during the pre-bid walk surfaces constraints that affect production, haul logistics, and inspection sequencing.",
+    },
+    {
+      title: "Specification Verification",
+      lead:
+        "Confirm aggregate base compaction status, subgrade proof-roll results, and geotechnical recommendations before heavy-duty asphalt sections are priced.",
+      checkpoints: [
+        "Confirm aggregate base compaction status.",
+        "Subgrade proof-roll results.",
+        "Geotechnical recommendations before heavy-duty asphalt sections are priced.",
+      ],
+      fieldNote:
+        "Verified specifications before mobilization protect compaction acceptance, drainage performance, and agency sign-off.",
+    },
+    {
+      title: "Inspection & Schedule Mapping",
+      lead:
+        "Map urban traffic phasing zones, fire lane routes, haul material staging, and multi-agency permit assumptions across City of Los Angeles and LA County jurisdictions.",
+      checkpoints: [
+        "Map urban traffic phasing zones.",
+        "Fire lane routes.",
+        "Haul material staging.",
+      ],
+      fieldNote:
+        "Mapped inspection windows and hold points keep sitework sequenced with your GC master schedule and vertical mobilization.",
+    },
+    {
+      title: "Technical Evaluation",
+      lead:
+        "Evaluate community impact controls — dust, noise, track-out, and work-hour restrictions — required near occupied tenants and residential adjacency during LA paving operations.",
+      checkpoints: [
+        "Evaluate community impact controls — dust.",
+        "Cross-check observations against civil plans, geotechnical data, and project specifications.",
+        "Flag constraints affecting production, haul logistics, SWPPP compliance, or inspection hold points.",
+      ],
+      fieldNote:
+        "Technical evaluation upfront reduces rework during production and prevents mid-project quantity disputes.",
+    },
+    {
+      title: "Itemized Bid Delivery",
+      lead:
+        "Deliver itemized commercial paving bid with tonnage assumptions, urban phasing schedules, and permit pathway notes within one business day.",
+      checkpoints: [
+        "Deliver itemized commercial paving bid with tonnage assumptions.",
+        "Urban phasing schedules.",
+        "Permit pathway notes within one business day.",
+      ],
+      fieldNote:
+        "Itemized assumptions documented in the bid package protect schedule, budget, and both parties at award.",
+    },
   ],
 
   evaluationSteps: [
@@ -91,7 +157,7 @@ export const pavingLosAngeles: ServiceCityPageContent = {
   faqs: [
     {
       q: "Do you provide commercial asphalt paving in Los Angeles, CA?",
-      a: "Yes. Mendozer x Earthworks (Lic. #1069854) self-performs commercial asphalt paving, aggregate base installation, industrial yard reconstruction, truck court heavy-duty sections, and parking lot paving on warehouse, logistics, and industrial projects in Los Angeles and throughout LA County.",
+      a: "Yes. Mendozer X Earthworks Inc. (Lic. #1069854) self-performs commercial asphalt paving, aggregate base installation, industrial yard reconstruction, truck court heavy-duty sections, and parking lot paving on warehouse, logistics, and industrial projects in Los Angeles and throughout LA County.",
     },
     {
       q: "How do you manage urban traffic phasing on LA commercial paving sites?",

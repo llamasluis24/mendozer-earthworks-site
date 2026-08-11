@@ -13,12 +13,78 @@ export const gradingSanBernardino: ServiceCityPageContent = {
     "Commercial grading in San Bernardino, CA. Large-lot mass grading, former industrial zone soil remediation, and San Bernardino County agency coordination for Inland Empire redevelopment pads.",
 
   siteVisitItems: [
-    "Walk expansive San Bernardino redevelopment parcels and document large-lot cut/fill quantities, haul road access, and on-site balance potential across multi-acre former industrial zone pads",
-    "Review geotechnical reports for undocumented fill, unsuitable soils, and former industrial zone contamination zones before mass excavation scope is priced",
-    "Confirm grading permit pathway with City of San Bernardino building division and San Bernardino County environmental health coordination on legacy industrial parcels",
-    "Map utility trench sequencing, storm drain tie-ins, and wet utility relocation holds across large-lot San Bernardino commercial grading schedules",
-    "Evaluate SWPPP BMP placement, sediment control, and track-out requirements for expansive grading operations on former industrial zone redevelopment sites",
-    "Deliver itemized grading bid with large-lot production rates, import/export assumptions, county agency coordination allowances, and pad certification milestones tied to vertical construction",
+    {
+      title: "Pre-Bid Site Walk",
+      lead:
+        "Walk expansive San Bernardino redevelopment parcels and document large-lot cut/fill quantities, haul road access, and on-site balance potential across multi-acre former industrial zone pads.",
+      checkpoints: [
+        "Walk expansive San Bernardino redevelopment parcels and document large-lot cut/fill quantities.",
+        "Haul road access.",
+        "On-site balance potential across multi-acre former industrial zone pads.",
+      ],
+      fieldNote:
+        "Early plan and document review keeps bid assumptions aligned with engineer-approved civil quantities before contract award.",
+    },
+    {
+      title: "Plan & Document Review",
+      lead:
+        "Review geotechnical reports for undocumented fill, unsuitable soils, and former industrial zone contamination zones before mass excavation scope is priced.",
+      checkpoints: [
+        "Review geotechnical reports for undocumented fill.",
+        "Unsuitable soils.",
+        "Former industrial zone contamination zones before mass excavation scope is priced.",
+      ],
+      fieldNote:
+        "Early plan and document review keeps bid assumptions aligned with engineer-approved civil quantities before contract award.",
+    },
+    {
+      title: "Specification Verification",
+      lead:
+        "Confirm grading permit pathway with City of San Bernardino building division and San Bernardino County environmental health coordination on legacy industrial parcels.",
+      checkpoints: [
+        "Confirm grading permit pathway with City of San Bernardino building division and San Bernardino County environmental health coordination on legacy industrial parcels.",
+        "Cross-check observations against civil plans, geotechnical data, and project specifications.",
+        "Flag constraints affecting production, haul logistics, SWPPP compliance, or inspection hold points.",
+      ],
+      fieldNote:
+        "Verified specifications before mobilization protect compaction acceptance, drainage performance, and agency sign-off.",
+    },
+    {
+      title: "Inspection & Schedule Mapping",
+      lead:
+        "Map utility trench sequencing, storm drain tie-ins, and wet utility relocation holds across large-lot San Bernardino commercial grading schedules.",
+      checkpoints: [
+        "Map utility trench sequencing.",
+        "Storm drain tie-ins.",
+        "Wet utility relocation holds across large-lot San Bernardino commercial grading schedules.",
+      ],
+      fieldNote:
+        "Mapped inspection windows and hold points keep sitework sequenced with your GC master schedule and vertical mobilization.",
+    },
+    {
+      title: "Technical Evaluation",
+      lead:
+        "Evaluate SWPPP BMP placement, sediment control, and track-out requirements for expansive grading operations on former industrial zone redevelopment sites.",
+      checkpoints: [
+        "Evaluate SWPPP BMP placement.",
+        "Sediment control.",
+        "Track-out requirements for expansive grading operations on former industrial zone redevelopment sites.",
+      ],
+      fieldNote:
+        "Technical evaluation upfront reduces rework during production and prevents mid-project quantity disputes.",
+    },
+    {
+      title: "Itemized Bid Delivery",
+      lead:
+        "Deliver itemized grading bid with large-lot production rates, import/export assumptions, county agency coordination allowances, and pad certification milestones tied to vertical construction.",
+      checkpoints: [
+        "Deliver itemized grading bid with large-lot production rates.",
+        "Import/export assumptions.",
+        "County agency coordination allowances.",
+      ],
+      fieldNote:
+        "Itemized assumptions documented in the bid package protect schedule, budget, and both parties at award.",
+    },
   ],
 
   evaluationSteps: [
@@ -90,7 +156,7 @@ export const gradingSanBernardino: ServiceCityPageContent = {
   faqs: [
     {
       q: "Do you provide commercial grading in San Bernardino, CA?",
-      a: "Yes. Mendozer x Earthworks (Lic. #1069854) self-performs mass excavation, fine grading, and pad certification on commercial, industrial, and developer-led projects across San Bernardino and the Inland Empire.",
+      a: "Yes. Mendozer X Earthworks Inc. (Lic. #1069854) self-performs mass excavation, fine grading, and pad certification on commercial, industrial, and developer-led projects across San Bernardino and the Inland Empire.",
     },
     {
       q: "Can you handle large-lot grading on San Bernardino industrial redevelopments?",

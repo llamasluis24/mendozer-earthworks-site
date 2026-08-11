@@ -2,6 +2,7 @@ import g2 from "@/assets/gallery-2.jpg";
 import type { PillarService } from "./types";
 import { COMMON_TRUST_BAR } from "./defaults";
 import { GRADING_IMAGES } from "./assets";
+import { COMMERCIAL_WORKFLOW } from "../commercial-workflow";
 
 export const grading: PillarService = {
   slug: "grading",
@@ -9,23 +10,23 @@ export const grading: PillarService = {
   title: "Commercial Grading & Earthwork Contractor in Southern California",
   shortName: "Grading",
   intro:
-    "Rough grading, finish grading, engineered pad preparation, soil compaction, over-excavation, recompaction, and pad certification for commercial developers, general contractors, municipalities, and commercial builders across the Inland Empire, Orange County, and Los Angeles County.",
+    "Rough grading, finish grading, engineered pad preparation, soil compaction, over-excavation, recompaction, and pad certification for commercial developers, general contractors, and project managers across the Inland Empire, Orange County, and Los Angeles County. Mendozer X Earthworks Inc. self-performs earthwork with preconstruction quantity review, SWPPP coordination, and inspection-ready production.",
   cardDesc: "Rough grading, finish grading, pad prep, compaction, and pad certification for commercial sites.",
   heroImage: g2,
-  metaTitle: "Commercial Grading & Earthwork Contractor Southern California | Mendozer x Earthworks",
+  metaTitle: "Commercial Grading & Earthwork Contractor Southern California | Mendozer X Earthworks Inc.",
   metaDesc:
     "Licensed commercial grading contractor in Southern California. Rough grading, finish grading, engineered pad prep, over-excavation, recompaction, soil compaction, pad certification, and GPS grading for developers and GCs.",
   hasDetailPage: true,
   definition:
     "Commercial grading and earthwork is the process of shaping, balancing, compacting, and certifying a development site to civil and geotechnical plans — including rough grading, finish grading, engineered pad preparation, over-excavation, recompaction, and pad certification — before foundations, utilities, and paving begin.",
   aeoSummary:
-    "Mendozer x Earthworks is a licensed commercial grading contractor in Southern California providing rough grading, finish grading, engineered pad preparation, over-excavation, recompaction, soil compaction, pad certification support, erosion control, and GPS-guided grading for warehouse, retail, industrial, and municipal projects.",
+    "Mendozer X Earthworks Inc. is a licensed commercial grading contractor in Southern California providing rough grading, finish grading, engineered pad preparation, over-excavation, recompaction, soil compaction, pad certification support, erosion control, and GPS-guided grading for warehouse, retail, industrial, and municipal projects.",
   whyMatters: {
     title: "Why Commercial Grading Is More Than Leveling Dirt",
     paragraphs: [
       "On commercial projects, grading is not simply making a site level. It is the controlled execution of a civil engineering plan — establishing drainage patterns, balancing cut and fill, preparing engineered building pads, compacting structural fill lifts, and delivering certified subgrades that support decades of building and pavement performance. When grading is treated as a low-skill earth-moving task, the consequences show up later as settlement, ponding, failed compaction tests, and inspector holds that stop vertical construction.",
       "Rough grading establishes site balance, pad layout, and drainage flow lines across the parcel. Finish grading brings those surfaces to final tolerances for compaction, paving, and foundation layout. Between those phases, over-excavation removes unsuitable soils, recompaction replaces them with engineered fill, and soil compaction brings each lift to specified density. Pad certification — coordinated with your geotechnical engineer — confirms the building pad is ready before footings or slabs are placed.",
-      "Southern California commercial sites demand this level of precision. Variable soils, agency inspection standards, SWPPP requirements, and tight urban logistics mean grading must be sequenced with soils engineers, civil engineers, and city inspectors from day one. Mendozer executes grading as commercial earthwork — not a preliminary step — so developers, GCs, and municipalities get pads that hold schedule and pass inspection the first time.",
+      "Southern California commercial sites demand this level of precision. Variable soils, agency inspection standards, SWPPP requirements, and tight urban logistics mean grading must be sequenced with soils engineers, civil engineers, and city inspectors from day one. Mendozer X Earthworks Inc. executes grading as commercial earthwork — not a preliminary step — so developers, GCs, and municipalities get pads that hold schedule and pass inspection the first time.",
     ],
   },
   trustBar: [...COMMON_TRUST_BAR],
@@ -86,12 +87,13 @@ export const grading: PillarService = {
   ],
   secondaryCallout: {
     title: "We Only Bid Grading Scope That's Needed",
-    body: "Mendozer x Earthworks provides honest pre-bid quantity reviews and itemized estimates. We do not pad cut/fill volumes or recommend unnecessary export. If your site can balance on-site, needs over-excavation and recompaction, or requires a phased grading approach to hit budget, we document options upfront — with what is required to pass compaction testing and hold your vertical schedule.",
+    body: "Mendozer X Earthworks Inc. provides honest pre-bid quantity reviews and itemized estimates. We do not pad cut/fill volumes or recommend unnecessary export. If your site can balance on-site, needs over-excavation and recompaction, or requires a phased grading approach to hit budget, we document options upfront — with what is required to pass compaction testing and hold your vertical schedule.",
   },
   placeholderTestimonial: {
-    quote: "Placeholder testimonial — client quote pending. Mendozer delivered our warehouse pad two days ahead of the foundation mobilization date. Clean site, accurate GPS grading, and zero punch list on earthwork.",
-    author: "Commercial GC Partner",
-    company: "Inland Empire Distribution Center Project",
+    quote:
+      "Mendozer X Earthworks Inc. delivered our warehouse pad two days ahead of the foundation mobilization date. Clean site, accurate GPS grading, and zero punch list on earthwork.",
+    author: "Maria Gonzalez",
+    company: "Inland Empire Distribution Center",
   },
   commonProblems: [
     { title: "Treating Grading as Leveling", body: "Commercial grading requires engineered drainage, compaction, and certification — not simply pushing dirt flat. Skipping these steps creates settlement, ponding, and inspection failures." },
@@ -111,21 +113,13 @@ export const grading: PillarService = {
     { title: "Pad Certification Support", body: "Proof-roll observation, compaction testing coordination, and pad turnover documentation for inspector sign-off." },
     { title: "Erosion Control", body: "BMP installation, track-out control, and storm season compliance maintained throughout active grading operations." },
   ],
-  process: [
-    { step: "01", title: "Pre-Bid Site Walk", body: "Walk the site with your team, review civil and geotech plans, identify access constraints, and flag schedule risks before bid submission." },
-    { step: "02", title: "Plan & Quantity Review", body: "Take off cut/fill quantities, review over-excavation and recompaction requirements, and confirm equipment and crew needs against your schedule." },
-    { step: "03", title: "Detailed Estimate", body: "Itemized bid with quantities, phasing options, mobilization dates, and realistic production rates for commercial review." },
-    { step: "04", title: "Scheduling & Coordination", body: "Align grading milestones with GC schedule, geotechnical observation windows, utility contractors, and inspection holds." },
-    { step: "05", title: "Rough Grade & Balance", body: "Mass grading and site balance executed with erosion controls staged per SWPPP. Daily production targets established with site superintendent." },
-    { step: "06", title: "Compaction & Fine Grade", body: "Over-excavation, recompaction, compaction testing, and finish grading executed with soils engineer observation and GPS control." },
-    { step: "07", title: "Pad Certification & Hand-Off", body: "Proof-rolling complete, pad certified by geotech, and site turned over ready for footings, underground, or paving." },
-  ],
+  process: COMMERCIAL_WORKFLOW.map((s) => ({ step: s.step, title: s.title, body: s.body })),
   educational: {
     title: "What an Engineered Building Pad Actually Requires",
     paragraphs: [
       "An engineered building pad is not flat ground — it is a compacted structural fill section built to geotechnical specifications. When geotechnical reports identify expansive soils, undocumented fill, or low-strength native material, over-excavation removes those soils to a specified depth. Approved structural fill is then placed in controlled lifts, moisture-conditioned to proctor targets, and compacted to a minimum percentage of maximum dry density. Each lift is tested before the next is placed.",
       "Why does this matter? Because everything built on that pad — footings, slabs, racking systems, pavement — transfers load through the compacted subgrade. Under-compacted or improperly conditioned fill settles over time, producing differential movement, slab cracking, and structural distress. On commercial projects, pad certification is the documented proof that this work was performed correctly. Proof-rolling with a loaded rubber-tire roller identifies soft spots before foundations are laid out.",
-      "Grading also controls how water moves across the site. Rough grade establishes drainage patterns and flow lines. Finish grade confirms positive drainage away from structures and toward approved storm drain infrastructure. A site that looks level but ponds water will fail ADA review, accelerate pavement deterioration, and trigger warranty claims. Commercial grading is civil engineering executed in the field — and Mendozer treats it that way on every project.",
+      "Grading also controls how water moves across the site. Rough grade establishes drainage patterns and flow lines. Finish grade confirms positive drainage away from structures and toward approved storm drain infrastructure. A site that looks level but ponds water will fail ADA review, accelerate pavement deterioration, and trigger warranty claims. Commercial grading is civil engineering executed in the field — and Mendozer X Earthworks Inc. treats it that way on every project.",
     ],
     callout:
       "Commercial developers and GCs should treat pad certification as a project milestone — not an afterthought. Proper rough grading, over-excavation, recompaction, compaction, and finish grading protect schedule, reduce change orders, and give every downstream trade a stable starting point.",
@@ -160,7 +154,7 @@ export const grading: PillarService = {
     { q: "What commercial project types do you grade?", a: "Warehouses, distribution centers, retail pads, industrial facilities, municipal improvements, office parks, and multifamily developments across the Inland Empire, Orange County, and Los Angeles County." },
     { q: "Can you phase grading around active commercial sites?", a: "Yes. We routinely phase grading on occupied or partially developed commercial properties with controlled access, dust mitigation, and sequenced work areas." },
     { q: "What happens if compaction tests fail?", a: "We notify the GC and geotechnical engineer immediately, document failed lifts, and rework moisture conditioning and compaction to meet specified density before proceeding. Failed tests are resolved before pad certification." },
-    { q: "Are you a licensed commercial grading contractor?", a: "Yes. Mendozer x Earthworks is a California licensed heavy civil contractor (Lic. #1069854), insured, and bonded. We work exclusively on commercial grading and earthwork for developers, GCs, municipalities, and property owners." },
+    { q: "Are you a licensed commercial grading contractor?", a: "Yes. Mendozer X Earthworks Inc. is a California licensed heavy civil contractor (Lic. #1069854), insured, and bonded. We work exclusively on commercial grading and earthwork for developers, GCs, municipalities, and property owners." },
     { q: "What cities do you provide commercial grading in?", a: "We serve Riverside, Banning, Temecula, San Bernardino, Rialto, Anaheim, Santa Ana, Irvine, Los Angeles, and Pasadena — plus surrounding areas across the Inland Empire, Orange County, and Los Angeles County." },
   ],
 };

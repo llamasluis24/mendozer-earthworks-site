@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { Shield, HardHat, Building2, Target, Users, MapPin } from "lucide-react";
+import { ArrowRight, HardHat, Shield, Target, Users, MapPin, Award } from "lucide-react";
 import heroImg from "@/assets/gallery-1.jpg";
 import teamImg from "@/assets/service-excavation.jpg";
 import { CTASection } from "@/components/site/CTA";
@@ -9,9 +9,9 @@ import { COMPANY } from "@/data/company";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About Mendozer x Earthworks Inc. | Southern California Heavy Civil Contractor" },
+      { title: "About Mendozer X Earthworks Inc. | Southern California Heavy Civil Contractor" },
       { name: "description", content: COMPANY.description },
-      { property: "og:title", content: "About Mendozer x Earthworks Inc." },
+      { property: "og:title", content: "About Mendozer X Earthworks Inc." },
       { property: "og:description", content: COMPANY.description },
       { property: "og:image", content: heroImg },
       { property: "og:url", content: "/about" },
@@ -22,12 +22,36 @@ export const Route = createFileRoute("/about")({
 });
 
 const values = [
-  { icon: Target, title: "Our Mission", body: "Deliver predictable, commercial-grade earthwork that lets developers and GCs hit their construction milestones with confidence." },
-  { icon: HardHat, title: "Work Ethic", body: "Show up early, run a clean site, finish what we start. The crew sets the standard every day." },
-  { icon: Shield, title: "Safety Standards", body: "OSHA-aligned practices, daily JHAs, and active site supervision. Safety is non-negotiable." },
-  { icon: Building2, title: "Commercial Focus", body: "We're built around commercial, industrial, municipal, and developer projects — not residential one-offs." },
-  { icon: Users, title: "Experienced Operators", body: "Skilled operators and laborers with deep experience across SoCal's heavy civil sector." },
-  { icon: MapPin, title: "Local Knowledge", body: "We know the soils, the cities, and the agencies across the Inland Empire, OC, and LA County." },
+  {
+    icon: Target,
+    title: "Discipline",
+    body: "Commercial earthwork is production work. We show up prepared, run clean sites, and finish what we commit to on the preconstruction schedule.",
+  },
+  {
+    icon: HardHat,
+    title: "Craftsmanship",
+    body: "Rough grade, compaction, and finish grade are executed to civil plans and geotechnical specs — not approximations that fail inspection.",
+  },
+  {
+    icon: Users,
+    title: "Relationships",
+    body: "Most of our work comes from referrals and repeat clients. We earn that by communicating directly with superintendents and project managers in the field.",
+  },
+  {
+    icon: Shield,
+    title: "Long-Term Trust",
+    body: "We do not pad bid quantities or recommend scope that is not required. Honest pre-bid walks protect your budget and our reputation.",
+  },
+  {
+    icon: Award,
+    title: "Work Ethic",
+    body: "Fifteen years in the industry taught us that schedule slips start when earthwork contractors treat grading as a low-skill task. We do not operate that way.",
+  },
+  {
+    icon: MapPin,
+    title: "Local Field Knowledge",
+    body: "We know the soils, agencies, and logistics across the Inland Empire, Orange County, and Los Angeles County from years of commercial production in the field.",
+  },
 ];
 
 function About() {
@@ -35,42 +59,65 @@ function About() {
     <>
       <section className="relative pt-32 pb-20 lg:pt-44 lg:pb-28 overflow-hidden">
         <div className="absolute inset-0">
-          <img src={heroImg} alt="Heavy equipment at sunset" className="h-full w-full object-cover" />
+          <img src={heroImg} alt="Heavy equipment at a commercial earthwork site" className="h-full w-full object-cover" />
           <div className="absolute inset-0 bg-gradient-to-r from-charcoal via-charcoal/85 to-charcoal/40" />
         </div>
         <div className="container-x relative">
           <p className="eyebrow">About Us</p>
-          <h1 className="mt-4 heading-xl max-w-4xl">Built on Discipline. Delivered with Equipment.</h1>
+          <h1 className="mt-4 heading-xl max-w-4xl">
+            Built on Excavation. <span className="text-gold">The X Is Who We Are.</span>
+          </h1>
           <p className="mt-6 max-w-2xl text-lg text-foreground/85 leading-relaxed">
-            Mendozer x Earthworks Inc. is a Southern California heavy civil contractor focused on commercial grading, excavation, concrete, and asphalt. We partner with developers, general contractors, and public agencies to deliver predictable, professional sitework.
+            Mendozer X Earthworks Inc. is a Southern California commercial earthwork contractor founded by Miguel Mendoza — a licensed heavy civil operator who grew up around equipment and built this company through discipline, referrals, and repeat work.
           </p>
         </div>
       </section>
 
       <section className="py-20 lg:py-28">
-        <div className="container-x grid lg:grid-cols-2 gap-14 items-center">
-          <div className="aspect-[5/4] rounded-2xl overflow-hidden border border-border">
-            <img src={teamImg} alt="Mendozer crew on a commercial site" className="h-full w-full object-cover" loading="lazy" />
+        <div className="container-x grid lg:grid-cols-2 gap-14 items-start">
+          <div className="aspect-[5/4] rounded-2xl overflow-hidden border border-border lg:sticky lg:top-28">
+            <img src={teamImg} alt="Commercial excavation and grading in progress" className="h-full w-full object-cover" loading="lazy" />
           </div>
           <div>
             <p className="eyebrow">Our Story</p>
-            <h2 className="mt-3 heading-lg">A Contractor Built for Commercial Earthwork</h2>
-            <p className="mt-5 text-muted-foreground text-lg leading-relaxed">
-              We started Mendozer x Earthworks Inc. with one focus: doing heavy civil work the right way for commercial clients. Today, we run late-model dozers, excavators, loaders, and compactors on commercial pads, grading sites, and asphalt projects across the Inland Empire, Orange County, and Los Angeles County.
-            </p>
-            <p className="mt-4 text-muted-foreground leading-relaxed">
-              We're licensed ({COMPANY.licenseLabel}), insured, and bonded — and we work the way larger GCs expect their subs to work. Clean job sites, accurate schedules, professional communication, and quality workmanship are the baseline.
-            </p>
+            <h2 className="mt-3 heading-lg">From COVID Downtime to a Full-Time Commercial Contractor</h2>
+            <div className="mt-6 space-y-5 text-muted-foreground text-lg leading-relaxed">
+              <p>
+                Mendozer X Earthworks Inc. started during COVID, when construction slowed and Miguel Mendoza decided to invest in himself instead of waiting for the market to return. He enrolled in contractor licensing school, studied the code and business requirements, and earned his California contractor license in late 2020 through {COMPANY.licensingSchool}, under instructor {COMPANY.licensingInstructor} — who helped him navigate the process and pass the exam.
+              </p>
+              <p>
+                His first major commercial opportunity was a movie theater project: demolition, grading, and concrete work. The client kept awarding additional scope. That relationship — and the production discipline behind it — gave Miguel the confidence to leave his previous employer and build Mendozer X Earthworks Inc. full time.
+              </p>
+              <p>
+                The company has grown primarily through referrals and repeat relationships with developers, general contractors, and project managers who need a earthwork partner that understands preconstruction, bid packages, and field sequencing — not a residential crew trying to scale up.
+              </p>
+              <p>
+                Miguel brings approximately fifteen years of industry experience, but the foundation goes back further. His father has been a heavy equipment operator since the 1990s. Miguel grew up around dozers, excavators, and grading crews. That upbringing shaped how he reads a site, talks to operators, and understands what excavation and earthwork actually require in the field — before a quantity hits a spreadsheet.
+              </p>
+              <p>
+                The <strong className="text-foreground">X</strong> in Mendozer X stands for <strong className="text-foreground">Excavation</strong>. It is not decorative. It reflects what the company was built on and what we self-perform every day: commercial excavation, grading, and the horizontal sitework that gets a pad ready for vertical construction.
+              </p>
+            </div>
             <div className="mt-8 grid grid-cols-3 gap-4">
-              <Stat n="1069854" l="License #" />
+              <Stat n="15+" l="Years in industry" />
+              <Stat n={COMPANY.license} l="License #" />
               <Stat n="3" l="Counties served" />
-              <Stat n="100%" l="Commercial focus" />
             </div>
           </div>
         </div>
       </section>
 
       <section className="py-20 lg:py-28 bg-secondary/40 border-y border-border">
+        <div className="container-x max-w-4xl">
+          <p className="eyebrow">Who We Work With</p>
+          <h2 className="mt-3 heading-lg">Commercial Construction — Not Homeowner Projects</h2>
+          <p className="mt-5 text-muted-foreground text-lg leading-relaxed">
+            Mendozer X Earthworks Inc. partners with developers, general contractors, civil engineers, and municipal agencies on warehouse pads, retail sitework, industrial yards, and horizontal improvements across Southern California. We speak the language of preconstruction meetings, SWPPP coordination, compaction testing, and inspection hold points — because that is the work we do every week.
+          </p>
+        </div>
+      </section>
+
+      <section className="py-20 lg:py-28">
         <div className="container-x">
           <p className="eyebrow">What We Stand For</p>
           <h2 className="mt-3 heading-lg max-w-3xl">Values That Show Up on Every Job Site</h2>
@@ -88,12 +135,12 @@ function About() {
         </div>
       </section>
 
-      <section className="py-20 lg:py-28">
+      <section className="py-20 lg:py-28 bg-secondary/40 border-y border-border">
         <div className="container-x">
           <p className="eyebrow">Service Area</p>
           <h2 className="mt-3 heading-lg max-w-3xl">Heavy Civil Work Across Southern California</h2>
           <p className="mt-5 max-w-2xl text-muted-foreground text-lg">
-            We mobilize quickly across three counties. If your project sits in one of these regions, we can be on site for a walk this week.
+            We mobilize across three counties for commercial grading, excavation, asphalt, and concrete flatwork.
           </p>
           <div className="mt-10 grid md:grid-cols-3 gap-6">
             {REGIONS.map((region) => {
@@ -120,7 +167,7 @@ function About() {
               View All Service Areas →
             </Link>
             <Link to="/contact" className="inline-flex items-center gap-2 rounded-md bg-gold px-6 py-3.5 text-sm font-semibold uppercase tracking-wider text-primary-foreground hover:bg-gold-bright transition">
-              Get In Touch
+              Request Estimate <ArrowRight className="h-4 w-4" />
             </Link>
           </div>
         </div>

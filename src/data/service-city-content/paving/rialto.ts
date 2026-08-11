@@ -14,12 +14,78 @@ export const pavingRialto: ServiceCityPageContent = {
     "Commercial asphalt paving in Rialto, CA. BNSF-adjacent logistics truck courts, large-lot industrial parking asphalt, San Bernardino County inspection coordination, and heavy-load pavement sections for Rialto warehouse and distribution sites.",
 
   siteVisitItems: [
-    "Review civil asphalt plans, pavement section details, and truck court specifications on Rialto BNSF-adjacent logistics parcels where heavy articulated traffic loads exceed standard commercial parking specifications",
-    "Assess existing pavement condition, base course integrity, and full-depth reconstruction scope on multi-acre Rialto warehouse and distribution center parking and drive aisles",
-    "Confirm San Bernardino County asphalt paving permit requirements, density testing schedules, and inspection hold points before aggregate base mobilizes on Rialto industrial sites",
-    "Map truck court turning radii, fire lane routes, and phased traffic control for articulated logistics traffic on active Rialto BNSF corridor industrial parcels",
-    "Evaluate aggregate base compaction, proof-roll results, and geotechnical recommendations for former industrial zone soil conditions before heavy-load asphalt tonnage is priced",
-    "Deliver itemized commercial asphalt bid with tonnage assumptions, truck court heavy-load scope, SWPPP prep, and San Bernardino County inspection sequencing within one business day",
+    {
+      title: "Plan & Document Review",
+      lead:
+        "Review civil asphalt plans, pavement section details, and truck court specifications on Rialto BNSF-adjacent logistics parcels where heavy articulated traffic loads exceed standard commercial parking specifications.",
+      checkpoints: [
+        "Review civil asphalt plans.",
+        "Pavement section details.",
+        "Truck court specifications on Rialto BNSF-adjacent logistics parcels where heavy articulated traffic loads exceed standard commercial parking specifications.",
+      ],
+      fieldNote:
+        "Early plan and document review keeps bid assumptions aligned with engineer-approved civil quantities before contract award.",
+    },
+    {
+      title: "Field Conditions Assessment",
+      lead:
+        "Assess existing pavement condition, base course integrity, and full-depth reconstruction scope on multi-acre Rialto warehouse and distribution center parking and drive aisles.",
+      checkpoints: [
+        "Assess existing pavement condition.",
+        "Base course integrity.",
+        "Full-depth reconstruction scope on multi-acre Rialto warehouse and distribution center parking and drive aisles.",
+      ],
+      fieldNote:
+        "Field assessment during the pre-bid walk surfaces constraints that affect production, haul logistics, and inspection sequencing.",
+    },
+    {
+      title: "Specification Verification",
+      lead:
+        "Confirm San Bernardino County asphalt paving permit requirements, density testing schedules, and inspection hold points before aggregate base mobilizes on Rialto industrial sites.",
+      checkpoints: [
+        "Confirm San Bernardino County asphalt paving permit requirements.",
+        "Density testing schedules.",
+        "Inspection hold points before aggregate base mobilizes on Rialto industrial sites.",
+      ],
+      fieldNote:
+        "Verified specifications before mobilization protect compaction acceptance, drainage performance, and agency sign-off.",
+    },
+    {
+      title: "Inspection & Schedule Mapping",
+      lead:
+        "Map truck court turning radii, fire lane routes, and phased traffic control for articulated logistics traffic on active Rialto BNSF corridor industrial parcels.",
+      checkpoints: [
+        "Map truck court turning radii.",
+        "Fire lane routes.",
+        "Phased traffic control for articulated logistics traffic on active Rialto BNSF corridor industrial parcels.",
+      ],
+      fieldNote:
+        "Mapped inspection windows and hold points keep sitework sequenced with your GC master schedule and vertical mobilization.",
+    },
+    {
+      title: "Technical Evaluation",
+      lead:
+        "Evaluate aggregate base compaction, proof-roll results, and geotechnical recommendations for former industrial zone soil conditions before heavy-load asphalt tonnage is priced.",
+      checkpoints: [
+        "Evaluate aggregate base compaction.",
+        "Proof-roll results.",
+        "Geotechnical recommendations for former industrial zone soil conditions before heavy-load asphalt tonnage is priced.",
+      ],
+      fieldNote:
+        "Technical evaluation upfront reduces rework during production and prevents mid-project quantity disputes.",
+    },
+    {
+      title: "Itemized Bid Delivery",
+      lead:
+        "Deliver itemized commercial asphalt bid with tonnage assumptions, truck court heavy-load scope, SWPPP prep, and San Bernardino County inspection sequencing within one business day.",
+      checkpoints: [
+        "Deliver itemized commercial asphalt bid with tonnage assumptions.",
+        "Truck court heavy-load scope.",
+        "San Bernardino County inspection sequencing within one business day.",
+      ],
+      fieldNote:
+        "Itemized assumptions documented in the bid package protect schedule, budget, and both parties at award.",
+    },
   ],
 
   evaluationSteps: [
@@ -91,7 +157,7 @@ export const pavingRialto: ServiceCityPageContent = {
   faqs: [
     {
       q: "Do you provide commercial asphalt paving in Rialto, CA?",
-      a: "Yes. Mendozer x Earthworks (Lic. #1069854) self-performs commercial asphalt paving, aggregate base installation, truck court heavy-duty sections, and parking lot reconstruction on warehouse, logistics, and industrial projects throughout Rialto and San Bernardino County.",
+      a: "Yes. Mendozer X Earthworks Inc. (Lic. #1069854) self-performs commercial asphalt paving, aggregate base installation, truck court heavy-duty sections, and parking lot reconstruction on warehouse, logistics, and industrial projects throughout Rialto and San Bernardino County.",
     },
     {
       q: "Can you pave warehouse and distribution parking lots in Rialto?",

@@ -16,7 +16,7 @@ export function ContactForm({ compact = false }: { compact?: boolean }) {
         <CheckCircle2 className="mx-auto h-12 w-12 text-gold" />
         <h3 className="mt-3 heading-lg text-foreground">Request Received</h3>
         <p className="mt-2 text-muted-foreground">
-          Our team will reach out within one business day. For urgent jobs call {COMPANY.phone}.
+          Mendozer X Earthworks Inc. will reach out within one business day. For urgent preconstruction schedules call {COMPANY.phone}.
         </p>
       </div>
     );

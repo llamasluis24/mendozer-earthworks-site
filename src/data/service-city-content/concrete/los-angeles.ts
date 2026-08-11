@@ -12,12 +12,78 @@ export const concreteLosAngeles: ServiceCityPageContent = {
     "Commercial concrete in Los Angeles, CA. Urban pour logistics, multi-agency inspection, utility-dense footings, and industrial yard flatwork with community impact controls.",
 
   siteVisitItems: [
-    "Review structural and civil concrete plans, footing details, and industrial yard flatwork scope on Los Angeles urban commercial and industrial redevelopment parcels",
-    "Assess urban staging constraints, haul route restrictions, pump truck access, and community impact protocols on dense Los Angeles commercial corridors",
-    "Confirm utility-dense forming requirements, embed schedules, and underground MEP coordination before footing and slab pours on LA commercial sites",
-    "Evaluate mix design, slump, and strength specifications for industrial yard aprons, structural footings, and municipal flatwork on Los Angeles projects",
-    "Map multi-agency pre-pour inspection windows, curing protocols, and LA city/county hold points before vertical construction milestones",
-    "Deliver itemized commercial concrete bid with pour quantities, haul allowances, and multi-agency inspection sequencing within one business day",
+    {
+      title: "Plan & Document Review",
+      lead:
+        "Review structural and civil concrete plans, footing details, and industrial yard flatwork scope on Los Angeles urban commercial and industrial redevelopment parcels.",
+      checkpoints: [
+        "Review structural and civil concrete plans.",
+        "Footing details.",
+        "Industrial yard flatwork scope on Los Angeles urban commercial and industrial redevelopment parcels.",
+      ],
+      fieldNote:
+        "Early plan and document review keeps bid assumptions aligned with engineer-approved civil quantities before contract award.",
+    },
+    {
+      title: "Field Conditions Assessment",
+      lead:
+        "Assess urban staging constraints, haul route restrictions, pump truck access, and community impact protocols on dense Los Angeles commercial corridors.",
+      checkpoints: [
+        "Assess urban staging constraints.",
+        "Haul route restrictions.",
+        "Pump truck access.",
+      ],
+      fieldNote:
+        "Field assessment during the pre-bid walk surfaces constraints that affect production, haul logistics, and inspection sequencing.",
+    },
+    {
+      title: "Specification Verification",
+      lead:
+        "Confirm utility-dense forming requirements, embed schedules, and underground MEP coordination before footing and slab pours on LA commercial sites.",
+      checkpoints: [
+        "Confirm utility-dense forming requirements.",
+        "Embed schedules.",
+        "Underground MEP coordination before footing and slab pours on LA commercial sites.",
+      ],
+      fieldNote:
+        "Verified specifications before mobilization protect compaction acceptance, drainage performance, and agency sign-off.",
+    },
+    {
+      title: "Technical Evaluation",
+      lead:
+        "Evaluate mix design, slump, and strength specifications for industrial yard aprons, structural footings, and municipal flatwork on Los Angeles projects.",
+      checkpoints: [
+        "Evaluate mix design.",
+        "Strength specifications for industrial yard aprons.",
+        "Structural footings.",
+      ],
+      fieldNote:
+        "Technical evaluation upfront reduces rework during production and prevents mid-project quantity disputes.",
+    },
+    {
+      title: "Inspection & Schedule Mapping",
+      lead:
+        "Map multi-agency pre-pour inspection windows, curing protocols, and LA city/county hold points before vertical construction milestones.",
+      checkpoints: [
+        "Map multi-agency pre-pour inspection windows.",
+        "Curing protocols.",
+        "LA city/county hold points before vertical construction milestones.",
+      ],
+      fieldNote:
+        "Mapped inspection windows and hold points keep sitework sequenced with your GC master schedule and vertical mobilization.",
+    },
+    {
+      title: "Itemized Bid Delivery",
+      lead:
+        "Deliver itemized commercial concrete bid with pour quantities, haul allowances, and multi-agency inspection sequencing within one business day.",
+      checkpoints: [
+        "Deliver itemized commercial concrete bid with pour quantities.",
+        "Haul allowances.",
+        "Multi-agency inspection sequencing within one business day.",
+      ],
+      fieldNote:
+        "Itemized assumptions documented in the bid package protect schedule, budget, and both parties at award.",
+    },
   ],
 
   evaluationSteps: [
@@ -89,7 +155,7 @@ export const concreteLosAngeles: ServiceCityPageContent = {
   faqs: [
     {
       q: "Do you provide commercial concrete in Los Angeles, CA?",
-      a: "Yes. Mendozer x Earthworks (Lic. #1069854) self-performs commercial concrete including structural footings, industrial yard flatwork, sidewalk, curb and gutter, and municipal improvements on commercial projects throughout Los Angeles and LA County.",
+      a: "Yes. Mendozer X Earthworks Inc. (Lic. #1069854) self-performs commercial concrete including structural footings, industrial yard flatwork, sidewalk, curb and gutter, and municipal improvements on commercial projects throughout Los Angeles and LA County.",
     },
     {
       q: "How do you manage urban pour logistics in Los Angeles?",

@@ -122,7 +122,7 @@ export function CityPageTemplate({ city, resolved }: Props) {
         </div>
       </section>
 
-      <BenefitGrid eyebrow="Why Mendozer" title="Why Developers and GCs Call Us" items={pageContent.localBenefits} variant="alt" />
+      <BenefitGrid eyebrow="Why Mendozer X" title="Why Developers and GCs Call Us" items={pageContent.localBenefits} variant="alt" />
 
       <TabbedLocalInsights insights={pageContent.tabbedInsights} county={city.county} />
 

@@ -12,12 +12,78 @@ export const demolitionLosAngeles: ServiceCityPageContent = {
     "Commercial demolition contractor in Los Angeles, CA. Urban structural takedown, industrial yard demolition, and foundation removal with multi-agency permit coordination, haul route planning, and community impact controls across LA County.",
 
   siteVisitItems: [
-    "Inventory existing industrial yard structures, slab-on-grade foundations, and buried improvements on Los Angeles redevelopment parcels",
-    "Map urban haul routes, truck staging zones, and traffic control requirements for dense LA commercial corridors before demolition mobilizes",
-    "Confirm demolition permit status across City of Los Angeles, LA County, and applicable fire department notification requirements",
-    "Document wet and dry utility disconnect and cap verification for gas, electric, water, sewer, and communications on active LA commercial sites",
-    "Assess dust, noise, and community impact controls required near occupied tenants and residential adjacency during phased LA demolition",
-    "Deliver itemized demolition bid with production rates, export logistics, and permit assumptions tied to your LA grading mobilization date",
+    {
+      title: "Inventory Existing Industrial Yard Structures",
+      lead:
+        "Inventory existing industrial yard structures, slab-on-grade foundations, and buried improvements on Los Angeles redevelopment parcels.",
+      checkpoints: [
+        "Inventory existing industrial yard structures.",
+        "Slab-on-grade foundations.",
+        "Buried improvements on Los Angeles redevelopment parcels.",
+      ],
+      fieldNote:
+        "Early plan and document review keeps bid assumptions aligned with engineer-approved civil quantities before contract award.",
+    },
+    {
+      title: "Inspection & Schedule Mapping",
+      lead:
+        "Map urban haul routes, truck staging zones, and traffic control requirements for dense LA commercial corridors before demolition mobilizes.",
+      checkpoints: [
+        "Map urban haul routes.",
+        "Truck staging zones.",
+        "Traffic control requirements for dense LA commercial corridors before demolition mobilizes.",
+      ],
+      fieldNote:
+        "Mapped inspection windows and hold points keep sitework sequenced with your GC master schedule and vertical mobilization.",
+    },
+    {
+      title: "Specification Verification",
+      lead:
+        "Confirm demolition permit status across City of Los Angeles, LA County, and applicable fire department notification requirements.",
+      checkpoints: [
+        "Confirm demolition permit status across City of Los Angeles.",
+        "Cross-check observations against civil plans, geotechnical data, and project specifications.",
+        "Flag constraints affecting production, haul logistics, SWPPP compliance, or inspection hold points.",
+      ],
+      fieldNote:
+        "Verified specifications before mobilization protect compaction acceptance, drainage performance, and agency sign-off.",
+    },
+    {
+      title: "Scope Documentation",
+      lead:
+        "Document wet and dry utility disconnect and cap verification for gas, electric, water, sewer, and communications on active LA commercial sites.",
+      checkpoints: [
+        "Document wet and dry utility disconnect and cap verification for gas.",
+        "Cross-check observations against civil plans, geotechnical data, and project specifications.",
+        "Flag constraints affecting production, haul logistics, SWPPP compliance, or inspection hold points.",
+      ],
+      fieldNote:
+        "Documented field conditions support realistic production rates and defensible preconstruction numbers.",
+    },
+    {
+      title: "Field Conditions Assessment",
+      lead:
+        "Assess dust, noise, and community impact controls required near occupied tenants and residential adjacency during phased LA demolition.",
+      checkpoints: [
+        "Assess dust.",
+        "Cross-check observations against civil plans, geotechnical data, and project specifications.",
+        "Flag constraints affecting production, haul logistics, SWPPP compliance, or inspection hold points.",
+      ],
+      fieldNote:
+        "Field assessment during the pre-bid walk surfaces constraints that affect production, haul logistics, and inspection sequencing.",
+    },
+    {
+      title: "Itemized Bid Delivery",
+      lead:
+        "Deliver itemized demolition bid with production rates, export logistics, and permit assumptions tied to your LA grading mobilization date.",
+      checkpoints: [
+        "Deliver itemized demolition bid with production rates.",
+        "Export logistics.",
+        "Permit assumptions tied to your LA grading mobilization date.",
+      ],
+      fieldNote:
+        "Itemized assumptions documented in the bid package protect schedule, budget, and both parties at award.",
+    },
   ],
 
   evaluationSteps: [
@@ -89,7 +155,7 @@ export const demolitionLosAngeles: ServiceCityPageContent = {
   faqs: [
     {
       q: "Do you provide commercial demolition in Los Angeles, CA?",
-      a: "Yes. Mendozer x Earthworks provides licensed commercial demolition for developers, GCs, and industrial property owners in Los Angeles and throughout LA County. We self-perform structural takedown, industrial yard demolition, foundation removal, and site clearing on urban commercial redevelopment parcels.",
+      a: "Yes. Mendozer X Earthworks Inc. provides licensed commercial demolition for developers, GCs, and industrial property owners in Los Angeles and throughout LA County. We self-perform structural takedown, industrial yard demolition, foundation removal, and site clearing on urban commercial redevelopment parcels.",
     },
     {
       q: "What types of demolition do you handle in Los Angeles?",

@@ -15,7 +15,6 @@ import pourStrip from "@/assets/pour-phase-strip.jpg";
 import pavingBase from "@/assets/paving-layer-base.jpg";
 import pavingSurface from "@/assets/paving-layer-surface.jpg";
 import pavingBinder from "@/assets/paving-layer-binder.jpg";
-import pavingSub from "@/assets/paving-layer-subgrade.jpg";
 
 export const EXCAVATION_IMAGES = [
   excavationImg,
@@ -28,6 +27,7 @@ export const EXCAVATION_IMAGES = [
   demolitionImg,
   pavingImg,
   pourForm,
+  pourPre,
 ];
 
 export const GRADING_IMAGES = [
@@ -58,19 +58,24 @@ export const CONCRETE_IMAGES = [
   aboutImg,
   g1,
   g2,
+  pavingBase,
+  heroImg,
+  demolitionImg,
 ];
 
 export const PAVING_IMAGES = [
   pavingImg,
-  pavingSurface,
   pavingBinder,
-  pavingBase,
-  pavingSub,
-  g3,
-  heroImg,
   g1,
+  pavingBase,
+  heroImg,
+  g3,
+  g4,
   excavationImg,
   aboutImg,
+  pourPre,
+  g2,
+  demolitionImg,
 ];
 
 export const DEMOLITION_IMAGES = [

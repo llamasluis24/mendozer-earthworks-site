@@ -13,12 +13,78 @@ export const pavingIrvine: ServiceCityPageContent = {
     "Commercial asphalt paving in Irvine, CA. Office and tech campus parking lot construction, structured parking area paving, and strict Orange County finish standards with master-plan design compliance for campus redevelopments.",
 
   siteVisitItems: [
-    "Review civil paving plans, parking stall layout, and cross-slope requirements against Irvine master-plan design standards on office and tech campus redevelopment parcels",
-    "Assess existing pavement condition, base course capacity, and drainage tie-ins on structured parking areas serving Irvine office, R&D, and commercial campus tenants",
-    "Confirm City of Irvine paving permit pathway, engineering plan check hold points, and final pavement inspection sequencing for commercial parking completion",
-    "Map traffic control phasing, haul routes, and paving staging against campus access controls and occupied office tenant circulation on active Irvine properties",
-    "Evaluate aggregate base compaction status, proof-roll results, and geotechnical recommendations before asphalt mobilization on Irvine commercial parking scopes",
-    "Deliver itemized paving bid with tonnage assumptions, phasing plan, and striping coordination tied to tenant occupancy milestones on Irvine schedules",
+    {
+      title: "Plan & Document Review",
+      lead:
+        "Review civil paving plans, parking stall layout, and cross-slope requirements against Irvine master-plan design standards on office and tech campus redevelopment parcels.",
+      checkpoints: [
+        "Review civil paving plans.",
+        "Parking stall layout.",
+        "Cross-slope requirements against Irvine master-plan design standards on office and tech campus redevelopment parcels.",
+      ],
+      fieldNote:
+        "Early plan and document review keeps bid assumptions aligned with engineer-approved civil quantities before contract award.",
+    },
+    {
+      title: "Field Conditions Assessment",
+      lead:
+        "Assess existing pavement condition, base course capacity, and drainage tie-ins on structured parking areas serving Irvine office, R&D, and commercial campus tenants.",
+      checkpoints: [
+        "Assess existing pavement condition.",
+        "Base course capacity.",
+        "Drainage tie-ins on structured parking areas serving Irvine office.",
+      ],
+      fieldNote:
+        "Field assessment during the pre-bid walk surfaces constraints that affect production, haul logistics, and inspection sequencing.",
+    },
+    {
+      title: "Specification Verification",
+      lead:
+        "Confirm City of Irvine paving permit pathway, engineering plan check hold points, and final pavement inspection sequencing for commercial parking completion.",
+      checkpoints: [
+        "Confirm City of Irvine paving permit pathway.",
+        "Engineering plan check hold points.",
+        "Final pavement inspection sequencing for commercial parking completion.",
+      ],
+      fieldNote:
+        "Verified specifications before mobilization protect compaction acceptance, drainage performance, and agency sign-off.",
+    },
+    {
+      title: "Inspection & Schedule Mapping",
+      lead:
+        "Map traffic control phasing, haul routes, and paving staging against campus access controls and occupied office tenant circulation on active Irvine properties.",
+      checkpoints: [
+        "Map traffic control phasing.",
+        "Haul routes.",
+        "Paving staging against campus access controls and occupied office tenant circulation on active Irvine properties.",
+      ],
+      fieldNote:
+        "Mapped inspection windows and hold points keep sitework sequenced with your GC master schedule and vertical mobilization.",
+    },
+    {
+      title: "Technical Evaluation",
+      lead:
+        "Evaluate aggregate base compaction status, proof-roll results, and geotechnical recommendations before asphalt mobilization on Irvine commercial parking scopes.",
+      checkpoints: [
+        "Evaluate aggregate base compaction status.",
+        "Proof-roll results.",
+        "Geotechnical recommendations before asphalt mobilization on Irvine commercial parking scopes.",
+      ],
+      fieldNote:
+        "Technical evaluation upfront reduces rework during production and prevents mid-project quantity disputes.",
+    },
+    {
+      title: "Itemized Bid Delivery",
+      lead:
+        "Deliver itemized paving bid with tonnage assumptions, phasing plan, and striping coordination tied to tenant occupancy milestones on Irvine schedules.",
+      checkpoints: [
+        "Deliver itemized paving bid with tonnage assumptions.",
+        "Phasing plan.",
+        "Striping coordination tied to tenant occupancy milestones on Irvine schedules.",
+      ],
+      fieldNote:
+        "Itemized assumptions documented in the bid package protect schedule, budget, and both parties at award.",
+    },
   ],
 
   evaluationSteps: [
@@ -90,7 +156,7 @@ export const pavingIrvine: ServiceCityPageContent = {
   faqs: [
     {
       q: "Do you provide commercial asphalt paving in Irvine, CA?",
-      a: "Yes. Mendozer x Earthworks (Lic. #1069854) self-performs commercial asphalt paving for developers, GCs, and commercial property owners in Irvine and Orange County. We construct new parking lots, structured parking areas, drive aisles, and overlay resurfacing on office and tech campus projects.",
+      a: "Yes. Mendozer X Earthworks Inc. (Lic. #1069854) self-performs commercial asphalt paving for developers, GCs, and commercial property owners in Irvine and Orange County. We construct new parking lots, structured parking areas, drive aisles, and overlay resurfacing on office and tech campus projects.",
     },
     {
       q: "What types of commercial paving do you handle in Irvine?",
