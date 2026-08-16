@@ -11,6 +11,9 @@ import g1 from "@/assets/gallery-1.jpg";
 import g2 from "@/assets/gallery-2.jpg";
 import g3 from "@/assets/gallery-3.jpg";
 import g4 from "@/assets/gallery-4.jpg";
+import recentWorkRetentionBasin from "@/assets/recent-work-retention-basin.jpg";
+import recentWorkExcavatorBasin from "@/assets/recent-work-excavator-basin.jpg";
+import recentWorkSlopeExcavation from "@/assets/recent-work-slope-excavation.jpg";
 import { CTASection } from "@/components/site/CTA";
 import { ContactLeadSection } from "@/components/site/ContactLeadSection";
 import { CommercialWorkflowSection } from "@/components/site/CommercialWorkflowSection";
@@ -49,9 +52,9 @@ const industries = [
 ];
 
 const gallery = [
-  { src: g1, alt: "Yellow heavy equipment lineup at sunset" },
-  { src: excavationImg, alt: "Aerial commercial excavation site" },
-  { src: g2, alt: "Graded commercial building pad" },
+  { src: recentWorkRetentionBasin, alt: "Large retention basin excavation in Southern California" },
+  { src: recentWorkExcavatorBasin, alt: "Excavator shaping a commercial retention basin" },
+  { src: recentWorkSlopeExcavation, alt: "Excavator completing precision slope grading" },
   { src: demolitionImg, alt: "Commercial demolition project" },
   { src: g3, alt: "Finished concrete slab at warehouse" },
   { src: pavingImg, alt: "Asphalt paving on commercial lot" },
