@@ -3,6 +3,7 @@ import { MapPin } from "lucide-react";
 import { CITIES } from "@/data/cities";
 import { cityUrl } from "@/data/cities";
 import { serviceCityUrl } from "@/data/services";
+import { ServiceAreaMap } from "./ServiceAreaMap";
 
 export function ServiceAreasSection({ serviceSlug }: { serviceSlug?: string }) {
   return (
@@ -14,14 +15,10 @@ export function ServiceAreasSection({ serviceSlug }: { serviceSlug?: string }) {
           Mendozer X Earthworks Inc. mobilizes across the Inland Empire, Orange County, and Los Angeles County for commercial excavation, grading, demolition, paving, concrete, and site development.
         </p>
         <div className="mt-10 grid lg:grid-cols-[1.2fr_1fr] gap-8 items-start">
-          <div className="rounded-xl overflow-hidden border border-border aspect-[16/10] lg:aspect-auto lg:min-h-[320px]">
-            <iframe
-              title="Southern California service area map"
-              src="https://www.google.com/maps?q=Southern+California&output=embed"
-              className="w-full h-full min-h-[280px] grayscale-[0.3] contrast-110"
-              loading="lazy"
-            />
-          </div>
+          <ServiceAreaMap
+            serviceSlug={serviceSlug}
+            className="aspect-[16/10] lg:aspect-auto lg:min-h-[320px] min-h-[280px]"
+          />
           <div>
             <h3 className="font-display text-lg tracking-wide text-gold mb-4">
               {serviceSlug ? "Cities We Serve" : "Commercial Service Area Pages"}

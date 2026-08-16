@@ -150,3 +150,98 @@
     to { transform: translateX(-50%); }
   }
 }
+
+/* Service area map — markers are built in JS, so they live outside Tailwind's scope. */
+
+/*
+ * Mapbox applies `position: relative` to its container via .mapboxgl-map, which
+ * collapses the map to zero height whenever the wrapper's height comes from
+ * min-height instead of a definite value. The doubled selector outranks it so
+ * the map always fills the wrapper.
+ */
+.mxe-map,
+.mxe-map.mapboxgl-map {
+  position: absolute;
+  inset: 0;
+}
+.mxe-marker {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Padding is the touch target; the dot itself is intentionally small. */
+  padding: 0.5rem;
+  cursor: pointer;
+  text-decoration: none;
+  line-height: 1;
+}
+.mxe-marker__dot {
+  width: 0.625rem;
+  height: 0.625rem;
+  border-radius: 9999px;
+  background-color: var(--gold);
+  box-shadow: 0 0 0 3px rgb(212 160 23 / 0.25);
+  transition: transform 150ms ease, box-shadow 150ms ease;
+}
+/* Labels are absolute and hidden by default so dense clusters stay legible. */
+.mxe-marker__label {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: var(--font-display);
+  font-size: 0.6875rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: var(--gold);
+  background-color: rgb(26 23 27 / 0.9);
+  border: 1px solid rgb(212 160 23 / 0.55);
+  border-radius: 0.25rem;
+  padding: 0.1875rem 0.375rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 150ms ease;
+}
+.mxe-marker:hover,
+.mxe-marker:focus-visible {
+  z-index: 2;
+}
+.mxe-marker:hover .mxe-marker__label,
+.mxe-marker:focus-visible .mxe-marker__label,
+.mxe-marker--active .mxe-marker__label {
+  opacity: 1;
+}
+.mxe-marker:hover .mxe-marker__dot,
+.mxe-marker:focus-visible .mxe-marker__dot,
+.mxe-marker--active .mxe-marker__dot {
+  transform: scale(1.35);
+  box-shadow: 0 0 0 5px rgb(212 160 23 / 0.3);
+}
+.mxe-marker--active .mxe-marker__dot {
+  background-color: var(--gold-bright);
+}
+@media (prefers-reduced-motion: reduce) {
+  .mxe-marker__dot,
+  .mxe-marker__label {
+    transition: none;
+  }
+}
+
+/* Keep Mapbox's default chrome from clashing with the dark brand palette. */
+.mapboxgl-ctrl-group {
+  background-color: rgb(26 23 27 / 0.85) !important;
+  border: 1px solid var(--border) !important;
+}
+.mapboxgl-ctrl-group button + button {
+  border-top-color: var(--border) !important;
+}
+.mapboxgl-ctrl-icon {
+  filter: invert(1) brightness(1.6);
+}
+.mapboxgl-ctrl-attrib {
+  background-color: rgb(26 23 27 / 0.7) !important;
+}
+.mapboxgl-ctrl-attrib a {
+  color: oklch(0.75 0.01 280) !important;
+}

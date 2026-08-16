@@ -4,6 +4,7 @@ export const MAIN_NAV = [
   { to: "/services/$slug" as const, params: { slug: "excavation" }, label: "Excavation" },
   { to: "/services/$slug" as const, params: { slug: "concrete" }, label: "Concrete" },
   { to: "/services/$slug" as const, params: { slug: "paving" }, label: "Asphalt" },
+  { to: "/projects", label: "Projects" },
   { to: "/about", label: "About" },
   { to: "/contact", label: "Contact" },
 ] as const;

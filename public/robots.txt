@@ -1,2 +1,7 @@
 User-agent: *
 Allow: /
+
+# AI / crawler discovery
+Sitemap: https://www.mendozerxearthworks.com/sitemap.xml
+# llms.txt — structured site summary for AI systems (https://llmstxt.org/)
+# https://www.mendozerxearthworks.com/llms.txt

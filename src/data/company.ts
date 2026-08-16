@@ -1,6 +1,8 @@
 export const COMPANY = {
   name: "Mendozer X Earthworks Inc.",
   shortName: "Mendozer X Earthworks",
+  /** Production origin, no trailing slash. Link previews require absolute URLs. */
+  siteUrl: "https://www.mendozerxearthworks.com",
   /** The X stands for Excavation — core to company identity */
   brandMark: "Mendozer X",
   phone: "(951) 427-4904",

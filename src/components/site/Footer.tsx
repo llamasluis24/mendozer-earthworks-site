@@ -46,7 +46,7 @@ export function Footer() {
           <h4 className="font-display text-sm tracking-[0.2em] text-gold mb-4">Contact</h4>
           <ul className="space-y-3 text-sm">
             <li><a href={COMPANY.phoneHref} className="flex items-center gap-2 text-foreground/85 hover:text-gold transition"><Phone className="h-4 w-4 text-gold" /> {COMPANY.phone}</a></li>
-            <li><a href={`mailto:${COMPANY.email}`} className="flex items-start gap-2 text-foreground/85 hover:text-gold transition"><Mail className="h-4 w-4 text-gold mt-0.5" /> {COMPANY.email}</a></li>
+            <li><a href={`mailto:${COMPANY.email}`} className="flex items-start gap-2 text-foreground/85 hover:text-gold transition"><Mail className="h-4 w-4 text-gold mt-0.5 shrink-0" /> <span className="break-all">{COMPANY.email}</span></a></li>
             <li className="flex items-start gap-2 text-foreground/85"><MapPin className="h-4 w-4 text-gold mt-0.5" /> Southern California</li>
           </ul>
         </div>
@@ -54,7 +54,17 @@ export function Footer() {
       <div className="border-t border-border">
         <div className="container-x py-5 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-muted-foreground">
           <p>© {new Date().getFullYear()} {COMPANY.name} All rights reserved.</p>
-          <p>Commercial Earthwork · Site Development · Southern California</p>
+          <p>
+            Website by{" "}
+            <a
+              href="https://www.ftwagency.ai/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-medium text-[#81D6BA] hover:opacity-90 transition"
+            >
+              FTW Agency
+            </a>
+          </p>
         </div>
       </div>
     </footer>

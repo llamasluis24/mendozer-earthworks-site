@@ -4,6 +4,8 @@ export interface City {
   county: "Riverside County" | "San Bernardino County" | "Orange County" | "Los Angeles County";
   region: "inland-empire" | "orange-county" | "los-angeles-county";
   nearby: string[];
+  /** City center used to place service area map markers. */
+  coords: { lng: number; lat: number };
 }
 
 export const REGIONS = [
@@ -34,6 +36,7 @@ export const CITIES: City[] = [
     county: "Riverside County",
     region: "inland-empire",
     nearby: ["banning", "temecula", "san-bernardino"],
+    coords: { lng: -117.3755, lat: 33.9806 },
   },
   {
     slug: "banning",
@@ -41,6 +44,7 @@ export const CITIES: City[] = [
     county: "Riverside County",
     region: "inland-empire",
     nearby: ["riverside", "temecula", "san-bernardino"],
+    coords: { lng: -116.8763, lat: 33.9256 },
   },
   {
     slug: "temecula",
@@ -48,6 +52,7 @@ export const CITIES: City[] = [
     county: "Riverside County",
     region: "inland-empire",
     nearby: ["riverside", "banning", "rialto"],
+    coords: { lng: -117.1484, lat: 33.4936 },
   },
   {
     slug: "san-bernardino",
@@ -55,6 +60,7 @@ export const CITIES: City[] = [
     county: "San Bernardino County",
     region: "inland-empire",
     nearby: ["rialto", "riverside", "banning"],
+    coords: { lng: -117.2898, lat: 34.1083 },
   },
   {
     slug: "rialto",
@@ -62,6 +68,7 @@ export const CITIES: City[] = [
     county: "San Bernardino County",
     region: "inland-empire",
     nearby: ["san-bernardino", "riverside", "temecula"],
+    coords: { lng: -117.3703, lat: 34.1064 },
   },
   {
     slug: "anaheim",
@@ -69,6 +76,7 @@ export const CITIES: City[] = [
     county: "Orange County",
     region: "orange-county",
     nearby: ["santa-ana", "irvine", "los-angeles"],
+    coords: { lng: -117.9143, lat: 33.8366 },
   },
   {
     slug: "santa-ana",
@@ -76,6 +84,7 @@ export const CITIES: City[] = [
     county: "Orange County",
     region: "orange-county",
     nearby: ["anaheim", "irvine", "los-angeles"],
+    coords: { lng: -117.8678, lat: 33.7455 },
   },
   {
     slug: "irvine",
@@ -83,6 +92,7 @@ export const CITIES: City[] = [
     county: "Orange County",
     region: "orange-county",
     nearby: ["anaheim", "santa-ana", "pasadena"],
+    coords: { lng: -117.8265, lat: 33.6846 },
   },
   {
     slug: "los-angeles",
@@ -90,6 +100,7 @@ export const CITIES: City[] = [
     county: "Los Angeles County",
     region: "los-angeles-county",
     nearby: ["pasadena", "anaheim", "santa-ana"],
+    coords: { lng: -118.2437, lat: 34.0522 },
   },
   {
     slug: "pasadena",
@@ -97,6 +108,7 @@ export const CITIES: City[] = [
     county: "Los Angeles County",
     region: "los-angeles-county",
     nearby: ["los-angeles", "anaheim", "irvine"],
+    coords: { lng: -118.1445, lat: 34.1478 },
   },
 ];
 

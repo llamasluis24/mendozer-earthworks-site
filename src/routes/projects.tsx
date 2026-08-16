@@ -13,7 +13,6 @@ export const Route = createFileRoute("/projects")({
       description:
         "Commercial earthwork case studies across Southern California. Grading, excavation, concrete, and asphalt projects for developers and GCs.",
       path: "/projects",
-      image: heroImg,
     }),
   component: Projects,
 });

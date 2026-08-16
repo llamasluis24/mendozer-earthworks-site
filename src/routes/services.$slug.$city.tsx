@@ -27,7 +27,6 @@ export const Route = createFileRoute("/services/$slug/$city")({
       title: resolved.meta.title,
       description: resolved.meta.description,
       path,
-      image: resolved.ogImage,
       scripts: [
         buildFaqSchema(resolved.faqs),
         buildServiceSchema({

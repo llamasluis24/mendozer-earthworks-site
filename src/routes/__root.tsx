@@ -11,6 +11,7 @@ import {
 import appCss from "../styles.css?url";
 import logo from "@/assets/logo.png";
 import { COMPANY } from "@/data/company";
+import { absoluteUrl, SHARE_IMAGE } from "@/data/seo";
 import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
 import { ScrollToTop } from "@/components/site/ScrollToTop";
@@ -64,7 +65,15 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "author", content: "Mendozer X Earthworks Inc." },
       { property: "og:site_name", content: "Mendozer X Earthworks Inc." },
       { property: "og:type", content: "website" },
+      { property: "og:url", content: absoluteUrl("/") },
+      // Fallback share card for any route that doesn't set its own; per-route
+      // meta from buildPageMeta overrides these.
+      { property: "og:image", content: absoluteUrl(SHARE_IMAGE.path) },
+      { property: "og:image:secure_url", content: absoluteUrl(SHARE_IMAGE.path) },
+      { property: "og:image:alt", content: SHARE_IMAGE.alt },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:image", content: absoluteUrl(SHARE_IMAGE.path) },
+      { name: "twitter:image:alt", content: SHARE_IMAGE.alt },
       { name: "theme-color", content: "#1A171B" },
     ],
     links: [

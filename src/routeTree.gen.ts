@@ -11,6 +11,7 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as ProjectsRouteImport } from './routes/projects'
+import { Route as LlmsDottxtRouteImport } from './routes/llms[.]txt'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
@@ -29,6 +30,11 @@ const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
 const ProjectsRoute = ProjectsRouteImport.update({
   id: '/projects',
   path: '/projects',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const LlmsDottxtRoute = LlmsDottxtRouteImport.update({
+  id: '/llms.txt',
+  path: '/llms.txt',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ContactRoute = ContactRouteImport.update({
@@ -81,6 +87,7 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/contact': typeof ContactRoute
+  '/llms.txt': typeof LlmsDottxtRoute
   '/projects': typeof ProjectsRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/service-areas/$slug': typeof ServiceAreasSlugRoute
@@ -94,6 +101,7 @@ export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/contact': typeof ContactRoute
+  '/llms.txt': typeof LlmsDottxtRoute
   '/projects': typeof ProjectsRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/service-areas/$slug': typeof ServiceAreasSlugRoute
@@ -107,6 +115,7 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/contact': typeof ContactRoute
+  '/llms.txt': typeof LlmsDottxtRoute
   '/projects': typeof ProjectsRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/service-areas/$slug': typeof ServiceAreasSlugRoute
@@ -122,6 +131,7 @@ export interface FileRouteTypes {
     | '/'
     | '/about'
     | '/contact'
+    | '/llms.txt'
     | '/projects'
     | '/sitemap.xml'
     | '/service-areas/$slug'
@@ -135,6 +145,7 @@ export interface FileRouteTypes {
     | '/'
     | '/about'
     | '/contact'
+    | '/llms.txt'
     | '/projects'
     | '/sitemap.xml'
     | '/service-areas/$slug'
@@ -147,6 +158,7 @@ export interface FileRouteTypes {
     | '/'
     | '/about'
     | '/contact'
+    | '/llms.txt'
     | '/projects'
     | '/sitemap.xml'
     | '/service-areas/$slug'
@@ -161,6 +173,7 @@ export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutRoute: typeof AboutRoute
   ContactRoute: typeof ContactRoute
+  LlmsDottxtRoute: typeof LlmsDottxtRoute
   ProjectsRoute: typeof ProjectsRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   ServiceAreasSlugRoute: typeof ServiceAreasSlugRoute
@@ -183,6 +196,13 @@ declare module '@tanstack/react-router' {
       path: '/projects'
       fullPath: '/projects'
       preLoaderRoute: typeof ProjectsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/llms.txt': {
+      id: '/llms.txt'
+      path: '/llms.txt'
+      fullPath: '/llms.txt'
+      preLoaderRoute: typeof LlmsDottxtRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/contact': {
@@ -269,6 +289,7 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
   ContactRoute: ContactRoute,
+  LlmsDottxtRoute: LlmsDottxtRoute,
   ProjectsRoute: ProjectsRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
   ServiceAreasSlugRoute: ServiceAreasSlugRoute,

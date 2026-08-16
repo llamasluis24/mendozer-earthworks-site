@@ -20,7 +20,6 @@ export const Route = createFileRoute("/service-areas/$slug")({
       title: resolved.meta.title,
       description: resolved.meta.description,
       path: `/service-areas/${city.slug}`,
-      image: resolved.ogImage,
       scripts: [buildFaqSchema(resolved.faqs)],
     });
   },

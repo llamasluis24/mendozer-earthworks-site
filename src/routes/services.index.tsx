@@ -22,7 +22,6 @@ export const Route = createFileRoute("/services/")({
       description:
         "Commercial grading, excavation, concrete, and asphalt services in Southern California for developers and GCs.",
       path: "/services",
-      image: heroImg,
     }),
   component: ServicesOverview,
 });

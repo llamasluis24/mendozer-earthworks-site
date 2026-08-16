@@ -11,6 +11,7 @@
     "dev:clean": "sh -c 'pkill -f \"vite dev\" 2>/dev/null || true; rm -rf node_modules/.vite; vite dev'",
     "build": "vite build",
     "audit:phase8": "node scripts/phase8-audit.mjs",
+    "og:image": "node scripts/generate-og-image.mjs",
     "build:dev": "vite build --mode development",
     "preview": "vite preview",
     "lint": "eslint .",
@@ -56,6 +57,7 @@
     "embla-carousel-react": "^8.6.0",
     "input-otp": "^1.4.2",
     "lucide-react": "^0.575.0",
+    "mapbox-gl": "^3.28.1",
     "react": "^19.2.0",
     "react-day-picker": "^9.14.0",
     "react-dom": "^19.2.0",
@@ -73,6 +75,7 @@
   "devDependencies": {
     "@eslint/js": "^9.32.0",
     "@lovable.dev/vite-tanstack-config": "^2.7.7",
+    "@types/mapbox-gl": "^3.4.1",
     "@types/node": "^22.16.5",
     "@types/react": "^19.2.0",
     "@types/react-dom": "^19.2.0",

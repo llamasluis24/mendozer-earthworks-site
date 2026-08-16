@@ -23,7 +23,6 @@ export const Route = createFileRoute("/")({
       title: "Mendozer X Earthworks Inc. | Commercial Earthwork Contractor Southern California",
       description: COMPANY.description,
       path: "/",
-      image: heroImg,
     }),
   component: Home,
 });
@@ -183,7 +182,7 @@ function Services() {
               params={{ slug: s.serviceSlug }}
               className="group relative overflow-hidden rounded-xl border border-border bg-card hover:border-gold/60 transition"
             >
-              <div className="aspect-[4/3] overflow-hidden">
+              <div className="relative aspect-[4/3] overflow-hidden">
                 <img src={s.img} alt={s.title} className="h-full w-full object-cover group-hover:scale-110 transition-transform duration-700" loading="lazy" />
                 <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/50 to-transparent" />
               </div>

@@ -1,7 +1,23 @@
 import { CITIES } from "./cities";
 import { SEO_SERVICE_SLUGS, serviceCityUrl, serviceUrl, SERVICES } from "./services";
 import { cityUrl } from "./cities";
+import { COMPANY } from "./company";
 import type { ServiceFaq } from "./services/types";
+
+/** Branded card shown when the site is shared over SMS/iMessage, social, or chat apps. */
+export const SHARE_IMAGE = {
+  path: "/og-preview.jpg",
+  width: "1200",
+  height: "630",
+  type: "image/jpeg",
+  alt: "Mendozer X Earthworks Inc. — commercial grading, excavation, concrete, and asphalt in Southern California",
+} as const;
+
+/** Link preview scrapers ignore root-relative URLs, so every shared URL must be absolute. */
+export function absoluteUrl(pathOrUrl: string): string {
+  if (/^https?:\/\//.test(pathOrUrl)) return pathOrUrl;
+  return `${COMPANY.siteUrl}${pathOrUrl.startsWith("/") ? "" : "/"}${pathOrUrl}`;
+}
 
 export function getAllSitemapPaths(): string[] {
   const staticPaths = ["/", "/about", "/contact", "/services", "/service-areas", "/projects"];
@@ -32,17 +48,36 @@ export function buildPageMeta({
   image?: string;
   scripts?: { type: string; children: string }[];
 }) {
+  const url = absoluteUrl(path);
+  const usesShareCard = !image;
+  const shareImage = absoluteUrl(image ?? SHARE_IMAGE.path);
+
   return {
     meta: [
       { title },
       { name: "description", content: description },
       { property: "og:title", content: title },
       { property: "og:description", content: description },
-      { property: "og:url", content: path },
+      { property: "og:url", content: url },
       { property: "og:type", content: "website" },
-      ...(image ? [{ property: "og:image", content: image }] : []),
+      { property: "og:image", content: shareImage },
+      { property: "og:image:secure_url", content: shareImage },
+      // Only the share card has known dimensions; page photos vary in size.
+      ...(usesShareCard
+        ? [
+            { property: "og:image:type", content: SHARE_IMAGE.type },
+            { property: "og:image:width", content: SHARE_IMAGE.width },
+            { property: "og:image:height", content: SHARE_IMAGE.height },
+            { property: "og:image:alt", content: SHARE_IMAGE.alt },
+          ]
+        : [{ property: "og:image:alt", content: title }]),
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: title },
+      { name: "twitter:description", content: description },
+      { name: "twitter:image", content: shareImage },
+      { name: "twitter:image:alt", content: usesShareCard ? SHARE_IMAGE.alt : title },
     ],
-    links: [{ rel: "canonical", href: path }],
+    links: [{ rel: "canonical", href: url }],
     ...(scripts ? { scripts } : {}),
   };
 }

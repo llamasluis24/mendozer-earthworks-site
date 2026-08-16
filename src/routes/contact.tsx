@@ -2,20 +2,18 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Phone, Mail, MapPin, Clock } from "lucide-react";
 import { COMPANY } from "@/data/company";
 import { ContactForm } from "@/components/site/ContactForm";
+import { ServiceAreaMap } from "@/components/site/ServiceAreaMap";
+import { buildPageMeta } from "@/data/seo";
 import heroImg from "@/assets/hero-bulldozer.jpg";
 
 export const Route = createFileRoute("/contact")({
-  head: () => ({
-    meta: [
-      { title: "Contact Mendozer X Earthworks Inc. | Request a Commercial Estimate" },
-      { name: "description", content: "Contact Mendozer X Earthworks Inc. for commercial grading, excavation, concrete, and asphalt in Southern California. Call (951) 427-4904 or request an estimate." },
-      { property: "og:title", content: "Contact Mendozer X Earthworks Inc." },
-      { property: "og:description", content: "Request a commercial earthwork estimate. Serving Inland Empire, Orange County, and LA County." },
-      { property: "og:image", content: heroImg },
-      { property: "og:url", content: "/contact" },
-    ],
-    links: [{ rel: "canonical", href: "/contact" }],
-  }),
+  head: () =>
+    buildPageMeta({
+      title: "Contact Mendozer X Earthworks Inc. | Request a Commercial Estimate",
+      description:
+        "Contact Mendozer X Earthworks Inc. for commercial grading, excavation, concrete, and asphalt in Southern California. Call (951) 427-4904 or request an estimate.",
+      path: "/contact",
+    }),
   component: Contact,
 });
 
@@ -44,14 +42,11 @@ function Contact() {
             <InfoCard icon={MapPin} label="Service Areas" value="Inland Empire · Orange County · LA County" />
             <InfoCard icon={Clock} label="Business Hours" value="Mon–Fri 7:00 AM – 6:00 PM" />
 
-            <div className="rounded-xl overflow-hidden border border-border aspect-[16/10] mt-6">
-              <iframe
-                title="Service area map"
-                src="https://www.google.com/maps?q=Riverside%2C+CA&output=embed"
-                className="w-full h-full grayscale-[0.4] contrast-110"
-                loading="lazy"
-              />
-            </div>
+            <ServiceAreaMap
+              highlightCitySlug="riverside"
+              className="aspect-[16/10] mt-6"
+              label="Mendozer X Earthworks service area map centered on Riverside, CA"
+            />
           </div>
           <div>
             <h2 className="heading-lg mb-4">Request an Estimate</h2>

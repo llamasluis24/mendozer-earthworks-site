@@ -5,19 +5,15 @@ import teamImg from "@/assets/service-excavation.jpg";
 import { CTASection } from "@/components/site/CTA";
 import { REGIONS, citiesInRegion, cityUrl } from "@/data/cities";
 import { COMPANY } from "@/data/company";
+import { buildPageMeta } from "@/data/seo";
 
 export const Route = createFileRoute("/about")({
-  head: () => ({
-    meta: [
-      { title: "About Mendozer X Earthworks Inc. | Southern California Heavy Civil Contractor" },
-      { name: "description", content: COMPANY.description },
-      { property: "og:title", content: "About Mendozer X Earthworks Inc." },
-      { property: "og:description", content: COMPANY.description },
-      { property: "og:image", content: heroImg },
-      { property: "og:url", content: "/about" },
-    ],
-    links: [{ rel: "canonical", href: "/about" }],
-  }),
+  head: () =>
+    buildPageMeta({
+      title: "About Mendozer X Earthworks Inc. | Southern California Heavy Civil Contractor",
+      description: COMPANY.description,
+      path: "/about",
+    }),
   component: About,
 });
 

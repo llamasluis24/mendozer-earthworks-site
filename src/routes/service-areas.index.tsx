@@ -11,7 +11,6 @@ export const Route = createFileRoute("/service-areas/")({
       description:
         "Commercial earthwork services across Southern California. Serving the Inland Empire, Orange County, and Los Angeles County.",
       path: "/service-areas",
-      image: heroImg,
     }),
   component: ServiceAreas,
 });

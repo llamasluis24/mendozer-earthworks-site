@@ -67,17 +67,17 @@ export function Header() {
       <div className="container-x flex items-center justify-between py-3">
         <Link to="/" className="group hover:opacity-95 transition">
           <BrandWordmark
-            iconClassName="h-14 w-14 group-hover:scale-[1.02] transition-transform"
+            iconClassName="h-12 w-12 xl:h-14 xl:w-14 group-hover:scale-[1.02] transition-transform"
             textClassName="hidden sm:flex"
           />
         </Link>
 
-        <nav className="hidden lg:flex items-center gap-7" aria-label="Main navigation">
+        <nav className="hidden lg:flex items-center gap-3 xl:gap-6" aria-label="Main navigation">
           {MAIN_NAV.map((n) => (
             <NavLink
               key={n.label}
               item={n}
-              className="text-[13px] font-medium uppercase tracking-wider text-foreground/85 hover:text-gold transition relative after:absolute after:-bottom-1.5 after:left-0 after:h-px after:w-0 after:bg-gold after:transition-all hover:after:w-full"
+              className="whitespace-nowrap text-[12px] xl:text-[13px] font-medium uppercase tracking-wider text-foreground/85 hover:text-gold transition relative after:absolute after:-bottom-1.5 after:left-0 after:h-px after:w-0 after:bg-gold after:transition-all hover:after:w-full"
               activeProps={{ className: "text-gold" }}
               activeOptions={{ exact: n.to === "/" }}
             />
@@ -87,7 +87,7 @@ export function Header() {
         <div className="flex items-center gap-3">
           <Link
             to="/contact"
-            className="hidden md:inline-flex items-center rounded-md bg-gold px-4 py-2.5 text-sm font-semibold uppercase tracking-wider text-primary-foreground hover:bg-gold-bright transition shadow-lg shadow-gold/20"
+            className="hidden md:inline-flex items-center whitespace-nowrap rounded-md bg-gold px-3 py-2 text-xs xl:px-4 xl:py-2.5 xl:text-sm font-semibold uppercase tracking-wider text-primary-foreground hover:bg-gold-bright transition shadow-lg shadow-gold/20"
           >
             Request Estimate
           </Link>

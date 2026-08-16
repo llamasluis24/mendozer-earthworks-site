@@ -17,7 +17,6 @@ export const Route = createFileRoute("/services/$slug/")({
       title: content.metaTitle,
       description: content.metaDesc,
       path,
-      image: content.heroImage,
       scripts: [
         buildFaqSchema(content.faqs),
         buildServiceSchema({
