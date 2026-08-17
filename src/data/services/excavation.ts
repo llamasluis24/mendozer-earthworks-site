@@ -1,4 +1,13 @@
 import excavationImg from "@/assets/service-excavation.jpg";
+import excavationMass from "@/assets/excavation-mass.jpg";
+import excavationCutFill from "@/assets/excavation-cut-fill.jpg";
+import excavationUtilityTrenching from "@/assets/excavation-utility-trenching.jpg";
+import excavationImportExport from "@/assets/excavation-import-export.jpg";
+import excavationStormDrain from "@/assets/excavation-storm-drain.jpg";
+import excavationTopsoilStripping from "@/assets/excavation-topsoil-stripping.jpg";
+import excavationRock from "@/assets/excavation-rock.jpg";
+import excavationRecompaction from "@/assets/excavation-recompaction.jpg";
+import excavationDeepUtility from "@/assets/excavation-deep-utility.jpg";
 import type { PillarService } from "./types";
 import { COMMERCIAL_WORKFLOW } from "../commercial-workflow";
 import { COMMON_TRUST_BAR } from "./defaults";
@@ -59,18 +68,18 @@ export const excavation: PillarService = {
     "GC master schedule milestones, phasing constraints, and inspection windows",
   ],
   subServices: [
-    { title: "Mass Excavation", body: "Large-volume earthmoving for warehouse pads, retail centers, and industrial sites using dozers, scrapers, and articulated haul trucks sized for commercial production schedules.", image: EXCAVATION_IMAGES[0] },
-    { title: "Cut & Fill Operations", body: "On-site cut and fill executed to civil engineering quantities — balancing material across the parcel to minimize haul costs while meeting pad elevations.", image: EXCAVATION_IMAGES[1] },
+    { title: "Mass Excavation", body: "Large-volume earthmoving for warehouse pads, retail centers, and industrial sites using dozers, scrapers, and articulated haul trucks sized for commercial production schedules.", image: excavationMass },
+    { title: "Cut & Fill Operations", body: "On-site cut and fill executed to civil engineering quantities — balancing material across the parcel to minimize haul costs while meeting pad elevations.", image: excavationCutFill },
     { title: "Site Balancing", body: "Cut/fill balance planning and execution that keeps suitable material on-site, reducing import, export, and truck traffic on commercial developments.", image: EXCAVATION_IMAGES[2] },
-    { title: "Utility Trenching Coordination", body: "Trench excavation for wet and dry utilities sequenced with your underground contractor — water, sewer, storm drain, electrical, and communications with inspection holds.", image: EXCAVATION_IMAGES[3] },
+    { title: "Utility Trenching Coordination", body: "Trench excavation for wet and dry utilities sequenced with your underground contractor — water, sewer, storm drain, electrical, and communications with inspection holds.", image: excavationUtilityTrenching },
     { title: "Over-Excavation", body: "Removal of unsuitable, expansive, or contaminated soils to geotechnical depths before approved structural fill and recompaction by the grading team.", image: EXCAVATION_IMAGES[4] },
-    { title: "Import & Export of Soil", body: "Coordinated import of approved structural fill and export of excess or unsuitable material with certified disposal facilities and permitted haul routes.", image: EXCAVATION_IMAGES[5] },
+    { title: "Import & Export of Soil", body: "Coordinated import of approved structural fill and export of excess or unsuitable material with certified disposal facilities and permitted haul routes.", image: excavationImportExport },
     { title: "Building Pad Excavation", body: "Pad-area excavation to subgrade elevation — preparing the footprint for structural fill placement, compaction, and finish grading.", image: EXCAVATION_IMAGES[6] },
-    { title: "Storm Drain Trenching", body: "Trench excavation for storm drain pipe, structures, and drainage infrastructure per civil engineering plans and agency requirements.", image: EXCAVATION_IMAGES[7] },
-    { title: "Topsoil Stripping & Stockpiling", body: "Stripping and stockpiling of topsoil and organic material before mass excavation and structural fill placement on commercial parcels.", image: EXCAVATION_IMAGES[8] },
-    { title: "Rock Excavation", body: "Ripping, hammering, and mechanical rock removal on commercial sites where bedrock or boulders impede excavation production.", image: EXCAVATION_IMAGES[9] },
-    { title: "Recompaction Support", body: "Excavation scope coordinated with grading for structural fill placement, moisture conditioning, and compaction after over-excavation is complete.", image: EXCAVATION_IMAGES[0] },
-    { title: "Deep Utility Excavation", body: "Deep trench and structure excavation for utility vaults, grease interceptors, and storm drain structures with shoring coordination as required.", image: EXCAVATION_IMAGES[10] },
+    { title: "Storm Drain Trenching", body: "Trench excavation for storm drain pipe, structures, and drainage infrastructure per civil engineering plans and agency requirements.", image: excavationStormDrain },
+    { title: "Topsoil Stripping & Stockpiling", body: "Stripping and stockpiling of topsoil and organic material before mass excavation and structural fill placement on commercial parcels.", image: excavationTopsoilStripping },
+    { title: "Rock Excavation", body: "Ripping, hammering, and mechanical rock removal on commercial sites where bedrock or boulders impede excavation production.", image: excavationRock },
+    { title: "Recompaction Support", body: "Excavation scope coordinated with grading for structural fill placement, moisture conditioning, and compaction after over-excavation is complete.", image: excavationRecompaction },
+    { title: "Deep Utility Excavation", body: "Deep trench and structure excavation for utility vaults, grease interceptors, and storm drain structures with shoring coordination as required.", image: excavationDeepUtility },
   ],
   scopeIncludes: [
     "Pre-bid site walk with civil and geotechnical plan review",
