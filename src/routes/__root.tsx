@@ -75,6 +75,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "twitter:image", content: absoluteUrl(SHARE_IMAGE.path) },
       { name: "twitter:image:alt", content: SHARE_IMAGE.alt },
       { name: "theme-color", content: "#1A171B" },
+      { name: "color-scheme", content: "dark" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },

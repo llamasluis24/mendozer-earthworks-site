@@ -38,25 +38,44 @@
 
 :root {
   --radius: 0.5rem;
+  /* Stops iOS Safari from auto-inverting an already-dark page, which
+     washes gold and grey body copy into near-invisible charcoal. */
+  color-scheme: dark;
 
-  /* Brand palette */
-  --gold: oklch(0.745 0.155 75);          /* #D4A017-ish */
+  /* Brand palette — hex first so Safari has a fallback if oklch is ignored. */
+  --gold: #D4A017;
+  --gold: oklch(0.745 0.155 75);
+  --gold-bright: #EFBB2B;
   --gold-bright: oklch(0.82 0.17 80);
-  --charcoal: oklch(0.18 0.005 280);       /* #1A171B */
-  --accent-gray: oklch(0.27 0 0);          /* #2B2B2B */
+  --charcoal: #1A171B;
+  --charcoal: oklch(0.18 0.005 280);
+  --accent-gray: #2B2B2B;
+  --accent-gray: oklch(0.27 0 0);
 
+  --background: #1A171B;
   --background: oklch(0.13 0.005 280);
+  --foreground: #F7F7F7;
   --foreground: oklch(0.97 0 0);
+  --card: #1A171B;
   --card: oklch(0.18 0.005 280);
+  --card-foreground: #F7F7F7;
   --card-foreground: oklch(0.97 0 0);
+  --popover: #1A171B;
   --popover: oklch(0.18 0.005 280);
+  --popover-foreground: #F7F7F7;
   --popover-foreground: oklch(0.97 0 0);
+  --primary: #D4A017;
   --primary: oklch(0.745 0.155 75);
+  --primary-foreground: #1A171B;
   --primary-foreground: oklch(0.13 0.005 280);
+  --secondary: #2B2B2B;
   --secondary: oklch(0.27 0 0);
+  --secondary-foreground: #F7F7F7;
   --secondary-foreground: oklch(0.97 0 0);
+  --muted: #2A272C;
   --muted: oklch(0.22 0.005 280);
-  --muted-foreground: oklch(0.68 0.01 280);
+  --muted-foreground: #C4C2C6;
+  --muted-foreground: oklch(0.78 0.01 280);
   --accent: oklch(0.745 0.155 75);
   --accent-foreground: oklch(0.13 0.005 280);
   --destructive: oklch(0.6 0.22 25);
@@ -68,13 +87,17 @@
 
 @layer base {
   * { border-color: var(--color-border); }
-  html { scroll-behavior: auto; }
+  html {
+    scroll-behavior: auto;
+    color-scheme: dark;
+  }
   body {
     background-color: var(--color-background);
     color: var(--color-foreground);
     font-family: var(--font-sans);
     -webkit-font-smoothing: antialiased;
   }
+  a { color: inherit; }
   h1, h2, h3, h4 {
     font-family: var(--font-display);
     letter-spacing: -0.01em;

@@ -183,7 +183,7 @@ function Services() {
               key={s.slug}
               to="/services/$slug"
               params={{ slug: s.serviceSlug }}
-              className="group relative overflow-hidden rounded-xl border border-border bg-card hover:border-gold/60 transition"
+              className="group relative overflow-hidden rounded-xl border border-border bg-card text-foreground hover:border-gold/60 transition"
             >
               <div className="relative aspect-[4/3] overflow-hidden">
                 <img src={s.img} alt={s.title} className="h-full w-full object-cover group-hover:scale-110 transition-transform duration-700" loading="lazy" />
@@ -193,8 +193,8 @@ function Services() {
                 <s.icon className="h-5 w-5 text-primary-foreground" />
               </div>
               <div className="p-6">
-                <h3 className="font-display text-xl tracking-wide group-hover:text-gold transition">{s.title}</h3>
-                <p className="mt-2 text-sm text-muted-foreground leading-relaxed">{s.desc}</p>
+                <h3 className="font-display text-xl tracking-wide text-foreground group-hover:text-gold transition">{s.title}</h3>
+                <p className="mt-2 text-sm text-foreground/80 leading-relaxed">{s.desc}</p>
                 <div className="mt-4 inline-flex items-center gap-1.5 text-xs uppercase tracking-wider text-gold font-semibold">
                   Learn More <ArrowRight className="h-3.5 w-3.5" />
                 </div>
