@@ -64,10 +64,10 @@ export function Header() {
           : "bg-gradient-to-b from-black/70 to-transparent"
       }`}
     >
-      <div className="container-x flex items-center justify-between py-3">
+      <div className="container-x flex items-center justify-between py-3 lg:py-3">
         <Link to="/" className="group hover:opacity-95 transition">
           <BrandWordmark
-            iconClassName="h-12 w-12 xl:h-14 xl:w-14 group-hover:scale-[1.02] transition-transform"
+            iconClassName="h-20 w-20 lg:h-14 lg:w-14 xl:h-16 xl:w-16 group-hover:scale-[1.02] transition-transform"
             textClassName="hidden sm:flex"
           />
         </Link>
