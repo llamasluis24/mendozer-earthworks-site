@@ -56,18 +56,31 @@ export function Header() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  useEffect(() => {
+    if (!open) return;
+    const previous = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.body.style.overflow = previous;
+    };
+  }, [open]);
+
+  const solidBar = scrolled || open;
+
   return (
     <header
       className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
-        scrolled
-          ? "bg-charcoal/95 backdrop-blur-md border-b border-border shadow-2xl"
-          : "bg-gradient-to-b from-black/70 to-transparent"
+        open
+          ? "min-h-dvh bg-charcoal border-b border-border"
+          : solidBar
+            ? "bg-charcoal border-b border-border shadow-2xl"
+            : "bg-gradient-to-b from-black/70 to-transparent"
       }`}
     >
-      <div className="container-x flex items-center justify-between py-3 lg:py-3">
-        <Link to="/" className="group hover:opacity-95 transition">
+      <div className="container-x flex items-center justify-between gap-3 py-2 lg:py-3">
+        <Link to="/" className="group relative z-10 shrink-0 hover:opacity-95 transition" onClick={() => setOpen(false)}>
           <BrandWordmark
-            iconClassName="h-36 w-36 lg:h-24 lg:w-24 xl:h-28 xl:w-28 group-hover:scale-[1.02] transition-transform"
+            iconClassName="h-16 w-16 max-w-16 sm:h-20 sm:w-20 sm:max-w-20 lg:h-24 lg:w-24 lg:max-w-24 xl:h-28 xl:w-28 xl:max-w-28 group-hover:scale-[1.02] transition-transform"
             textClassName="hidden sm:flex"
           />
         </Link>
@@ -84,7 +97,7 @@ export function Header() {
           ))}
         </nav>
 
-        <div className="flex items-center gap-3">
+        <div className="relative z-20 flex items-center gap-3 shrink-0">
           <Link
             to="/contact"
             className="hidden md:inline-flex items-center whitespace-nowrap rounded-md bg-gold px-3 py-2 text-xs xl:px-4 xl:py-2.5 xl:text-sm font-semibold uppercase tracking-wider text-primary-foreground hover:bg-gold-bright transition shadow-lg shadow-gold/20"
@@ -94,7 +107,7 @@ export function Header() {
           <button
             onClick={() => setOpen((o) => !o)}
             className="lg:hidden p-2 text-foreground"
-            aria-label="Toggle menu"
+            aria-label={open ? "Close menu" : "Open menu"}
             aria-expanded={open}
           >
             {open ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
@@ -104,7 +117,7 @@ export function Header() {
 
       {open && (
         <div className="lg:hidden border-t border-border bg-charcoal">
-          <div className="container-x py-4 flex flex-col gap-1">
+          <div className="container-x py-4 flex flex-col gap-1 pb-24">
             {MAIN_NAV.map((n) => (
               <NavLink
                 key={n.label}
