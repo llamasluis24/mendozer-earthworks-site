@@ -9,9 +9,12 @@ export function Footer() {
   return (
     <footer className="relative bg-charcoal border-t border-border">
       <div className="h-1 diagonal-stripes opacity-80" />
-      <div className="container-x py-16 grid gap-12 lg:grid-cols-4">
-        <div>
-          <BrandWordmark iconClassName="h-48 w-48" />
+      <div className="container-x py-16 grid gap-12 lg:grid-cols-[minmax(0,1.4fr)_1fr_1fr_1fr] lg:gap-x-16">
+        <div className="min-w-0 pr-4">
+          <BrandWordmark
+            iconClassName="h-48 w-48"
+            className="flex-col items-start gap-4"
+          />
           <p className="mt-5 text-sm text-muted-foreground leading-relaxed">
             {COMPANY.description}
           </p>

@@ -3,14 +3,16 @@ import logo from "@/assets/logo.png";
 type BrandWordmarkProps = {
   iconClassName?: string;
   textClassName?: string;
+  className?: string;
 };
 
 export function BrandWordmark({
   iconClassName = "h-14 w-14",
   textClassName = "",
+  className = "",
 }: BrandWordmarkProps) {
   return (
-    <div className="flex items-center gap-3">
+    <div className={`flex items-center gap-3 ${className}`}>
       <img
         src={logo}
         alt="Mendozer X Earthworks Inc. logo"
