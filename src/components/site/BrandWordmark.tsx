@@ -14,8 +14,8 @@ export function BrandWordmark({
       <img
         src={logo}
         alt="Mendozer X Earthworks Inc. logo"
-        width={80}
-        height={80}
+        width={96}
+        height={96}
         className={`${iconClassName} object-contain drop-shadow-md shrink-0`}
       />
       <div className={`flex flex-col items-center leading-none gap-0.5 ${textClassName}`}>
