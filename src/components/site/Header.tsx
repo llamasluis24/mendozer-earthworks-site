@@ -67,7 +67,7 @@ export function Header() {
       <div className="container-x flex items-center justify-between py-3 lg:py-3">
         <Link to="/" className="group hover:opacity-95 transition">
           <BrandWordmark
-            iconClassName="h-24 w-24 lg:h-16 lg:w-16 xl:h-20 xl:w-20 group-hover:scale-[1.02] transition-transform"
+            iconClassName="h-32 w-32 lg:h-20 lg:w-20 xl:h-24 xl:w-24 group-hover:scale-[1.02] transition-transform"
             textClassName="hidden sm:flex"
           />
         </Link>

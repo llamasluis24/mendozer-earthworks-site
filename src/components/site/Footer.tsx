@@ -11,7 +11,7 @@ export function Footer() {
       <div className="h-1 diagonal-stripes opacity-80" />
       <div className="container-x py-16 grid gap-12 lg:grid-cols-4">
         <div>
-          <BrandWordmark iconClassName="h-24 w-24" />
+          <BrandWordmark iconClassName="h-32 w-32" />
           <p className="mt-5 text-sm text-muted-foreground leading-relaxed">
             {COMPANY.description}
           </p>
