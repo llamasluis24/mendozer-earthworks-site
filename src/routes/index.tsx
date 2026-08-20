@@ -104,7 +104,7 @@ function Hero() {
             Southern California's <span className="text-gold">Commercial Earthwork</span> Experts
           </h1>
           <p className="mt-6 max-w-2xl text-lg lg:text-xl text-foreground/85 leading-relaxed">
-            Mendozer <span className="text-gold font-semibold">X</span> Earthworks Inc. — the X stands for Excavation. Licensed commercial earthwork for developers, GCs, and civil teams across the Inland Empire, Orange County, and LA County.
+            Mendozer <span className="text-gold font-semibold">X</span> Earthworks Inc. — licensed commercial earthwork for developers, GCs, and civil teams across the Inland Empire, Orange County, and LA County.
           </p>
           <div className="mt-9 flex flex-wrap gap-3">
             <Link to="/contact" className="group inline-flex items-center gap-2 rounded-md bg-gold px-7 py-4 text-base font-semibold uppercase tracking-wider text-primary-foreground hover:bg-gold-bright transition shadow-xl shadow-gold/20">
