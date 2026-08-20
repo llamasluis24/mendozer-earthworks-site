@@ -1,4 +1,5 @@
 import excavationImg from "@/assets/service-excavation.jpg";
+import massExcavationImg from "@/assets/excavation-mass.jpg";
 import pavingImg from "@/assets/service-paving.jpg";
 import pourCure from "@/assets/pour-phase-cure.jpg";
 import g2 from "@/assets/gallery-2.jpg";
@@ -86,8 +87,8 @@ export const PROJECTS: Project[] = [
     solution:
       "Phased grading with daily moisture conditioning, GPS-guided fine grade, and direct coordination with the project soils engineer for density testing on every structural lift.",
     results: "Pad certified ahead of schedule with zero re-work. Site turned over ready for footings and underground installation.",
-    image: excavationImg,
-    gallery: [excavationImg, g2, g3],
+    image: massExcavationImg,
+    gallery: [massExcavationImg, g2, g3],
     relatedServices: ["grading", "excavation", "concrete"],
   },
 ];
