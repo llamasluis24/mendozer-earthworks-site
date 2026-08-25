@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, Phone, Shield, Clock, Award, Wrench, HardHat, Building2, Truck, Hammer, Layers, Mountain, Quote, ChevronLeft, ChevronRight, MapPin } from "lucide-react";
 import { useEffect, useState } from "react";
-import heroImg from "@/assets/hero-bulldozer.jpg";
+import heroPoster from "@/assets/hero-video-poster.jpg";
 import excavationImg from "@/assets/service-excavation.jpg";
 import aboutImg from "@/assets/about-daytime.jpg";
 import demolitionImg from "@/assets/service-demolition.jpg";
@@ -86,11 +86,92 @@ function Home() {
   );
 }
 
+const HERO_VIDEO_SRC = "/hero-video.mp4";
+
+type NetworkInformationLike = {
+  saveData?: boolean;
+  effectiveType?: string;
+};
+
+function shouldLoadHeroVideo(): boolean {
+  if (typeof window === "undefined") return false;
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return false;
+  // Phones / narrow viewports get the static poster only.
+  if (window.matchMedia("(max-width: 767px)").matches) return false;
+
+  const nav = navigator as Navigator & {
+    connection?: NetworkInformationLike;
+    deviceMemory?: number;
+  };
+  const connection = nav.connection;
+  if (connection?.saveData) return false;
+  if (connection?.effectiveType === "slow-2g" || connection?.effectiveType === "2g") return false;
+  // Low-RAM devices (Chrome/Edge) skip the video to keep the hero snappy.
+  if (typeof nav.deviceMemory === "number" && nav.deviceMemory < 4) return false;
+
+  return true;
+}
+
 function Hero() {
+  const [loadVideo, setLoadVideo] = useState(false);
+  const [videoReady, setVideoReady] = useState(false);
+
+  useEffect(() => {
+    const evaluate = () => {
+      const next = shouldLoadHeroVideo();
+      setLoadVideo(next);
+      if (!next) setVideoReady(false);
+    };
+
+    evaluate();
+
+    const motionMq = window.matchMedia("(prefers-reduced-motion: reduce)");
+    const mobileMq = window.matchMedia("(max-width: 767px)");
+    motionMq.addEventListener("change", evaluate);
+    mobileMq.addEventListener("change", evaluate);
+    return () => {
+      motionMq.removeEventListener("change", evaluate);
+      mobileMq.removeEventListener("change", evaluate);
+    };
+  }, []);
+
   return (
     <section className="relative min-h-[100svh] flex items-end overflow-hidden">
       <div className="absolute inset-0">
-        <img src={heroImg} alt="Heavy construction equipment on a commercial site in broad daylight" className="h-full w-full object-cover" width={1920} height={1080} />
+        {/* Static poster is always painted first — LCP + mobile / reduced-motion / slow-device fallback. */}
+        <img
+          src={heroPoster}
+          alt="Heavy construction equipment on a commercial earthwork site"
+          className="h-full w-full object-cover"
+          width={1280}
+          height={720}
+          fetchPriority="high"
+        />
+        {loadVideo ? (
+          <video
+            className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-700 ${videoReady ? "opacity-100" : "opacity-0"}`}
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="metadata"
+            poster={heroPoster}
+            onCanPlay={(event) => {
+              const video = event.currentTarget;
+              const playPromise = video.play();
+              if (playPromise) {
+                playPromise
+                  .then(() => setVideoReady(true))
+                  .catch(() => setVideoReady(false));
+              } else {
+                setVideoReady(true);
+              }
+            }}
+            aria-hidden
+          >
+            <source src={HERO_VIDEO_SRC} type="video/mp4" />
+          </video>
+        ) : null}
         <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/50 to-charcoal/10" />
         <div className="absolute inset-0 bg-gradient-to-r from-charcoal/80 via-charcoal/30 to-transparent" />
       </div>
