@@ -9,11 +9,24 @@ import {
   Layers,
 } from "lucide-react";
 import { EARTHWORK_DISCLAIMER } from "@/data/company";
+import {
+  TRUCK_CY,
+  TRUCK_LABEL,
+  SQ_FT_MIN,
+  SQ_FT_MAX,
+  DEPTH_MIN,
+  DEPTH_MAX,
+  clampSquareFeet,
+  clampDepth,
+  calcEarthworkVolumes,
+  graphicBalanceFromDepths,
+  terrainStatsFromVolumes,
+} from "@/lib/earthworkCalc";
 
-const PRESETS = [
-  { label: "Export cut", value: -4 },
-  { label: "Balanced pad", value: 0 },
-  { label: "Import fill", value: 4 },
+const DEPTH_PRESETS = [
+  { label: "4 ft excavation", excavation: 4, import: 0 },
+  { label: "2.5 ft import", excavation: 0, import: 2.5 },
+  { label: "Balanced pad", excavation: 0, import: 0 },
 ] as const;
 
 const SOIL_PRESETS = [
@@ -21,11 +34,6 @@ const SOIL_PRESETS = [
   { label: "Mixed native", expansion: 20, shrink: 10 },
   { label: "Sandy / granular", expansion: 12, shrink: 15 },
 ] as const;
-
-const ACRES = 2.5;
-const CY_PER_FT = ACRES * 1613;
-const TRUCK_CY = 10;
-const TRUCK_LABEL = "Super 10";
 
 const EDUCATION = [
   {
@@ -227,6 +235,10 @@ function GraphicOverlay({
   padY,
   isExport,
   isImport,
+  exportBcy,
+  hasExportVolumes,
+  hasImportVolumes,
+  hasDualVolumes,
 }: {
   eduId: EduId;
   stats: TerrainStats;
@@ -235,6 +247,10 @@ function GraphicOverlay({
   padY: number;
   isExport: boolean;
   isImport: boolean;
+  exportBcy: number;
+  hasExportVolumes: boolean;
+  hasImportVolumes: boolean;
+  hasDualVolumes: boolean;
 }) {
   const cx = 200;
 
@@ -288,20 +304,33 @@ function GraphicOverlay({
     );
   }
 
-  if (eduId === "volumes" && stats.mag > 0) {
-    const lineCount = isImport ? 4 : isExport ? 3 : 2;
-    const boxH = 18 + lineCount * 10;
+  if (eduId === "volumes" && (stats.mag > 0 || hasDualVolumes)) {
+    const lineCount =
+      (hasExportVolumes ? 2 : 0) + (hasImportVolumes ? 2 : 0) + (hasDualVolumes ? 1 : 0);
+    const boxH = 18 + Math.max(lineCount, 2) * 10;
     return (
       <g>
-        <CalloutBox x={10} y={78} width={86} height={boxH} stroke="#d4a843">
-          <CalloutTitle x={53} y={92} fill="#d4a843">VOLUME TYPES</CalloutTitle>
-          <CalloutLine x={53} y={104} fill="#fff" size={5.5}>BCY: {stats.bcy.toLocaleString()}</CalloutLine>
-          {isExport && <CalloutLine x={53} y={114} fill="#fdba74" size={5.5}>LCY: {stats.lcyExport.toLocaleString()}</CalloutLine>}
-          {isImport && (
-            <>
-              <CalloutLine x={53} y={114} fill="#7dd3fc" size={5.5}>CCY: {stats.ccyImport.toLocaleString()}</CalloutLine>
-              <CalloutLine x={53} y={124} fill="#fff" size={5.5}>LCY: {stats.lcyImport.toLocaleString()}</CalloutLine>
-            </>
+        <CalloutBox x={10} y={78} width={96} height={boxH} stroke="#d4a843">
+          <CalloutTitle x={58} y={92} fill="#d4a843">VOLUME TYPES</CalloutTitle>
+          {hasExportVolumes && (
+            <CalloutLine x={58} y={104} fill="#fdba74" size={5.5}>
+              Export BCY: {exportBcy.toLocaleString()}
+            </CalloutLine>
+          )}
+          {hasExportVolumes && (
+            <CalloutLine x={58} y={114} fill="#fff" size={5.5}>
+              Export LCY: {stats.lcyExport.toLocaleString()}
+            </CalloutLine>
+          )}
+          {hasImportVolumes && (
+            <CalloutLine x={58} y={hasExportVolumes ? 124 : 104} fill="#7dd3fc" size={5.5}>
+              Import CCY: {stats.ccyImport.toLocaleString()}
+            </CalloutLine>
+          )}
+          {hasImportVolumes && (
+            <CalloutLine x={58} y={hasExportVolumes ? 134 : 114} fill="#fff" size={5.5}>
+              Import LCY: {stats.lcyImport.toLocaleString()}
+            </CalloutLine>
           )}
         </CalloutBox>
       </g>
@@ -365,12 +394,20 @@ function GradingTerrain({
   stats,
   expansionPct,
   shrinkPct,
+  exportBcy,
+  hasExportVolumes,
+  hasImportVolumes,
+  hasDualVolumes,
 }: {
   balance: number;
   eduId: EduId;
   stats: TerrainStats;
   expansionPct: number;
   shrinkPct: number;
+  exportBcy: number;
+  hasExportVolumes: boolean;
+  hasImportVolumes: boolean;
+  hasDualVolumes: boolean;
 }) {
   const isExport = balance < 0;
   const isImport = balance > 0;
@@ -513,6 +550,10 @@ function GradingTerrain({
         padY={padY}
         isExport={isExport}
         isImport={isImport}
+        exportBcy={exportBcy}
+        hasExportVolumes={hasExportVolumes}
+        hasImportVolumes={hasImportVolumes}
+        hasDualVolumes={hasDualVolumes}
       />
 
       {isExport &&
@@ -550,32 +591,52 @@ function GradingTerrain({
 }
 
 export function GradeBalanceSimulator() {
-  const [balance, setBalance] = useState(-3);
+  const [squareFeet, setSquareFeet] = useState(10_000);
+  const [excavationDepthFt, setExcavationDepthFt] = useState(4);
+  const [importDepthFt, setImportDepthFt] = useState(0);
   const [expansionPct, setExpansionPct] = useState(25);
   const [shrinkPct, setShrinkPct] = useState(10);
   const [eduTab, setEduTab] = useState(0);
 
-  const stats = useMemo(() => {
-    const isExport = balance < 0;
-    const isImport = balance > 0;
-    const mag = Math.abs(balance);
-    const bcy = Math.round(mag * CY_PER_FT);
-    const lcyExport = Math.round(bcy * (1 + expansionPct / 100));
-    const ccyImport = bcy;
-    const lcyImport = Math.round(ccyImport / (1 - shrinkPct / 100));
-    const exportLoads = isExport ? Math.ceil(lcyExport / TRUCK_CY) : 0;
-    const importLoads = isImport ? Math.ceil(lcyImport / TRUCK_CY) : 0;
-    const padReady = mag <= 0.5;
-    const naiveLoads = Math.ceil(bcy / TRUCK_CY);
+  const volumes = useMemo(
+    () =>
+      calcEarthworkVolumes({
+        squareFeet,
+        excavationDepthFt,
+        importDepthFt,
+        expansionPct,
+        shrinkPct,
+      }),
+    [squareFeet, excavationDepthFt, importDepthFt, expansionPct, shrinkPct],
+  );
 
-    return { isExport, isImport, mag, bcy, lcyExport, ccyImport, lcyImport, exportLoads, importLoads, padReady, naiveLoads };
-  }, [balance, expansionPct, shrinkPct]);
+  const graphicBalance = useMemo(
+    () => graphicBalanceFromDepths(excavationDepthFt, importDepthFt),
+    [excavationDepthFt, importDepthFt],
+  );
 
-  const nudge = (delta: number) =>
-    setBalance((b) => Math.min(8, Math.max(-8, Math.round((b + delta) * 2) / 2)));
+  const stats = useMemo(
+    () => terrainStatsFromVolumes(volumes, graphicBalance),
+    [volumes, graphicBalance],
+  );
 
   const edu = EDUCATION[eduTab];
   const EduIcon = edu.icon;
+
+  const handleSquareFeetChange = (raw: string) => {
+    const parsed = Number(raw.replace(/,/g, ""));
+    if (!Number.isFinite(parsed)) return;
+    setSquareFeet(clampSquareFeet(parsed));
+  };
+
+  const handleDepthChange = (
+    raw: string,
+    setter: (value: number) => void,
+  ) => {
+    const parsed = Number(raw);
+    if (!Number.isFinite(parsed)) return;
+    setter(clampDepth(parsed));
+  };
 
   return (
     <div className="rounded-2xl border border-border bg-card overflow-hidden">
@@ -619,41 +680,127 @@ export function GradeBalanceSimulator() {
 
       {/* Interactive terrain graphic */}
       <div className="relative bg-[#3a2818]/30 min-h-[260px] lg:min-h-[300px] border-b border-border">
-        <GradingTerrain balance={balance} eduId={edu.id} stats={stats} expansionPct={expansionPct} shrinkPct={shrinkPct} />
+        <GradingTerrain
+          balance={graphicBalance}
+          eduId={edu.id}
+          stats={stats}
+          expansionPct={expansionPct}
+          shrinkPct={shrinkPct}
+          exportBcy={volumes.exportBcy}
+          hasExportVolumes={volumes.hasExport}
+          hasImportVolumes={volumes.hasImport}
+          hasDualVolumes={volumes.hasExport && volumes.hasImport}
+        />
       </div>
 
       <div className="p-6 lg:p-8 bg-secondary/20 space-y-8">
         <p className="text-center text-xs text-muted-foreground uppercase tracking-wider">
-          Conceptual planning tool — adjust cut/fill, expansion, and shrink to see how earthwork quantities change
+          Conceptual planning tool — enter your project area and depths to estimate earthwork quantities
         </p>
         <p className="text-center text-sm text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-          Cubic yards = (Length × Width × Depth or Fill Height) ÷ 27 · {TRUCK_LABEL} trucks haul {TRUCK_CY} CY per load
+          CY = Square Footage × Depth (ft) ÷ 27 · {TRUCK_LABEL} trucks haul {TRUCK_CY} CY per load
           (example: 1,000 CY ≈ 100 {TRUCK_LABEL} loads). Adjust soil type below — expansive dirt changes export and import math.
         </p>
 
-        <div className="flex items-center justify-center gap-3 max-w-lg mx-auto">
-          <button type="button" onClick={() => nudge(-1)} disabled={balance <= -8} className="flex flex-col items-center gap-1.5 rounded-xl border-2 border-orange-500/50 bg-orange-500/10 px-5 py-4 hover:bg-orange-500/20 transition disabled:opacity-30 min-w-[120px]">
-            <ArrowDownToLine className="h-7 w-7 text-orange-400" />
-            <span className="text-sm font-semibold text-orange-300 uppercase tracking-wider">Export</span>
-          </button>
-          <div className="flex flex-col items-center px-4 min-w-[100px]">
-            <span className="text-3xl font-display text-foreground tabular-nums">{balance > 0 ? "+" : ""}{balance.toFixed(1)}</span>
-            <span className="text-xs text-muted-foreground mt-1">ft vs design</span>
+        <div className="max-w-3xl mx-auto rounded-xl border border-gold/30 bg-card/50 p-5 space-y-5">
+          <h4 className="font-display text-sm tracking-wide text-gold uppercase">Project Dimensions</h4>
+
+          <div>
+            <label htmlFor="project-area" className="block text-xs font-semibold uppercase tracking-wider text-muted-foreground mb-2">
+              Project Area / Square Footage
+            </label>
+            <div className="flex items-center gap-3">
+              <input
+                id="project-area"
+                type="number"
+                min={SQ_FT_MIN}
+                max={SQ_FT_MAX}
+                step={100}
+                value={squareFeet}
+                onChange={(e) => handleSquareFeetChange(e.target.value)}
+                className="w-full rounded-md bg-input border border-border px-4 py-3 text-lg font-display text-foreground tabular-nums focus:outline-none focus:ring-2 focus:ring-gold/60"
+              />
+              <span className="text-sm text-muted-foreground whitespace-nowrap shrink-0">sq. ft.</span>
+            </div>
           </div>
-          <button type="button" onClick={() => nudge(1)} disabled={balance >= 8} className="flex flex-col items-center gap-1.5 rounded-xl border-2 border-sky-500/50 bg-sky-500/10 px-5 py-4 hover:bg-sky-500/20 transition disabled:opacity-30 min-w-[120px]">
-            <ArrowUpFromLine className="h-7 w-7 text-sky-400" />
-            <span className="text-sm font-semibold text-sky-300 uppercase tracking-wider">Import</span>
-          </button>
-        </div>
 
-        <input id="grade-slider" type="range" min={-8} max={8} step={0.5} value={balance} onChange={(e) => setBalance(Number(e.target.value))} className="w-full max-w-md mx-auto block accent-gold cursor-pointer" />
+          <div className="grid sm:grid-cols-2 gap-5">
+            <div>
+              <label htmlFor="excavation-depth" className="block text-xs font-semibold uppercase tracking-wider text-muted-foreground mb-2">
+                Excavation / Over-Ex Depth (ft)
+              </label>
+              <div className="flex items-center gap-3 mb-2">
+                <input
+                  id="excavation-depth"
+                  type="number"
+                  min={DEPTH_MIN}
+                  max={DEPTH_MAX}
+                  step={0.5}
+                  value={excavationDepthFt}
+                  onChange={(e) => handleDepthChange(e.target.value, setExcavationDepthFt)}
+                  className="w-24 rounded-md bg-input border border-border px-3 py-2 text-base font-display text-foreground tabular-nums focus:outline-none focus:ring-2 focus:ring-gold/60"
+                />
+                <span className="text-sm text-orange-300 font-medium">Export / cut</span>
+              </div>
+              <input
+                type="range"
+                min={DEPTH_MIN}
+                max={DEPTH_MAX}
+                step={0.5}
+                value={excavationDepthFt}
+                onChange={(e) => setExcavationDepthFt(clampDepth(Number(e.target.value)))}
+                className="w-full accent-orange-500 cursor-pointer"
+              />
+            </div>
 
-        <div className="flex flex-wrap justify-center gap-2">
-          {PRESETS.map((p) => (
-            <button key={p.label} type="button" onClick={() => setBalance(p.value)} className={`rounded-full border px-3 py-1 text-xs font-medium transition ${balance === p.value ? "border-gold bg-gold/15 text-gold" : "border-border text-muted-foreground hover:border-gold/40"}`}>
-              {p.label}
-            </button>
-          ))}
+            <div>
+              <label htmlFor="import-depth" className="block text-xs font-semibold uppercase tracking-wider text-muted-foreground mb-2">
+                Import / Fill Depth (ft)
+              </label>
+              <div className="flex items-center gap-3 mb-2">
+                <input
+                  id="import-depth"
+                  type="number"
+                  min={DEPTH_MIN}
+                  max={DEPTH_MAX}
+                  step={0.5}
+                  value={importDepthFt}
+                  onChange={(e) => handleDepthChange(e.target.value, setImportDepthFt)}
+                  className="w-24 rounded-md bg-input border border-border px-3 py-2 text-base font-display text-foreground tabular-nums focus:outline-none focus:ring-2 focus:ring-gold/60"
+                />
+                <span className="text-sm text-sky-300 font-medium">Import / fill</span>
+              </div>
+              <input
+                type="range"
+                min={DEPTH_MIN}
+                max={DEPTH_MAX}
+                step={0.5}
+                value={importDepthFt}
+                onChange={(e) => setImportDepthFt(clampDepth(Number(e.target.value)))}
+                className="w-full accent-sky-500 cursor-pointer"
+              />
+            </div>
+          </div>
+
+          <div className="flex flex-wrap gap-2">
+            {DEPTH_PRESETS.map((p) => (
+              <button
+                key={p.label}
+                type="button"
+                onClick={() => {
+                  setExcavationDepthFt(p.excavation);
+                  setImportDepthFt(p.import);
+                }}
+                className={`rounded-full border px-3 py-1 text-xs font-medium transition ${
+                  excavationDepthFt === p.excavation && importDepthFt === p.import
+                    ? "border-gold bg-gold/15 text-gold"
+                    : "border-border text-muted-foreground hover:border-gold/40"
+                }`}
+              >
+                {p.label}
+              </button>
+            ))}
+          </div>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-6 max-w-5xl mx-auto">
@@ -687,45 +834,65 @@ export function GradeBalanceSimulator() {
 
           <div className="rounded-xl border border-border bg-card/50 p-5">
             <h4 className="font-display text-sm tracking-wide text-gold uppercase mb-4">Volume & Haul Estimate</h4>
-            <dl className="grid grid-cols-2 gap-3 text-sm">
-              <div className="rounded-lg border border-border px-3 py-2">
-                <dt className="text-[10px] uppercase tracking-wider text-muted-foreground">Bank CY (BCY)</dt>
-                <dd className="font-display text-lg text-foreground mt-0.5">{stats.bcy.toLocaleString()}</dd>
+            {!volumes.hasExport && !volumes.hasImport ? (
+              <p className="text-sm text-muted-foreground leading-relaxed">
+                Enter excavation and/or import depth above to calculate cubic yards for your project area.
+              </p>
+            ) : (
+              <div className="space-y-5">
+                {volumes.hasExport && (
+                  <div>
+                    <p className="text-[10px] uppercase tracking-wider text-orange-300 font-semibold mb-3">
+                      Excavation / Export ({excavationDepthFt} ft depth)
+                    </p>
+                    <dl className="grid grid-cols-2 gap-3 text-sm">
+                      <div className="rounded-lg border border-border px-3 py-2">
+                        <dt className="text-[10px] uppercase tracking-wider text-muted-foreground">Excavation BCY</dt>
+                        <dd className="font-display text-lg text-foreground mt-0.5">{volumes.exportBcy.toLocaleString()}</dd>
+                      </div>
+                      <div className="rounded-lg border border-orange-500/30 bg-orange-500/5 px-3 py-2">
+                        <dt className="text-[10px] uppercase tracking-wider text-muted-foreground">Loose CY (LCY)</dt>
+                        <dd className="font-display text-lg text-foreground mt-0.5">{volumes.lcyExport.toLocaleString()}</dd>
+                      </div>
+                      <div className="rounded-lg border border-border px-3 py-2 col-span-2">
+                        <dt className="text-[10px] uppercase tracking-wider text-muted-foreground flex items-center gap-1">
+                          <Truck className="h-3 w-3" /> Export {TRUCK_LABEL} loads ({TRUCK_CY} LCY each)
+                        </dt>
+                        <dd className="font-display text-lg text-orange-300 mt-0.5">{volumes.exportLoads.toLocaleString()} loads</dd>
+                        <p className="text-[11px] text-muted-foreground mt-1">
+                          Without expansion factor: ~{volumes.naiveLoads} loads — underestimates haul by{" "}
+                          {volumes.exportLoads - volumes.naiveLoads} loads at {expansionPct}% swell
+                        </p>
+                      </div>
+                    </dl>
+                  </div>
+                )}
+
+                {volumes.hasImport && (
+                  <div>
+                    <p className="text-[10px] uppercase tracking-wider text-sky-300 font-semibold mb-3">
+                      Import / Fill ({importDepthFt} ft depth)
+                    </p>
+                    <dl className="grid grid-cols-2 gap-3 text-sm">
+                      <div className="rounded-lg border border-sky-500/30 bg-sky-500/5 px-3 py-2">
+                        <dt className="text-[10px] uppercase tracking-wider text-muted-foreground">Compacted CY (CCY)</dt>
+                        <dd className="font-display text-lg text-foreground mt-0.5">{volumes.importCcy.toLocaleString()}</dd>
+                      </div>
+                      <div className="rounded-lg border border-border px-3 py-2">
+                        <dt className="text-[10px] uppercase tracking-wider text-muted-foreground">Loose CY delivered</dt>
+                        <dd className="font-display text-lg text-foreground mt-0.5">{volumes.lcyImport.toLocaleString()}</dd>
+                      </div>
+                      <div className="rounded-lg border border-border px-3 py-2 col-span-2">
+                        <dt className="text-[10px] uppercase tracking-wider text-muted-foreground flex items-center gap-1">
+                          <Truck className="h-3 w-3" /> Import {TRUCK_LABEL} loads ({TRUCK_CY} LCY each)
+                        </dt>
+                        <dd className="font-display text-lg text-sky-300 mt-0.5">{volumes.importLoads.toLocaleString()} loads</dd>
+                      </div>
+                    </dl>
+                  </div>
+                )}
               </div>
-              {stats.isExport ? (
-                <>
-                  <div className="rounded-lg border border-orange-500/30 bg-orange-500/5 px-3 py-2">
-                    <dt className="text-[10px] uppercase tracking-wider text-muted-foreground">Loose CY (LCY)</dt>
-                    <dd className="font-display text-lg text-foreground mt-0.5">{stats.lcyExport.toLocaleString()}</dd>
-                  </div>
-                  <div className="rounded-lg border border-border px-3 py-2 col-span-2">
-                    <dt className="text-[10px] uppercase tracking-wider text-muted-foreground flex items-center gap-1"><Truck className="h-3 w-3" /> Export {TRUCK_LABEL} loads ({TRUCK_CY} LCY each)</dt>
-                    <dd className="font-display text-lg text-orange-300 mt-0.5">{stats.exportLoads.toLocaleString()} loads</dd>
-                    <p className="text-[11px] text-muted-foreground mt-1">Without expansion factor: ~{stats.naiveLoads} loads — underestimates haul by {stats.exportLoads - stats.naiveLoads} loads at {expansionPct}% swell</p>
-                  </div>
-                </>
-              ) : stats.isImport ? (
-                <>
-                  <div className="rounded-lg border border-sky-500/30 bg-sky-500/5 px-3 py-2">
-                    <dt className="text-[10px] uppercase tracking-wider text-muted-foreground">Compacted CY (CCY)</dt>
-                    <dd className="font-display text-lg text-foreground mt-0.5">{stats.ccyImport.toLocaleString()}</dd>
-                  </div>
-                  <div className="rounded-lg border border-border px-3 py-2">
-                    <dt className="text-[10px] uppercase tracking-wider text-muted-foreground">Loose CY delivered</dt>
-                    <dd className="font-display text-lg text-foreground mt-0.5">{stats.lcyImport.toLocaleString()}</dd>
-                  </div>
-                  <div className="rounded-lg border border-border px-3 py-2 col-span-2">
-                    <dt className="text-[10px] uppercase tracking-wider text-muted-foreground flex items-center gap-1"><Truck className="h-3 w-3" /> Import {TRUCK_LABEL} loads ({TRUCK_CY} LCY each)</dt>
-                    <dd className="font-display text-lg text-sky-300 mt-0.5">{stats.importLoads.toLocaleString()} loads</dd>
-                  </div>
-                </>
-              ) : (
-                <div className="rounded-lg border border-gold/30 bg-gold/5 px-3 py-2 col-span-1">
-                  <dt className="text-[10px] uppercase tracking-wider text-muted-foreground">Site balance</dt>
-                  <dd className="font-display text-lg text-gold mt-0.5">On-site balance</dd>
-                </div>
-              )}
-            </dl>
+            )}
           </div>
         </div>
 
