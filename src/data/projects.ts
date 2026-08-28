@@ -31,22 +31,22 @@ export const PROJECTS: Project[] = [
     location: "Southern California",
     county: "Inland Empire",
     projectType: "Commercial Car Wash Facility",
-    serviceCategory: "Grading, Excavation, Concrete & Asphalt",
+    serviceCategory: "Grading & Excavation",
     overview:
-      "Commercial site work for a Quick Quack Car Wash facility including grading, excavation, concrete flatwork, and asphalt paving to deliver a build-ready pad for tenant improvement and certificate of occupancy.",
+      "Site-prep earthwork for a Quick Quack Car Wash facility — mass grading, export, compaction, building pad over-excavation, recompaction, and pad certification to deliver a build-ready pad for subsequent vertical construction.",
     scope:
-      "Mass grading, utility trench coordination, slab-on-grade and trench drain flatwork, asphalt parking and drive aisles, and SWPPP compliance across the full horizontal scope.",
+      "Mass grading, export, lot compaction, building pad over-excavation, recompaction, and pad certification.",
     challenge:
-      "Fast-track schedule tied to franchise opening date with phased earthwork, concrete, and asphalt sequencing on an active commercial corridor parcel.",
-    equipment: "D6 dozer, 330 excavator, articulated haul trucks, smooth drum rollers, concrete pump, asphalt paver.",
-    timeline: "Multi-phase sitework program with grading, concrete, and asphalt milestones aligned to franchise opening.",
+      "Rock-heavy site requiring efficient export and disposal logistics. Mendozer's relationships with Robertson and other aggregate processing facilities helped move material off-site efficiently.",
+    equipment: "D6 dozer, 330 excavator, Super 10 dump trucks, sheep's foot roller, 5½-yard loader.",
+    timeline: "Approximately 45 days.",
     solution:
-      "Unified superintendent oversight with grading and utility sequencing before concrete and asphalt mobilization. Phased production maintained corridor access while meeting inspection hold points.",
+      "Coordinated export hauling to approved disposal and aggregate processing facilities; sequenced over-excavation, recompaction, and compaction testing to certify the building pad.",
     results:
-      "Site turned over build-ready with documented compaction results, completed flatwork, and paved areas inspection-ready ahead of franchise opening. Placeholder — final client metrics pending.",
+      "Completed on time with no delays. Approximately 10,000–12,000 cubic yards of material exported. Pad certified for subsequent vertical construction.",
     image: pavingImg,
     gallery: [pavingImg, pourCure, g2],
-    relatedServices: ["grading", "excavation", "concrete", "paving"],
+    relatedServices: ["grading", "excavation"],
   },
   {
     slug: "so-cal-edison",
@@ -54,42 +54,45 @@ export const PROJECTS: Project[] = [
     location: "Southern California",
     county: "Inland Empire",
     projectType: "Utility / Industrial",
-    serviceCategory: "Grading, Excavation & Site Prep",
+    serviceCategory: "Grading & Excavation",
     overview:
-      "Commercial earthwork and site preparation for a Southern California Edison utility project requiring graded access roads, excavation for underground infrastructure, and compaction-certified pads.",
+      "Earthwork and pad preparation for a Southern California Edison utility site — mass grading, fine grading, over-excavation, export, pad compaction, and pad certification.",
     scope:
-      "Mass grading, fine grading, utility trench excavation and backfill coordination, aggregate base placement, and SWPPP compliance on a utility-sector commercial parcel.",
+      "Mass grading, fine grading, over-excavation, export (approximately 3,000 CY), pad compaction, and pad certification.",
     challenge:
-      "Utility-dense site with strict agency inspection requirements, environmental compliance, and schedule coordination with SCE engineering and civil contractors.",
-    equipment: "D6 dozer, 320 excavator, motor grader with GPS, smooth drum rollers, water trucks for dust suppression.",
-    timeline: "Phased grading and excavation program with geotechnical observation and agency inspection hold points.",
+      "During over-excavation, encountered wet clay with excessive moisture that would not achieve the required 90% compaction despite repeated attempts.",
+    equipment: "320 excavator, D6 dozer, water truck, 5½-yard loader.",
+    timeline: "3 weeks.",
     solution:
-      "Pre-mobilization review of civil plans, utility routing, and agency requirements. Phased earthwork with documented compaction testing and SWPPP BMP maintenance throughout execution.",
+      "Removed unsuitable wet soil, replaced with rock, compacted rock to stabilize the base, then continued replacing and recompacting excavation material on the stabilized foundation.",
     results:
-      "Pad certified and site turned over inspection-ready for subsequent utility and civil contractor mobilization. Placeholder — final client metrics pending.",
+      "90%+ compaction achieved after rock stabilization. Pad certified and turned over inspection-ready.",
     image: excavationImg,
     gallery: [excavationImg, g3, pourCure],
-    relatedServices: ["grading", "excavation", "concrete"],
+    relatedServices: ["grading", "excavation"],
   },
   {
     slug: "commercial-grading-riverside",
-    title: "Commercial Grading Project in Riverside County",
+    title: "Riverside Apartment Complex — Electrical Infrastructure Earthwork",
     location: "Riverside, CA",
     county: "Riverside County",
-    projectType: "Warehouse Development",
-    serviceCategory: "Grading & Excavation",
+    projectType: "Apartment / Utility Trench & Street Restoration",
+    serviceCategory: "Grading, Excavation & Asphalt",
     overview:
-      "A large industrial warehouse development requiring mass excavation, cut/fill balancing, and engineered pad certification before vertical construction mobilization.",
-    scope: "Mass excavation, cut/fill, engineered pad prep, compaction, and fine grading for a build-to-suit distribution facility.",
-    challenge: "Variable alluvial soils and a tight schedule tied to tenant delivery and vertical construction mobilization.",
-    equipment: "D6 dozer, 330 excavator, articulated haul trucks, smooth drum rollers, motor grader with GPS.",
-    timeline: "6-week grading phase with phased compaction testing and geotech observation.",
+      "Earthwork to upgrade outdated electrical infrastructure at a Riverside apartment complex — connecting apartment infrastructure to the existing electrical source, with full roadway restoration.",
+    scope:
+      "Saw cutting, street demolition, approximately 300 ft of street/trench excavation, trenching, grading, backfill, compaction, street restoration, grinding, and asphalt overlay (approximately half the street). Electrical contractor installed conduit; Mendozer backfilled, compacted, and restored the roadway.",
+    challenge:
+      "Approximately 300 ft of trench through a very busy street with heavy, fast-moving traffic. Required traffic control, worker safety, maintained vehicle access, and daily steel plate coverage so the road could not remain open overnight.",
+    equipment: "8K mini excavator, skid steer, dump trucks, skip loader, trench shoring.",
+    timeline: "Approximately 2 months across multiple mobilizations and phases.",
     solution:
-      "Phased grading with daily moisture conditioning, GPS-guided fine grade, and direct coordination with the project soils engineer for density testing on every structural lift.",
-    results: "Pad certified ahead of schedule with zero re-work. Site turned over ready for footings and underground installation.",
+      "Excavated in sections; covered the open trench with steel plates at the end of each workday for vehicle traffic; reopened and continued excavation the following day until the full run was complete.",
+    results:
+      "Electrical infrastructure upgraded for the apartment complex. Excavation, backfill, and compaction completed. Roadway restored with grind-and-overlay asphalt.",
     image: massExcavationImg,
     gallery: [massExcavationImg, g2, g3],
-    relatedServices: ["grading", "excavation", "concrete"],
+    relatedServices: ["grading", "excavation", "paving"],
   },
 ];
 
