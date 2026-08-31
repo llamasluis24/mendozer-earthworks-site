@@ -154,18 +154,14 @@ const GROUND_Y = 148;
 const SLOPE_OUT = 28;
 /** Bottom strip for import / hint callouts */
 const CALLOUT_Y = 168;
-/** Sky-area callout for export overlays — above the excavation pit */
+/** Sky-area callout for export overlays — centered above the excavation pit */
 const EXPORT_CALLOUT_Y = 48;
-/** Import trucks sit on the right horizon; export trucks use a left haul lane. */
+/** Import trucks on the right; export trucks sit below centered callouts on the left. */
 const IMPORT_TRUCK_Y = 84;
-const EXPORT_TRUCK_Y = 80;
+const EXPORT_TRUCK_Y = 108;
 const CALLOUT_W = 216;
 const CALLOUT_X = 200 - CALLOUT_W / 2;
-/** Export sky callouts sit right of the OUT truck lane so they never overlap. */
-const EXPORT_CALLOUT_X = 124;
-const EXPORT_CALLOUT_CX = EXPORT_CALLOUT_X + CALLOUT_W / 2;
 const VIEW_CX = 200;
-/** Max trucks and spacing so the left haul lane stays clear of center callouts. */
 const MAX_HAUL_TRUCKS = 3;
 const TRUCK_SPACING = 26;
 
@@ -312,12 +308,12 @@ function GraphicOverlay({
       <g>
         <path d={`M${padL + 24} ${padY + 6} L${padL + 24} ${calloutY + 40}`} stroke="#f97316" strokeWidth="1.2" markerEnd="url(#arrowUp)" />
         <path d={`M${padR - 24} ${padY + 6} L${padR - 24} ${calloutY + 40}`} stroke="#f97316" strokeWidth="1.2" markerEnd="url(#arrowUp)" />
-        <CalloutBox x={EXPORT_CALLOUT_X} y={calloutY} width={CALLOUT_W} height={40} stroke="#f97316">
-          <CalloutTitle x={EXPORT_CALLOUT_CX} y={calloutY + 13} fill="#fdba74">SWELL ON EXCAVATION</CalloutTitle>
-          <CalloutLine x={EXPORT_CALLOUT_CX} y={calloutY + 26} fill="#fff" size={7}>
+        <CalloutBox x={CALLOUT_X} y={calloutY} width={CALLOUT_W} height={40} stroke="#f97316">
+          <CalloutTitle x={cx} y={calloutY + 13} fill="#fdba74">SWELL ON EXCAVATION</CalloutTitle>
+          <CalloutLine x={cx} y={calloutY + 26} fill="#fff" size={7}>
             {stats.bcy.toLocaleString()} BCY → {stats.lcyExport.toLocaleString()} LCY
           </CalloutLine>
-          <CalloutLine x={EXPORT_CALLOUT_CX} y={calloutY + 36} fill="#fdba74" size={6}>
+          <CalloutLine x={cx} y={calloutY + 36} fill="#fdba74" size={6}>
             +{expansionPct}% expansion increases haul quantities
           </CalloutLine>
         </CalloutBox>
@@ -392,12 +388,12 @@ function GraphicOverlay({
   if (eduId === "changeorders" && isExport && stats.mag > 0 && stats.exportLoads > stats.naiveLoads) {
     const calloutY = exportCalloutY(padY);
     return (
-      <CalloutBox x={EXPORT_CALLOUT_X} y={calloutY} width={CALLOUT_W} height={44} stroke="#ef4444" fill="rgba(120,40,20,0.92)">
-        <CalloutTitle x={EXPORT_CALLOUT_CX} y={calloutY + 13} fill="#fca5a5">CHANGE ORDER RISK</CalloutTitle>
-        <CalloutLine x={EXPORT_CALLOUT_CX} y={calloutY + 26} fill="#fff" size={6.5}>
+      <CalloutBox x={CALLOUT_X} y={calloutY} width={CALLOUT_W} height={44} stroke="#ef4444" fill="rgba(120,40,20,0.92)">
+        <CalloutTitle x={cx} y={calloutY + 13} fill="#fca5a5">CHANGE ORDER RISK</CalloutTitle>
+        <CalloutLine x={cx} y={calloutY + 26} fill="#fff" size={6.5}>
           Naive: {stats.naiveLoads} loads · Actual: {stats.exportLoads} loads
         </CalloutLine>
-        <CalloutLine x={EXPORT_CALLOUT_CX} y={calloutY + 37} fill="#fecaca" size={6}>
+        <CalloutLine x={cx} y={calloutY + 37} fill="#fecaca" size={6}>
           +{stats.exportLoads - stats.naiveLoads} extra hauls without swell factor
         </CalloutLine>
       </CalloutBox>
