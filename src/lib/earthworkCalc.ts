@@ -73,17 +73,24 @@ export function graphicBalanceFromDepths(excavationDepthFt: number, importDepthF
 
 /**
  * Maps project square footage to a pad width in SVG units so the terrain
- * graphic visually grows/shrinks with land area (sqrt scale for area feel).
- * ViewBox is 400 wide; keep margins for slopes and equipment.
+ * graphic visually grows/shrinks with land area.
+ * Tuned so common commercial pads (5k–100k sq ft) read as meaningful
+ * width changes; 100k+ approaches the max footprint.
  */
 export function padWidthFromSquareFeet(squareFeet: number): number {
   const sq = Math.min(SQ_FT_MAX, Math.max(SQ_FT_MIN, squareFeet));
-  const minW = 72;
-  const maxW = 280;
-  const t =
+  const minW = 88;
+  const maxW = 300;
+  // Cap the visual curve at 100k so mid-range jobs expand more clearly.
+  const visualMax = 100_000;
+  const t = Math.min(
+    1,
     (Math.sqrt(sq) - Math.sqrt(SQ_FT_MIN)) /
-    (Math.sqrt(SQ_FT_MAX) - Math.sqrt(SQ_FT_MIN));
-  return Math.round(minW + t * (maxW - minW));
+      (Math.sqrt(visualMax) - Math.sqrt(SQ_FT_MIN)),
+  );
+  // Ease-out curve: small jobs stay compact; growth accelerates into mid-range.
+  const eased = 1 - Math.pow(1 - t, 1.35);
+  return minW + eased * (maxW - minW);
 }
 
 /** Stats shape consumed by the SVG terrain overlay. */

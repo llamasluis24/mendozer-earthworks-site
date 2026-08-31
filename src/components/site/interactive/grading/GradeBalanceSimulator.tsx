@@ -1,4 +1,4 @@
-import { useMemo, useState, type ReactNode } from "react";
+import { useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import {
   ArrowDownToLine,
   ArrowUpFromLine,
@@ -23,6 +23,46 @@ import {
   terrainStatsFromVolumes,
   padWidthFromSquareFeet,
 } from "@/lib/earthworkCalc";
+
+/** Smoothly interpolates numeric values so pad width / depth animate instead of snapping. */
+function useSmoothValue(target: number, durationMs = 600) {
+  const [value, setValue] = useState(target);
+  const valueRef = useRef(target);
+  const frameRef = useRef(0);
+
+  useEffect(() => {
+    const from = valueRef.current;
+    const to = target;
+    if (Math.abs(from - to) < 0.05) {
+      valueRef.current = to;
+      setValue(to);
+      return;
+    }
+
+    const t0 = performance.now();
+    cancelAnimationFrame(frameRef.current);
+
+    const tick = (now: number) => {
+      const p = Math.min(1, (now - t0) / durationMs);
+      // Ease-in-out cubic — land mass expands/contracts with weight
+      const eased = p < 0.5 ? 4 * p * p * p : 1 - Math.pow(-2 * p + 2, 3) / 2;
+      const next = from + (to - from) * eased;
+      valueRef.current = next;
+      setValue(next);
+      if (p < 1) {
+        frameRef.current = requestAnimationFrame(tick);
+      } else {
+        valueRef.current = to;
+        setValue(to);
+      }
+    };
+
+    frameRef.current = requestAnimationFrame(tick);
+    return () => cancelAnimationFrame(frameRef.current);
+  }, [target, durationMs]);
+
+  return value;
+}
 
 const DEPTH_PRESETS = [
   { label: "4 ft excavation", excavation: 4, import: 0 },
@@ -419,8 +459,13 @@ function GradingTerrain({
   const isImport = balance > 0;
   const mag = Math.abs(balance);
   const depthPx = mag * PX_PER_FT;
-  const padY = GROUND_Y - balance * PX_PER_FT;
-  const padWidth = padWidthFromSquareFeet(squareFeet);
+
+  // Animate land-mass width + pad elevation so area changes feel physical, not snapped.
+  const targetPadWidth = padWidthFromSquareFeet(squareFeet);
+  const padWidth = useSmoothValue(targetPadWidth, 650);
+  const targetPadY = GROUND_Y - balance * PX_PER_FT;
+  const padY = useSmoothValue(targetPadY, 500);
+
   const padL = VIEW_CX - padWidth / 2;
   const padR = VIEW_CX + padWidth / 2;
   const loads = isExport ? stats.exportLoads : isImport ? stats.importLoads : 0;
@@ -461,6 +506,10 @@ function GradingTerrain({
           <stop offset="0%" stopColor="#6b4e30" />
           <stop offset="100%" stopColor="#3a2818" />
         </linearGradient>
+        <linearGradient id="landMassGlow" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stopColor="#d4a843" stopOpacity="0.35" />
+          <stop offset="100%" stopColor="#d4a843" stopOpacity="0.05" />
+        </linearGradient>
         <pattern id="cutHatch" width="5" height="5" patternTransform="rotate(45)">
           <line x1="0" y1="0" x2="0" y2="5" stroke="#d4a843" strokeWidth="1" opacity="0.35" />
         </pattern>
@@ -475,6 +524,16 @@ function GradingTerrain({
       <rect x="0" y="0" width="400" height="72" fill="url(#skyGrad)" />
       <rect x="0" y="72" width="400" height="148" fill="url(#fieldSoil)" />
 
+      {/* Soft land-mass footprint — expands/contracts with sq ft under the pad */}
+      <rect
+        x={padL}
+        y={Math.min(GROUND_Y, padY)}
+        width={padWidth}
+        height={Math.abs(GROUND_Y - padY) + 28}
+        fill="url(#landMassGlow)"
+        opacity={0.55}
+      />
+
       <line x1="0" y1={GROUND_Y} x2={outerL} y2={GROUND_Y} stroke="#7a5c38" strokeWidth="2" opacity="0.6" />
       <line x1={outerR} y1={GROUND_Y} x2="400" y2={GROUND_Y} stroke="#7a5c38" strokeWidth="2" opacity="0.6" />
       <text x="12" y={GROUND_Y - 6} fill="#c9b896" fontSize="7" letterSpacing="1" opacity="0.7">
@@ -482,7 +541,7 @@ function GradingTerrain({
       </text>
 
       {isExport && depthPx > 0 && (
-        <g className="transition-all duration-500 ease-out">
+        <g>
           <path d={`M${padL} ${GROUND_Y} L${padL} ${padY} L${padR} ${padY} L${padR} ${GROUND_Y} Z`} fill="url(#cutFace)" />
           <path d={`M${padL} ${GROUND_Y} L${padL} ${padY} L${padR} ${padY} L${padR} ${GROUND_Y} Z`} fill="url(#cutHatch)" opacity="0.5" />
           <line x1={padL} y1={GROUND_Y} x2={padL} y2={padY} stroke="#4a3520" strokeWidth="1.5" opacity="0.8" />
@@ -491,7 +550,7 @@ function GradingTerrain({
       )}
 
       {isImport && depthPx > 0 && (
-        <g className="transition-all duration-500 ease-out">
+        <g>
           <path d={`M${padL} ${GROUND_Y} L${padL} ${padY} L${padR} ${padY} L${padR} ${GROUND_Y} Z`} fill="url(#importFill)" />
           <line x1={padL} y1={GROUND_Y} x2={padL} y2={padY} stroke="#a08055" strokeWidth="1.5" opacity="0.7" />
           <line x1={padR} y1={GROUND_Y} x2={padR} y2={padY} stroke="#a08055" strokeWidth="1.5" opacity="0.7" />
@@ -499,25 +558,24 @@ function GradingTerrain({
       )}
 
       {mag > 0 && (
-        <g className="transition-all duration-500 ease-out">
+        <g>
           <path d={`M${outerL} ${GROUND_Y} L${padL} ${padY + slopeDrop} L${padL} ${isExport ? GROUND_Y : padY} Z`} fill={isImport ? "#b8956a" : "#4a3520"} opacity={isImport ? 0.85 : 0.7} />
           <path d={`M${outerR} ${GROUND_Y} L${padR} ${padY + slopeDrop} L${padR} ${isExport ? GROUND_Y : padY} Z`} fill={isImport ? "#b8956a" : "#4a3520"} opacity={isImport ? 0.85 : 0.7} />
         </g>
       )}
 
-      <rect x={padL} y={padY} width={padWidth} height="4" fill="#d4a843" className="transition-all duration-500 ease-out" />
-      <line x1={padL} y1={padY} x2={padR} y2={padY} stroke="#f0d060" strokeWidth="1" opacity="0.6" className="transition-all duration-500 ease-out" />
+      <rect x={padL} y={padY} width={padWidth} height="4" fill="#d4a843" />
+      <line x1={padL} y1={padY} x2={padR} y2={padY} stroke="#f0d060" strokeWidth="1" opacity="0.6" />
 
       {padSurfaceMarks.map((x) => (
         <ellipse
-          key={x}
+          key={Math.round(x * 10)}
           cx={x}
           cy={padY - 1}
           rx="14"
           ry={mag <= 1.5 ? 3 : 1.5}
           fill="#b8956a"
           opacity={mag <= 1.5 ? 0.55 : 0.25}
-          className="transition-all duration-500 ease-out"
         />
       ))}
 
@@ -527,7 +585,7 @@ function GradingTerrain({
       <rect x="348" y="100" width="52" height="10" rx="2" fill="#5a5a5a" opacity="0.25" />
 
       {mag > 0 && (
-        <g className="transition-all duration-500 ease-out">
+        <g>
           <line x1={depthDimX} y1={GROUND_Y} x2={depthDimX} y2={padY} stroke="#d4a843" strokeWidth="1.2" />
           <polygon points={`${depthDimX - 3},${GROUND_Y} ${depthDimX + 3},${GROUND_Y} ${depthDimX},${GROUND_Y + (isImport ? -4 : 4)}`} fill="#d4a843" />
           <polygon points={`${depthDimX - 3},${padY} ${depthDimX + 3},${padY} ${depthDimX},${padY + (isImport ? 4 : -4)}`} fill="#d4a843" />
@@ -545,27 +603,27 @@ function GradingTerrain({
         </g>
       )}
 
-      {/* Project area dimension — shows land mass scaling with sq ft */}
-      <g className="transition-all duration-500 ease-out">
-        <line x1={padL} y1={CALLOUT_Y + 8} x2={padR} y2={CALLOUT_Y + 8} stroke="#d4a843" strokeWidth="1.2" />
-        <line x1={padL} y1={CALLOUT_Y + 4} x2={padL} y2={CALLOUT_Y + 12} stroke="#d4a843" strokeWidth="1.2" />
-        <line x1={padR} y1={CALLOUT_Y + 4} x2={padR} y2={CALLOUT_Y + 12} stroke="#d4a843" strokeWidth="1.2" />
+      {/* Project area dimension — land mass width tracks animated pad */}
+      <g>
+        <line x1={padL} y1={CALLOUT_Y + 8} x2={padR} y2={CALLOUT_Y + 8} stroke="#d4a843" strokeWidth="1.4" />
+        <polygon points={`${padL},${CALLOUT_Y + 8} ${padL + 5},${CALLOUT_Y + 4} ${padL + 5},${CALLOUT_Y + 12}`} fill="#d4a843" />
+        <polygon points={`${padR},${CALLOUT_Y + 8} ${padR - 5},${CALLOUT_Y + 4} ${padR - 5},${CALLOUT_Y + 12}`} fill="#d4a843" />
         <rect
           x={VIEW_CX - areaLabelW / 2}
           y={CALLOUT_Y + 14}
           width={areaLabelW}
           height={14}
           rx={3}
-          fill="rgba(20,14,6,0.85)"
+          fill="rgba(20,14,6,0.9)"
           stroke="#d4a843"
-          strokeWidth="0.6"
+          strokeWidth="0.8"
         />
         <text x={VIEW_CX} y={CALLOUT_Y + 24} textAnchor="middle" fill="#d4a843" fontSize="7" fontWeight="bold" letterSpacing="0.4">
           {areaLabel}
         </text>
       </g>
 
-      <g className="transition-all duration-500 ease-out">
+      <g>
         {isImport ? (
           <>
             <Bulldozer x={rightEquipX} y={padY - 28} flip />
@@ -612,7 +670,7 @@ function GradingTerrain({
         ))}
 
       {/* Pad label on top layer so equipment never covers it */}
-      <g className="transition-all duration-500 ease-out">
+      <g>
         <rect x={VIEW_CX - padLabelW / 2} y={padY - 18} width={padLabelW} height="11" rx="3" fill="rgba(20,14,6,0.72)" />
         <text x={VIEW_CX} y={padY - 10} textAnchor="middle" fill="#d4a843" fontSize="7" fontWeight="bold" letterSpacing="1">
           FINISHED PAD
