@@ -21,6 +21,7 @@ import {
   calcEarthworkVolumes,
   graphicBalanceFromDepths,
   terrainStatsFromVolumes,
+  padWidthFromSquareFeet,
 } from "@/lib/earthworkCalc";
 
 const DEPTH_PRESETS = [
@@ -110,8 +111,6 @@ type TerrainStats = {
 
 const PX_PER_FT = 5.5;
 const GROUND_Y = 148;
-const PAD_L = 118;
-const PAD_R = 282;
 const SLOPE_OUT = 28;
 /** Bottom strip for import / hint callouts */
 const CALLOUT_Y = 168;
@@ -120,6 +119,7 @@ const EXPORT_CALLOUT_Y = 48;
 const EXPORT_TRUCK_Y = 36;
 const CALLOUT_W = 216;
 const CALLOUT_X = 200 - CALLOUT_W / 2;
+const VIEW_CX = 200;
 
 function exportCalloutY(padY: number) {
   return Math.min(EXPORT_CALLOUT_Y, Math.max(42, padY - 56));
@@ -150,7 +150,7 @@ function CalloutBox({
   );
 }
 
-function CalloutTitle({ x, y, fill, children }: { x: number; y: number; fill: string; children: string }) {
+function CalloutTitle({ x, y, fill, children }: { x: number; y: number; fill: string; children: ReactNode }) {
   return (
     <text x={x} y={y} textAnchor="middle" fill={fill} fontSize="6.5" fontWeight="bold" letterSpacing="0.4">
       {children}
@@ -158,7 +158,7 @@ function CalloutTitle({ x, y, fill, children }: { x: number; y: number; fill: st
   );
 }
 
-function CalloutLine({ x, y, fill, size = 6.5, children }: { x: number; y: number; fill: string; size?: number; children: string }) {
+function CalloutLine({ x, y, fill, size = 6.5, children }: { x: number; y: number; fill: string; size?: number; children: ReactNode }) {
   return (
     <text x={x} y={y} textAnchor="middle" fill={fill} fontSize={size}>
       {children}
@@ -233,6 +233,8 @@ function GraphicOverlay({
   expansionPct,
   shrinkPct,
   padY,
+  padL,
+  padR,
   isExport,
   isImport,
   exportBcy,
@@ -245,6 +247,8 @@ function GraphicOverlay({
   expansionPct: number;
   shrinkPct: number;
   padY: number;
+  padL: number;
+  padR: number;
   isExport: boolean;
   isImport: boolean;
   exportBcy: number;
@@ -252,14 +256,14 @@ function GraphicOverlay({
   hasImportVolumes: boolean;
   hasDualVolumes: boolean;
 }) {
-  const cx = 200;
+  const cx = VIEW_CX;
 
   if (eduId === "expansion" && isExport && stats.mag > 0) {
     const calloutY = exportCalloutY(padY);
     return (
       <g>
-        <path d={`M${PAD_L + 24} ${padY + 6} L${PAD_L + 24} ${calloutY + 40}`} stroke="#f97316" strokeWidth="1.2" markerEnd="url(#arrowUp)" />
-        <path d={`M${PAD_R - 24} ${padY + 6} L${PAD_R - 24} ${calloutY + 40}`} stroke="#f97316" strokeWidth="1.2" markerEnd="url(#arrowUp)" />
+        <path d={`M${padL + 24} ${padY + 6} L${padL + 24} ${calloutY + 40}`} stroke="#f97316" strokeWidth="1.2" markerEnd="url(#arrowUp)" />
+        <path d={`M${padR - 24} ${padY + 6} L${padR - 24} ${calloutY + 40}`} stroke="#f97316" strokeWidth="1.2" markerEnd="url(#arrowUp)" />
         <CalloutBox x={CALLOUT_X} y={calloutY} width={CALLOUT_W} height={40} stroke="#f97316">
           <CalloutTitle x={cx} y={calloutY + 13} fill="#fdba74">SWELL ON EXCAVATION</CalloutTitle>
           <CalloutLine x={cx} y={calloutY + 26} fill="#fff" size={7}>
@@ -276,7 +280,7 @@ function GraphicOverlay({
   if (eduId === "shrinkage" && isImport && stats.mag > 0) {
     return (
       <g>
-        <path d={`M${PAD_L + 36} ${padY - 4} L${PAD_L + 36} ${padY + 12}`} stroke="#38bdf8" strokeWidth="1.2" markerEnd="url(#arrowDown)" />
+        <path d={`M${padL + 36} ${padY - 4} L${padL + 36} ${padY + 12}`} stroke="#38bdf8" strokeWidth="1.2" markerEnd="url(#arrowDown)" />
         <CalloutBox x={CALLOUT_X} y={CALLOUT_Y} width={CALLOUT_W} height={40} stroke="#38bdf8">
           <CalloutTitle x={cx} y={CALLOUT_Y + 13} fill="#7dd3fc">SHRINK ON COMPACTION</CalloutTitle>
           <CalloutLine x={cx} y={CALLOUT_Y + 26} fill="#fff" size={7}>
@@ -299,7 +303,7 @@ function GraphicOverlay({
         <CalloutLine x={336} y={112} fill="#5c4228" size={5.5}>Swell {expansionPct}% · Shrink {shrinkPct}%</CalloutLine>
         <CalloutLine x={336} y={122} fill="#5c4228" size={5.5}>Over-excavation depth</CalloutLine>
         <CalloutLine x={336} y={132} fill="#5c4228" size={5.5}>Compaction specification</CalloutLine>
-        <line x1="288" y1="108" x2={PAD_R - 8} y2={padY + 2} stroke="#d4a843" strokeWidth="0.8" strokeDasharray="3 2" opacity="0.65" />
+        <line x1="288" y1="108" x2={padR - 8} y2={padY + 2} stroke="#d4a843" strokeWidth="0.8" strokeDasharray="3 2" opacity="0.65" />
       </g>
     );
   }
@@ -390,6 +394,7 @@ function GraphicOverlay({
 
 function GradingTerrain({
   balance,
+  squareFeet,
   eduId,
   stats,
   expansionPct,
@@ -400,6 +405,7 @@ function GradingTerrain({
   hasDualVolumes,
 }: {
   balance: number;
+  squareFeet: number;
   eduId: EduId;
   stats: TerrainStats;
   expansionPct: number;
@@ -414,13 +420,27 @@ function GradingTerrain({
   const mag = Math.abs(balance);
   const depthPx = mag * PX_PER_FT;
   const padY = GROUND_Y - balance * PX_PER_FT;
-  const truckCount = Math.min(3, Math.ceil(mag / 2));
+  const padWidth = padWidthFromSquareFeet(squareFeet);
+  const padL = VIEW_CX - padWidth / 2;
+  const padR = VIEW_CX + padWidth / 2;
+  const loads = isExport ? stats.exportLoads : isImport ? stats.importLoads : 0;
+  const truckCount = Math.min(4, Math.max(1, Math.ceil(loads / 40) || Math.ceil(mag / 2)));
   const slopeDrop = Math.min(depthPx * 0.45, 18);
-  const outerL = PAD_L - SLOPE_OUT;
-  const outerR = PAD_R + SLOPE_OUT;
+  const outerL = padL - SLOPE_OUT;
+  const outerR = padR + SLOPE_OUT;
   /** Keep machines on pad edges — never stacked over center label */
-  const leftEquipX = PAD_L + 6;
-  const rightEquipX = PAD_R - 58;
+  const leftEquipX = padL + 6;
+  const rightEquipX = padR - 58;
+  const depthDimX = Math.max(28, padL - 16);
+  const padLabelW = Math.min(padWidth - 8, 72);
+  const areaLabel = `${squareFeet.toLocaleString()} sq ft`;
+  const areaLabelW = Math.max(70, areaLabel.length * 4.2 + 12);
+
+  const padSurfaceMarks = (() => {
+    const count = Math.max(3, Math.min(7, Math.round(padWidth / 36)));
+    const step = padWidth / (count + 1);
+    return Array.from({ length: count }, (_, i) => padL + step * (i + 1));
+  })();
 
   return (
     <svg viewBox="0 0 400 220" className="w-full h-full" preserveAspectRatio="xMidYMid meet" aria-hidden>
@@ -463,32 +483,32 @@ function GradingTerrain({
 
       {isExport && depthPx > 0 && (
         <g className="transition-all duration-500 ease-out">
-          <path d={`M${PAD_L} ${GROUND_Y} L${PAD_L} ${padY} L${PAD_R} ${padY} L${PAD_R} ${GROUND_Y} Z`} fill="url(#cutFace)" />
-          <path d={`M${PAD_L} ${GROUND_Y} L${PAD_L} ${padY} L${PAD_R} ${padY} L${PAD_R} ${GROUND_Y} Z`} fill="url(#cutHatch)" opacity="0.5" />
-          <line x1={PAD_L} y1={GROUND_Y} x2={PAD_L} y2={padY} stroke="#4a3520" strokeWidth="1.5" opacity="0.8" />
-          <line x1={PAD_R} y1={GROUND_Y} x2={PAD_R} y2={padY} stroke="#4a3520" strokeWidth="1.5" opacity="0.8" />
+          <path d={`M${padL} ${GROUND_Y} L${padL} ${padY} L${padR} ${padY} L${padR} ${GROUND_Y} Z`} fill="url(#cutFace)" />
+          <path d={`M${padL} ${GROUND_Y} L${padL} ${padY} L${padR} ${padY} L${padR} ${GROUND_Y} Z`} fill="url(#cutHatch)" opacity="0.5" />
+          <line x1={padL} y1={GROUND_Y} x2={padL} y2={padY} stroke="#4a3520" strokeWidth="1.5" opacity="0.8" />
+          <line x1={padR} y1={GROUND_Y} x2={padR} y2={padY} stroke="#4a3520" strokeWidth="1.5" opacity="0.8" />
         </g>
       )}
 
       {isImport && depthPx > 0 && (
         <g className="transition-all duration-500 ease-out">
-          <path d={`M${PAD_L} ${GROUND_Y} L${PAD_L} ${padY} L${PAD_R} ${padY} L${PAD_R} ${GROUND_Y} Z`} fill="url(#importFill)" />
-          <line x1={PAD_L} y1={GROUND_Y} x2={PAD_L} y2={padY} stroke="#a08055" strokeWidth="1.5" opacity="0.7" />
-          <line x1={PAD_R} y1={GROUND_Y} x2={PAD_R} y2={padY} stroke="#a08055" strokeWidth="1.5" opacity="0.7" />
+          <path d={`M${padL} ${GROUND_Y} L${padL} ${padY} L${padR} ${padY} L${padR} ${GROUND_Y} Z`} fill="url(#importFill)" />
+          <line x1={padL} y1={GROUND_Y} x2={padL} y2={padY} stroke="#a08055" strokeWidth="1.5" opacity="0.7" />
+          <line x1={padR} y1={GROUND_Y} x2={padR} y2={padY} stroke="#a08055" strokeWidth="1.5" opacity="0.7" />
         </g>
       )}
 
       {mag > 0 && (
         <g className="transition-all duration-500 ease-out">
-          <path d={`M${outerL} ${GROUND_Y} L${PAD_L} ${padY + slopeDrop} L${PAD_L} ${isExport ? GROUND_Y : padY} Z`} fill={isImport ? "#b8956a" : "#4a3520"} opacity={isImport ? 0.85 : 0.7} />
-          <path d={`M${outerR} ${GROUND_Y} L${PAD_R} ${padY + slopeDrop} L${PAD_R} ${isExport ? GROUND_Y : padY} Z`} fill={isImport ? "#b8956a" : "#4a3520"} opacity={isImport ? 0.85 : 0.7} />
+          <path d={`M${outerL} ${GROUND_Y} L${padL} ${padY + slopeDrop} L${padL} ${isExport ? GROUND_Y : padY} Z`} fill={isImport ? "#b8956a" : "#4a3520"} opacity={isImport ? 0.85 : 0.7} />
+          <path d={`M${outerR} ${GROUND_Y} L${padR} ${padY + slopeDrop} L${padR} ${isExport ? GROUND_Y : padY} Z`} fill={isImport ? "#b8956a" : "#4a3520"} opacity={isImport ? 0.85 : 0.7} />
         </g>
       )}
 
-      <rect x={PAD_L} y={padY} width={PAD_R - PAD_L} height="4" fill="#d4a843" className="transition-all duration-500 ease-out" />
-      <line x1={PAD_L} y1={padY} x2={PAD_R} y2={padY} stroke="#f0d060" strokeWidth="1" opacity="0.6" className="transition-all duration-500 ease-out" />
+      <rect x={padL} y={padY} width={padWidth} height="4" fill="#d4a843" className="transition-all duration-500 ease-out" />
+      <line x1={padL} y1={padY} x2={padR} y2={padY} stroke="#f0d060" strokeWidth="1" opacity="0.6" className="transition-all duration-500 ease-out" />
 
-      {[138, 168, 198, 228, 258].map((x) => (
+      {padSurfaceMarks.map((x) => (
         <ellipse
           key={x}
           cx={x}
@@ -508,21 +528,49 @@ function GradingTerrain({
 
       {mag > 0 && (
         <g className="transition-all duration-500 ease-out">
-          <line x1="102" y1={GROUND_Y} x2="102" y2={padY} stroke="#d4a843" strokeWidth="1.2" />
-          <polygon points={`99,${GROUND_Y} 105,${GROUND_Y} 102,${GROUND_Y + (isImport ? -4 : 4)}`} fill="#d4a843" />
-          <polygon points={`99,${padY} 105,${padY} 102,${padY + (isImport ? 4 : -4)}`} fill="#d4a843" />
-          <text x="92" y={(GROUND_Y + padY) / 2 + 2} textAnchor="middle" fill="#d4a843" fontSize="8" fontWeight="bold" transform={`rotate(-90 92 ${(GROUND_Y + padY) / 2})`}>
+          <line x1={depthDimX} y1={GROUND_Y} x2={depthDimX} y2={padY} stroke="#d4a843" strokeWidth="1.2" />
+          <polygon points={`${depthDimX - 3},${GROUND_Y} ${depthDimX + 3},${GROUND_Y} ${depthDimX},${GROUND_Y + (isImport ? -4 : 4)}`} fill="#d4a843" />
+          <polygon points={`${depthDimX - 3},${padY} ${depthDimX + 3},${padY} ${depthDimX},${padY + (isImport ? 4 : -4)}`} fill="#d4a843" />
+          <text
+            x={depthDimX - 10}
+            y={(GROUND_Y + padY) / 2 + 2}
+            textAnchor="middle"
+            fill="#d4a843"
+            fontSize="8"
+            fontWeight="bold"
+            transform={`rotate(-90 ${depthDimX - 10} ${(GROUND_Y + padY) / 2})`}
+          >
             {mag.toFixed(1)} ft
           </text>
         </g>
       )}
+
+      {/* Project area dimension — shows land mass scaling with sq ft */}
+      <g className="transition-all duration-500 ease-out">
+        <line x1={padL} y1={CALLOUT_Y + 8} x2={padR} y2={CALLOUT_Y + 8} stroke="#d4a843" strokeWidth="1.2" />
+        <line x1={padL} y1={CALLOUT_Y + 4} x2={padL} y2={CALLOUT_Y + 12} stroke="#d4a843" strokeWidth="1.2" />
+        <line x1={padR} y1={CALLOUT_Y + 4} x2={padR} y2={CALLOUT_Y + 12} stroke="#d4a843" strokeWidth="1.2" />
+        <rect
+          x={VIEW_CX - areaLabelW / 2}
+          y={CALLOUT_Y + 14}
+          width={areaLabelW}
+          height={14}
+          rx={3}
+          fill="rgba(20,14,6,0.85)"
+          stroke="#d4a843"
+          strokeWidth="0.6"
+        />
+        <text x={VIEW_CX} y={CALLOUT_Y + 24} textAnchor="middle" fill="#d4a843" fontSize="7" fontWeight="bold" letterSpacing="0.4">
+          {areaLabel}
+        </text>
+      </g>
 
       <g className="transition-all duration-500 ease-out">
         {isImport ? (
           <>
             <Bulldozer x={rightEquipX} y={padY - 28} flip />
             <Excavator x={rightEquipX - 36} y={padY - 26} flip size={0.9} />
-            <Compactor x={PAD_L + 24} y={padY - 22} />
+            <Compactor x={padL + 24} y={padY - 22} />
           </>
         ) : isExport ? (
           <>
@@ -531,8 +579,8 @@ function GradingTerrain({
           </>
         ) : (
           <>
-            <Compactor x={PAD_L + 40} y={padY - 22} />
-            <Compactor x={PAD_R - 58} y={padY - 22} />
+            <Compactor x={padL + 40} y={padY - 22} />
+            <Compactor x={padR - 58} y={padY - 22} />
           </>
         )}
       </g>
@@ -548,6 +596,8 @@ function GradingTerrain({
         expansionPct={expansionPct}
         shrinkPct={shrinkPct}
         padY={padY}
+        padL={padL}
+        padR={padR}
         isExport={isExport}
         isImport={isImport}
         exportBcy={exportBcy}
@@ -563,8 +613,8 @@ function GradingTerrain({
 
       {/* Pad label on top layer so equipment never covers it */}
       <g className="transition-all duration-500 ease-out">
-        <rect x={168} y={padY - 18} width="64" height="11" rx="3" fill="rgba(20,14,6,0.72)" />
-        <text x={200} y={padY - 10} textAnchor="middle" fill="#d4a843" fontSize="7" fontWeight="bold" letterSpacing="1">
+        <rect x={VIEW_CX - padLabelW / 2} y={padY - 18} width={padLabelW} height="11" rx="3" fill="rgba(20,14,6,0.72)" />
+        <text x={VIEW_CX} y={padY - 10} textAnchor="middle" fill="#d4a843" fontSize="7" fontWeight="bold" letterSpacing="1">
           FINISHED PAD
         </text>
       </g>
@@ -575,13 +625,13 @@ function GradingTerrain({
           : isImport
             ? { lines: ["IMPORTING", "BUILD PAD"] as const, width: 118, height: 30 }
             : { lines: ["BALANCED", "AT DESIGN ELEVATION"] as const, width: 136, height: 30 };
-        const badgeX = 200 - badge.width / 2;
+        const badgeX = VIEW_CX - badge.width / 2;
         return (
           <>
             <rect x={badgeX} y={8} width={badge.width} height={badge.height} rx={badge.height / 2} fill="rgba(20,14,6,0.82)" stroke="#d4a843" strokeWidth="0.8" />
-            <text x="200" y={18} textAnchor="middle" fill="#d4a843" fontSize="6.5" fontWeight="bold" letterSpacing="0.6">
-              <tspan x="200" dy="0">{badge.lines[0]}</tspan>
-              <tspan x="200" dy="9">{badge.lines[1]}</tspan>
+            <text x={VIEW_CX} y={18} textAnchor="middle" fill="#d4a843" fontSize="6.5" fontWeight="bold" letterSpacing="0.6">
+              <tspan x={VIEW_CX} dy="0">{badge.lines[0]}</tspan>
+              <tspan x={VIEW_CX} dy="9">{badge.lines[1]}</tspan>
             </text>
           </>
         );
@@ -592,8 +642,11 @@ function GradingTerrain({
 
 export function GradeBalanceSimulator() {
   const [squareFeet, setSquareFeet] = useState(10_000);
+  const [squareFeetDraft, setSquareFeetDraft] = useState("10000");
   const [excavationDepthFt, setExcavationDepthFt] = useState(4);
+  const [excavationDraft, setExcavationDraft] = useState("4");
   const [importDepthFt, setImportDepthFt] = useState(0);
+  const [importDraft, setImportDraft] = useState("0");
   const [expansionPct, setExpansionPct] = useState(25);
   const [shrinkPct, setShrinkPct] = useState(10);
   const [eduTab, setEduTab] = useState(0);
@@ -623,19 +676,69 @@ export function GradeBalanceSimulator() {
   const edu = EDUCATION[eduTab];
   const EduIcon = edu.icon;
 
-  const handleSquareFeetChange = (raw: string) => {
-    const parsed = Number(raw.replace(/,/g, ""));
-    if (!Number.isFinite(parsed)) return;
-    setSquareFeet(clampSquareFeet(parsed));
+  const commitSquareFeet = (raw: string) => {
+    const digits = raw.replace(/[^0-9]/g, "");
+    if (!digits) {
+      setSquareFeetDraft(String(squareFeet));
+      return;
+    }
+    const next = clampSquareFeet(Number(digits));
+    setSquareFeet(next);
+    setSquareFeetDraft(String(next));
   };
 
-  const handleDepthChange = (
+  const handleSquareFeetTyping = (raw: string) => {
+    // Allow free typing of digits only; do not clamp until blur/Enter.
+    const cleaned = raw.replace(/[^0-9]/g, "");
+    setSquareFeetDraft(cleaned);
+    if (cleaned === "") return;
+    const parsed = Number(cleaned);
+    if (!Number.isFinite(parsed)) return;
+    // Live-update graphic when within range; keep draft as typed if below min mid-entry.
+    if (parsed >= SQ_FT_MIN && parsed <= SQ_FT_MAX) {
+      setSquareFeet(parsed);
+    }
+  };
+
+  const commitDepth = (
     raw: string,
     setter: (value: number) => void,
+    draftSetter: (value: string) => void,
+    current: number,
   ) => {
-    const parsed = Number(raw);
+    const cleaned = raw.replace(/[^0-9.]/g, "");
+    if (!cleaned || cleaned === ".") {
+      draftSetter(String(current));
+      return;
+    }
+    const next = clampDepth(Number(cleaned));
+    setter(next);
+    draftSetter(String(next));
+  };
+
+  const handleDepthTyping = (
+    raw: string,
+    setter: (value: number) => void,
+    draftSetter: (value: string) => void,
+  ) => {
+    const cleaned = raw.replace(/[^0-9.]/g, "");
+    // Keep at most one decimal point
+    const parts = cleaned.split(".");
+    const normalized = parts.length > 2 ? `${parts[0]}.${parts.slice(1).join("")}` : cleaned;
+    draftSetter(normalized);
+    if (normalized === "" || normalized === ".") return;
+    const parsed = Number(normalized);
     if (!Number.isFinite(parsed)) return;
-    setter(clampDepth(parsed));
+    if (parsed >= DEPTH_MIN && parsed <= DEPTH_MAX) {
+      setter(clampDepth(parsed));
+    }
+  };
+
+  const applyDepthPreset = (excavation: number, fill: number) => {
+    setExcavationDepthFt(excavation);
+    setImportDepthFt(fill);
+    setExcavationDraft(String(excavation));
+    setImportDraft(String(fill));
   };
 
   return (
@@ -682,6 +785,7 @@ export function GradeBalanceSimulator() {
       <div className="relative bg-[#3a2818]/30 min-h-[260px] lg:min-h-[300px] border-b border-border">
         <GradingTerrain
           balance={graphicBalance}
+          squareFeet={squareFeet}
           eduId={edu.id}
           stats={stats}
           expansionPct={expansionPct}
@@ -712,16 +816,27 @@ export function GradeBalanceSimulator() {
             <div className="flex items-center gap-3">
               <input
                 id="project-area"
-                type="number"
-                min={SQ_FT_MIN}
-                max={SQ_FT_MAX}
-                step={100}
-                value={squareFeet}
-                onChange={(e) => handleSquareFeetChange(e.target.value)}
+                type="text"
+                inputMode="numeric"
+                pattern="[0-9]*"
+                autoComplete="off"
+                value={squareFeetDraft}
+                onChange={(e) => handleSquareFeetTyping(e.target.value)}
+                onBlur={() => commitSquareFeet(squareFeetDraft)}
+                onKeyDown={(e) => {
+                  if (e.key === "Enter") {
+                    e.currentTarget.blur();
+                  }
+                }}
+                placeholder="e.g. 10000"
+                aria-describedby="project-area-hint"
                 className="w-full rounded-md bg-input border border-border px-4 py-3 text-lg font-display text-foreground tabular-nums focus:outline-none focus:ring-2 focus:ring-gold/60"
               />
               <span className="text-sm text-muted-foreground whitespace-nowrap shrink-0">sq. ft.</span>
             </div>
+            <p id="project-area-hint" className="mt-1.5 text-[11px] text-muted-foreground">
+              Type any project area ({SQ_FT_MIN.toLocaleString()}–{SQ_FT_MAX.toLocaleString()} sq. ft.) — the pad graphic scales with your land mass.
+            </p>
           </div>
 
           <div className="grid sm:grid-cols-2 gap-5">
@@ -732,12 +847,15 @@ export function GradeBalanceSimulator() {
               <div className="flex items-center gap-3 mb-2">
                 <input
                   id="excavation-depth"
-                  type="number"
-                  min={DEPTH_MIN}
-                  max={DEPTH_MAX}
-                  step={0.5}
-                  value={excavationDepthFt}
-                  onChange={(e) => handleDepthChange(e.target.value, setExcavationDepthFt)}
+                  type="text"
+                  inputMode="decimal"
+                  autoComplete="off"
+                  value={excavationDraft}
+                  onChange={(e) => handleDepthTyping(e.target.value, setExcavationDepthFt, setExcavationDraft)}
+                  onBlur={() => commitDepth(excavationDraft, setExcavationDepthFt, setExcavationDraft, excavationDepthFt)}
+                  onKeyDown={(e) => {
+                    if (e.key === "Enter") e.currentTarget.blur();
+                  }}
                   className="w-24 rounded-md bg-input border border-border px-3 py-2 text-base font-display text-foreground tabular-nums focus:outline-none focus:ring-2 focus:ring-gold/60"
                 />
                 <span className="text-sm text-orange-300 font-medium">Export / cut</span>
@@ -748,7 +866,11 @@ export function GradeBalanceSimulator() {
                 max={DEPTH_MAX}
                 step={0.5}
                 value={excavationDepthFt}
-                onChange={(e) => setExcavationDepthFt(clampDepth(Number(e.target.value)))}
+                onChange={(e) => {
+                  const next = clampDepth(Number(e.target.value));
+                  setExcavationDepthFt(next);
+                  setExcavationDraft(String(next));
+                }}
                 className="w-full accent-orange-500 cursor-pointer"
               />
             </div>
@@ -760,12 +882,15 @@ export function GradeBalanceSimulator() {
               <div className="flex items-center gap-3 mb-2">
                 <input
                   id="import-depth"
-                  type="number"
-                  min={DEPTH_MIN}
-                  max={DEPTH_MAX}
-                  step={0.5}
-                  value={importDepthFt}
-                  onChange={(e) => handleDepthChange(e.target.value, setImportDepthFt)}
+                  type="text"
+                  inputMode="decimal"
+                  autoComplete="off"
+                  value={importDraft}
+                  onChange={(e) => handleDepthTyping(e.target.value, setImportDepthFt, setImportDraft)}
+                  onBlur={() => commitDepth(importDraft, setImportDepthFt, setImportDraft, importDepthFt)}
+                  onKeyDown={(e) => {
+                    if (e.key === "Enter") e.currentTarget.blur();
+                  }}
                   className="w-24 rounded-md bg-input border border-border px-3 py-2 text-base font-display text-foreground tabular-nums focus:outline-none focus:ring-2 focus:ring-gold/60"
                 />
                 <span className="text-sm text-sky-300 font-medium">Import / fill</span>
@@ -776,7 +901,11 @@ export function GradeBalanceSimulator() {
                 max={DEPTH_MAX}
                 step={0.5}
                 value={importDepthFt}
-                onChange={(e) => setImportDepthFt(clampDepth(Number(e.target.value)))}
+                onChange={(e) => {
+                  const next = clampDepth(Number(e.target.value));
+                  setImportDepthFt(next);
+                  setImportDraft(String(next));
+                }}
                 className="w-full accent-sky-500 cursor-pointer"
               />
             </div>
@@ -787,10 +916,7 @@ export function GradeBalanceSimulator() {
               <button
                 key={p.label}
                 type="button"
-                onClick={() => {
-                  setExcavationDepthFt(p.excavation);
-                  setImportDepthFt(p.import);
-                }}
+                onClick={() => applyDepthPreset(p.excavation, p.import)}
                 className={`rounded-full border px-3 py-1 text-xs font-medium transition ${
                   excavationDepthFt === p.excavation && importDepthFt === p.import
                     ? "border-gold bg-gold/15 text-gold"

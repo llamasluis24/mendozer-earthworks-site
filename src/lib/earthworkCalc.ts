@@ -71,6 +71,21 @@ export function graphicBalanceFromDepths(excavationDepthFt: number, importDepthF
   return 0;
 }
 
+/**
+ * Maps project square footage to a pad width in SVG units so the terrain
+ * graphic visually grows/shrinks with land area (sqrt scale for area feel).
+ * ViewBox is 400 wide; keep margins for slopes and equipment.
+ */
+export function padWidthFromSquareFeet(squareFeet: number): number {
+  const sq = Math.min(SQ_FT_MAX, Math.max(SQ_FT_MIN, squareFeet));
+  const minW = 72;
+  const maxW = 280;
+  const t =
+    (Math.sqrt(sq) - Math.sqrt(SQ_FT_MIN)) /
+    (Math.sqrt(SQ_FT_MAX) - Math.sqrt(SQ_FT_MIN));
+  return Math.round(minW + t * (maxW - minW));
+}
+
 /** Stats shape consumed by the SVG terrain overlay. */
 export function terrainStatsFromVolumes(
   volumes: EarthworkVolumeResult,
