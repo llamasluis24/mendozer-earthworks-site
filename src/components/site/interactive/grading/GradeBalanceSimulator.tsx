@@ -156,10 +156,18 @@ const SLOPE_OUT = 28;
 const CALLOUT_Y = 168;
 /** Sky-area callout for export overlays — above the excavation pit */
 const EXPORT_CALLOUT_Y = 48;
-const EXPORT_TRUCK_Y = 36;
+/** Import trucks sit on the right horizon; export trucks use a left haul lane. */
+const IMPORT_TRUCK_Y = 84;
+const EXPORT_TRUCK_Y = 80;
 const CALLOUT_W = 216;
 const CALLOUT_X = 200 - CALLOUT_W / 2;
+/** Export sky callouts sit right of the OUT truck lane so they never overlap. */
+const EXPORT_CALLOUT_X = 124;
+const EXPORT_CALLOUT_CX = EXPORT_CALLOUT_X + CALLOUT_W / 2;
 const VIEW_CX = 200;
+/** Max trucks and spacing so the left haul lane stays clear of center callouts. */
+const MAX_HAUL_TRUCKS = 3;
+const TRUCK_SPACING = 26;
 
 function exportCalloutY(padY: number) {
   return Math.min(EXPORT_CALLOUT_Y, Math.max(42, padY - 56));
@@ -304,12 +312,12 @@ function GraphicOverlay({
       <g>
         <path d={`M${padL + 24} ${padY + 6} L${padL + 24} ${calloutY + 40}`} stroke="#f97316" strokeWidth="1.2" markerEnd="url(#arrowUp)" />
         <path d={`M${padR - 24} ${padY + 6} L${padR - 24} ${calloutY + 40}`} stroke="#f97316" strokeWidth="1.2" markerEnd="url(#arrowUp)" />
-        <CalloutBox x={CALLOUT_X} y={calloutY} width={CALLOUT_W} height={40} stroke="#f97316">
-          <CalloutTitle x={cx} y={calloutY + 13} fill="#fdba74">SWELL ON EXCAVATION</CalloutTitle>
-          <CalloutLine x={cx} y={calloutY + 26} fill="#fff" size={7}>
+        <CalloutBox x={EXPORT_CALLOUT_X} y={calloutY} width={CALLOUT_W} height={40} stroke="#f97316">
+          <CalloutTitle x={EXPORT_CALLOUT_CX} y={calloutY + 13} fill="#fdba74">SWELL ON EXCAVATION</CalloutTitle>
+          <CalloutLine x={EXPORT_CALLOUT_CX} y={calloutY + 26} fill="#fff" size={7}>
             {stats.bcy.toLocaleString()} BCY → {stats.lcyExport.toLocaleString()} LCY
           </CalloutLine>
-          <CalloutLine x={cx} y={calloutY + 36} fill="#fdba74" size={6}>
+          <CalloutLine x={EXPORT_CALLOUT_CX} y={calloutY + 36} fill="#fdba74" size={6}>
             +{expansionPct}% expansion increases haul quantities
           </CalloutLine>
         </CalloutBox>
@@ -384,12 +392,12 @@ function GraphicOverlay({
   if (eduId === "changeorders" && isExport && stats.mag > 0 && stats.exportLoads > stats.naiveLoads) {
     const calloutY = exportCalloutY(padY);
     return (
-      <CalloutBox x={CALLOUT_X} y={calloutY} width={CALLOUT_W} height={44} stroke="#ef4444" fill="rgba(120,40,20,0.92)">
-        <CalloutTitle x={cx} y={calloutY + 13} fill="#fca5a5">CHANGE ORDER RISK</CalloutTitle>
-        <CalloutLine x={cx} y={calloutY + 26} fill="#fff" size={6.5}>
+      <CalloutBox x={EXPORT_CALLOUT_X} y={calloutY} width={CALLOUT_W} height={44} stroke="#ef4444" fill="rgba(120,40,20,0.92)">
+        <CalloutTitle x={EXPORT_CALLOUT_CX} y={calloutY + 13} fill="#fca5a5">CHANGE ORDER RISK</CalloutTitle>
+        <CalloutLine x={EXPORT_CALLOUT_CX} y={calloutY + 26} fill="#fff" size={6.5}>
           Naive: {stats.naiveLoads} loads · Actual: {stats.exportLoads} loads
         </CalloutLine>
-        <CalloutLine x={cx} y={calloutY + 37} fill="#fecaca" size={6}>
+        <CalloutLine x={EXPORT_CALLOUT_CX} y={calloutY + 37} fill="#fecaca" size={6}>
           +{stats.exportLoads - stats.naiveLoads} extra hauls without swell factor
         </CalloutLine>
       </CalloutBox>
@@ -469,7 +477,7 @@ function GradingTerrain({
   const padL = VIEW_CX - padWidth / 2;
   const padR = VIEW_CX + padWidth / 2;
   const loads = isExport ? stats.exportLoads : isImport ? stats.importLoads : 0;
-  const truckCount = Math.min(4, Math.max(1, Math.ceil(loads / 40) || Math.ceil(mag / 2)));
+  const truckCount = Math.min(MAX_HAUL_TRUCKS, Math.max(1, Math.ceil(loads / 50) || Math.ceil(mag / 2)));
   const slopeDrop = Math.min(depthPx * 0.45, 18);
   const outerL = padL - SLOPE_OUT;
   const outerR = padR + SLOPE_OUT;
@@ -645,7 +653,7 @@ function GradingTerrain({
 
       {isImport &&
         Array.from({ length: truckCount }).map((_, i) => (
-          <HaulTruck key={`in-${i}`} x={340 - i * 30} y={84} direction="in" />
+          <HaulTruck key={`in-${i}`} x={340 - i * TRUCK_SPACING} y={IMPORT_TRUCK_Y} direction="in" />
         ))}
 
       <GraphicOverlay
@@ -666,7 +674,7 @@ function GradingTerrain({
 
       {isExport &&
         Array.from({ length: truckCount }).map((_, i) => (
-          <HaulTruck key={`out-${i}`} x={8 + i * 30} y={EXPORT_TRUCK_Y} direction="out" />
+          <HaulTruck key={`out-${i}`} x={4 + i * TRUCK_SPACING} y={EXPORT_TRUCK_Y} direction="out" />
         ))}
 
       {/* Pad label on top layer so equipment never covers it */}
