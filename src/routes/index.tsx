@@ -4,16 +4,20 @@ import { useEffect, useState } from "react";
 import heroPoster from "@/assets/hero-video-poster.jpg";
 import excavationImg from "@/assets/service-excavation.jpg";
 import aboutImg from "@/assets/about-daytime.jpg";
-import demolitionImg from "@/assets/service-demolition.jpg";
 import pavingImg from "@/assets/service-paving.jpg";
 import concreteImg from "@/assets/service-concrete.jpg";
 import g1 from "@/assets/gallery-1.jpg";
 import g2 from "@/assets/gallery-2.jpg";
-import g3 from "@/assets/gallery-3.jpg";
-import g4 from "@/assets/gallery-4.jpg";
 import recentWorkRetentionBasin from "@/assets/recent-work-retention-basin.jpg";
 import recentWorkExcavatorBasin from "@/assets/recent-work-excavator-basin.jpg";
 import recentWorkSlopeExcavation from "@/assets/recent-work-slope-excavation.jpg";
+import jobsiteAsphaltDemoHaul from "@/assets/jobsite-asphalt-demo-haul.jpg";
+import jobsiteElectricalRoomTrench from "@/assets/jobsite-electrical-room-trench.jpg";
+import jobsiteLoaderDemoDebris from "@/assets/jobsite-loader-demo-debris.jpg";
+import jobsiteSkipLoaderGrading from "@/assets/jobsite-skip-loader-grading.jpg";
+import jobsiteSkipLoaderBucket from "@/assets/jobsite-skip-loader-bucket.jpg";
+import jobsiteSkipLoaderOperator from "@/assets/jobsite-skip-loader-operator.jpg";
+import jobsiteMendozerSign from "@/assets/jobsite-mendozer-sign.jpg";
 import { CTASection } from "@/components/site/CTA";
 import { ContactLeadSection } from "@/components/site/ContactLeadSection";
 import { CommercialWorkflowSection } from "@/components/site/CommercialWorkflowSection";
@@ -55,11 +59,13 @@ const gallery = [
   { src: recentWorkRetentionBasin, alt: "Large retention basin excavation in Southern California" },
   { src: recentWorkExcavatorBasin, alt: "Excavator shaping a commercial retention basin" },
   { src: recentWorkSlopeExcavation, alt: "Excavator completing precision slope grading" },
-  { src: demolitionImg, alt: "Commercial demolition project" },
-  { src: g3, alt: "Finished concrete slab at warehouse" },
-  { src: pavingImg, alt: "Asphalt paving on commercial lot" },
-  { src: g4, alt: "Excavator bucket close up" },
-  { src: concreteImg, alt: "Concrete pour at commercial site" },
+  { src: jobsiteAsphaltDemoHaul, alt: "Saw-cut asphalt and concrete demo staged for haul-off" },
+  { src: jobsiteElectricalRoomTrench, alt: "Utility trench excavation outside a building electrical room" },
+  { src: jobsiteLoaderDemoDebris, alt: "Loader working asphalt demo debris on an active site" },
+  { src: jobsiteSkipLoaderGrading, alt: "Skip loader rough grading the work area" },
+  { src: jobsiteSkipLoaderBucket, alt: "Skip loader moving material across the graded pad" },
+  { src: jobsiteSkipLoaderOperator, alt: "Mendozer operator running a Case 570N skip loader" },
+  { src: jobsiteMendozerSign, alt: "Mendozer X Earthworks jobsite signage" },
 ];
 
 const reviews = [
