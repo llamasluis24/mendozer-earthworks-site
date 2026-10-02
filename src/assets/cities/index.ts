@@ -14,57 +14,57 @@ export interface CityLandmarkAsset {
   alt: string;
 }
 
-/** Distinct placeholder image per city until real landmark photos arrive. */
+/** Jobsite photos per city until real landmark photos arrive. */
 export const CITY_LANDMARK_ASSETS: Record<string, CityLandmarkAsset> = {
   riverside: {
     image: g1,
     landmark: "Mission Inn / downtown Riverside",
-    alt: "Placeholder — Mission Inn and downtown Riverside skyline",
+    alt: "Active commercial earthwork site in Riverside County",
   },
   banning: {
     image: g2,
     landmark: "Pass area / I-10 corridor",
-    alt: "Placeholder — Banning Pass area and I-10 commercial corridor",
+    alt: "Mendozer X Earthworks grading equipment on a commercial pad",
   },
   temecula: {
     image: g3,
     landmark: "Old Town Temecula / wine country",
-    alt: "Placeholder — Old Town Temecula and wine country commercial district",
+    alt: "Utility trench excavation at a commercial jobsite",
   },
   "san-bernardino": {
     image: g4,
     landmark: "San Bernardino Mountains / industrial redevelopment",
-    alt: "Placeholder — San Bernardino Mountains and industrial zone",
+    alt: "Mini excavator working a commercial excavation site",
   },
   rialto: {
     image: excavationImg,
     landmark: "Rialto industrial / logistics corridor",
-    alt: "Placeholder — Rialto industrial and logistics corridor",
+    alt: "Commercial excavation in the Inland Empire",
   },
   anaheim: {
     image: pavingImg,
     landmark: "ARTIC / commercial corridor",
-    alt: "Placeholder — Anaheim Regional Transportation Intermodal Center area",
+    alt: "Asphalt and concrete demo staged for haul-off",
   },
   "santa-ana": {
     image: heroImg,
     landmark: "Santa Ana civic center / county seat",
-    alt: "Placeholder — Santa Ana civic center and Orange County seat",
+    alt: "Wide view of an active Mendozer earthwork jobsite",
   },
   irvine: {
     image: aboutImg,
     landmark: "Irvine Spectrum / business district",
-    alt: "Placeholder — Irvine Spectrum business and commercial district",
+    alt: "Skip loader grading a commercial building pad",
   },
   "los-angeles": {
     image: demolitionImg,
     landmark: "Downtown LA skyline / industrial corridor",
-    alt: "Placeholder — Downtown Los Angeles skyline and industrial corridor",
+    alt: "Commercial demolition and site clearing in progress",
   },
   pasadena: {
     image: aboutImg,
     landmark: "Old Pasadena / Colorado Boulevard corridor",
-    alt: "Placeholder — Old Pasadena and Colorado Boulevard commercial corridor",
+    alt: "Skip loader grading a commercial building pad",
   },
 };
 
@@ -73,7 +73,7 @@ export function getCityLandmarkAsset(citySlug: string): CityLandmarkAsset {
     CITY_LANDMARK_ASSETS[citySlug] ?? {
       image: g1,
       landmark: "Southern California commercial corridor",
-      alt: "Placeholder — Southern California commercial area",
+      alt: "Active commercial earthwork site in Southern California",
     }
   );
 }
