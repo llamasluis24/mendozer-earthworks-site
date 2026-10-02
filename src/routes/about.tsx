@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, HardHat, Shield, Target, Users, MapPin, Award } from "lucide-react";
-import heroImg from "@/assets/gallery-1.jpg";
-import teamImg from "@/assets/service-excavation.jpg";
+import heroImg from "@/assets/service-grading.jpg";
+import teamImg from "@/assets/jobsite-skip-loader-operator.jpg";
 import { CTASection } from "@/components/site/CTA";
 import { REGIONS, citiesInRegion, cityUrl } from "@/data/cities";
 import { COMPANY } from "@/data/company";

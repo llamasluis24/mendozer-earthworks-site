@@ -4,7 +4,7 @@ import { COMPANY } from "@/data/company";
 import { ContactForm } from "@/components/site/ContactForm";
 import { ServiceAreaMap } from "@/components/site/ServiceAreaMap";
 import { buildPageMeta } from "@/data/seo";
-import heroImg from "@/assets/hero-bulldozer.jpg";
+import heroImg from "@/assets/site-overview.jpg";
 
 export const Route = createFileRoute("/contact")({
   head: () =>

@@ -3,11 +3,11 @@ import { ArrowRight, Phone, Shield, Clock, Award, Wrench, HardHat, Building2, Tr
 import { useEffect, useState } from "react";
 import heroPoster from "@/assets/hero-video-poster.jpg";
 import excavationImg from "@/assets/service-excavation.jpg";
-import aboutImg from "@/assets/about-daytime.jpg";
+import siteOverviewImg from "@/assets/site-overview.jpg";
+import serviceGradingImg from "@/assets/service-grading.jpg";
 import pavingImg from "@/assets/service-paving.jpg";
 import concreteImg from "@/assets/service-concrete.jpg";
 import g1 from "@/assets/gallery-1.jpg";
-import g2 from "@/assets/gallery-2.jpg";
 import recentWorkRetentionBasin from "@/assets/recent-work-retention-basin.jpg";
 import recentWorkExcavatorBasin from "@/assets/recent-work-excavator-basin.jpg";
 import recentWorkSlopeExcavation from "@/assets/recent-work-slope-excavation.jpg";
@@ -35,7 +35,7 @@ export const Route = createFileRoute("/")({
 });
 
 const services = [
-  { slug: "grading", title: "Grading", desc: "Mass grading, fine grading, and engineered pad prep for commercial sites.", img: g2, icon: Mountain, serviceSlug: "grading" },
+  { slug: "grading", title: "Grading", desc: "Mass grading, fine grading, and engineered pad prep for commercial sites.", img: serviceGradingImg, icon: Mountain, serviceSlug: "grading" },
   { slug: "excavation", title: "Excavation", desc: "Commercial excavation, cut/fill, and utility trenching for developer and GC schedules.", img: excavationImg, icon: Truck, serviceSlug: "excavation" },
   { slug: "concrete", title: "Concrete", desc: "Footings, slabs, curbs, gutters, and flatwork to commercial spec.", img: concreteImg, icon: Building2, serviceSlug: "concrete" },
   { slug: "asphalt", title: "Asphalt", desc: "Asphalt paving and resurfacing for parking lots, drive aisles, and access roads.", img: pavingImg, icon: Layers, serviceSlug: "paving" },
@@ -219,7 +219,7 @@ function About() {
       <div className="container-x grid lg:grid-cols-2 gap-14 items-center py-20 lg:py-32">
         <div className="relative">
           <div className="aspect-[4/5] rounded-2xl overflow-hidden border border-border">
-            <img src={aboutImg} alt="Daytime aerial of commercial excavation site with heavy equipment" className="h-full w-full object-cover" width={896} height={1120} loading="lazy" />
+            <img src={siteOverviewImg} alt="Active commercial earthwork site with equipment and crew" className="h-full w-full object-cover" width={896} height={1120} loading="lazy" />
           </div>
           <div className="absolute -bottom-6 -right-6 hidden sm:block bg-gold text-primary-foreground rounded-xl p-6 shadow-2xl max-w-[220px]">
             <div className="font-display text-3xl leading-none tracking-wide">1069854</div>

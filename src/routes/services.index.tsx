@@ -6,7 +6,7 @@ import { ServiceCard } from "@/components/site/ServiceCard";
 import { CTASection } from "@/components/site/CTA";
 import { buildPageMeta } from "@/data/seo";
 import { COMPANY } from "@/data/company";
-import heroImg from "@/assets/hero-bulldozer.jpg";
+import heroImg from "@/assets/site-overview.jpg";
 
 const ICONS: Record<string, React.ComponentType<{ className?: string }>> = {
   grading: Mountain,

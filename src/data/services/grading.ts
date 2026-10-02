@@ -1,4 +1,4 @@
-import g2 from "@/assets/gallery-2.jpg";
+import serviceGradingImg from "@/assets/service-grading.jpg";
 import type { PillarService } from "./types";
 import { COMMON_TRUST_BAR } from "./defaults";
 import { GRADING_IMAGES } from "./assets";
@@ -12,7 +12,7 @@ export const grading: PillarService = {
   intro:
     "Rough grading, finish grading, engineered pad preparation, soil compaction, over-excavation, recompaction, and pad certification for commercial developers, general contractors, and project managers across the Inland Empire, Orange County, and Los Angeles County. Mendozer X Earthworks Inc. self-performs earthwork with preconstruction quantity review, SWPPP coordination, and inspection-ready production.",
   cardDesc: "Rough grading, finish grading, pad prep, compaction, and pad certification for commercial sites.",
-  heroImage: g2,
+  heroImage: serviceGradingImg,
   metaTitle: "Commercial Grading & Earthwork Contractor Southern California | Mendozer X Earthworks Inc.",
   metaDesc:
     "Licensed commercial grading contractor in Southern California. Rough grading, finish grading, engineered pad prep, over-excavation, recompaction, soil compaction, pad certification, and GPS grading for developers and GCs.",

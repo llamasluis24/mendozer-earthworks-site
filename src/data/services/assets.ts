@@ -1,6 +1,11 @@
 import heroImg from "@/assets/hero-bulldozer.jpg";
 import excavationImg from "@/assets/service-excavation.jpg";
 import demolitionImg from "@/assets/service-demolition.jpg";
+import demolitionAsphaltRemoval from "@/assets/demolition-asphalt-removal.jpg";
+import demolitionConcreteRemoval from "@/assets/demolition-concrete-removal.jpg";
+import demolitionDebrisHauling from "@/assets/demolition-debris-hauling.jpg";
+import serviceGradingImg from "@/assets/service-grading.jpg";
+import gradingCommercialPad from "@/assets/grading-commercial-pad.jpg";
 import pavingImg from "@/assets/service-paving.jpg";
 import aboutImg from "@/assets/about-daytime.jpg";
 import g1 from "@/assets/gallery-1.jpg";
@@ -31,8 +36,8 @@ export const EXCAVATION_IMAGES = [
 ];
 
 export const GRADING_IMAGES = [
-  g2,
-  heroImg,
+  serviceGradingImg,
+  gradingCommercialPad,
   excavationImg,
   g1,
   g3,
@@ -82,11 +87,11 @@ export const DEMOLITION_IMAGES = [
   demolitionImg,
   excavationImg,
   heroImg,
-  g1,
-  g3,
-  g2,
+  demolitionImg,
+  demolitionConcreteRemoval,
+  demolitionAsphaltRemoval,
   g4,
-  pavingImg,
+  demolitionDebrisHauling,
   aboutImg,
   pourStrip,
 ];
