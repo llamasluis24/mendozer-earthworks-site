@@ -25,6 +25,14 @@ import recentWorkExcavatorBasin from "@/assets/recent-work-excavator-basin.jpg";
 import recentWorkSlopeExcavation from "@/assets/recent-work-slope-excavation.jpg";
 import excavationSiteBalancingStock from "@/assets/excavation-site-balancing-stock.jpg";
 import excavationOverExcavationStock from "@/assets/excavation-over-excavation-stock.jpg";
+import concreteStockGallery1 from "@/assets/concrete-stock-gallery-1.jpg";
+import concreteStockGallery2 from "@/assets/concrete-stock-gallery-2.jpg";
+import concreteStockGallery3 from "@/assets/concrete-stock-gallery-3.jpg";
+import concreteStockGallery4 from "@/assets/concrete-stock-gallery-4.jpg";
+import concreteStockAbout from "@/assets/concrete-stock-about.jpg";
+import concreteStockPavingBase from "@/assets/concrete-stock-paving-base.jpg";
+import concreteStockHero from "@/assets/concrete-stock-hero.jpg";
+import concreteStockDemolition from "@/assets/concrete-stock-demolition.jpg";
 import pourForm from "@/assets/pour-phase-form-rebar.jpg";
 import pourPre from "@/assets/pour-phase-pre-pour.jpg";
 import pourPour from "@/assets/pour-phase-pour.jpg";
@@ -67,18 +75,18 @@ export const GRADING_IMAGES = [
 ];
 
 export const CONCRETE_IMAGES = [
-  demolitionConcreteRemoval,
-  gradingCommercialPad,
-  g3,
-  g4,
-  aboutImg,
-  g1,
-  g2,
-  heroImg,
-  demolitionImg,
-  jobsiteLoaderDemo,
-  projectTrenchDustControl,
-  recentWorkExcavatorBasin,
+  pourForm,
+  pourPre,
+  pourPour,
+  pourCure,
+  concreteStockGallery3,
+  concreteStockGallery4,
+  concreteStockAbout,
+  concreteStockGallery1,
+  concreteStockGallery2,
+  concreteStockPavingBase,
+  concreteStockHero,
+  concreteStockDemolition,
 ];
 
 export const PAVING_IMAGES = [
