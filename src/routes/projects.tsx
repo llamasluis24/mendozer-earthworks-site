@@ -4,7 +4,7 @@ import { PROJECTS } from "@/data/projects";
 import { serviceUrl } from "@/data/services";
 import { CTASection } from "@/components/site/CTA";
 import { buildPageMeta } from "@/data/seo";
-import heroImg from "@/assets/site-overview.jpg";
+import heroImg from "@/assets/projects-stock-hero.jpg";
 
 export const Route = createFileRoute("/projects")({
   head: () =>
@@ -29,7 +29,7 @@ function Projects() {
           <p className="eyebrow">Case Studies</p>
           <h1 className="mt-4 heading-xl max-w-4xl">Commercial Project Case Studies Across Southern California</h1>
           <p className="mt-6 max-w-2xl text-lg text-foreground/85">
-            Featured commercial grading, excavation, concrete, and asphalt projects for developers, GCs, and property owners across Southern California.
+            Featured commercial grading, excavation, concrete, and asphalt projects for developers, GCs, and property owners. Placeholder imagery — final project photos and drone documentation coming soon.
           </p>
         </div>
       </section>

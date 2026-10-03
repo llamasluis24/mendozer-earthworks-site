@@ -1,11 +1,9 @@
-import serviceExcavation from "@/assets/service-excavation.jpg";
-import massExcavationImg from "@/assets/excavation-mass.jpg";
-import gradingCommercialPad from "@/assets/grading-commercial-pad.jpg";
-import serviceGrading from "@/assets/service-grading.jpg";
-import jobsiteElectricalRoomTrench from "@/assets/jobsite-electrical-room-trench.jpg";
-import jobsiteAsphaltDemoHaul from "@/assets/jobsite-asphalt-demo-haul.jpg";
-import jobsiteLoaderDemoDebris from "@/assets/jobsite-loader-demo-debris.jpg";
-import projectTrenchDustControl from "@/assets/project-trench-dust-control.jpg";
+import projectsStockExcavation from "@/assets/projects-stock-excavation.jpg";
+import projectsStockMassExcavation from "@/assets/projects-stock-mass-excavation.jpg";
+import projectsStockPaving from "@/assets/service-paving.jpg";
+import pourCure from "@/assets/pour-phase-cure.jpg";
+import projectsStockGallery2 from "@/assets/projects-stock-gallery-2.jpg";
+import projectsStockGallery3 from "@/assets/projects-stock-gallery-3.jpg";
 
 export interface Project {
   slug: string;
@@ -46,8 +44,8 @@ export const PROJECTS: Project[] = [
       "Coordinated export hauling to approved disposal and aggregate processing facilities; sequenced over-excavation, recompaction, and compaction testing to certify the building pad.",
     results:
       "Completed on time with no delays. Approximately 10,000–12,000 cubic yards of material exported. Pad certified for subsequent vertical construction.",
-    image: gradingCommercialPad,
-    gallery: [gradingCommercialPad, serviceGrading, massExcavationImg],
+    image: projectsStockPaving,
+    gallery: [projectsStockPaving, pourCure, projectsStockGallery2],
     relatedServices: ["grading", "excavation"],
   },
   {
@@ -69,8 +67,8 @@ export const PROJECTS: Project[] = [
       "Removed unsuitable wet soil, replaced with rock, compacted rock to stabilize the base, then continued replacing and recompacting excavation material on the stabilized foundation.",
     results:
       "90%+ compaction achieved after rock stabilization. Pad certified and turned over inspection-ready.",
-    image: massExcavationImg,
-    gallery: [massExcavationImg, serviceExcavation, serviceGrading],
+    image: projectsStockExcavation,
+    gallery: [projectsStockExcavation, projectsStockGallery3, pourCure],
     relatedServices: ["grading", "excavation"],
   },
   {
@@ -92,8 +90,8 @@ export const PROJECTS: Project[] = [
       "Excavated in sections; covered the open trench with steel plates at the end of each workday for vehicle traffic; reopened and continued excavation the following day until the full run was complete.",
     results:
       "Electrical infrastructure upgraded for the apartment complex. Excavation, backfill, and compaction completed. Roadway restored with grind-and-overlay asphalt.",
-    image: jobsiteElectricalRoomTrench,
-    gallery: [jobsiteElectricalRoomTrench, jobsiteAsphaltDemoHaul, jobsiteLoaderDemoDebris, projectTrenchDustControl],
+    image: projectsStockMassExcavation,
+    gallery: [projectsStockMassExcavation, projectsStockGallery2, projectsStockGallery3],
     relatedServices: ["grading", "excavation", "paving"],
   },
 ];
