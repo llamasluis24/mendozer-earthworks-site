@@ -23,6 +23,8 @@ import projectTrenchDustControl from "@/assets/project-trench-dust-control.jpg";
 import recentWorkRetentionBasin from "@/assets/recent-work-retention-basin.jpg";
 import recentWorkExcavatorBasin from "@/assets/recent-work-excavator-basin.jpg";
 import recentWorkSlopeExcavation from "@/assets/recent-work-slope-excavation.jpg";
+import excavationSiteBalancingStock from "@/assets/excavation-site-balancing-stock.jpg";
+import excavationOverExcavationStock from "@/assets/excavation-over-excavation-stock.jpg";
 import pourForm from "@/assets/pour-phase-form-rebar.jpg";
 import pourPre from "@/assets/pour-phase-pre-pour.jpg";
 import pourPour from "@/assets/pour-phase-pour.jpg";
@@ -35,9 +37,9 @@ import pavingBinder from "@/assets/paving-layer-binder.jpg";
 export const EXCAVATION_IMAGES = [
   excavationImg,
   massExcavationImg,
-  utilityTrenchingImg,
+  excavationSiteBalancingStock,
   importExportImg,
-  recompactionImg,
+  excavationOverExcavationStock,
   g1,
   g3,
   g2,
